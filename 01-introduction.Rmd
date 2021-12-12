@@ -16,5 +16,6 @@ options(width = 70)
 knitr::include_graphics(path = "figure/conceptual_dag.pdf")
 ```
 
-
 This is to test citations @asche_etal08.
+
+Also I would like to see if the established connection with Github works well.

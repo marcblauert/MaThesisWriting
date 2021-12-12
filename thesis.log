@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.24)  12 DEC 2021 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.24)  12 DEC 2021 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1166,14 +1166,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 ...ter{Literature Review}\label{literature}}
+l.236 ...ter{Literature Review}\label{literature}}
                                                    [1
 
  <./figure/conceptual_dag.pdf>]pdfTeX warning (ext4): destination with the same
  identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 ...ter{Literature Review}\label{literature}}
+l.236 ...ter{Literature Review}\label{literature}}
                                                    [2
 
 ]
@@ -1191,11 +1191,11 @@ Chapter 4.
 ]
 Chapter 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 260.
+(Font)              <10> on input line 262.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 260.
+(Font)              <7> on input line 262.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 260.
+(Font)              <5> on input line 262.
 [9] [10]
 Chapter 6.
 [11
@@ -1215,32 +1215,32 @@ Appendix B.
 [17] [18
 
 ]
-Underfull \hbox (badness 1859) in paragraph at lines 347--349
+Underfull \hbox (badness 1859) in paragraph at lines 349--351
 []\T1/lmr/m/n/12 (+20) Asche, F., Bjarte Nilsen, O., & Tvet-eras, R. (2008). Na
 t-u-ral Gas De-
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 347--349
+Underfull \hbox (badness 1412) in paragraph at lines 349--351
 \T1/lmr/m/n/12 (+20) mand in the Eu-ro-pean House-hold Sec-tor. \T1/lmr/m/it/12
  (+20) The En-ergy Jour-nal\T1/lmr/m/n/12 (+20) , \T1/lmr/m/it/12 (+20) 29\T1/l
 mr/m/n/12 (+20) (3).
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 354.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
 [19
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 354.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 354.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 354.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 70B12ABE2C6D438C939BA229D424E8DF;562.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 356.
  ) 
 Here is how much of TeX's memory you used:
  12521 strings out of 493014
@@ -1257,7 +1257,7 @@ st/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/public/lm/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/l
 m/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro12.p
 fb>
-Output written on thesis.pdf (31 pages, 184478 bytes).
+Output written on thesis.pdf (31 pages, 184560 bytes).
 PDF statistics:
  258 PDF objects out of 1000 (max. 8388607)
  214 compressed objects within 3 object streams
