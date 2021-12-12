@@ -1,0 +1,20 @@
+<!--
+Appendix
+-->
+
+`r if(knitr:::is_latex_output()) '\\appendix'`
+
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'` 
+
+```{r setup8, echo=FALSE}
+pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
+
+# Set how wide the R output will go
+options(width = 70)
+```
+
+# First Appendix
+
+# Second Appendix
+
+(...)

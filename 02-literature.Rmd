@@ -1,0 +1,12 @@
+<!--
+Chapter 2 - Literature Review
+-->
+
+```{r setup2, echo=FALSE}
+pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
+
+# Set how wide the R output will go
+options(width = 70)
+```
+
+# Literature Review {#literature}

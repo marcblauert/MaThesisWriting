@@ -1,0 +1,2660 @@
+[
+	{
+		"id": "schutze_etal20a",
+		"type": "article-journal",
+		"abstract": "Mit einer Taxonomie für nachhaltige Investitionen schafft die EU-Kommission erstmals einheitliche Kriterien für klimaverträgliche Wirtschaftsaktivitäten. Um das Ziel der Klimaneutralität bis 2050 zu erreichen, soll Unternehmen und Investoren damit Orientierung gegeben werden, welche Investitionen mit der Vermeidung von Treibhausgasemissionen im Einklang stehen und als nachhaltig eingestuft werden können. Der vorliegende Bericht untersucht, inwiefern die Taxonomie diesem Ziel gerecht wird. Die Studie kommt zu dem Ergebnis, dass die Kriterien zwar in einigen Wirtschaftszweigen wie dem Automobilsektor kompatibel mit einem Pfad zur Klimaneutralität sind. In anderen Bereichen, vor allem der emissionsintensiven Grundstoffindustrie, sind die Kriterien aber bisher nicht ausreichend. Zu schwache Schwellenwerte bergen die Gefahr eines „Carbon-Lock-In“, der Zementierung von emissionsintensiven Technologien und Strukturen. Stattdessen sollte die Taxonomie Anreize für Innovationen in die Dekarbonisierung der Wirtschaft bieten. Dies kann durch das Festlegen von unterschiedlichen Schwellenwerten für Neuinvestitionen und für die Bewertung bestehender Unternehmenswerte geschehen, wie es die Taxonomie im Bereich Gebäude bereits vorsieht",
+		"container-title": "DIW Wochenbericht",
+		"DOI": "10.18723/DIW_WB:2020-51-1",
+		"note": "publisher: DIW - Deutsches Institut für Wirtschaftsforschung\nversion: 2.0",
+		"source": "DOI.org (Datacite)",
+		"title": "EU-Taxonomie stärkt Transparenz für nachhaltige Investitionen",
+		"URL": "http://www.diw.de/sixcms/detail.php?id=diw_01.c.807109.de",
+		"author": [
+			{
+				"family": "Schütze",
+				"given": "Franziska"
+			},
+			{
+				"family": "Stede",
+				"given": "Jan"
+			},
+			{
+				"family": "Blauert",
+				"given": "Marc"
+			},
+			{
+				"family": "Erdmann",
+				"given": "Katharina"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					5
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "watson_hudson15",
+		"type": "article-journal",
+		"abstract": "As global growth in renewable energy projects accelerates, site identification will come to the forefront, where a key consideration is to minimise the environmental impact of the development. A large area of southern England (17,094km2) was assessed for suitability for wind and solar farm developments in three stages using geographic information systems. A multi-criteria decision making framework incorporating an analytical hierarchy process involving expert stakeholders was applied, which is a novel approach for this type of study. A binary constraint layer was created identifying entirely unsuitable locations. A factor layer was developed to indicate suitability in relation to a range of variables. Suitability layers for wind farm and solar farm development were then created covering the region. The environmental constraints used in the model accounted for over 60% of the study area for both wind and solar developments. Suitability for wind energy was generally low, with only 0.5km2 accounting for the ‘most suitable’ category. Solar suitability was higher overall; and a greater area (294km2) within the ‘most suitable’ category, suggesting the region is better suited for solar farm developments. Stakeholder input resulted in higher weightings for economic considerations for the solar model, prompting the most suitable areas to coincide with locations of the national grid connections. A sensitivity analysis indicated that model was generally reliable. This method can be used to assist appropriate site selection for onshore renewable energy projects across large geographical areas, helping to minimise their environmental impacts.",
+		"container-title": "Landscape and Urban Planning",
+		"DOI": "10.1016/j.landurbplan.2015.02.001",
+		"ISSN": "0169-2046",
+		"journalAbbreviation": "Landscape and Urban Planning",
+		"page": "20–31",
+		"title": "Regional Scale wind farm and solar farm suitability assessment using GIS-assisted multi-criteria evaluation",
+		"URL": "http://www.sciencedirect.com/science/article/pii/S0169204615000249",
+		"volume": "138",
+		"author": [
+			{
+				"family": "Watson",
+				"given": "Joss J. W."
+			},
+			{
+				"family": "Hudson",
+				"given": "Malcolm D."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					6,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "brewer_etal15",
+		"type": "article-journal",
+		"abstract": "Determining socially acceptable and economically viable locations for utility-scale solar projects is a costly process that depends on many technical, economic, environmental and social factors. This paper presents a GIS-based multi-criteria solar project siting study conducted in the southwestern United States with a unique social preference component. Proximity raster layers were derived from features including roads, power lines, and rivers then overlain with 10 × 10 m raster terrain datasets including slope and potential irradiance to produce a high resolution map showing solar energy potential from “poor” to “excellent” for high potential counties across the southwestern United States. Similar maps were produced by adding social acceptance data collected from a series of surveys showing the potential public resistance to development that can be expected in areas of high solar energy suitability. Applying social preferences to the model significantly reduced the amount of suitable area in each of the selected study areas. The methods demonstrated are expected to help reduce time, money, and resources currently allocated toward finding and assessing areas of high solar power suitability.",
+		"container-title": "Renewable Energy",
+		"DOI": "10.1016/j.renene.2015.04.017",
+		"ISSN": "0960-1481",
+		"journalAbbreviation": "Renewable Energy",
+		"page": "825–836",
+		"title": "Using GIS analytics and social preference data to evaluate utility-scale solar power site suitability",
+		"URL": "http://www.sciencedirect.com/science/article/pii/S0960148115002979",
+		"volume": "81",
+		"author": [
+			{
+				"family": "Brewer",
+				"given": "Justin"
+			},
+			{
+				"family": "Ames",
+				"given": "Daniel P."
+			},
+			{
+				"family": "Solan",
+				"given": "David"
+			},
+			{
+				"family": "Lee",
+				"given": "Randy"
+			},
+			{
+				"family": "Carlisle",
+				"given": "Juliet"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					9,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "carrion_etal08",
+		"type": "article-journal",
+		"abstract": "The privileged climate and orographic setting of southern Spain give Andalusia an enormous potential for the installation of photovoltaic power plants connected to electricity grids and also for individual use. These circumstances as well as the present energy crisis, largely stemming from the world's dependence on fossil fuels, justify this research study. This article describes how the GIS was used to inventory the most suitable land sites for the location of solar power plants for the production of electrical energy in compliance with the legal, environmental, and operational requisites for grid-connected photovoltaic power plants (GPPPs). On the basis of this inventory and the calculation of the global irradiation on horizontal surface, it is estimated that the electrical production capacity of GPPPs in Andalusia doubles the Special Regime electricity demand. The resulting electricity production capacity is estimated at 38,693GWh/yr for 164,495.37ha of land, which has no legal and/or environmental impediments to solar power installations.",
+		"container-title": "Renewable Energy",
+		"DOI": "10.1016/j.renene.2007.05.041",
+		"ISSN": "0960-1481",
+		"issue": "4",
+		"journalAbbreviation": "Renewable Energy",
+		"page": "545–552",
+		"title": "The electricity production capacity of photovoltaic power plants and the selection of solar energy sites in Andalusia (Spain)",
+		"URL": "http://www.sciencedirect.com/science/article/pii/S0960148107001802",
+		"volume": "33",
+		"author": [
+			{
+				"family": "Carrión",
+				"given": "J. Arán"
+			},
+			{
+				"family": "Espín Estrella",
+				"given": "A."
+			},
+			{
+				"family": "Aznar Dols",
+				"given": "F."
+			},
+			{
+				"family": "Ridao",
+				"given": "A. Ramos"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					4,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "effat13",
+		"type": "article-journal",
+		"abstract": "Abstract Egypt is known to be one of the most optimal locations in the world for solar energy production. Solar energy can provide a great opportunity for sustainable development and population redistribution in its vast deserts. Ismailia Governorate encompasses the Suez Canal which in turn possesses high development potentiality. The objective of this paper is to identify optimum sites for constructing solar energy plants in Ismailia Governorate. To achieve this objective, two interrelated steps have been applied in this research. First, remote sensing including satellite data from SPOT-4 was used to derive land use/land cover map of the study area. Also, Shuttle Radar Topography Mission (SRTM) and Digital Elevation Model (DEM) were used to model the aspect angles map and to model the global solar radiation map for the study area. The global insolation (direct and diffuse radiation, WH/m2) shows where the highest amounts of solar radiation are. Second, a Spatial Multicriteria Evaluation (SMCE) model was designed. Various criteria were used in this study, including meteorological (global insolation); terrestrial (the aspect); economic (distance from power lines, main roads and populated area). The Analytical Hierarchy Process (AHP) was used for calculation of the criteria weights. A weighted overlay was used to produce a suitability index map for solar energy power. Few sites were selected based on high suitability index values and area of a site. The methodology proves to be promising for creating zoning maps for developing solar energy infrastructures in the region.",
+		"container-title": "International Journal of Advanced Remote Sensing and GIS",
+		"journalAbbreviation": "International Journal of Advanced Remote Sensing and GIS",
+		"page": "205–220",
+		"title": "Selection of Potential Sites for Solar Energy Farms in Ismailia Governorate, Egypt using SRTM and Multicriteria Analysis",
+		"volume": "2",
+		"author": [
+			{
+				"family": "Effat",
+				"given": "Hala"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013",
+					1,
+					22
+				]
+			]
+		}
+	},
+	{
+		"id": "georgiou_skarlatos16",
+		"type": "article-journal",
+		"abstract": "Among the renewable powers sources, solar is rapidly becoming popular being inexhaustible, clean, and dependable. It is also becoming more efficient since the photovoltaic solar cells' power conversion efficiency is rising. Following these trends, solar power will become more affordable in years to come and considerable investments are to be expected. Despite the size of solar plants, the sitting procedure is a crucial factor for their efficiency and financial viability. Many aspects rule such decision; legal, environmental, technical, and financial to name some. This paper describes a general integrated framework to evaluate land suitability for the optimal placement of photovoltaic solar power plants, which is based on a combination of a Geographic Information System (GIS), remote sensing techniques and multi-criteria decision making methods. An application of the proposed framework for Limassol District in Cyprus is further illustrated. The combination of GIS and multi-criteria methods, consist an excellent analysis tool that creates an extensive database of spatial and non spatial data that will be used to simplify problems, to solve and promote the use of multiple criteria. A set of environmental, economic, social and technical constrains based on recent Cypriot legislation, European's Union policies and experts' advices, identifies the potential sites for solar park installation. The pair-wise comparison method in the context of the analytic hierarchy process (AHP) is applied to estimate the criteria weights in order to establish their relative importance in site evaluation. In addition, four different methods to combine information layers and check their sensitivity were used. The first considered all the criteria as being equally important and assign them equal weight, while the others grouped the criteria and graded them according to their objective perceived importance. The overall suitability of the study region for sitting solar park is appraised through the summation rule. Strict application of the framework depicts 3.0 % of the study region scoring best suitability index for solar resource exploitation, hence minimizing risk of a potential investment. However, using different weighting schemes for criteria, suitable areas may reach up to 83 % of the study region. The suggested methodological framework applied can be easily utilized by potential investors and renewable energy developers, through a front end web based application with proper GUI for personalized weighting schemes.",
+		"container-title": "Geoscientific Instrumentation, Methods and Data Systems Discussions",
+		"DOI": "10.5194/gi-2016-4",
+		"journalAbbreviation": "Geoscientific Instrumentation, Methods and Data Systems Discussions",
+		"page": "1–19",
+		"title": "Optimal Site Selection for Sittinga Solar Park using Multi-Criteria Decision Analysis and Geographical Information Systems (GIS)",
+		"author": [
+			{
+				"family": "Georgiou",
+				"given": "Andreas"
+			},
+			{
+				"family": "Skarlatos",
+				"given": "Dimitrios"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					3,
+					17
+				]
+			]
+		}
+	},
+	{
+		"id": "piirisaar19",
+		"type": "article-journal",
+		"abstract": "The constraints accounted for 85.11% of the study area and 0.67% of the study area was found to fulfill all the required criteria and to be suitable for utility-scale solar plants. Majority of the suitable areas were scattered in the northeast of the county, exemplifying how topography influences incoming solar radiation as the most important factor for solar energy generation.",
+		"page": "86",
+		"title": "A multi-criteria GIS analysis for siting of utility-scale photovoltaic solar plants in county Kilkenny, Ireland",
+		"author": [
+			{
+				"family": "Piirisaar",
+				"given": "Ingrid"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "janke10",
+		"type": "article-journal",
+		"abstract": "The majority of electricity and heat in Colorado comes from coal and natural gas; however, renewable energy sources will play an integral role in the state’s energy future. Colorado is the 11th windiest state and has more than 250 sunny days per year. The objectives of this research are to: 1) determine which landcover classes are affiliated with high wind and solar potential; and 2) identify areas that are suitable for wind and solar farms using multicriteria GIS modelling techniques. Renewable potential (NREL wind speed measurements at 50 m above the ground and NREL annual insolation data), landcover, population density, federal lands, and distance to roads, transmission lines, and cities were reclassified according to their suitability. Each was assigned weights based on their relative importance to one another. Superb wind classes are located in high alpine areas. Unfortunately, these areas are not suitable for large-scale wind farm development due to their inaccessibility and location within a sensitive ecosystem. Federal lands have low wind potential. According to the GIS model, ideal areas for wind farm development are located in northeastern Colorado. About 41 850 km2 of the state has model scores that are in the 90–100% range. Although annual solar radiation varies slightly, inter-mountain areas receive the most insolation. As far as federal lands, Indian reservations have the greatest solar input. The GIS model indicates that ideal areas for solar development are located in northwestern Colorado and east of Denver. Only 191 km2 of the state had model scores that were in the 90–100% range. These results suggest that the variables used in this analysis have more of an effect at eliminating non-suitable areas for large-scale solar farms; a greater area exists for suitable wind farms. However, given the statewide high insolation values with minimal variance, solar projects may be better suited for small-scale residential or commercial projects.",
+		"container-title": "Renewable Energy",
+		"DOI": "10.1016/j.renene.2010.03.014",
+		"journalAbbreviation": "Renewable Energy",
+		"page": "2228–2234",
+		"title": "Multicriteria GIS modeling of wind and solar farms in Colorado",
+		"volume": "35",
+		"author": [
+			{
+				"family": "Janke",
+				"given": "Jason"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010",
+					10,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "sanchez-lozano_etal13",
+		"type": "article-journal",
+		"abstract": "This paper is based on the combination of a Geographic Information System (GIS) and tools or multi-criteria decision making (MCDM) methods in order to obtain the evaluation of the optimal placement of photovoltaic solar power plants in the area of Cartagena (Region of Murcia), in southeast Spain. The combination GIS–MCDM generates an excellent analysis tool that allows for the creation of an extensive cartographic and alphanumeric database that will later be used by multi-criteria methodologies to simplify problems to solve and promote the use of multiple criteria. In GIS two types of criteria will be reflected: constraints or restrictive criteria, and weighting criteria or factors. Constraints or restrictive criteria will make it possible to reduce the area of study by discarding those areas that prevent the implementation of renewable energy plants. These criteria will be obtained from the legislation (planning regulations, protected areas, road networks, railways, waterways, mountains, etc). Weighting criteria or factors will be those which, according to the objective to be reached, influence the ability to solve a concrete alternative. The choice of such criteria is marked by the influence presented to the overall goal; in this case they will be location, geomorphological, environmental and climatic criteria. Through the use of MCDM the criteria or factors mentioned will be weighted in order to evaluate potential sites to locate a solar plant. Analysis and calculation of the weights of these factors will be conducted using Analytic Hierarchy Process (AHP). The assessment of the alternatives according to their degree of adequacy is carried out through the TOPSIS method (Technique for Order Preference by Similarity to Ideal Solution).",
+		"container-title": "Renewable and Sustainable Energy Reviews",
+		"DOI": "10.1016/j.rser.2013.03.019",
+		"ISSN": "1364-0321",
+		"journalAbbreviation": "Renewable and Sustainable Energy Reviews",
+		"page": "544–556",
+		"title": "Geographical Information Systems (GIS) and Multi-Criteria Decision Making (MCDM) methods for the evaluation of solar farms locations: Case study in south-eastern Spain",
+		"title-short": "Geographical Information Systems (GIS) and Multi-Criteria Decision Making (MCDM) methods for the evaluation of solar farms locations",
+		"URL": "http://www.sciencedirect.com/science/article/pii/S1364032113001780",
+		"volume": "24",
+		"author": [
+			{
+				"family": "Sánchez-Lozano",
+				"given": "Juan M."
+			},
+			{
+				"family": "Teruel-Solano",
+				"given": "Jerónimo"
+			},
+			{
+				"family": "Soto-Elvira",
+				"given": "Pedro L."
+			},
+			{
+				"family": "Socorro García-Cascales",
+				"given": "M."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013",
+					8,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "uyan13",
+		"type": "article-journal",
+		"abstract": "Renewable energy is clean sources and has a much lower environmental impact than other energy sources. In Turkey, solar energy investments have been developed rapidly in recent years. Site selection for solar farms is a critical issue for large investments because of quality of terrain, local weathering factors, proximity to high transmission capacity lines, agricultural facilities and environmental conservation issues. Multi criteria evaluation methods are often used for different site selection studies. The purpose of this study was to determine suitable site selection for solar farms by using GIS and AHP in the study area. The final index model was grouped into four categories as “low suitable”, “moderate”, “suitable” and “best suitable” with an equal interval classification method. As a result, 15.38% (928.18km2) of the study area has low suitable, 14.38% (867.83km2) has moderate suitable, 15.98% (964.39km2) has suitable and 13.92% (840.07km2) has best suitable for solar farms area. 40.34% (2434.52km2) of the study area is not suitable for solar farm areas.",
+		"container-title": "Renewable and Sustainable Energy Reviews",
+		"DOI": "10.1016/j.rser.2013.07.042",
+		"ISSN": "1364-0321",
+		"journalAbbreviation": "Renewable and Sustainable Energy Reviews",
+		"page": "11–17",
+		"title": "GIS-based solar farms site selection using analytic hierarchy process (AHP) in Karapinar region, Konya/Turkey",
+		"URL": "http://www.sciencedirect.com/science/article/pii/S1364032113004875",
+		"volume": "28",
+		"author": [
+			{
+				"family": "Uyan",
+				"given": "Mevlut"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					21
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013",
+					12,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "Bayrisches15",
+		"type": "report",
+		"event-place": "München",
+		"publisher": "Bayrisches Staatsministerium für Wirtschaft und Medien, Energie und Technologie",
+		"publisher-place": "München",
+		"title": "Bayrisches Energieprogramm",
+		"URL": "https://www.stmwi.bayern.de/fileadmin/user_upload/stmwi/Publikationen/2015/2015-21-10-Bayerisches_Energieprogramm.pdf",
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "Umweltwissen15",
+		"type": "report",
+		"event-place": "München",
+		"publisher": "Bayrisches Landesamt für Umwelt",
+		"publisher-place": "München",
+		"title": "Umweltwissen Klima & Energie: Sonnenenergie",
+		"URL": "https://www.lfu.bayern.de/buerger/doc/uw_62_sonnenenergie.pdf",
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "Bayrischer15",
+		"type": "report",
+		"event-place": "München",
+		"publisher": "Bayrisches Staatsministerium für Wirtschaft, Landesentwicklung und Energie",
+		"publisher-place": "München",
+		"title": "Bayrischer Solaratlas",
+		"URL": "https://www.bestellen.bayern.de/application/eshop_app000001?SID=1718381921&DIR=eshop&ACTIONxSETVAL(artdtl.htm,APGxNODENR:289223,AARTxNR:07000018,AARTxNODENR:334036,USERxBODYURL:artdtl.htm,KATALOG:StMWIVT,AKATxNAME:StMWIVT,ALLE:x)=X",
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "PraxisLeitfaden14",
+		"type": "report",
+		"event-place": "München",
+		"publisher": "Bayrisches Landesamt für Umwelt",
+		"publisher-place": "München",
+		"title": "Praxis-Leitfaden für die Ökologische Gastaltung von Photovoltaik-Freiflächenanlagen",
+		"URL": "https://www.bestellen.bayern.de/application/applstarter?APPL=eshop&DIR=eshop&ACTIONxSETVAL(artdtl.htm,APGxNODENR:34,AARTxNR:lfu_nat_00209,AARTxNODENR:326826,USERxBODYURL:artdtl.htm,KATALOG:StMUG,AKATxNAME:StMUG,ALLE:x)=X",
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014"
+				]
+			]
+		}
+	},
+	{
+		"id": "stede_may20",
+		"type": "report",
+		"abstract": "Several countries and regions have introduced mandatory minimum distances of wind turbines to nearby residential areas, in order to increase public acceptance of wind power. Germany’s largest federal state Bavaria introduced such separation distances of ten times the height of new wind turbines in 2014. Here, we provide a novel monthly district-level dataset of construction permits for wind turbines constructed in Germany between 2010 and 2018. We use this dataset to evaluate the causal effect of introducing the Bavarian minimum distance regulation on the issuance of construction permits for wind turbines. We find that permits decreased by up to 90 percent. This decrease is in the same order of magnitude as the reduction of land area available for wind turbines. The results are in line with findings indicating that minimum distances do not increase the public acceptance of wind power, but harm the expansion of onshore wind power.",
+		"event-place": "Rochester, NY",
+		"genre": "SSRN Scholarly Paper",
+		"note": "DOI: 10.2139/ssrn.3603933",
+		"number": "ID 3603933",
+		"publisher": "Social Science Research Network",
+		"publisher-place": "Rochester, NY",
+		"title": "Way Off: The Effect of Minimum Distance Regulation on the Deployment of Wind Power",
+		"title-short": "Way Off",
+		"URL": "https://papers.ssrn.com/abstract=3603933",
+		"author": [
+			{
+				"family": "Stede",
+				"given": "Jan"
+			},
+			{
+				"family": "May",
+				"given": "Nils"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					5,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "voigtlander_ebert19",
+		"type": "report",
+		"event-place": "München",
+		"publisher": "Bayrisches Staatsministerium für Wirtschaft, Landesentwicklung und Energie",
+		"publisher-place": "München",
+		"title": "Aktuelle Zahlen zur Energieversorgung in Bayern: Prognose bis zum Jahr 2018",
+		"URL": "https://www.stmwi.bayern.de/fileadmin/user_upload/stmwi/Publikationen/2019/2019-08-19_Energiedaten_Bayern_Endbericht.pdf",
+		"author": [
+			{
+				"family": "Voigtländer",
+				"given": "Christoph"
+			},
+			{
+				"family": "Ebert",
+				"given": "Marcel"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "kaldellis_etal13",
+		"type": "article-journal",
+		"abstract": "As renewable energy projects have gradually been introduced in various forms and in many places around the world, public skepticism on these developments has emerged and siting decisions have, in several cases, been determined by intense conflicts and debate. In this context, the present study focuses on the assessment of the levels of public acceptability for existing and new renewable energy projects, namely wind farms, small hydro and photovoltaics (PVs), in a representative region of Southern Greece. A point of particular interest in this survey is the adverse environmental conditions and poor air quality existing in the area under investigation, resulting from the long-term operation of a lignite-based thermal power station. A postal, three-part survey has been conducted based on a representative sample of local inhabitants. According to the results obtained, high levels of acceptability for existing and new projects have been encountered for all technologies examined. Interestingly, better results concerned PV applications, with the positive trend towards new projects being illustrated by the high percentage of about 85%. Similarly, wind and hydro energy applications demonstrate high acceptability of the order of 80%. Furthermore, local habitants' experience on already operating renewable energy projects in the region has also designated their “tolerance” on the main environmental impacts of these technologies (visual, noise, land occupation etc.). However, this survey also reveals a specific minority of people that are opposed to renewable energy applications, either disregarding any environmental, social and financial benefits or just weighing benefits less heavily than the reasons of opposition.",
+		"container-title": "Renewable Energy",
+		"DOI": "10.1016/j.renene.2012.10.045",
+		"ISSN": "0960-1481",
+		"journalAbbreviation": "Renewable Energy",
+		"page": "197–208",
+		"title": "Comparing recent views of public attitude on wind energy, photovoltaic and small hydro applications",
+		"URL": "http://www.sciencedirect.com/science/article/pii/S0960148112006908",
+		"volume": "52",
+		"author": [
+			{
+				"family": "Kaldellis",
+				"given": "J. K."
+			},
+			{
+				"family": "Kapsali",
+				"given": "M."
+			},
+			{
+				"family": "Kaldelli",
+				"given": "El."
+			},
+			{
+				"family": "Katsanou",
+				"given": "Ev."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013",
+					4,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "elsland_etal16",
+		"type": "report",
+		"event-place": "Karlsruhe",
+		"page": "74",
+		"publisher": "Frauenhofer ISI",
+		"publisher-place": "Karlsruhe",
+		"title": "Netzentwicklungsplan Strom: Entwicklung der regionalen Stromnachfrage und Lastprofile (Begleitgutachten)",
+		"URL": "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/cce/2017/Fraunhofer_ISI_2017_Netzentwicklungsplan_Strom.pdf",
+		"author": [
+			{
+				"family": "Elsland",
+				"given": "Rainer"
+			},
+			{
+				"family": "Boßmann",
+				"given": "Tobias"
+			},
+			{
+				"family": "Klingler",
+				"given": "Anna-Lena"
+			},
+			{
+				"family": "Herbst",
+				"given": "Andrea"
+			},
+			{
+				"family": "Klobasa",
+				"given": "Marian"
+			},
+			{
+				"family": "Wietschel",
+				"given": "Martin"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					10,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		}
+	},
+	{
+		"id": "perpinacastillo_etal16",
+		"type": "article-journal",
+		"container-title": "Energy Policy",
+		"DOI": "10.1016/j.enpol.2015.10.004",
+		"ISSN": "03014215",
+		"journalAbbreviation": "Energy Policy",
+		"page": "86–99",
+		"title": "An assessment of the regional potential for solar power generation in EU-28",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421515301324",
+		"volume": "88",
+		"author": [
+			{
+				"family": "Perpiña Castillo",
+				"given": "Carolina"
+			},
+			{
+				"family": "Batista e Silva",
+				"given": "Filipe"
+			},
+			{
+				"family": "Lavalle",
+				"given": "Carlo"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					10,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "palmer_etal19",
+		"type": "article-journal",
+		"container-title": "Renewable Energy",
+		"DOI": "10.1016/j.renene.2018.08.109",
+		"ISSN": "09601481",
+		"journalAbbreviation": "Renewable Energy",
+		"page": "1136–1146",
+		"title": "The future scope of large-scale solar in the UK: Site suitability and target analysis",
+		"title-short": "The future scope of large-scale solar in the UK",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0960148118310590",
+		"volume": "133",
+		"author": [
+			{
+				"family": "Palmer",
+				"given": "Diane"
+			},
+			{
+				"family": "Gottschalg",
+				"given": "Ralph"
+			},
+			{
+				"family": "Betts",
+				"given": "Tom"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					10,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "Verordnung",
+		"type": "bill",
+		"title": "Verordnung über Gebote für Freiflächenanlagen"
+	},
+	{
+		"id": "iea20",
+		"type": "report",
+		"abstract": "Abstract In response to the exceptional circumstances stemming from the coronavirus pandemic, the annual IEA Global Energy Review has expanded its coverage to include real-time analysis of developments to date in 2020 and possible directions for the rest of the year. In addition to reviewing 2019 energy and CO2 emissions data by fuel and country, for this section of the Global Energy Review we have tracked energy use by country and fuel over the past three months and in some cases – such as electricity – in real time. Some tracking will continue on a weekly basis. The uncertainty surrounding public health, the economy and hence energy over the rest of 2020 is unprecedented. This analysis therefore not only charts a possible path for energy use and CO2 emissions in 2020 but also highlights the many factors that could lead to differing outcomes. We draw key lessons on how to navigate this once-in-a-century crisis.",
+		"page": "55",
+		"title": "Global Energy Review 2020",
+		"URL": "https://www.iea.org/reports/global-energy-review-2020",
+		"author": [
+			{
+				"family": "IEA",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					11,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "buttermann20",
+		"type": "report",
+		"publisher": "Arbeitsgemeinschaft Energiebilanzen e.V.",
+		"title": "Energieverbrauch in Deutschland im Jahr 2019",
+		"URL": "https://ag-energiebilanzen.de/20-0-Berichte.html",
+		"author": [
+			{
+				"family": "Buttermann",
+				"given": "Hans G."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					11,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "Renewable20",
+		"type": "report",
+		"event-place": "Abu Dhabi",
+		"publisher": "International Renewable Energy Agency",
+		"publisher-place": "Abu Dhabi",
+		"title": "Renewable Power Generation Costs in 2019",
+		"URL": "https://www.irena.org/publications/2020/Jun/Renewable-Power-Costs-in-2019",
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					11,
+					22
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "ruiz_etal20",
+		"type": "article-journal",
+		"abstract": "A reliable tool for site-suitability assessment of solar power plants capable to account for the sustainable development and protection of cultural and biodiversity conservation areas is proposed. We present a novel Analytic Hierarchy Process (AHP) based approach for the Multi-Decision Criteria Analysis (MDCA) of SSI satellite retrieved data and local information sources, it within a GIS platform tailored to fit the needs of energy stakeholders at Indonesia, simultaneously ensuring the conservation of legally protected areas. This imposes significant challenges due to the wide diversification of cultural, natural, and ecological protected areas that need to be considered, in landmarks that demand for high resolution imaging of surface solar irradiance (SSI) within $\\textbackslashpm 4ˆ{\\textbackslashcirc}$ of the equator. To overcome these challenges, a GIS spatial weighted overlay analysis for criteria layers such as climatology, topography, electrical grid, and road infrastructure has been performed, it based on the technical and economic feasibility for solar plants deployment within three approximation schemes focused on their proximity to the existing (i) power network, (ii) road infrastructure, and (iii) community settlements. Here, we focused on the West Kalimantan Province of Borneo Island (WKP), it mainly due to its possibility of onshore inter-connectivity and energy share with Malaysia and Brunei, and the high national and international importance that brings forward the protection of the biodiversity of Borneo. It has been found that the optimal location of PV plants can be reduced to just $0.03\\textbackslash%$ ($46.60\\textasciitildekmˆ{2}$) and $0.07\\textbackslash%$ ($108.58\\textasciitilde{km}ˆ{2}$) of WKP, in what we report as the best-suitable conditions out of the $33.05\\textbackslash%$ exploitable area found after the exclusion of conservation areas. This corresponds to ...",
+		"container-title": "arXiv:2007.15351 [physics]",
+		"note": "arXiv: 2007.15351",
+		"title": "GIS-AHP Multi-Decision-Criteria-Analysis for the Optimal Location of Solar Energy Plants at Indonesia",
+		"URL": "http://arxiv.org/abs/2007.15351",
+		"author": [
+			{
+				"family": "Ruiz",
+				"given": "H. S."
+			},
+			{
+				"family": "Sunarso",
+				"given": "A."
+			},
+			{
+				"family": "Ibrahim-bathis",
+				"given": "K."
+			},
+			{
+				"family": "Murti",
+				"given": "S. A."
+			},
+			{
+				"family": "Budiarto",
+				"given": "I."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					1
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					7,
+					30
+				]
+			]
+		}
+	},
+	{
+		"id": "merrouni_etal14",
+		"type": "article-journal",
+		"container-title": "Energy Procedia",
+		"DOI": "10.1016/j.egypro.2014.03.240",
+		"ISSN": "18766102",
+		"journalAbbreviation": "Energy Procedia",
+		"page": "2270–2279",
+		"title": "CSP Sites Suitability Analysis in the Eastern Region of Morocco",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S1876610214006948",
+		"volume": "49",
+		"author": [
+			{
+				"family": "Merrouni",
+				"given": "A. Alami"
+			},
+			{
+				"family": "Mezrhab",
+				"given": "Ab."
+			},
+			{
+				"family": "Mezrhab",
+				"given": "A."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					1
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014"
+				]
+			]
+		}
+	},
+	{
+		"id": "schmid_etal19",
+		"type": "report",
+		"event-place": "München",
+		"page": "63",
+		"publisher": "Forschungsstelle für Energiewirtschaft e. V.",
+		"publisher-place": "München",
+		"title": "EE-Prognose Bayern 2060: Aktualisierung 2019",
+		"URL": "https://www.ffe.de/attachments/article/961/20200127_EE-Prognose%20Bayern_Kurzfassung.pdf",
+		"author": [
+			{
+				"family": "Schmid",
+				"given": "Tobias"
+			},
+			{
+				"family": "Jetter",
+				"given": "Fabian"
+			},
+			{
+				"family": "Limmer",
+				"given": "Timo"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					12,
+					19
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "hessenmobil16",
+		"type": "webpage",
+		"container-title": "Hessen Mobil",
+		"language": "de",
+		"title": "A 49 Neuental - Gemünden/Felda",
+		"URL": "https://mobil.hessen.de/bau/großprojekte/49-neuental-gemündenfelda/gesamtmaßnahme",
+		"author": [
+			{
+				"family": "Hessen Mobil",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					8,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					3,
+					8
+				]
+			]
+		}
+	},
+	{
+		"id": "deges20",
+		"type": "report",
+		"title": "Lückenschluss A 49: Ausgleichs- und Ersatzmaßnahmen",
+		"URL": "https://www.lueckenschluss-a49.de/wp-content/uploads/2020/11/201112_infografik_massnahmen_a49.pdf",
+		"author": [
+			{
+				"family": "DEGES",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					8,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "schutze_etal20",
+		"type": "article-journal",
+		"abstract": "Mit einer Taxonomie für nachhaltige Investitionen schafft die EU-Kommission erstmals einheitliche Kriterien für klimaverträgliche Wirtschaftsaktivitäten. Um das Ziel der Klimaneutralität bis 2050 zu erreichen, soll Unternehmen und Investoren damit Orientierung gegeben werden, welche Investitionen mit der Vermeidung von Treibhausgasemissionen im Einklang stehen und als nachhaltig eingestuft werden können. Der vorliegende Bericht untersucht, inwiefern die Taxonomie diesem Ziel gerecht wird. Die Studie kommt zu dem Ergebnis, dass die Kriterien zwar in einigen Wirtschaftszweigen wie dem Automobilsektor kompatibel mit einem Pfad zur Klimaneutralität sind. In anderen Bereichen, vor allem der emissionsintensiven Grundstoffindustrie, sind die Kriterien aber bisher nicht ausreichend. Zu schwache Schwellenwerte bergen die Gefahr eines „Carbon-Lock-In“, der Zementierung von emissionsintensiven Technologien und Strukturen. Stattdessen sollte die Taxonomie Anreize für Innovationen in die Dekarbonisierung der Wirtschaft bieten. Dies kann durch das Festlegen von unterschiedlichen Schwellenwerten für Neuinvestitionen und für die Bewertung bestehender Unternehmenswerte geschehen, wie es die Taxonomie im Bereich Gebäude bereits vorsieht",
+		"container-title": "DIW Wochenbericht",
+		"DOI": "10.18723/DIW_WB:2020-51-1",
+		"note": "publisher: DIW - Deutsches Institut für Wirtschaftsforschung\nversion: 2.0",
+		"source": "DOI.org (Datacite)",
+		"title": "EU-Taxonomie stärkt Transparenz für nachhaltige Investitionen",
+		"URL": "http://www.diw.de/sixcms/detail.php?id=diw_01.c.807109.de",
+		"author": [
+			{
+				"family": "Schütze",
+				"given": "Franziska"
+			},
+			{
+				"family": "Stede",
+				"given": "Jan"
+			},
+			{
+				"family": "Blauert",
+				"given": "Marc"
+			},
+			{
+				"family": "Erdmann",
+				"given": "Katharina"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					8,
+					9
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "stede_etal",
+		"type": "article-journal",
+		"title": "Way Off: The Effect of Minimum Distance Regulation on the Deployment of Wind Power",
+		"author": [
+			{
+				"family": "Stede",
+				"given": "Jan"
+			},
+			{
+				"family": "May",
+				"given": "Nils"
+			},
+			{
+				"family": "Blauert",
+				"given": "Marc"
+			}
+		]
+	},
+	{
+		"id": "bmbf",
+		"type": "report",
+		"event-place": "2019",
+		"publisher-place": "2019",
+		"title": "Batterieforschung und Transfer stärken – Innovationen beschleunigen Dachkonzept „Forschungsfabrik Batterie“",
+		"URL": "https://www.bmbf.de/bmbf/shareddocs/downloads/files/bmbf_dachkonzept_forschungsfab-ik_batterie_handout_januar2019.pdf?__blob=publicationFile&v=1",
+		"author": [
+			{
+				"family": "BMBF",
+				"given": ""
+			}
+		]
+	},
+	{
+		"id": "doe21",
+		"type": "webpage",
+		"title": "Global Energy Storage Database",
+		"URL": "https://sandia.gov/ess-ssl/gesdb/public/statistics.html",
+		"author": [
+			{
+				"family": "DOE",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "fraunhoferisi20",
+		"type": "webpage",
+		"language": "de",
+		"title": "Batterien für Elektroautos: Faktencheck und Antworten auf die wichtigsten Fragen zur Elektromobilität",
+		"URL": "https://www.isi.fraunhofer.de/de/presse/2020/presseinfo-02-Faktencheck-E-Autos.html",
+		"author": [
+			{
+				"family": "Fraunhofer ISI",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "fraunhoferiwes17",
+		"type": "webpage",
+		"language": "de",
+		"title": "Das »Barometer der Energiewende«: Batteriespeicher",
+		"URL": "https://www.herkulesprojekt.de/de/Barometer/barometer_2017/batteriespeicher.html",
+		"author": [
+			{
+				"family": "Fraunhofer IWES",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "zotero-2699",
+		"type": "report"
+	},
+	{
+		"id": "agoraverkehrswende19",
+		"type": "report",
+		"language": "de",
+		"page": "72",
+		"source": "Zotero",
+		"title": "Klimabilanz von Elektroautos",
+		"URL": "https://www.agora-verkehrswende.de/fileadmin/Projekte/2018/Klimabilanz_von_Elektroautos/Agora-Verkehrswende_22_Klimabilanz-von-Elektroautos_WEB.pdf",
+		"author": [
+			{
+				"family": "Agora Verkehrswende",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "bmu21",
+		"type": "report",
+		"language": "de",
+		"page": "24",
+		"source": "Zotero",
+		"title": "Wie umweltfreundlich sind Elektroautos? Eine ganzheitliche Bilanz",
+		"URL": "https://www.bmu.de/fileadmin/Daten_BMU/Pools/Broschueren/elektroautos_bf.pdf",
+		"author": [
+			{
+				"family": "BMU",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "gelbach_hawkins20",
+		"type": "article-journal",
+		"abstract": "We propose a Bayesian method for econometric event studies commonly used in U.S. securities litigation. We show that our approach may be based on the Bayes factor, which has a simple form when inference is based on the empirical distribution function of abnormal returns; it also avoids problems related to nonnormality of abnormal returns. We use data from litigation related to alleged fraud by the Apollo Education Group (University of Phoenix’s parent) to illustrate the method. Results are similar to frequentist hypothesis testing with a large event-date effect, but they can be importantly different with a small or moderate effect.",
+		"container-title": "Journal of Institutional and Theoretical Economics",
+		"DOI": "10.1628/jite-2020-0012",
+		"ISSN": "0932-4569",
+		"issue": "1",
+		"journalAbbreviation": "JITE",
+		"language": "en",
+		"page": "86",
+		"source": "DOI.org (Crossref)",
+		"title": "A Bayesian Approach to Event Studies for Securities Litigation",
+		"URL": "https://www.mohrsiebeck.com/10.1628/jite-2020-0012",
+		"volume": "176",
+		"author": [
+			{
+				"family": "Gelbach",
+				"given": "Jonah B."
+			},
+			{
+				"family": "Hawkins",
+				"given": "Jenny R."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					31
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "sen_vonschickfus20",
+		"type": "article-journal",
+		"abstract": "Climate policies to keep global warming below 2◦C might render some of the world’s fossil fuels and related infrastructure worthless prior to the end of their economic life time. Therefore, some energy-sector assets are at risk of becoming stranded. This paper investigates whether and how investors price in this risk of asset stranding. We exploit the gradual development of a German climate policy proposal aimed at reducing electricity production from coal and analyze its effect on the valuation of energy utilities. We ﬁnd that investors take stranded asset risk into consideration, but that they also expect a ﬁnancial compensation for their stranded assets.",
+		"container-title": "Journal of Environmental Economics and Management",
+		"DOI": "10.1016/j.jeem.2019.102277",
+		"ISSN": "00950696",
+		"journalAbbreviation": "Journal of Environmental Economics and Management",
+		"language": "en",
+		"page": "102277",
+		"source": "DOI.org (Crossref)",
+		"title": "Climate policy, stranded assets, and investors’ expectations",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0095069618307083",
+		"volume": "100",
+		"author": [
+			{
+				"family": "Sen",
+				"given": "Suphi"
+			},
+			{
+				"family": "Schickfus",
+				"given": "Marie-Theres",
+				"non-dropping-particle": "von"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					31
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "brav00",
+		"type": "article-journal",
+		"abstract": "Statistical inference in long-horizon event studies has been hampered by the fact that abnormal returns are neither normally distributed nor independent. This study presents a new approach to inference that overcomes these difficulties and dominates other popular testing methods. I illustrate the use of the methodology by examining the long-horizon returns of initial public offerings (IPOs). I find that the Fama and French (1993) three-factor model is inconsistent with the observed long-horizon price performance of these IPOs, whereas a characteristic-based model cannot be rejected.",
+		"container-title": "The Journal of Finance",
+		"DOI": "10.1111/0022-1082.00279",
+		"ISSN": "00221082",
+		"issue": "5",
+		"journalAbbreviation": "The Journal of Finance",
+		"language": "en",
+		"page": "1979-2016",
+		"source": "DOI.org (Crossref)",
+		"title": "Inference in Long-Horizon Event Studies: A Bayesian Approach with Application to Initial Public Offerings",
+		"title-short": "Inference in Long-Horizon Event Studies",
+		"URL": "http://doi.wiley.com/10.1111/0022-1082.00279",
+		"volume": "55",
+		"author": [
+			{
+				"family": "Brav",
+				"given": "Alon"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					31
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2000",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "dordi_weber19",
+		"type": "article-journal",
+		"abstract": "Several prominent institutional investors concerned about climate change have announced their intention or have divested from fossil fuel shares, to limit their exposure to the industry. The act of fossil fuel divestment may directly depress share prices or stigmatize the industry’s reputation, resulting in lower share value. While there has been considerable research conducted on the performance of the fossil fuel industry, there is not yet any empirical evidence that divestment announcements influence share prices. Adopting an event study methodology, this study measures abnormal deviations in stock prices of the top 200 global oil, gas, and coal companies by proven reserves, on days of prominent divestment announcements. Events are analyzed independently and in aggregate. The results make several notable contributions. While many events experienced short-term negative abnormal returns around the event day, the effects of events were more pronounced over longer event windows following the New York Climate March, suggesting a shift in investor perception. The results also find that divestment announcements related to campaigns, pledges, and endorsements all have a significant effect over the short-term event window. Finally, the results control for the general underperformance of the industry over the estimation window, attesting that the price change is caused by divestment announcements. Several robustness tests using alternate expected returns models and statistical tests were conducted to ensure the accuracy of the result. Overall, this study finds that divestment announcements decrease the share price of the fossil fuel companies, and thus, we conclude that ‘divestors’ can influence the share price of their target companies. Theoretically, the result adds new knowledge regarding the efficacy of the efficient market hypothesis in relation to divestment.",
+		"container-title": "Sustainability",
+		"DOI": "10.3390/su11113122",
+		"ISSN": "2071-1050",
+		"issue": "11",
+		"journalAbbreviation": "Sustainability",
+		"language": "en",
+		"page": "3122",
+		"source": "DOI.org (Crossref)",
+		"title": "The Impact of Divestment Announcements on the Share Price of Fossil Fuel Stocks",
+		"URL": "https://www.mdpi.com/2071-1050/11/11/3122",
+		"volume": "11",
+		"author": [
+			{
+				"family": "Dordi",
+				"given": "Truzaar"
+			},
+			{
+				"family": "Weber",
+				"given": "Olaf"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					6,
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "bremus_etal21",
+		"type": "article-journal",
+		"container-title": "SSRN Electronic Journal",
+		"DOI": "10.2139/ssrn.3810492",
+		"ISSN": "1556-5068",
+		"journalAbbreviation": "SSRN Journal",
+		"language": "en",
+		"source": "DOI.org (Crossref)",
+		"title": "The Impact of ECB Corporate Sector Purchases on European Green Bonds",
+		"URL": "https://www.ssrn.com/abstract=3810492",
+		"author": [
+			{
+				"family": "Bremus",
+				"given": "Franziska"
+			},
+			{
+				"family": "Schuetze",
+				"given": "Franziska"
+			},
+			{
+				"family": "Zaklan",
+				"given": "Aleksandar"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					7,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "lin",
+		"type": "article-journal",
+		"language": "en",
+		"page": "8",
+		"source": "Zotero",
+		"title": "Lecture Notes on Event Study Analysis",
+		"author": [
+			{
+				"family": "Lin",
+				"given": "Jin-Lung"
+			}
+		]
+	},
+	{
+		"id": "eia21",
+		"type": "report",
+		"language": "en",
+		"source": "Zotero",
+		"title": "Price Elasticity for Energy Use in Buildings in the United States",
+		"URL": "https://www.eia.gov/analysis/studies/buildings/energyuse/pdf/price_elasticities.pdf#page9",
+		"author": [
+			{
+				"family": "EIA",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "fan_hyndman10",
+		"type": "article-journal",
+		"abstract": "In this paper, the price elasticity of electricity demand, representing the sensitivity of customer demand to the price of electricity, has been estimated for South Australia. We first undertake a review of the scholarly literature regarding electricity price elasticity for different regions and systems. Then we perform an empirical evaluation of the historic South Australian price elasticity, focussing on the relationship between price and demand quantiles at each half-hour of the day. This work attempts to determine whether there is any variation in price sensitivity with the time of day or quantile, and to estimate the form of any relationship that might exist in South Australia.",
+		"container-title": "Monash University, Department of Econometrics and Business Statistics, Monash Econometrics and Business Statistics Working Papers",
+		"DOI": "10.1016/j.enpol.2011.03.080",
+		"journalAbbreviation": "Monash University, Department of Econometrics and Business Statistics, Monash Econometrics and Business Statistics Working Papers",
+		"source": "ResearchGate",
+		"title": "The price elasticity of electricity demand in South Australia",
+		"volume": "39",
+		"author": [
+			{
+				"family": "Fan",
+				"given": "Shu"
+			},
+			{
+				"family": "Hyndman",
+				"given": "Rob"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010",
+					12,
+					16
+				]
+			]
+		}
+	},
+	{
+		"id": "gillingham14",
+		"type": "article-journal",
+		"abstract": "There have been dramatic swings in retail gasoline prices over the past decade, along with reports in the media of consumers changing their driving habits — providing a unique opportunity to examine how consumers respond to changes in gasoline prices. This paper exploits a unique and extremely rich vehicle-level dataset of all new vehicles registered in California in 2001–2003 and then subsequently given a smog check in 2005–2009, a period of steady economic growth but rapidly increasing gasoline prices after 2005. The primary empirical result is a medium-run estimate of the elasticity of vehicle-miles-traveled with respect to gasoline price for new vehicles of −0.22. There is evidence of considerable heterogeneity in this elasticity across buyer types, demographics, and geography. Surprisingly, the vehicle-level responsiveness is increasing with income, perhaps due to within-household switching of vehicles. The estimated elasticity has important implications for the effectiveness of price policies, such as increased gasoline taxes or a carbon policy, in reducing greenhouse gases. The heterogeneity in the elasticity underscores differing distributional and local air pollution beneﬁts of policies that increase the price of gasoline.",
+		"container-title": "Regional Science and Urban Economics",
+		"DOI": "10.1016/j.regsciurbeco.2013.08.004",
+		"ISSN": "01660462",
+		"journalAbbreviation": "Regional Science and Urban Economics",
+		"language": "en",
+		"page": "13-24",
+		"source": "DOI.org (Crossref)",
+		"title": "Identifying the elasticity of driving: Evidence from a gasoline price shock in California",
+		"title-short": "Identifying the elasticity of driving",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0166046213000653",
+		"volume": "47",
+		"author": [
+			{
+				"family": "Gillingham",
+				"given": "Kenneth"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "gillingham_etal15",
+		"type": "article-journal",
+		"abstract": "The consumer response to changing gasoline prices has long interested economists and policymakers, for it has important implications for the effects of gasoline taxation and vehicle energy efﬁciency policies. This study examines both the elasticity of driving with respect to changing gasoline prices and heterogeneity in this elasticity by geography, the fuel economy of the vehicle, and the age of the vehicle. We use detailed annual vehicle-level emissions inspection test data from Pennsylvania that include odometer readings, inspection zip codes, and extensive vehicle characteristics. We estimate a short-run gasoline price elasticity of driving demand of −0.10, and ﬁnd substantial heterogeneity in this responsiveness. The elasticity is largely driven by low fuel economy vehicles, as well as vehicles between 3 and 7 years old. Our ﬁndings help reconcile some of the recent literature and provide guidance on the magnitude of the direct rebound effect from light duty vehicle energy efﬁciency policies.",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/j.eneco.2015.08.011",
+		"ISSN": "01409883",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "S41-S52",
+		"source": "DOI.org (Crossref)",
+		"title": "Heterogeneity in the response to gasoline prices: Evidence from Pennsylvania and implications for the rebound effect",
+		"title-short": "Heterogeneity in the response to gasoline prices",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140988315002340",
+		"volume": "52",
+		"author": [
+			{
+				"family": "Gillingham",
+				"given": "Kenneth"
+			},
+			{
+				"family": "Jenn",
+				"given": "Alan"
+			},
+			{
+				"family": "Azevedo",
+				"given": "Inês M.L."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "halvorsen75",
+		"type": "article-journal",
+		"archive": "JSTOR",
+		"container-title": "The Review of Economics and Statistics",
+		"DOI": "10.2307/1937858",
+		"ISSN": "00346535, 15309142",
+		"issue": "1",
+		"note": "publisher: The MIT Press",
+		"page": "12-18",
+		"title": "Residential Demand for Electric Energy",
+		"URL": "http://www.jstor.org/stable/1937858",
+		"volume": "57",
+		"author": [
+			{
+				"family": "Halvorsen",
+				"given": "Robert"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1975"
+				]
+			]
+		}
+	},
+	{
+		"id": "kialashaki_reisel13",
+		"type": "article-journal",
+		"abstract": "This paper describes the development of energy-demand models which are able to predict the future energy demand in the residential sector of the United States. One set of models use an artificial neural network (ANN) technique, and the other set of models use a multiple linear regression (MLR) technique. The models are used to forecast future household energy demand considering different scenarios for the growth rates of the effective factors in the models. The household sector includes all energy-consuming activities in residential units (both apartments and houses) including space and water heating, cooling, lighting and the use of appliances. In order to understand the evolution of household energy use, a set of indicators has been developed. For instance, several factors affect energy consumption for space heating as a share of households’ energy demand. These factors include, dwelling size, number of occupants, the efficiency of heating equipment and the useful energy intensity. The paper also analyzes the trend of energy consumption in the residential sector of the United States. Moreover, the effects of important indicators on the energy consumption are discussed. The analysis performed in this paper is done for each census region, where possible, to elucidate the effects of different indicators in each region.",
+		"container-title": "Applied Energy",
+		"DOI": "10.1016/j.apenergy.2013.03.034",
+		"ISSN": "0306-2619",
+		"journalAbbreviation": "Applied Energy",
+		"language": "en",
+		"page": "271-280",
+		"source": "ScienceDirect",
+		"title": "Modeling of the energy demand of the residential sector in the United States using regression models and artificial neural networks",
+		"URL": "https://www.sciencedirect.com/science/article/pii/S0306261913002304",
+		"volume": "108",
+		"author": [
+			{
+				"family": "Kialashaki",
+				"given": "Arash"
+			},
+			{
+				"family": "Reisel",
+				"given": "John R."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					1
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013",
+					8,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "schmitz_madlener20",
+		"type": "article-journal",
+		"abstract": "More than 80% of the energy expenditures of private households in Germany are spent on space heating and hot water preparation. This creates opportunities for policymakers trying to inﬂuence energy consumer behavior. However, for these measures to be effective and efﬁcient, the factors that determine energy usage need to be known. In this paper, we identify the determinants of heating and hot water expenditures for German households, using a panel dataset derived from yearly residential household surveys covering the years 1996–2014. Furthermore, we test for heterogeneity between households using different methods. For the full sample, we ﬁnd an own-price demand elasticity of heating expenditures ranging from 0.573 to 0.690. A large number of technical and socio-demographic factors are signiﬁcant determinants of energy use. Additionally, we discover signiﬁcant heterogeneity in price elasticity between different socioeconomic groups. Our ﬁndings have implications for evaluating the effectiveness of policy measures that target inﬂuencing energy use across different groups of consumers.",
+		"container-title": "Empirical Economics",
+		"DOI": "10.1007/s00181-019-01760-y",
+		"ISSN": "0377-7332, 1435-8921",
+		"issue": "5",
+		"journalAbbreviation": "Empir Econ",
+		"language": "en",
+		"page": "2255-2281",
+		"source": "DOI.org (Crossref)",
+		"title": "Heterogeneity in price responsiveness for residential space heating in Germany",
+		"URL": "http://link.springer.com/10.1007/s00181-019-01760-y",
+		"volume": "59",
+		"author": [
+			{
+				"family": "Schmitz",
+				"given": "Hendrik"
+			},
+			{
+				"family": "Madlener",
+				"given": "Reinhard"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "schulte_heindl17",
+		"type": "article-journal",
+		"container-title": "Energy Policy",
+		"DOI": "10.1016/j.enpol.2016.12.055",
+		"ISSN": "03014215",
+		"journalAbbreviation": "Energy Policy",
+		"language": "en",
+		"page": "512-528",
+		"source": "DOI.org (Crossref)",
+		"title": "Price and income elasticities of residential energy demand in Germany",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421516307194",
+		"volume": "102",
+		"author": [
+			{
+				"family": "Schulte",
+				"given": "Isabella"
+			},
+			{
+				"family": "Heindl",
+				"given": "Peter"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "singhal20",
+		"type": "article-journal",
+		"abstract": "Eﬀective attention to information may play a prominent role in consumer choice for energy-intensive services and it may simply be a function of receiving timely information when consumption takes place. This paper investigates whether and why the timing of utility bills leads to salience bias in heat energy consumption. In Germany, the 12-month billing period varies across buildings with a signiﬁcant share of buildings receiving bills during the summer months, when the salience of heating costs is absent or low. I exploit this large-scale natural experiment in utility billing cycles at the building level to identify the salience eﬀect of costs on energy consumption and the underlying heterogeneity in the average treatment eﬀect. I ﬁnd new evidence for consumer inattention to energy costs: consumers that are billed for heating during oﬀ-winter months demand more heat energy annually. Results suggest that households are paying attention to their heating costs in the ﬁrst three months of the 12-month billing period. As a result, bills immediately before the winter heating season are most eﬀective, allowing ample opportunity to adjust consumption. I show that salience bias in consumption is persistent and pervasive – aﬀecting households in all regions and building/technology type. Engaging energy users with salient bills, not necessarily more frequent, has the potential to reduce energy consumption in the residential sector signiﬁcantly. This paper further examines whether enduring diﬀerences in consumer inattention to energy costs had a long-run impact on thermal eﬃciency investments by building owners – with implications for the energy-eﬃciency gap.",
+		"container-title": "SSRN Electronic Journal",
+		"DOI": "10.2139/ssrn.3686418",
+		"ISSN": "1556-5068",
+		"journalAbbreviation": "SSRN Journal",
+		"language": "en",
+		"source": "DOI.org (Crossref)",
+		"title": "Inform Me When It Matters: Cost Salience, Energy Consumption, and Efficiency Investments",
+		"title-short": "Inform Me When It Matters",
+		"URL": "https://www.ssrn.com/abstract=3686418",
+		"author": [
+			{
+				"family": "Singhal",
+				"given": "Puja"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					11
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "asche_etal08",
+		"type": "article-journal",
+		"container-title": "The Energy Journal",
+		"DOI": "10.5547/ISSN0195-6574-EJ-Vol29-No3-2",
+		"ISSN": "01956574",
+		"issue": "3",
+		"journalAbbreviation": "EJ",
+		"source": "DOI.org (Crossref)",
+		"title": "Natural Gas Demand in the European Household Sector",
+		"URL": "http://www.iaee.org/en/publications/ejarticle.aspx?id=2267",
+		"volume": "29",
+		"author": [
+			{
+				"family": "Asche",
+				"given": "Frank"
+			},
+			{
+				"family": "Bjarte Nilsen",
+				"given": "Odd"
+			},
+			{
+				"family": "Tveteras",
+				"given": "Ragnar"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					7,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "berkhout_etal04",
+		"type": "article-journal",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/j.eneco.2004.04.002",
+		"ISSN": "01409883",
+		"issue": "3",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "297-317",
+		"source": "DOI.org (Crossref)",
+		"title": "The ex post impact of an energy tax on household energy demand",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S014098830400012X",
+		"volume": "26",
+		"author": [
+			{
+				"family": "Berkhout",
+				"given": "Peter H.G."
+			},
+			{
+				"family": "Ferrer-i-Carbonell",
+				"given": "Ada"
+			},
+			{
+				"family": "Muskens",
+				"given": "Jos C."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2004",
+					5
+				]
+			]
+		}
+	},
+	{
+		"id": "ritter_bingler",
+		"type": "article-journal",
+		"abstract": "We examine a large randomized controlled trial in which residential natural gas prices are exogenously varied. Households consume natural gas to produce commodities such as heat or warm water. We address two fundamental assumptions that are regularly made but seldom tested. First, we test whether households participating in the experiment know their prices. Second, we test whether households react to considerable price variations up to 18%. Using Bayes factors, we ﬁnd substantial to strong evidence that households neither know their prices nor react to price changes.",
+		"language": "en",
+		"page": "39",
+		"source": "Zotero",
+		"title": "Don’t know? Don’t care? What a price experiment tells us about natural gas consumption",
+		"author": [
+			{
+				"family": "Ritter",
+				"given": "Nolan"
+			},
+			{
+				"family": "Bingler",
+				"given": "Julia Anna"
+			}
+		]
+	},
+	{
+		"id": "du_etal21",
+		"type": "article-journal",
+		"container-title": "The Energy Journal",
+		"DOI": "10.5547/01956574.42.4.kdu",
+		"ISSN": "01956574",
+		"issue": "4",
+		"journalAbbreviation": "EJ",
+		"source": "DOI.org (Crossref)",
+		"title": "Urban Residential Energy Demand and Rebound Effect in China: A Stochastic Energy Demand Frontier Approach",
+		"title-short": "Urban Residential Energy Demand and Rebound Effect in China",
+		"URL": "http://www.iaee.org/en/publications/ejarticle.aspx?id=3707",
+		"volume": "42",
+		"author": [
+			{
+				"family": "Du",
+				"given": "Kerui"
+			},
+			{
+				"family": "Shao",
+				"given": "Shuai"
+			},
+			{
+				"family": "Yan",
+				"given": "Zheming"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "brons_etal08",
+		"type": "article-journal",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/j.eneco.2007.08.004",
+		"ISSN": "01409883",
+		"issue": "5",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "2105-2122",
+		"source": "DOI.org (Crossref)",
+		"title": "A meta-analysis of the price elasticity of gasoline demand. A SUR approach",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140988307001144",
+		"volume": "30",
+		"author": [
+			{
+				"family": "Brons",
+				"given": "Martijn"
+			},
+			{
+				"family": "Nijkamp",
+				"given": "Peter"
+			},
+			{
+				"family": "Pels",
+				"given": "Eric"
+			},
+			{
+				"family": "Rietveld",
+				"given": "Piet"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "torres-reyna",
+		"type": "article-journal",
+		"language": "en",
+		"page": "28",
+		"source": "Zotero",
+		"title": "Getting Started in Fixed/Random Effects Models using R",
+		"author": [
+			{
+				"family": "Torres-Reyna",
+				"given": "Oscar"
+			}
+		]
+	},
+	{
+		"id": "schug_etal21",
+		"type": "article-journal",
+		"abstract": "Gridded population data is widely used to map fine scale population patterns and dynamics to understand associated human-environmental processes for global change research, disaster risk assessment and other domains. This study mapped gridded population across Germany using weighting layers from building density, building height (both from previous studies) and building type datasets, all created from freely available, temporally and globally consistent Copernicus Sentinel-1 and Sentinel-2 data. We first produced and validated a nation-wide dataset of predominant residential and non-residential building types. We then examined the impact of different weighting layers from density, type and height on top-down dasymetric mapping quality across scales. We finally performed a nation-wide bottom-up population estimate based on the three datasets. We found that integrating building types into dasymetric mapping is helpful at fine scale, as population is not redistributed to non-residential areas. Building density improved the overall quality of population estimates at all scales compared to using a binary building layer. Most importantly, we found that the combined use of density and height, i.e. volume, considerably increased mapping quality in general and with regard to regional discrepancy by largely eliminating systematic underestimation in dense agglomerations and overestimation in rural areas. We also found that building density, type and volume, together with living floor area per capita, are suitable to produce accurate large-area bottom-up population estimates.",
+		"container-title": "PLOS ONE",
+		"DOI": "10.1371/journal.pone.0249044",
+		"ISSN": "1932-6203",
+		"issue": "3",
+		"journalAbbreviation": "PLoS ONE",
+		"language": "en",
+		"page": "e0249044",
+		"source": "DOI.org (Crossref)",
+		"title": "Gridded population mapping for Germany based on building density, height and type from Earth Observation data using census disaggregation and bottom-up estimates",
+		"URL": "https://dx.plos.org/10.1371/journal.pone.0249044",
+		"volume": "16",
+		"author": [
+			{
+				"family": "Schug",
+				"given": "Franz"
+			},
+			{
+				"family": "Frantz",
+				"given": "David"
+			},
+			{
+				"family": "Linden",
+				"given": "Sebastian",
+				"non-dropping-particle": "van der"
+			},
+			{
+				"family": "Hostert",
+				"given": "Patrick"
+			}
+		],
+		"editor": [
+			{
+				"family": "Vadrevu",
+				"given": "Krishna Prasad"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					26
+				]
+			]
+		}
+	},
+	{
+		"id": "osm21",
+		"type": "webpage",
+		"title": "Postleitzahlen Deutschland",
+		"URL": "https://www.suche-postleitzahl.org/downloads",
+		"author": [
+			{
+				"family": "OSM",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "osm21a",
+		"type": "webpage",
+		"title": "Einwohnerzahl auf PLZ-Gebiete abbilden",
+		"URL": "https://blog.suche-postleitzahl.org/post/132153774751/einwohnerzahl-auf-plz-gebiete-abbilden",
+		"author": [
+			{
+				"family": "OSM",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "bkg21",
+		"type": "webpage",
+		"language": "de",
+		"title": "Verwaltungsgebiete 1:250 000 (Ebenen)",
+		"URL": "https://gdz.bkg.bund.de/index.php/default/digitale-geodaten/verwaltungsgebiete/verwaltungsgebiete-1-250-000-ebenen-stand-01-01-vg250-ebenen-01-01.html",
+		"author": [
+			{
+				"family": "BKG",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					1,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "public",
+		"type": "article-journal",
+		"language": "en",
+		"page": "20",
+		"source": "Zotero",
+		"title": "SOEP-Core – 2020: Household (A-L3, M1-M2 + N-Q)",
+		"author": [
+			{
+				"family": "Public",
+				"given": "Kantar"
+			}
+		]
+	},
+	{
+		"id": "bmwi12",
+		"type": "report",
+		"title": "Mehr aus Energie machen: Nationaler Aktionsplan Energieeffizienz: Methodisches Begleitdokument",
+		"URL": "https://www.buildup.eu/sites/default/files/content/DE%20-%20Energy%20Efficiency%20Action%20Plan%20Technical%20DE.pdf",
+		"author": [
+			{
+				"family": "BMWi",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2012"
+				]
+			]
+		}
+	},
+	{
+		"id": "prognos/gws09",
+		"type": "report",
+		"event-place": "Basel, Osnabrück",
+		"publisher-place": "Basel, Osnabrück",
+		"title": "Analyse und Modellierung der Energieverbrauchsentwicklung: Gutachten im Auftrag des BMWi",
+		"URL": "https://media.frag-den-staat.de/files/foi/160617/Schlussbericht34_05Prognos.pdf",
+		"author": [
+			{
+				"family": "Prognos/GWS",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		}
+	},
+	{
+		"id": "bach_etal19",
+		"type": "report",
+		"abstract": "Wir analysieren ein CO2-Bepreisungsszenario für den Wärme- und Verkehrssektor. Dabei wird im Jahr 2020 ein CO2-Preis mit einem einheitlichen Steuersatz von 35 Euro je t CO2 eingeführt, der bis zum Jahr 2030 linear auf 180 Euro je t CO2 steigt. Dazu wird die Energiesteuer auf die Kraft- und Heizstoffe entsprechend erhöht, zusätzlich zu den bestehenden Energiesteuerbelastungen. Das Mehraufkommen aus der Energiesteuer soll zunächst den privaten Haushalten in Form eines \"Klimabonus\" zurückgegeben werden, ausgestaltet als einheitlicher Pro-Kopf-Transfer an jeden Einwohner in Höhe von 80 Euro im Jahr. Ferner soll das Mehraufkommen ab 2021 für eine Senkung der Stromsteuer und der EEG-Umlage verwendet werden, also den Strompreis entlasten. [...].",
+		"event-place": "Berlin",
+		"language": "de",
+		"publisher": "DIW Berlin",
+		"publisher-place": "Berlin",
+		"title": "Für eine sozialverträgliche CO2-Bepreisung",
+		"URL": "https://www.diw.de/documents/publikationen/73/diw_01.c.635193.de/diwkompakt_2019-138.pdf",
+		"author": [
+			{
+				"family": "Bach",
+				"given": "Stefan"
+			},
+			{
+				"family": "Isaak",
+				"given": "Niklas"
+			},
+			{
+				"family": "Kemfert",
+				"given": "Claudia"
+			},
+			{
+				"family": "Kunert",
+				"given": "Uwe"
+			},
+			{
+				"family": "Schill",
+				"given": "Wolf-Peter"
+			},
+			{
+				"family": "Wägner",
+				"given": "Nicole"
+			},
+			{
+				"family": "Zaklan",
+				"given": "Aleksandar"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "fos19",
+		"type": "report",
+		"language": "de",
+		"page": "22",
+		"source": "Zotero",
+		"title": "Lenkungs- und Verteilungswirkungen einer klimaschutzorientierten Reform der Energiesteuern",
+		"URL": "https://foes.de/pdf/2019-07-FOES_CO2Preis_Hintergrundpapier_BMU.pdf",
+		"author": [
+			{
+				"family": "FÖS",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "bmu21a",
+		"type": "report",
+		"event-place": "Berlin",
+		"language": "de",
+		"page": "369",
+		"publisher-place": "Berlin",
+		"title": "Projektionsbericht 2021 für Deutschland",
+		"URL": "https://www.bmu.de/download/projektionsbericht-der-bundesregierung-2021",
+		"author": [
+			{
+				"family": "BMU",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "Projektionsbericht21",
+		"type": "article-journal",
+		"abstract": "Projection report 2021 for Germany The projection report 2021 for Germany presents the development of greenhouse gas emissions in Germany in a ‘with measures’ scenario for the period from 2021 to 2040. The report is in accordance with Regulation (EU) 2018/1999 of the European Parliament and the Council of 11 December 2018 on the Governance of the Energy Union and Climate Action.",
+		"language": "de",
+		"page": "369",
+		"source": "Zotero",
+		"title": "Projektionsbericht 2021 für Deutschland",
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "mcelreath20",
+		"type": "book",
+		"edition": "2",
+		"ISBN": "978-0-429-02960-8",
+		"language": "en",
+		"note": "DOI: 10.1201/9780429029608",
+		"publisher": "Chapman and Hall/CRC",
+		"source": "DOI.org (Crossref)",
+		"title": "Statistical Rethinking: A Bayesian Course with Examples in R and Stan",
+		"title-short": "Statistical Rethinking",
+		"URL": "https://www.taylorfrancis.com/books/9780429642319",
+		"author": [
+			{
+				"family": "McElreath",
+				"given": "Richard"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					11
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					3,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "destatis21",
+		"type": "webpage",
+		"language": "de",
+		"title": "Verbraucherpreisindex: Deutschland, Jahre (61111-0001)",
+		"URL": "https://www-genesis.destatis.de/genesis//online?operation=table&code=61111-0001&bypass=true&levelindex=1&levelid=1636748679996#abreadcrumb",
+		"author": [
+			{
+				"family": "DESTATIS",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					12
+				]
+			]
+		}
+	},
+	{
+		"id": "statistischeamter21",
+		"type": "webpage",
+		"abstract": "Verfügbares Einkommen\nDas  verfügbare  Einkommen  der  privaten  Haushalte\nergibt  sich  aus  den  Primäreinkommen  nach  Abzug\nder  geleisteten  laufenden  Transfers  und  nach  Hinzu-\nrechnung der empfangenen laufenden Transfers. Das\nverfügbare  Einkommen  ist  als  der  Betrag  zu  verste-\nhen,  der  für  Konsumzwecke  oder  zur  Ersparnisbil-\ndung  zur  Verfügung  steht.  Es  stellt  damit  einen  aus-\nsagefähigen Indikator für den (monetären) Wohl-\nstand  der  Bevölkerung  dar.  Allerdings  sollte  das  ver-\nfügbare  Einkommen  nicht  pauschal  mit  dem  Begriff\n„Kaufkraft”  gleichgesetzt  werden,  da  Kaufkraft  ne-\nben  dem  nominellen  Geldbetrag  grundsätzlich  auch\ndas  Preisniveau  berücksichtigen  müsste  (reale  Kauf-\nkraft),  während  das  verfügbare  Einkommen  als  rein\nnominaler Geldbetrag keine Preisunterschiede be-\n\nrücksichtigt.",
+		"language": "de",
+		"title": "Einkommen der privaten Haushalte in den kreisfreien Städten und Landkreisen der Bundesrepublik Deutschland 1995 bis 2019",
+		"URL": "http://www.statistikportal.de/de/vgrdl/ergebnisse-kreisebene/einkommen-kreise",
+		"author": [
+			{
+				"family": "Statistische Ämter",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "burke_yang16",
+		"type": "article-journal",
+		"abstract": "Natural gas contributes a growing share of the world's energy mix. In this paper we use national-level data for a sample of 44 countries to estimate the price and income elasticities of natural gas demand. We present both single-equation results and results instrumenting natural gas prices with proved natural gas reserves. Our instrument includes both domestic reserves and distance-weighted reserves in other countries. We obtain estimates of the average long-run price elasticity of natural gas demand of around −1.25 and of the average long-run income elasticity of natural gas demand of +1 and higher. We also present separate estimates for ﬁnal natural gas demand by industry and households.",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/j.eneco.2016.08.025",
+		"ISSN": "01409883",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "466-474",
+		"source": "DOI.org (Crossref)",
+		"title": "The price and income elasticities of natural gas demand: International evidence",
+		"title-short": "The price and income elasticities of natural gas demand",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140988316302420",
+		"volume": "59",
+		"author": [
+			{
+				"family": "Burke",
+				"given": "Paul J."
+			},
+			{
+				"family": "Yang",
+				"given": "Hewen"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					9
+				]
+			]
+		}
+	},
+	{
+		"id": "IV",
+		"type": "webpage",
+		"title": "IV using brms",
+		"URL": "https://rpsychologist.com/adherence-analysis-IV-brms"
+	},
+	{
+		"id": "duso",
+		"type": "article-journal",
+		"language": "en",
+		"page": "82",
+		"source": "Zotero",
+		"title": "EIO 1. Measuring Market Power - From the Early Studies to NEIO",
+		"author": [
+			{
+				"family": "Duso",
+				"given": "Tomaso"
+			}
+		]
+	},
+	{
+		"id": "lopes_polson14",
+		"type": "article-journal",
+		"abstract": "Instrumental variable (IV) regression provides a number of statistical challenges due to the shape of the likelihood. We review the main Bayesian literature on instrumental variables and highlight these pathologies. We discuss Jeﬀreys priors, the connection to the errors-in-the-variables problems and more general error distributions. We propose, as an alternative to the inverted Wishart prior, a new Cholesky-based prior for the covariance matrix of the errors in IV regressions. We argue that this prior is more ﬂexible and more robust thanthe inverted Wishart prior since it is not based on only one tightness parameter and therefore can be more informative about certain components of the covariance matrix and less informative about others. We show how prior-posterior inference can be formulated in a Gibbs sampler and compare its performance in the weak instruments case for synthetic as well as two illustrations based on well-known real data.",
+		"container-title": "Econometric Reviews",
+		"DOI": "10.1080/07474938.2013.807146",
+		"ISSN": "0747-4938, 1532-4168",
+		"issue": "1-4",
+		"journalAbbreviation": "Econometric Reviews",
+		"language": "en",
+		"page": "100-121",
+		"source": "DOI.org (Crossref)",
+		"title": "Bayesian Instrumental Variables: Priors and Likelihoods",
+		"title-short": "Bayesian Instrumental Variables",
+		"URL": "http://www.tandfonline.com/doi/abs/10.1080/07474938.2013.807146",
+		"volume": "33",
+		"author": [
+			{
+				"family": "Lopes",
+				"given": "Hedibert F."
+			},
+			{
+				"family": "Polson",
+				"given": "Nicholas G."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					2,
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "destatis21a",
+		"type": "webpage",
+		"language": "de",
+		"title": "Bauen und Wohnen 2020 (Fachserie 5, Reihe 3)",
+		"URL": "https://www.destatis.de/DE/Service/Bibliothek/_publikationen-fachserienliste-5.html",
+		"author": [
+			{
+				"family": "DESTATIS",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	},
+	{
+		"id": "burkner17",
+		"type": "article-journal",
+		"container-title": "Journal of statistical software",
+		"DOI": "10.18637/jss.v080.i01",
+		"issue": "1",
+		"page": "1–28",
+		"source": "Google Scholar",
+		"title": "brms: An R package for Bayesian multilevel models using Stan",
+		"title-short": "brms",
+		"volume": "80",
+		"author": [
+			{
+				"family": "Bürkner",
+				"given": "Paul-Christian"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		}
+	},
+	{
+		"id": "hennes_etal21",
+		"type": "article-journal",
+		"abstract": "In the German climate action package 2030, a national price for greenhouse gas emissions in the transport and building sectors was introduced. However, the effect of such a price is unclear considering the inﬂuence of economic effects on the investment decisions of households. Accounting for these aspects, we analyze the effect of price signals by coupling econometric modeling of ﬁnal energy consumption and linear techno-economic optimization of the energy system. In doing so, the feedback effects of consumer behavior and a carbon price ﬂoor are incorporated into the energy system model. The introduction of a CO2 price for households inﬂuences the investment behavior, leading to the adoption of more electricity-based technologies. Compared to our reference scenario, signiﬁcantly more electric vehicles are purchased, and heat pumps installed. In the electricity sector, the introduction of a carbon price ﬂoor leads to a greater decarbonization of power generation, which is reﬂected in a stronger expansion of renewable energy capacities. In addition, the energy sector, in contrast to the building, trafﬁc, or industry sector, contributes disproportionately to greenhouse gas reduction due to the minimum price, such that the national reduction target of 55% will be achieved in 2030. In 2050, however, the climate targets will only be achieved in a scenario with a high CO2 price. Yet, this is not based on an intensiﬁed transformation in the transport and building sectors, but on the provision of imported CO2-neutral synthetic energy sources.",
+		"container-title": "Zeitschrift für Energiewirtschaft",
+		"DOI": "10.1007/s12398-021-00305-0",
+		"ISSN": "0343-5377, 1866-2765",
+		"issue": "2",
+		"journalAbbreviation": "Z Energiewirtsch",
+		"language": "de",
+		"page": "91-107",
+		"source": "DOI.org (Crossref)",
+		"title": "Auswirkungen von CO2-Preisen auf den Gebäude‑, Verkehrs- und Energiesektor",
+		"URL": "https://link.springer.com/10.1007/s12398-021-00305-0",
+		"volume": "45",
+		"author": [
+			{
+				"family": "Hennes",
+				"given": "Oliver"
+			},
+			{
+				"family": "Jeddi",
+				"given": "Samir"
+			},
+			{
+				"family": "Madlener",
+				"given": "Reinhard"
+			},
+			{
+				"family": "Schmitz",
+				"given": "Hendrik"
+			},
+			{
+				"family": "Wagner",
+				"given": "Johannes"
+			},
+			{
+				"family": "Wolff",
+				"given": "Stefanie"
+			},
+			{
+				"family": "Zinke",
+				"given": "Jonas"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6
+				]
+			]
+		}
+	}
+]

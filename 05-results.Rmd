@@ -1,0 +1,33 @@
+<!--
+Chapter 5 - Results
+-->
+
+```{r setup5, echo=FALSE}
+pacman::p_load(tidyverse, thesisdown, knitr, kableExtra, rio)
+
+# Set how wide the R output will go
+options(width = 70)
+```
+
+# Results {#results}
+
+```{r tabletest, echo=FALSE, results="asis"}
+d <- import("data/flights.csv")
+
+table_destination <- d %>% 
+  group_by(dest_name) %>% 
+  summarise(n = n())
+
+table_destination %>% 
+  kbl(col.names = c("Destination", "Number of connections"), 
+      caption = "Number of flight connections per destination", 
+      longtable = T, 
+      booktabs = T,
+      digits = 2) %>% 
+  kable_styling(latex_options = "repeat_header",
+                font_size = 10) %>%
+  footnote(number = c("This table was created based on the flights dataset.", "Source: R Packages."))
+
+# if too wide: 
+# kable_styling(latex_options = "scale_down")
+```

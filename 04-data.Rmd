@@ -1,0 +1,12 @@
+<!--
+Chapter 4 - Data
+-->
+
+```{r setup4, echo=FALSE}
+pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
+
+# Set how wide the R output will go
+options(width = 70)
+```
+
+# Data {#data}

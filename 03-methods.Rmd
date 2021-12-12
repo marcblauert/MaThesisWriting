@@ -1,0 +1,12 @@
+<!--
+Chapter 3 - Methods
+-->
+
+```{r setup3, echo=FALSE}
+pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
+
+# Set how wide the R output will go
+options(width = 70)
+```
+
+# Methods {#methods}
