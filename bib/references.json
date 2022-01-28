@@ -42,7 +42,8 @@
 					"2020"
 				]
 			]
-		}
+		},
+		"citation-key": "schutze_etal20a"
 	},
 	{
 		"id": "watson_hudson15",
@@ -83,7 +84,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "watson_hudson15"
 	},
 	{
 		"id": "brewer_etal15",
@@ -136,7 +138,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "brewer_etal15"
 	},
 	{
 		"id": "carrion_etal08",
@@ -186,7 +189,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "carrion_etal08"
 	},
 	{
 		"id": "effat13",
@@ -211,7 +215,8 @@
 					22
 				]
 			]
-		}
+		},
+		"citation-key": "effat13"
 	},
 	{
 		"id": "georgiou_skarlatos16",
@@ -240,7 +245,8 @@
 					17
 				]
 			]
-		}
+		},
+		"citation-key": "georgiou_skarlatos16"
 	},
 	{
 		"id": "piirisaar19",
@@ -260,7 +266,8 @@
 					"2019"
 				]
 			]
-		}
+		},
+		"citation-key": "piirisaar19"
 	},
 	{
 		"id": "janke10",
@@ -286,7 +293,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "janke10"
 	},
 	{
 		"id": "sanchez-lozano_etal13",
@@ -336,7 +344,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "sanchez-lozano_etal13"
 	},
 	{
 		"id": "uyan13",
@@ -373,7 +382,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "uyan13"
 	},
 	{
 		"id": "Bayrisches15",
@@ -398,7 +408,8 @@
 					"2015"
 				]
 			]
-		}
+		},
+		"citation-key": "Bayrisches15"
 	},
 	{
 		"id": "Umweltwissen15",
@@ -423,7 +434,8 @@
 					"2015"
 				]
 			]
-		}
+		},
+		"citation-key": "Umweltwissen15"
 	},
 	{
 		"id": "Bayrischer15",
@@ -448,7 +460,8 @@
 					"2015"
 				]
 			]
-		}
+		},
+		"citation-key": "Bayrischer15"
 	},
 	{
 		"id": "PraxisLeitfaden14",
@@ -473,7 +486,8 @@
 					"2014"
 				]
 			]
-		}
+		},
+		"citation-key": "PraxisLeitfaden14"
 	},
 	{
 		"id": "stede_may20",
@@ -515,7 +529,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "stede_may20"
 	},
 	{
 		"id": "voigtlander_ebert19",
@@ -550,7 +565,8 @@
 					"2019"
 				]
 			]
-		}
+		},
+		"citation-key": "voigtlander_ebert19"
 	},
 	{
 		"id": "kaldellis_etal13",
@@ -599,7 +615,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "kaldellis_etal13"
 	},
 	{
 		"id": "elsland_etal16",
@@ -651,7 +668,8 @@
 					"2016"
 				]
 			]
-		}
+		},
+		"citation-key": "elsland_etal16"
 	},
 	{
 		"id": "perpinacastillo_etal16",
@@ -694,7 +712,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "perpinacastillo_etal16"
 	},
 	{
 		"id": "palmer_etal19",
@@ -738,12 +757,14 @@
 					4
 				]
 			]
-		}
+		},
+		"citation-key": "palmer_etal19"
 	},
 	{
 		"id": "Verordnung",
 		"type": "bill",
-		"title": "Verordnung über Gebote für Freiflächenanlagen"
+		"title": "Verordnung über Gebote für Freiflächenanlagen",
+		"citation-key": "Verordnung"
 	},
 	{
 		"id": "iea20",
@@ -773,7 +794,8 @@
 					"2020"
 				]
 			]
-		}
+		},
+		"citation-key": "iea20"
 	},
 	{
 		"id": "buttermann20",
@@ -803,7 +825,8 @@
 					3
 				]
 			]
-		}
+		},
+		"citation-key": "buttermann20"
 	},
 	{
 		"id": "Renewable20",
@@ -829,7 +852,8 @@
 					6
 				]
 			]
-		}
+		},
+		"citation-key": "Renewable20"
 	},
 	{
 		"id": "ruiz_etal20",
@@ -878,7 +902,8 @@
 					30
 				]
 			]
-		}
+		},
+		"citation-key": "ruiz_etal20"
 	},
 	{
 		"id": "merrouni_etal14",
@@ -920,7 +945,8 @@
 					"2014"
 				]
 			]
-		}
+		},
+		"citation-key": "merrouni_etal14"
 	},
 	{
 		"id": "schmid_etal19",
@@ -961,7 +987,8 @@
 					10
 				]
 			]
-		}
+		},
+		"citation-key": "schmid_etal19"
 	},
 	{
 		"id": "hessenmobil16",
@@ -993,7 +1020,8 @@
 					8
 				]
 			]
-		}
+		},
+		"citation-key": "hessenmobil16"
 	},
 	{
 		"id": "deges20",
@@ -1021,7 +1049,8 @@
 					"2020"
 				]
 			]
-		}
+		},
+		"citation-key": "deges20"
 	},
 	{
 		"id": "schutze_etal20",
@@ -1066,7 +1095,8 @@
 					"2020"
 				]
 			]
-		}
+		},
+		"citation-key": "schutze_etal20"
 	},
 	{
 		"id": "stede_etal",
@@ -1085,7 +1115,8 @@
 				"family": "Blauert",
 				"given": "Marc"
 			}
-		]
+		],
+		"citation-key": "stede_etal"
 	},
 	{
 		"id": "bmbf",
@@ -1099,7 +1130,8 @@
 				"family": "BMBF",
 				"given": ""
 			}
-		]
+		],
+		"citation-key": "bmbf"
 	},
 	{
 		"id": "doe21",
@@ -1127,7 +1159,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "doe21"
 	},
 	{
 		"id": "fraunhoferisi20",
@@ -1156,7 +1189,8 @@
 					"2020"
 				]
 			]
-		}
+		},
+		"citation-key": "fraunhoferisi20"
 	},
 	{
 		"id": "fraunhoferiwes17",
@@ -1185,11 +1219,13 @@
 					"2017"
 				]
 			]
-		}
+		},
+		"citation-key": "fraunhoferiwes17"
 	},
 	{
 		"id": "zotero-2699",
-		"type": "report"
+		"type": "report",
+		"citation-key": "zotero-2699"
 	},
 	{
 		"id": "agoraverkehrswende19",
@@ -1211,7 +1247,8 @@
 					"2019"
 				]
 			]
-		}
+		},
+		"citation-key": "agoraverkehrswende19"
 	},
 	{
 		"id": "bmu21",
@@ -1233,7 +1270,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "bmu21"
 	},
 	{
 		"id": "gelbach_hawkins20",
@@ -1275,7 +1313,8 @@
 					"2020"
 				]
 			]
-		}
+		},
+		"citation-key": "gelbach_hawkins20"
 	},
 	{
 		"id": "sen_vonschickfus20",
@@ -1318,7 +1357,8 @@
 					3
 				]
 			]
-		}
+		},
+		"citation-key": "sen_vonschickfus20"
 	},
 	{
 		"id": "brav00",
@@ -1358,7 +1398,8 @@
 					10
 				]
 			]
-		}
+		},
+		"citation-key": "brav00"
 	},
 	{
 		"id": "dordi_weber19",
@@ -1402,7 +1443,8 @@
 					3
 				]
 			]
-		}
+		},
+		"citation-key": "dordi_weber19"
 	},
 	{
 		"id": "bremus_etal21",
@@ -1444,7 +1486,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "bremus_etal21"
 	},
 	{
 		"id": "lin",
@@ -1458,7 +1501,8 @@
 				"family": "Lin",
 				"given": "Jin-Lung"
 			}
-		]
+		],
+		"citation-key": "lin"
 	},
 	{
 		"id": "eia21",
@@ -1488,7 +1532,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "eia21"
 	},
 	{
 		"id": "fan_hyndman10",
@@ -1518,7 +1563,8 @@
 					16
 				]
 			]
-		}
+		},
+		"citation-key": "fan_hyndman10"
 	},
 	{
 		"id": "gillingham14",
@@ -1557,7 +1603,8 @@
 					7
 				]
 			]
-		}
+		},
+		"citation-key": "gillingham14"
 	},
 	{
 		"id": "gillingham_etal15",
@@ -1604,7 +1651,8 @@
 					12
 				]
 			]
-		}
+		},
+		"citation-key": "gillingham_etal15"
 	},
 	{
 		"id": "halvorsen75",
@@ -1640,7 +1688,8 @@
 					"1975"
 				]
 			]
-		}
+		},
+		"citation-key": "halvorsen75"
 	},
 	{
 		"id": "kialashaki_reisel13",
@@ -1683,7 +1732,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "kialashaki_reisel13"
 	},
 	{
 		"id": "schmitz_madlener20",
@@ -1726,7 +1776,8 @@
 					11
 				]
 			]
-		}
+		},
+		"citation-key": "schmitz_madlener20"
 	},
 	{
 		"id": "schulte_heindl17",
@@ -1767,7 +1818,8 @@
 					3
 				]
 			]
-		}
+		},
+		"citation-key": "schulte_heindl17"
 	},
 	{
 		"id": "singhal20",
@@ -1803,7 +1855,8 @@
 					"2020"
 				]
 			]
-		}
+		},
+		"citation-key": "singhal20"
 	},
 	{
 		"id": "asche_etal08",
@@ -1848,7 +1901,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "asche_etal08"
 	},
 	{
 		"id": "berkhout_etal04",
@@ -1894,7 +1948,8 @@
 					5
 				]
 			]
-		}
+		},
+		"citation-key": "berkhout_etal04"
 	},
 	{
 		"id": "ritter_bingler",
@@ -1913,7 +1968,8 @@
 				"family": "Bingler",
 				"given": "Julia Anna"
 			}
-		]
+		],
+		"citation-key": "ritter_bingler"
 	},
 	{
 		"id": "du_etal21",
@@ -1959,7 +2015,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "du_etal21"
 	},
 	{
 		"id": "brons_etal08",
@@ -2009,7 +2066,8 @@
 					9
 				]
 			]
-		}
+		},
+		"citation-key": "brons_etal08"
 	},
 	{
 		"id": "torres-reyna",
@@ -2023,7 +2081,8 @@
 				"family": "Torres-Reyna",
 				"given": "Oscar"
 			}
-		]
+		],
+		"citation-key": "torres-reyna"
 	},
 	{
 		"id": "schug_etal21",
@@ -2082,7 +2141,8 @@
 					26
 				]
 			]
-		}
+		},
+		"citation-key": "schug_etal21"
 	},
 	{
 		"id": "osm21",
@@ -2101,7 +2161,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "osm21"
 	},
 	{
 		"id": "osm21a",
@@ -2120,7 +2181,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "osm21a"
 	},
 	{
 		"id": "bkg21",
@@ -2151,7 +2213,8 @@
 					1
 				]
 			]
-		}
+		},
+		"citation-key": "bkg21"
 	},
 	{
 		"id": "public",
@@ -2165,7 +2228,8 @@
 				"family": "Public",
 				"given": "Kantar"
 			}
-		]
+		],
+		"citation-key": "public"
 	},
 	{
 		"id": "bmwi12",
@@ -2193,7 +2257,8 @@
 					"2012"
 				]
 			]
-		}
+		},
+		"citation-key": "bmwi12"
 	},
 	{
 		"id": "prognos/gws09",
@@ -2214,7 +2279,8 @@
 					"2009"
 				]
 			]
-		}
+		},
+		"citation-key": "prognos/gws09"
 	},
 	{
 		"id": "bach_etal19",
@@ -2271,7 +2337,8 @@
 					"2019"
 				]
 			]
-		}
+		},
+		"citation-key": "bach_etal19"
 	},
 	{
 		"id": "fos19",
@@ -2293,7 +2360,8 @@
 					"2019"
 				]
 			]
-		}
+		},
+		"citation-key": "fos19"
 	},
 	{
 		"id": "bmu21a",
@@ -2316,7 +2384,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "bmu21a"
 	},
 	{
 		"id": "Projektionsbericht21",
@@ -2332,7 +2401,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "Projektionsbericht21"
 	},
 	{
 		"id": "mcelreath20",
@@ -2369,7 +2439,8 @@
 					13
 				]
 			]
-		}
+		},
+		"citation-key": "mcelreath20"
 	},
 	{
 		"id": "destatis21",
@@ -2400,7 +2471,8 @@
 					12
 				]
 			]
-		}
+		},
+		"citation-key": "destatis21"
 	},
 	{
 		"id": "statistischeamter21",
@@ -2430,7 +2502,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "statistischeamter21"
 	},
 	{
 		"id": "burke_yang16",
@@ -2473,13 +2546,15 @@
 					9
 				]
 			]
-		}
+		},
+		"citation-key": "burke_yang16"
 	},
 	{
 		"id": "IV",
 		"type": "webpage",
 		"title": "IV using brms",
-		"URL": "https://rpsychologist.com/adherence-analysis-IV-brms"
+		"URL": "https://rpsychologist.com/adherence-analysis-IV-brms",
+		"citation-key": "IV"
 	},
 	{
 		"id": "duso",
@@ -2493,7 +2568,8 @@
 				"family": "Duso",
 				"given": "Tomaso"
 			}
-		]
+		],
+		"citation-key": "duso"
 	},
 	{
 		"id": "lopes_polson14",
@@ -2538,7 +2614,8 @@
 					10
 				]
 			]
-		}
+		},
+		"citation-key": "lopes_polson14"
 	},
 	{
 		"id": "destatis21a",
@@ -2567,7 +2644,8 @@
 					"2021"
 				]
 			]
-		}
+		},
+		"citation-key": "destatis21a"
 	},
 	{
 		"id": "burkner17",
@@ -2592,7 +2670,8 @@
 					"2017"
 				]
 			]
-		}
+		},
+		"citation-key": "burkner17"
 	},
 	{
 		"id": "hennes_etal21",
@@ -2655,6 +2734,953 @@
 					6
 				]
 			]
-		}
+		},
+		"citation-key": "hennes_etal21"
+	},
+	{
+		"id": "rehdanz07",
+		"type": "article-journal",
+		"abstract": "We first examine the determinants of household expenditures on space heating and hot water supply in Germany. A number of socio-economic characteristics of households are included along with building characteristics. Our analysis covers information on more than 12,000 households in Germany for the years 1998 and 2003.",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/j.eneco.2006.04.002",
+		"ISSN": "01409883",
+		"issue": "2",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "167-182",
+		"source": "DOI.org (Crossref)",
+		"title": "Determinants of residential space heating expenditures in Germany",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140988306000405",
+		"volume": "29",
+		"author": [
+			{
+				"family": "Rehdanz",
+				"given": "Katrin"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2007",
+					3
+				]
+			]
+		},
+		"citation-key": "rehdanz07"
+	},
+	{
+		"id": "zeng_etal18",
+		"type": "article-journal",
+		"abstract": "On the basis of a newly established database from the Chinese Residential Energy Consumption Survey, this paper estimates the price elasticity of natural gas demand for the households and investigates the factors that affect residential natural gas consumption in China. To address the endogeneity problems, the non-residential natural gas price has been adopted as the instrumental variable for residential natural gas price. Results demonstrate that the natural gas demand of Chinese households respond signiﬁcantly to price change, with an overall price elasticity coefﬁcient of À0.898. In the meanwhile, 1% increase in family members would cause 0.159% rise in natural gas demand, and household in the south consumes 28.8% more natural gas than that in the north. Recognizing the heterogeneity of residential natural gas price elasticity for different households, quantile regression technique has further been applied to analyze the distributional effect of natural gas consumption. The simulation suggests that the Gini coefﬁcient drops from 0.49 to 0.40 after introducing an increasing block tariff scheme to replace the original ﬂat tariff system, conﬁrming a price reform has potential to improve the energy equity situation by reshaping the energy consumption pattern.",
+		"container-title": "Journal of Cleaner Production",
+		"DOI": "10.1016/j.jclepro.2018.01.123",
+		"ISSN": "09596526",
+		"journalAbbreviation": "Journal of Cleaner Production",
+		"language": "en",
+		"page": "441-449",
+		"source": "DOI.org (Crossref)",
+		"title": "Price elasticity, block tariffs, and equity of natural gas demand in China: Investigation based on household-level survey data",
+		"title-short": "Price elasticity, block tariffs, and equity of natural gas demand in China",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0959652618301458",
+		"volume": "179",
+		"author": [
+			{
+				"family": "Zeng",
+				"given": "Shipei"
+			},
+			{
+				"family": "Chen",
+				"given": "Zhan-Ming"
+			},
+			{
+				"family": "Alsaedi",
+				"given": "Ahmed"
+			},
+			{
+				"family": "Hayat",
+				"given": "Tasawar"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					4
+				]
+			]
+		},
+		"citation-key": "zeng_etal18"
+	},
+	{
+		"id": "auffhammer_rubin18",
+		"type": "report",
+		"abstract": "Half of American households heat their homes with natural gas furnaces and 43% use it to heat their water. Hence, understanding residential natural gas consumption behavior has become a first-order problem. In this paper, we provide the first ever causally identified, microdata-based estimates of residential natural gas demand elasticities using a panel of approximately 300 million bills in California. To overcome multiple sources of endogeneity, we employ a two-pronged empirical strategy: (1) we exploit a discontinuity along the border between two major natural-gas utilities in conjunction with (2) an instrumental variables strategy based upon the differences in the utilities’ rules/behaviors for internalizing changes in the upstream natural gas spot market. We estimate that the elasticity of demand for residential natural gas is between -0.23 and -0.17. We also provide evidence of significant seasonal and income-based heterogeneity in this elasticity. This heterogeneity suggests unexplored policy avenues that may be simultaneously efficiencyenhancing–in the absence of first best pricing—and pro-poor.",
+		"event-place": "Cambridge, MA",
+		"language": "en",
+		"note": "DOI: 10.3386/w24295",
+		"number": "w24295",
+		"page": "w24295",
+		"publisher": "National Bureau of Economic Research",
+		"publisher-place": "Cambridge, MA",
+		"source": "DOI.org (Crossref)",
+		"title": "Natural Gas Price Elasticities and Optimal Cost Recovery Under Consumer Heterogeneity: Evidence from 300 million natural gas bills",
+		"title-short": "Natural Gas Price Elasticities and Optimal Cost Recovery Under Consumer Heterogeneity",
+		"URL": "http://www.nber.org/papers/w24295.pdf",
+		"author": [
+			{
+				"family": "Auffhammer",
+				"given": "Maximilian"
+			},
+			{
+				"family": "Rubin",
+				"given": "Edward"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					2
+				]
+			]
+		},
+		"citation-key": "auffhammer_rubin18"
+	},
+	{
+		"id": "labandeira_etal17",
+		"type": "article-journal",
+		"abstract": "Price elasticities of energy demand have become increasingly relevant in estimating the socio-economic and environmental eﬀects of energy policies or other events that inﬂuence the price of energy goods. Since the 1970s, a large number of academic papers have provided both short and long-term price elasticity estimates for diﬀerent countries using several models, data and estimation techniques. Yet the literature oﬀers a rather wide range of estimates for the price elasticities of demand for energy. This paper quantitatively summarizes the recent, but sizeable, empirical evidence to facilitate a sounder economic assessment of (in some cases policyrelated) energy price changes. It uses meta-analysis to identify the main factors aﬀecting short and long term elasticity results for energy, in general, as well as for speciﬁc products, i.e., electricity, natural gas, gasoline, diesel and heating oil.",
+		"container-title": "Energy Policy",
+		"DOI": "10.1016/j.enpol.2017.01.002",
+		"ISSN": "03014215",
+		"journalAbbreviation": "Energy Policy",
+		"language": "en",
+		"page": "549-568",
+		"source": "DOI.org (Crossref)",
+		"title": "A meta-analysis on the price elasticity of energy demand",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421517300022",
+		"volume": "102",
+		"author": [
+			{
+				"family": "Labandeira",
+				"given": "Xavier"
+			},
+			{
+				"family": "Labeaga",
+				"given": "José M."
+			},
+			{
+				"family": "López-Otero",
+				"given": "Xiral"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					3
+				]
+			]
+		},
+		"citation-key": "labandeira_etal17"
+	},
+	{
+		"id": "germeshausen",
+		"type": "article-journal",
+		"abstract": "I investigate the impact of the European Union Emissions Trading Scheme (EU ETS) on fuel efﬁciency of fossil fuel power plants, using administrative micro data on German power plants from 2003 to 2012. I ﬁnd positive efﬁciency effects leading to a decrease in fuel input conditional on output of around 0.3% on average for an increase in carbon cost of €1. A back-of-the-envelope calculation suggests that this reduction in fuel use by fossil fuel power plants due to the introduction of the EU ETS translates into reductions in total annual carbon emissions of about 1.5%–2% within the German energy sector.",
+		"language": "en",
+		"page": "27",
+		"source": "Zotero",
+		"title": "The European Union Emissions Trading Scheme and Fuel Efficiency of Fossil Fuel Power Plants in Germany",
+		"author": [
+			{
+				"family": "Germeshausen",
+				"given": "Robert"
+			}
+		],
+		"citation-key": "germeshausen"
+	},
+	{
+		"id": "affeldt_kesler",
+		"type": "article-journal",
+		"abstract": "Since 2010, Google, Apple, Facebook, Amazon, and Microsoft (GAFAM) have acquired more than 400 companies. Competition authorities did not scrutinize most of these transactions and blocked none. This raised concerns that GAFAM acquisitions target potential competitors yet ﬂy under the radar of current merger control due to the features of the digital economy. We empirically study the competitive effects of big tech acquisitions on competitors in a relevant online market. We identify acquisitions by GAFAM involving apps from 2015 to 2019, matching these to a comprehensive database covering apps available in the Google Play Store. We ﬁnd that competing apps tend to innovate less following an acquisition by GAFAM, while there seems to be no impact on prices and privacy-sensitive permissions of competing apps. Additionally, we ﬁnd evidence that affected developers reallocate innovation efforts to unaffected apps and that affected markets experience less entry post-acquisition.",
+		"language": "en",
+		"page": "41",
+		"source": "Zotero",
+		"title": "Competitors’ Reactions to Big Tech Acquisitions: Evidence from Mobile Apps",
+		"author": [
+			{
+				"family": "Affeldt",
+				"given": "Pauline"
+			},
+			{
+				"family": "Kesler",
+				"given": "Reinhold"
+			}
+		],
+		"citation-key": "affeldt_kesler"
+	},
+	{
+		"id": "destatis21b",
+		"type": "webpage",
+		"language": "de",
+		"title": "Wohngebäude, Wohnungen, Wohnfläche: Bundesländer (31231-0003)",
+		"URL": "https://www-genesis.destatis.de/genesis//online?operation=table&code=31231-0003&bypass=true&levelindex=0&levelid=1640618753373#abreadcrumb",
+		"author": [
+			{
+				"family": "DESTATIS",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					27
+				]
+			]
+		},
+		"citation-key": "destatis21b"
+	},
+	{
+		"id": "kim_etal17",
+		"type": "article-journal",
+		"container-title": "Economics Bulletin",
+		"issue": "1",
+		"page": "606-613",
+		"title": "The short-run price elasticity of demand for energy in the US.",
+		"volume": "37",
+		"author": [
+			{
+				"family": "Kim",
+				"given": "Youngsoo"
+			},
+			{
+				"family": "Kim",
+				"given": "Younoh"
+			},
+			{
+				"family": "Radoias",
+				"given": "Vlad"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		},
+		"citation-key": "kim_etal17"
+	},
+	{
+		"id": "alberini_etal11",
+		"type": "article-journal",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/j.eneco.2011.01.015",
+		"ISSN": "01409883",
+		"issue": "5",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "870-881",
+		"source": "DOI.org (Crossref)",
+		"title": "Residential consumption of gas and electricity in the U.S.: The role of prices and income",
+		"title-short": "Residential consumption of gas and electricity in the U.S.",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140988311000351",
+		"volume": "33",
+		"author": [
+			{
+				"family": "Alberini",
+				"given": "Anna"
+			},
+			{
+				"family": "Gans",
+				"given": "Will"
+			},
+			{
+				"family": "Velez-Lopez",
+				"given": "Daniel"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					9
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2011",
+					9
+				]
+			]
+		},
+		"citation-key": "alberini_etal11"
+	},
+	{
+		"id": "angrist_krueger01",
+		"type": "article-journal",
+		"abstract": "Instrumental variables was first used in the 1920s to estimate supply and demand elasticities and later to correct for measurement error in single equation models. Recently, instrumental variables have been widely used to reduce bias from omitted variables in estimates of causal relationships. Intuitively, instrumental variables methods use only a portion of the variability in key variables to estimate the relationships of interest; if the instruments are valid, that portion is unrelated to the omitted variables. We discuss the mechanics of instrumental variables and the qualities that make for a good instrument, devoting particular attention to instruments derived from “natural experiments.”",
+		"container-title": "Journal of Economic Perspectives",
+		"DOI": "10.1257/jep.15.4.69",
+		"ISSN": "0895-3309",
+		"issue": "4",
+		"journalAbbreviation": "Journal of Economic Perspectives",
+		"language": "en",
+		"page": "69-85",
+		"source": "DOI.org (Crossref)",
+		"title": "Instrumental Variables and the Search for Identification: From Supply and Demand to Natural Experiments",
+		"title-short": "Instrumental Variables and the Search for Identification",
+		"URL": "https://pubs.aeaweb.org/doi/10.1257/jep.15.4.69",
+		"volume": "15",
+		"author": [
+			{
+				"family": "Angrist",
+				"given": "Joshua D"
+			},
+			{
+				"family": "Krueger",
+				"given": "Alan B"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					9
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2001",
+					11,
+					1
+				]
+			]
+		},
+		"citation-key": "angrist_krueger01"
+	},
+	{
+		"id": "sterner12",
+		"type": "article-journal",
+		"abstract": "This paper1 takes as its starting point the observation that fuel prices – and thus taxes – are important for good management of climate change and other environmental problems. To economists this should be no surprise yet it seems that the role of fuel taxation as an instrument of climate policy has not been fully appreciated. It is however one of the few policy instruments that, since several decades, has actually reduced fuel consumption appreciably. Thanks to taxation (mainly in Europe and Japan), carbon emissions are considerably lower than they would have been otherwise. In future where carbon emissions are to be cut drastically, this instrument will be crucial. There is however much opposition to the instrument. This opposition uses various arguments, for instance that fuel taxes hurt the poor since they are strongly regressive. We however ﬁnd that the choice of country and methodology turns out to be of great consequence. We study seven European countries—France, Germany, United Kingdom, Italy, Serbia, Spain and Sweden and do ﬁnd some evidence of regressivity but the evidence is very weak. It does not apply when lifetime income is used and it does not apply to the poorest country in the group. The best one-line summary is probably that the tax is approximately proportional.",
+		"container-title": "Energy Policy",
+		"DOI": "10.1016/j.enpol.2010.03.012",
+		"ISSN": "03014215",
+		"journalAbbreviation": "Energy Policy",
+		"language": "en",
+		"page": "75-83",
+		"source": "DOI.org (Crossref)",
+		"title": "Distributional effects of taxing transport fuel",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421510001758",
+		"volume": "41",
+		"author": [
+			{
+				"family": "Sterner",
+				"given": "Thomas"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2012",
+					2
+				]
+			]
+		},
+		"citation-key": "sterner12"
+	},
+	{
+		"id": "csereklyei20",
+		"type": "article-journal",
+		"container-title": "Energy Policy",
+		"DOI": "10.1016/j.enpol.2019.111079",
+		"ISSN": "03014215",
+		"journalAbbreviation": "Energy Policy",
+		"language": "en",
+		"page": "111079",
+		"source": "DOI.org (Crossref)",
+		"title": "Price and income elasticities of residential and industrial electricity demand in the European Union",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421519306664",
+		"volume": "137",
+		"author": [
+			{
+				"family": "Csereklyei",
+				"given": "Zsuzsanna"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					2
+				]
+			]
+		},
+		"citation-key": "csereklyei20"
+	},
+	{
+		"id": "saha_bhattacharya18",
+		"type": "article-journal",
+		"abstract": "This paper estimates price and income elasticities of electricity demand for four consumer categories, Agriculture, Commerce, Industry and Domestic, for two major utilities (one public and the other private) that supply electricity in West Bengal, India. We use panel data analysis covering 15 years for the four consumer categories. The comparison of the responsiveness in demand due to changes in tariﬀ for the two utilities reveals some interesting diﬀerences in the demand pattern of the consumers served by the diﬀerent utilities when the private sector supplies to the highly urbanized areas and the public sector supplies to the rest of the state. We get an idea about the diﬀerence in tariﬀ structure of a public and a private utility as well. Our study suggests that any policy to entirely remove the cross subsidy is not a viable option as there is considerable diﬀerences in the elasticity of demand for power among the diﬀerent category of consumers. Further, for the success of the policy of ‘open access’ which is an important and integral part of the power sector reform some regulatory mechanism is required to control market power in the power sector.",
+		"container-title": "Energy Policy",
+		"DOI": "10.1016/j.enpol.2017.12.035",
+		"ISSN": "03014215",
+		"journalAbbreviation": "Energy Policy",
+		"language": "en",
+		"page": "591-597",
+		"source": "DOI.org (Crossref)",
+		"title": "An analysis of elasticity of electricity demand in West Bengal, India: Some policy lessons learnt",
+		"title-short": "An analysis of elasticity of electricity demand in West Bengal, India",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421517308571",
+		"volume": "114",
+		"author": [
+			{
+				"family": "Saha",
+				"given": "Debalina"
+			},
+			{
+				"family": "Bhattacharya",
+				"given": "Rabindra N."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					3
+				]
+			]
+		},
+		"citation-key": "saha_bhattacharya18"
+	},
+	{
+		"id": "winkler_etal21",
+		"type": "article-journal",
+		"abstract": "Sexual selection is considered the major driver for the evolution of sex differences. However, the eco-­evolutionary dynamics of sexual selection and their role for a population’s adaptive potential to respond to environmental change have only recently been explored. Theory predicts that sexual selection promotes adaptation at a low demographic cost only if sexual selection is aligned with natural selection and if net selection is stronger on males compared to females. We used a comparative approach to show that net selection is indeed stronger in males and provide preliminary support that this sex bias is associated with sexual selection. Given that both sexes share the vast majority of their genes, our findings corroborate the notion that the genome is often confronted with a more stressful environment when expressed in males. Collectively, our study supports one of the long-s­ tanding key assumptions required for sexual selection to bolster adaptation, and sexual selection may therefore enable some species to track environmental change more efficiently.",
+		"container-title": "eLife",
+		"DOI": "10.7554/eLife.68316",
+		"ISSN": "2050-084X",
+		"language": "en",
+		"page": "e68316",
+		"source": "DOI.org (Crossref)",
+		"title": "Stronger net selection on males across animals",
+		"URL": "https://elifesciences.org/articles/68316",
+		"volume": "10",
+		"author": [
+			{
+				"family": "Winkler",
+				"given": "Lennart"
+			},
+			{
+				"family": "Moiron",
+				"given": "Maria"
+			},
+			{
+				"family": "Morrow",
+				"given": "Edward H"
+			},
+			{
+				"family": "Janicke",
+				"given": "Tim"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					17
+				]
+			]
+		},
+		"citation-key": "winkler_etal21"
+	},
+	{
+		"id": "joutz09",
+		"type": "article-journal",
+		"container-title": "SSRN Electronic Journal",
+		"DOI": "10.2139/ssrn.1444927",
+		"ISSN": "1556-5068",
+		"journalAbbreviation": "SSRN Journal",
+		"language": "en",
+		"source": "DOI.org (Crossref)",
+		"title": "Estimating Regional Short-Run and Long-Run Price Elasticities of Residential Natural Gas Demand in the U.S.",
+		"URL": "http://www.ssrn.com/abstract=1444927",
+		"author": [
+			{
+				"family": "Joutz",
+				"given": "Frederick"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2009"
+				]
+			]
+		},
+		"citation-key": "joutz09"
+	},
+	{
+		"id": "lyngse_etal21",
+		"type": "report",
+		"abstract": "1\n          Abstract\n          The Omicron variant of concern (VOC) is a rapidly spreading variant of SARS-CoV-2 that is likely to overtake the previously dominant Delta VOC in many countries by the end of 2021.\n          We estimated the transmission dynamics following the spread of Omicron VOC within Danish households during December 2021. We used data from Danish registers to estimate the household secondary attack rate (SAR).\n          Among 11,937 households (2,225 with the Omicron VOC), we identified 6,397 secondary infections during a 1-7 day follow-up period. The SAR was 31% and 21% in households with the Omicron and Delta VOC, respectively. We found an increased transmission for unvaccinated individuals, and a reduced transmission for booster-vaccinated individuals, compared to fully vaccinated individuals. Comparing households infected with the Omicron to Delta VOC, we found an 1.17 (95%-CI: 0.99-1.38) times higher SAR for unvaccinated, 2.61 times (95%-CI: 2.34-2.90) higher for fully vaccinated and 3.66 (95%-CI: 2.65-5.05) times higher for booster-vaccinated individuals, demonstrating strong evidence of immune evasiveness of the Omicron VOC.\n          Our findings confirm that the rapid spread of the Omicron VOC primarily can be ascribed to the immune evasiveness rather than an inherent increase in the basic transmissibility.",
+		"genre": "preprint",
+		"language": "en",
+		"note": "DOI: 10.1101/2021.12.27.21268278",
+		"publisher": "Infectious Diseases (except HIV/AIDS)",
+		"source": "DOI.org (Crossref)",
+		"title": "SARS-CoV-2 Omicron VOC Transmission in Danish Households",
+		"URL": "http://medrxiv.org/lookup/doi/10.1101/2021.12.27.21268278",
+		"author": [
+			{
+				"family": "Lyngse",
+				"given": "Frederik Plesner"
+			},
+			{
+				"family": "Mortensen",
+				"given": "Laust Hvas"
+			},
+			{
+				"family": "Denwood",
+				"given": "Matthew J."
+			},
+			{
+				"family": "Christiansen",
+				"given": "Lasse Engbo"
+			},
+			{
+				"family": "Møller",
+				"given": "Camilla Holten"
+			},
+			{
+				"family": "Skov",
+				"given": "Robert Leo"
+			},
+			{
+				"family": "Spiess",
+				"given": "Katja"
+			},
+			{
+				"family": "Fomsgaard",
+				"given": "Anders"
+			},
+			{
+				"family": "Lassaunière",
+				"given": "Maria Magdalena"
+			},
+			{
+				"family": "Rasmussen",
+				"given": "Morten"
+			},
+			{
+				"family": "Stegger",
+				"given": "Marc"
+			},
+			{
+				"family": "Nielsen",
+				"given": "Claus"
+			},
+			{
+				"family": "Sieber",
+				"given": "Raphael Niklaus"
+			},
+			{
+				"family": "Cohen",
+				"given": "Arieh Sierra"
+			},
+			{
+				"family": "Møller",
+				"given": "Frederik Trier"
+			},
+			{
+				"family": "Overvad",
+				"given": "Maria"
+			},
+			{
+				"family": "Mølbak",
+				"given": "Kåre"
+			},
+			{
+				"family": "Krause",
+				"given": "Tyra Grove"
+			},
+			{
+				"family": "Kirkeby",
+				"given": "Carsten Thure"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					12,
+					27
+				]
+			]
+		},
+		"citation-key": "lyngse_etal21"
+	},
+	{
+		"id": "rwi21",
+		"type": "report",
+		"language": "de",
+		"title": "Anwendungsbilanzen 2020 für den Sektor der privaten Haushalte und den Verkehrssektor in Deutschland",
+		"URL": "https://ag-energiebilanzen.de/wp-content/uploads/2020/10/rwi_anwendungsbilanz_2020__priv._hh_und_verkehr__vorl._eb.pdf",
+		"author": [
+			{
+				"family": "RWI",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		},
+		"citation-key": "rwi21"
+	},
+	{
+		"id": "ageb21",
+		"type": "report",
+		"event-place": "Berlin",
+		"language": "de",
+		"publisher-place": "Berlin",
+		"title": "Auswertungstabellen zur Energiebilanz 1990 bis 2020",
+		"URL": "https://ag-energiebilanzen.de/daten-und-fakten/auswertungstabellen/",
+		"author": [
+			{
+				"family": "AGEB",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		},
+		"citation-key": "ageb21"
+	},
+	{
+		"id": "ksg",
+		"type": "webpage",
+		"title": "KSG - Bundes-Klimaschutzgesetz",
+		"URL": "https://www.gesetze-im-internet.de/ksg/BJNR251310019.html",
+		"author": [
+			{
+				"family": "KSG",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					15
+				]
+			]
+		},
+		"citation-key": "ksg"
+	},
+	{
+		"id": "destatis18",
+		"type": "webpage",
+		"abstract": "Im Jahr 2017 stellten die Betreiber von Fernwärmenetzen rund 161 Terawattstunden (TWh) Wärme zur Verfügung. Das waren 0,6 % weniger als im Vorjahr. Mit dieser Wärmemenge könnte der Fernwärmebedarf aller Haushalte in Deutschland für drei Jahre gedeckt werden. Wichtigste Energieträger zur Fernwärmeerzeugung waren im Jahr 2017 Erdgas (47 %), Stein- und Braunkohlen (28 %) sowie Abfall (14 %).",
+		"container-title": "Statistisches Bundesamt",
+		"language": "de",
+		"title": "Fernwärmeversorgung 2017: Abgegebene Wärmemenge leicht gesunken",
+		"title-short": "Fernwärmeversorgung 2017",
+		"URL": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2018/11/PD18_434_434.html",
+		"author": [
+			{
+				"family": "DESTATIS",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					19
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		},
+		"citation-key": "destatis18"
+	},
+	{
+		"id": "erk20",
+		"type": "report",
+		"language": "de",
+		"title": "Bericht zur Vorjahresschätzung der deutschen Treibhausgasemissionen für das Jahr 2020",
+		"URL": "https://expertenrat-klima.de/content/uploads/2021/04/210415_Bericht_Expertenrat_Klimafragen_2021-2.pdf",
+		"author": [
+			{
+				"family": "ERK",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					19
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		},
+		"citation-key": "erk20"
+	},
+	{
+		"id": "techem19",
+		"type": "report",
+		"event-place": "Eschborn",
+		"publisher": "Techem",
+		"publisher-place": "Eschborn",
+		"title": "Energiekennwerte 2019",
+		"URL": "https://www.techem.com/content/dam/techem/newsroom/studien/Techem-Energiekennwerte-Studie-2019.pdf",
+		"author": [
+			{
+				"family": "Techem",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					12,
+					12
+				]
+			]
+		},
+		"citation-key": "techem19"
+	},
+	{
+		"id": "stede_etal20",
+		"type": "article-journal",
+		"abstract": "Die Emissionsminderung im Gebäudesektor ist ein zentraler Baustein der deutschen Energie- und Klimapolitik. Jährlich wertet das DIW Berlin die Entwicklung des Heizenergiebedarfs in deutschen Wohngebäuden anhand eines umfangreichen Datenbestands aus. In diesem Jahr werden zudem die daraus entstehenden CO₂-Emissionen berechnet und mit der Zielsetzung für das Jahr 2030 im Bundes-Klimaschutzgesetz verglichen. Der temperaturbereinigte Heizenergiebedarf im Jahr 2019 ist im Vergleich zum Vorjahr leicht gesunken. Auch die CO2-Emissionen der untersuchten Zwei- und Mehrparteienhäuser gingen zurück – seit 2010 um rund 21 Prozent. Allerdings ist der Rückgang vor allem den wärmeren Wintern zu verdanken; temperaturbereinigt nahmen die CO₂-Emissionen in der letzten Dekade nur um rund drei Prozent ab. In den kommenden zehn Jahren müssen private Haushalte ihre Emissionen deutlich stärker reduzieren, um das Klimaziel für 2030 zu erreichen. Stärkere Anreize für energieeffiziente Gebäudesanierungen könnten die höhere Förderrate für energetische Sanierung und die geplante CO2-Bepreisung ab dem Jahr 2021 schaffen. Nur durch weitere umfangreiche Maßnahmen kann die Lücke zwischen prognostizierten und zulässigen Emissionsmengen geschlossen werden.",
+		"container-title": "DIW Wochenbericht",
+		"DOI": "10.18723/DIW_WB:2020-40-1",
+		"note": "publisher: DIW - Deutsches Institut für Wirtschaftsforschung\nversion: 2.0",
+		"source": "DOI.org (Datacite)",
+		"title": "Wärmemonitor 2019: Klimaziele bei Wohngebäuden trotz sinkender CO2-Emissionen derzeit außer Reichweite",
+		"title-short": "Wärmemonitor 2019",
+		"URL": "http://www.diw.de/sixcms/detail.php?id=diw_01.c.799802.de",
+		"author": [
+			{
+				"family": "Stede",
+				"given": "Jan"
+			},
+			{
+				"family": "Schütze",
+				"given": "Franziska"
+			},
+			{
+				"family": "Wietschel",
+				"given": "Johanna"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					11,
+					18
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		},
+		"citation-key": "stede_etal20"
+	},
+	{
+		"id": "bmwi21",
+		"type": "report",
+		"publisher": "BMWi",
+		"title": "Gesamtausgabe der Energiedaten",
+		"URL": "https://www.bmwi.de/Redaktion/DE/Binaer/Energiedaten/energiedaten-gesamt-xls.xlsx?__blob=publicationFile&v=133",
+		"author": [
+			{
+				"family": "BMWi",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					5
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		},
+		"citation-key": "bmwi21"
 	}
 ]

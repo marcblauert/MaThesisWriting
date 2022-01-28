@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.24)  12 DEC 2021 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.24)  28 JAN 2022 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -995,6 +995,15 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (./thesis.aux
 
+LaTeX Warning: Label `full_results' multiply defined.
+
+
+LaTeX Warning: Label `full_results_descriptive' multiply defined.
+
+
+LaTeX Warning: Label `full_results_regression' multiply defined.
+
+
 LaTeX Warning: Label `tab:tabletest' multiply defined.
 
 )
@@ -1157,110 +1166,176 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Chapter 1.
-<figure/conceptual_dag.pdf, id=116, 794.97pt x 433.62pt>
-File: figure/conceptual_dag.pdf Graphic file (type pdf)
-<use figure/conceptual_dag.pdf>
-Package pdftex.def Info: figure/conceptual_dag.pdf used on input line 225.
-(pdftex.def)             Requested size: 433.62pt x 236.52663pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 227.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 227.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 227.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.236 ...ter{Literature Review}\label{literature}}
-                                                   [1
+l.230 
+       [1
 
- <./figure/conceptual_dag.pdf>]pdfTeX warning (ext4): destination with the same
- identifier (name{page.2}) has been already used, duplicate ignored
+]
+Underfull \vbox (badness 2119) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.236 ...ter{Literature Review}\label{literature}}
-                                                   [2
+l.238 
+       [2]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 247.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) <figure/conceptual_dag.pdf, id=206, 722.7pt x 361.35pt>
+File: figure/conceptual_dag.pdf Graphic file (type pdf)
+<use figure/conceptual_dag.pdf>
+Package pdftex.def Info: figure/conceptual_dag.pdf used on input line 253.
+(pdftex.def)             Requested size: 433.62pt x 216.81168pt.
+[3 <./figure/conceptual_dag.pdf>] [4
 
 ]
 Chapter 2.
-[3] [4
+[5] [6] [7] [8
 
 ]
 Chapter 3.
-[5] [6
 
-]
-Chapter 4.
-[7] [8
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-Chapter 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 262.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 262.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 262.
 [9] [10]
-Chapter 6.
+Chapter 4.
 [11
 
-] [12
+] [12]
+Chapter 5.
+[13
 
-]
-Chapter 7.
-[13] [14
+pdfTeX warning (ext4): destination with the same identifier (name{full_results}
+) has been already used, duplicate ignored
 
-]
-Appendix A.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.431 \addlinespace
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{full_results_descriptive}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.431 \addlinespace
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{full_results_regression}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.431 \addlinespace
+                   ]
+Underfull \vbox (badness 10000) detected at line 462
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
 [15] [16
 
 ]
-Appendix B.
+Chapter 6.
 [17] [18
 
 ]
-Underfull \hbox (badness 1859) in paragraph at lines 349--351
-[]\T1/lmr/m/n/12 (+20) Asche, F., Bjarte Nilsen, O., & Tvet-eras, R. (2008). Na
-t-u-ral Gas De-
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 349--351
-\T1/lmr/m/n/12 (+20) mand in the Eu-ro-pean House-hold Sec-tor. \T1/lmr/m/it/12
- (+20) The En-ergy Jour-nal\T1/lmr/m/n/12 (+20) , \T1/lmr/m/it/12 (+20) 29\T1/l
-mr/m/n/12 (+20) (3).
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
-[19
+Chapter 7.
+[19] [20
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
+Appendix A.
+[21] [22
+
+]
+Appendix B.
+[23] [24
+
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 508.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 507--509
+\T1/lmr/m/n/12 (+20) Re-trieved from []$\T1/lmtt/m/n/12 https : / / ag -[] ener
+giebilanzen . de / daten -[] und -[] fakten /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+[]$\T1/lmtt/m/n/12 https : / / www . bmwi . de / Redaktion / DE / Binaer / Ener
+giedaten / energiedaten -[]
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 519--521
+\T1/lmr/m/it/12 (+20) und den Verkehrssek-tor in Deutsch-land\T1/lmr/m/n/12 (+2
+0) . Re-trieved from []$\T1/lmtt/m/n/12 https : / / ag -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
+\T1/lmtt/m/n/12 energiebilanzen . de / wp -[] content / uploads / 2020 / 10 / r
+wi _ anwendungsbilanz _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--527
+[]$\T1/lmtt/m/n/12 https : / / www . techem . com / content / dam / techem / ne
+wsroom / studien / Techem -[]
+ []
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 438.
+See the caption package documentation for explanation.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 532.
+[25
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 532.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 532.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 532.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 70B12ABE2C6D438C939BA229D424E8DF;562.
+(rerunfilecheck)             Checksum: 63B65AC821C62C39EE40E5186256BC66;1327.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 356.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
  ) 
 Here is how much of TeX's memory you used:
- 12521 strings out of 493014
- 187669 string characters out of 6133351
- 320990 words of memory out of 5000000
- 15688 multiletter control sequences out of 15000+600000
- 62116 words of font info for 75 fonts, out of 8000000 for 9000
+ 12728 strings out of 493014
+ 190774 string characters out of 6133351
+ 323453 words of memory out of 5000000
+ 15779 multiletter control sequences out of 15000+600000
+ 75195 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,49p,297b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/lm/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/l
-m/lmri12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro12.p
-fb>
-Output written on thesis.pdf (31 pages, 184560 bytes).
+ 39i,11n,49p,1716b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm
+/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmr8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on thesis.pdf (37 pages, 265124 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 12374 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 14502 words of extra memory for PDF output out of 17280 (max. 10000000)
 

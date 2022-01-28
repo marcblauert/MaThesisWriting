@@ -10,3 +10,41 @@ options(width = 70)
 ```
 
 # Literature Review {#literature}
+
+The objective of this chapter is to provide an overview of the existing literature on the price elasticity of heating demand. The text is organized as follows. The first part of the chapter focuses on the theoretical interactions between energy prices and energy consumption as well as the resulting effects on greenhouse gas emissions and climate change. The second part of the chapter then summarizes the empirical evidence on price elasticities from the literature.
+
+## Energy prices, energy consumption, and climate change {#literature_intro}
+
+
+Energy taxation and climate change
+- Fuel consumption demand is determined by demand functions that depend primarily on income and prices
+- Those who disfavor fuel taxes often claim they are strongly regressive. Earlier studies have shown that this depends on the country studied and on the details of the methods used, for instance if lifetime or temporary income is used, if substitution or other reactions are allowed for in the analysis. There is a tendency to progressivity in low income countries but regressivity in high income countries.
+- Indirect channel of long-term price change and anticipation of those changes leading to investments in low-carbon UBA: Remediation measures drawn by lot through the BEHG are partly subsidized through the BEG or the tax incentive and are accounted for there (CO2 price as door opener for subsidy) 
+
+
+Knowing the responsiveness of energy demand to the price allows analysts to predict the effects of price changes or policies that result in price changes—for example, taxes on carbon emissions, or mandates on the share of renewable energy.
+
+The quantity demanded of a good or service depends on multiple factors, such as price, income, and preference. Whenever there is a change in these variables, it causes a change in the quantity demanded of the good or service.
+
+Price elasticity of demand is an economic measure of the sensitivity of demand relative to a change in price. The measure of the change in the quantity demanded due to the change in the price of a good or service is known as price elasticity of demand.
+
+Elasticity estimations:
+
+- Price elasticities for energy is a vast field of literature
+- Focus on the behavior of the private households sector and for heating demand as a subset of the larger field of research
+- Spatial focuses: many studies on the US and European countries; number of studies especially in China but also in other emerging and less developed countries is rising
+- The meta-analysis of Labandeira et al. (2017) serves as a good starting point for the review of the literature since it compiles the evidence of the past decades on energy price elasticities.
+- Previous meta analysis (e.g., xxx) focus solely on gasoline price elasticity studies which is thus unsuitable for the focus of this research. 
+- At any rate, the large number of surveys on price elasticities of energy demand contrasts with scarce attempts by the literature to summarize these elasticities in a single value through meta-analysis.
+
+Short and long run: Economists often distinguish between a short-run response and long-run response when referring to how a household changes its natural gas usage when faced with price and income changes,. The short-run response is defined as a household's natural gas demand response to natural gas price and income changes given their current capital stock of natural gas-using appliances and shell efficiency of the house. The long-run response is defined as a household's response to natural gas prices changes and income changes after the household has had time to change their stock of gas using appliances and house shell efficiency.
+
+
+Aufhammer results:
+We find that the price elasticity of demand for natural gas for households ranges on average from minus 0.23 to minus 0.17. Importantly, we find evidence of heterogeneity in this elasticity along the dimensions of season and income. Both lower-income and higher-income households are essentially inelastic to price in the summer months. In the winter months, however, lower-income households are much more price elastic than higher-income households.
+
+From Csereklyei (2020):
+
+Labandeira et al. (2017) survey 428 papers published between 1990 and 2016. Most of the surveyed papers use varying econometric techniques, geographic and time scope, resulting in substantial variation in the estimates. Labandeira et al. (2017) find the average short-run and long-run price elasticities of electricity demand at -0.13 and at -0.37 respectively. Labandeira et al. (2017) also report that many studies found decreasing elasticities over time. This is similar to the finding of Fouquet (2014), who reports that both the income and price elasticity of energy demand reduced in the UK over the past two hundred years. Several authors, such as Miller and Alberini (2016) Wang and Mogi (2017) and Inglesi-Lotz (2011) report a negative relationship between average prices and the estimated price elasticities in a given year.
+
+Meta-studies are useful in providing us the possible ranges of price and income elasticities, however they might mask large differences arising from the variety of data and methods used. Different levels of aggregation, estimation methods (e.g., panel vs. cross-sectional, dynamic panel vs. long-run models), endogeneity and measurement heterogeneity, and price trends all impact on the estimates in the literature (Miller and Alberini, 2016).

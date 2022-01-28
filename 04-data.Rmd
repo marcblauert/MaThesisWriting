@@ -1,7 +1,8 @@
+```{=html}
 <!--
 Chapter 4 - Data
 -->
-
+```
 ```{r setup4, echo=FALSE}
 pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 
@@ -10,3 +11,17 @@ options(width = 70)
 ```
 
 # Data {#data}
+
+Several data sources were used for the analysis presented in this thesis. The section is structured as follows. First, the data sources for the variables used in the analysis are being introduced and shortly described. To structure the description, the variables retrieved from the sources are used. Then, in a second part, the data cleaning process is described and reasoned for where necessary.
+
+## Space heat consumption and energy prices {#ista_data}
+
+The data on space heat consumption and energy prices -- which is the backbone of the analysis -- was obtained from a large-scale building-level panel of heating bills made available though the Climate Policy Department at DIW Berlin. The data originates from the energy and billing service provider ista Deutschland GmbH and was provided for scientific use. The sample contains information on an average of 260,000 multi-unit residential buildings in Germany per year and is structured around annual heating bills at the building-level. This means that the smallest buildings observed have two living units; single-family houses with just one unit, on the other hand, are not observed. Spatially, the data have a good coverage and spreads over all German federal states. While the consumption data in the panel already start in 2003, the energy prices are only observable with a more extensive data delivery at the end of 2008. However, since a relevant number of observations billed in 2008 already have the majority of the billing period in 2007, the panel data used in the analysis ranges from 2007 to 2019.
+
+Consumption data is...
+
+Data structure for prices
+
+Additional variables + spatial differenciation
+
+The ista consumption panel serves as a staring point from which the other sources of data are merged to it.

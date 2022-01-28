@@ -55,6 +55,9 @@ lof: true
 link-citations: true
 urlcolor: blue
 linkcolor: blue
+
+# Used to convert html (e.g., tables) when rendering word document.
+always_allow_html: true
 ---
 
 ```{r setup0, include=FALSE}

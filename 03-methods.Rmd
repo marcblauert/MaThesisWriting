@@ -10,3 +10,25 @@ options(width = 70)
 ```
 
 # Methods {#methods}
+
+Csereklyei (2020):
+It is widely anticipated that responses in electricity consumption to changes in prices will be rather slow, as it takes time for energy-using durable stock to change (Miller and Alberini, 2016). Thus, short-run or annual price elasticity estimates are expected to be rather inelastic, while one anticipates significantly larger long-run estimates.
+
+Miller and Alberini (2016) furthermore report that the use of IV estimates can change the reported elasticities by up to 80%.
+
+
+All from Labanderira et al.
+
+discrete decision to purchase durable goods that consume energy and the decision to consume energy is rarely considered. 
+renovations may disturbe the picture the panel data provides
+
+On the other hand, most empirical studies in this area have used single-equation econometric models that require separability re- strictions. This is a severe disadvantage as it is not possible to estimate cross-price effects between different energy products or consider the effects of non-energy products on the price elasticity of energy goods. 
+
+
+Sample period. It is widely accepted that the economic cycle has a strong influence on energy consumption due to income and (indirect cycle-related) price effects. In the case of economic crises, for example, a depression of energy prices may occur; reduced dis- posable income may lead agents to reduce consumption through improvements in energy efficiency, adjustments to other types of consumption or changes towards other more inexpensive energy goods.
+
+
+From Aufhammer wegen IV approach:
+We instrument the utilities’ consumer-facing prices with the weekly average spot price of natural gas at a major natural gas distribution hub in Louisiana (the Henry Hub). This instrument is valid, as we know the formula of how utilities pass-through the price (providing a strong first stage), and the price is determined prior to within-bill consumption (strengthening the exclusion restriction).
+
+No change in the energy taxation (Energiesteuergesetz) in the observed period; letzte Neufassung aus 2006 mit Effekten für 2007

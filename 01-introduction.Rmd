@@ -12,10 +12,34 @@ options(width = 70)
 
 # Introduction {#introduction}
 
+## Background and motivation {#background}
+
+Residential energy demand of private households accounted for 20.2% of the overall primary energy consumption in Germany in 2020 [@ageb21]. Also according to national energy statistics, 68.1% of this 20.2% was in turn used for space heating (1,631.1 of 2,294.2 petajoules) [@rwi21]. This means that space heating as an energy consumption category accounts for the largest share of primary energy consumption by private households in their homes. Far exceeding other categories such as hot water generation (16.1%), process heat (6.0%), room cooling, information technology, or lighting (all below 5%) [@rwi21]. Furthermore, national statistics also show that in the residential sector, only the two purposes of space heating and hot water supply continue to rely largely on fossil fuels [@rwi21]. In 2020, 80.1% of the energy used for space heating came from either natural gas (45.4%), fuel oil (24.5%), or district heating (10.1%)[^1] [@rwi21]. Together, these figures convey two messages. First, that the level of energy used for space heating largely determines the total energy demand in the residential buildings sector in Germany. And secondly, that space heating is also the largest source of greenhouse gas (GHG) emissions in the residential buildings sector due to its generation from fossil fuels.
+
+[^1]: Which is at present also to almost 90% generated from fossil fuels (natural gas or coal) or waste incineration [@destatis18].
+
+GHG emissions in the building sector have fallen by 34% as compared to the levels pf 1995 [@erk20]. The reduction is mainly attributable to lower primary energy consumption and partly offset by an increase in the number of apartments (smaller average household size) as well as the increase in the average living space [@bmwi21]. Yet, much of this emission reduction was realized in the 1990s and 2000s. For recent years, multiple independent sources of data indicate that the primary energy consumption per square meter in buildings has largely stagnated [@bmwi21; @stede_etal20; @techem19].
+
+Against the backdrop of the high relevance of space heating consumption for primary energy use and emission levels in the buildings sector, this thesis intends to conduct a statistical analysis of the short-term price elasticities of heating demand in Germany. Specifically, it is aimed at estimating own price elasticities on the basis of an empirical sample of space heating bills in multi-unit buildings in Germany in the period from 2008 to 2019. Conceptually, own price elasticities are a measure of the change in consumption of a good following from a change in its price. Due to budget restraints, consumers tend to consume less of a good if its price rises. The magnitude of the demand response to a price change is expressed by the elasticity.
+
+Understanding energy prices as one of the major factors influencing residential space heating demand is relevant for a number of reasons. Most importantly, it is relevant against the ambitious climate targets set at the German national as well as at the European level. The latest amendment of the national Federal Climate Change Act 2021 (Bundes-Klimaschutzgesetz, KSG)[^2] stipulates that greenhouse gas emissions must reach net zero in 2045. Furthermore, the latest amendment also tightened intermediate reduction targets. Instead of previously 55%, the reductions in 2030 are now set at 65% as compared to the baseline of GHG emissions in 1990.
+
+[^2]: Federal Climate Change Act of 12 December 2019 (Federal Law Gazette I, p. 2513), as last amended by Article 1 of the Act of 18 August 2021 (Federal Law Gazette I, p. 3905).
+
+As a mean to govern emission reductions, the Federal Climate Change Act translates the national targets into six sector-specific targets for which an annual reduction pathway is specified. Among those sectors is also the buildings sector. For 2020, the first reporting year in which emissions incurred were assessed against the sector reduction pathways, the building sector was the only sector that failed to meet its established target. While actual emissions in 2020 totaled at 120 MtCO~2~e, the target specified was 118 MtCO~2~e [@erk20]. While some of the incurred emissions may be attributable to extraordinary effects linked to the external shock of the COVID-19 pandemic,  The shortfall of the buildings sector to meet its target in turn ed to the initiation of an emergency emissions reduction program in the buildings sector, which is also legally anchored by the governance system of the Federal Climate Change Act [@erk20]. Thus, against the potentially reoccurring need for evaluating additional policy options, the investigation of price elasticities conducted here may serve as a relevant piece of information.
+
+Circling back to the outstanding position of space heating consumption for emissions in the buildings sector, this means that
+
+Therefore, the buildings sector was the only sector that missed its specified target in the first year in which the governance system of the new legislation was applied. This
+
+a better understanding may help in the development of policies intended to reduce energy consumption and GHG emissions.
+
+The three energy carrier types natural gas, heating oil, and district heating together account for 80.1% of the space heating consumption.
+
+-   energy goods may be particularly exposed to price increases and collateral distributive effects from post-Paris climate policies (see Sterner (2007)).
+
+## Research question and objective {#question}
+
 ```{r dag, echo = FALSE, fig.cap = "DAG", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/conceptual_dag.pdf")
 ```
-
-This is to test citations @asche_etal08.
-
-Also I would like to see if the established connection with Github works well.
