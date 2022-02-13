@@ -11,20 +11,18 @@ options(width = 70)
 
 # Results {#results}
 
+## Descriptive statistics {#descriptives}
+
 ## Full sample analysis {#full_results}
 
-### Descriptive statistics {#full_results_descriptive}
-
-### Regression results {#full_results_regression}
 
 
+Notes (copied from other papers):
+
+-Accounting for unobserved heterogeneity reduces the elasticities by 15% to 32% relative to a model that does not include any effects at all, where the own price elasticity of electricity demand is −1.).
 
 
-##  Subsample analysis {#full_results}
-
-### Descriptive statistics {#full_results_descriptive}
-
-### Regression results {#full_results_regression}
+## Subsample analysis {#full_results}
 
 
 

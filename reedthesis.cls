@@ -36,6 +36,12 @@
 % Added by CII
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
@@ -99,7 +105,7 @@
 
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{6pt}}
 % End of CII add
 
 % This gives us rules below the headers
@@ -166,10 +172,12 @@
                       \@afterheading
                     \fi}
 
-\newcommand{\RTcleardoublepage}{
-	\clearpage\if@twoside \ifodd\c@page\else
-	\thispagestyle{empty}\hbox{}\newpage
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\newcommand{\RTcleardoublepage}{\clearpage} % mblauert: adjusted to not have double page breaks at the end of each chapter
+
+%\newcommand{\RTcleardoublepage}{
+%	\clearpage\if@twoside \ifodd\c@page\else
+%	\thispagestyle{empty}\hbox{}\newpage
+%	\if@twocolumn\hbox{}\newpage\fi\fi\fi}
 
 \let\RToldcleardoublepage\cleardoublepage
 \renewcommand{\cleardoublepage}{\RTcleardoublepage}
@@ -319,8 +327,8 @@
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \smallskip
 	\textit{Submitted to:} \\
-    1st Supervisor: Prof. Dr. Karsten Neuhoff (DIW Berlin, TU Berlin) \\
-    2nd Supervisor: Prof. Dr. Tobias Krüger (HU Berlin) \\
+    $1^{\textnormal{st}}$ Supervisor: Prof. Dr. Karsten Neuhoff (DIW Berlin, TU Berlin) \\
+    $2^{\textnormal{nd}}$ Supervisor: Prof. Dr. Tobias Krüger (HU Berlin) \\
     \smallskip
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \smallskip

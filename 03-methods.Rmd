@@ -9,7 +9,62 @@ pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 options(width = 70)
 ```
 
-# Methods {#methods}
+# Data and Methods {#methods}
+
+## Data {#data}
+
+Several data sources were used for the analysis presented in this thesis. The section is structured as follows. First, the data sources for the variables used in the analysis are being introduced and shortly described. Then, in a second part, the data cleaning process is described and reasoned for where necessary.
+
+### Panel on space heat consumption and energy prices {#ista_data}
+
+The data on space heat consumption and energy prices -- which is the backbone of the analysis -- was obtained from a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin[^3]. The sample contains information on an average of 260,000 multi-unit residential buildings in Germany from 2003 to 2019. This means that the smallest buildings observed have two living units; single-family houses with just one unit, on the other hand, are not observed. 
+
+The sample is structured around annual heating bills at the building-level. While the consumption data in the panel already start in 2003, the energy prices are only observable with a more extensive data delivery at the end of 2008. However, since a relevant number of observations billed in 2008 already have the majority of the billing period in 2007, the panel data used in the analysis ranges from 2007 to 2019. Spatially, the data have a good coverage and spreads over all German federal states.
+
+[^3]: The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided to DIW Berlin for scientific use. Due to the sensitive nature of the data, it is classified as confidential and was only accessed using the internal servers at DIW Berlin. Making the data available to an external party for own scientific purposes or reproduction of results is therefore not possible.
+
+In the sample, the consumption data is given in kilowatt hours (kWh) consumed per building and per annual billing. Importantly, the data set also includes information on the relative share of energy consumed for space heating and the relative share for hot water production. While one group of buildings also uses central heating for hot water production, other buildings do not produce hot water. In order not to distort the overall picture of energy consumed, only the share of space heating that is relevant for all buildings is considered. In order to obtain a comparable metric for the different sized buildings, the total consumption at building level is divided by the total heating area in square meters. This results in the space heating consumption in kWh per square meter as the consumption variable (kWh/sqm.).
+
+The data structure for prices in the data set is similar to that for consumption data. Total annual costs in euros are given on the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. This gives a per-unit cost in cents per kWh (cents/kWh). A breakdown according to fixed and variable cost components is not reported in the data. Prices are provided as nominal prices.
+
+Besides consumption and price data, the panel also features additional building characteristics that must be considered relevant for the analysis. This includes the exact dates of the billing period which allows for assigning a bill to a year. Additionally, the data also features an unique identifier per building. This is important as it allows to identify changes on the building-level over time and to use buildings as a unit for clustering (panel structure). Furthermore, the data set also provides important information on the individual properties of the buildings, including the type of energy carrier used in a billing period, total building living space in square meters, number of living units per building, as well as its spatial location on the postal code level.
+
+### Additional sources of data {#ista_data}
+
+**Degree days**
+Degree days data was retrieved from 
+
+
+
+## Estimation methods and empirical model design {#empirical_model}
+
+**Establishing causality**
+
+**Endogeneity issues**
+
+
+Prices: Form nominal --> real
+
+
+There is considerable debate in the literature whether household energy demand depends on the marginal or average price, which may differ in the presence of fixed fee and block pricing. Shin (1985) argues that households will respond to average price, which is easily calculated from the electricity bill, rather than to the actual block marginal price, which is costly to determine, and develops an empirical strategy for testing this conjecture. The average price is also used in Metcalf and Hassett (1999),5 and Borenstein (2008, 2009) and Ito (2010) find no evidence that consumers “bunching up” around the block where the price changes, as one would expect if consumers truly respond to marginal price. If demand is assumed to depend on the marginal block price, then price and consumption are simulta-neously determined, and instrumental variable estimation techniques must be used (Burtless and Hausman, 1978; McFadden et al., 1978; Wilder and Willenborg, 1975; Hewitt and Hanemann, 1995; Reiss and White, 2005).
+For lack of exact information about the block rates faced by the consumers, however, we are forced to use average price. 
+
+
+Zu Blockpreisen:
+Blockpreise stellen eine gesonderte Ausprägungsform von Paketpreisen dar, und sind beispielsweise bei Stromlieferanten vorzufinden (ebd.). Hier ändern sich die Preise je Mengenintervall, d.h. im Beispiel der Stromversorger nimmt der Preis mit steigendem Mengenintervall ab. Die Idee dahinter ist die, dass die Nachfrage nach Energieversorgung zwar mit zunehmender Haushaltsgröße steigt, die Zahlungsbereitschaft für die gewünschte Menge beim Ausgangspreis jedoch sinkt, sodass durch Blockpreise dieses Dilemma ausgeglichen werden kann und somit zusätzliche Gewinne generiert werden können (ebd., S.288).
+
+Aus Alberini (2011):
+An additional concern is whether usage decisions depend on the price in the current (billing) period, on that of earlier periods, or a moving average of the prices of recent periods (Poyer and Williams, 1993).For good measure, in what follows we experiment with current price, as well as price of the previous period.
+
+
+**Frequentist estimation approaches**
+
+**Bayesian estimation approaches**
+
+## Workflow {#workflow}
+
+Since we model conditional demand only, the results should be considered as short-term elasticities. In contrast, medium- and long-term income elasticities tend to be higher. Households with increased income are likely to move into larger homes over the medium term, which would increase their heating expenditures as well (Nesbakken 1999).  --> Short-run elasticities as a lower bar estimate that produces a conservative estimate.
+
 
 Csereklyei (2020):
 It is widely anticipated that responses in electricity consumption to changes in prices will be rather slow, as it takes time for energy-using durable stock to change (Miller and Alberini, 2016). Thus, short-run or annual price elasticity estimates are expected to be rather inelastic, while one anticipates significantly larger long-run estimates.
@@ -32,3 +87,6 @@ From Aufhammer wegen IV approach:
 We instrument the utilities’ consumer-facing prices with the weekly average spot price of natural gas at a major natural gas distribution hub in Louisiana (the Henry Hub). This instrument is valid, as we know the formula of how utilities pass-through the price (providing a strong first stage), and the price is determined prior to within-bill consumption (strengthening the exclusion restriction).
 
 No change in the energy taxation (Energiesteuergesetz) in the observed period; letzte Neufassung aus 2006 mit Effekten für 2007
+
+Miller Alberini (2016):
+We also find that aggregating our data can result in both higher and lower price elasticity estimates, depending on the dataset used, and that controlling for unit-level fixed effects with panel data generally results in more inelastic demand functions. Addressing the endogeneity of price and/or measurement error in price with instrumental variables has a small but noticeable effect on the price elasticities. Finally, controlling for housing characteristics and capital stock produces a lower price elasticity.

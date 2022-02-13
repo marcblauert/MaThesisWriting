@@ -185,6 +185,8 @@ $endfor$
 %%
 %
 
+\DeclareUnicodeCharacter{2212}{-}
+
 \begin{document}
 
 % Everything below added by CII
@@ -236,6 +238,8 @@ $endif$
 
 \mainmatter % here the regular arabic numbering starts
 \pagestyle{fancyplain} % turns page numbering back on
+
+\setlength{\parskip}{6pt} %mblauert, added to see if one can add a skip between paragraphs in the text
 
 $body$
 

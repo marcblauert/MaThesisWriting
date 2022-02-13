@@ -10,3 +10,5 @@ options(width = 70)
 ```
 
 # Conclusion {#conclusion}
+
+\@ref(eq:ep)

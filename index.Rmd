@@ -1,5 +1,5 @@
 ---
-title: "Short-Term Price Elasticities of Heating Demand: A Statistical Analysis of Consumption Data in Germany"
+title: "Short-Term Price Elasticities of Heating Demand: A Statistical Analysis of Energy Billing Data in Germany"
 author: "Marc Blauert"
 date: "`r format(Sys.Date())`"
 institution: "Humboldt University of Berlin"
@@ -15,6 +15,8 @@ site: bookdown::bookdown_site
 
 header-includes:
     - \usepackage{setspace}\onehalfspacing
+    - \usepackage{float}
+    - \floatplacement{figure}{H}  #make every figure with caption = h, this was the fix
 
 # This will automatically install the {remotes} package and {thesisdown}
 # Change this to FALSE if you'd like to install them manually on your own.
@@ -35,6 +37,7 @@ output:
 # lines 25-39 in this YAML header.
 
 abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`'
+  #The preface pretty much says it all. Second paragraph of abstract starts here.
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.

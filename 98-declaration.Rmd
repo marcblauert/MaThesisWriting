@@ -1,0 +1,33 @@
+<!--
+Chapter 9 - Declaration of own work 
+-->
+
+```{r setup9, echo=FALSE}
+pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
+
+# Set how wide the R output will go
+options(width = 70)
+```
+
+# Declaration of Authorship (Eigenständigkeitserklärung) {-}
+
+Hiermit erkläre ich, dass ich die vorliegende Arbeit selbständig verfasst habe und sämtliche Quellen, einschließlich Internetquellen, die unverändert oder abgewandelt wiedergegeben werden, insbesondere Quellen für Texte, Grafiken, Tabellen und Bilder, als solche kenntlich gemacht habe.
+
+Ich versichere, dass ich die vorliegende Abschlussarbeit noch nicht für andere Prüfungen eingereicht habe.
+
+Mir ist bekannt, dass bei Verstößen gegen diese Grundsätze ein Verfahren wegen Täuschungsversuchs bzw. Täuschung gemäß der fachspezifischen Prüfungsordnung und/oder der Fächerübergreifenden Satzung zur Regelung von Zulassung, Studium und Prüfung der Humboldt-Universität zu Berlin (ZSP-HU) eingeleitet wird.
+
+\
+&nbsp;
+
+\
+&nbsp;
+
+\
+&nbsp;
+
+\begin{tabular}{m{8cm}m{8cm}}
+Berlin, den 28.02.2022 & \\
+\textit{Ort, Datum} & \textit{Unterschrift} \\
+\end{tabular}
+

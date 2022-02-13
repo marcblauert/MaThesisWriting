@@ -3682,5 +3682,671 @@
 			]
 		},
 		"citation-key": "bmwi21"
+	},
+	{
+		"id": "iwu21",
+		"type": "webpage",
+		"title": "IWU-Tool „Gradtagzahlen-Deutschland.xlsx“",
+		"URL": "https://www.iwu.de/publikationen/fachinformationen/energiebilanzen/",
+		"author": [
+			{
+				"family": "IWU",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					22
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					7
+				]
+			]
+		},
+		"citation-key": "iwu21"
+	},
+	{
+		"id": "destatis21c",
+		"type": "webpage",
+		"abstract": "GENESIS-Online ist eine Datenbank, die tief gegliederte Ergebnisse der amtlichen Statistik enthält. Sie wird kontinuierlich ausgebaut. Der Tabellenabruf erfolgt unentgeltlich und kann variabel auf den individuellen Bedarf angepasst werden. Die Abspeicherung der Ergebnisse ist in verschiedenen Formaten möglich.",
+		"genre": "Text",
+		"language": "de",
+		"title": "Bevölkerung: Kreise, Stichtag, Altersgruppen (12411-0017)",
+		"URL": "https://www-genesis.destatis.de/genesis/online?operation=previous&levelindex=0&step=0&titel=Tabellenaufbau&levelid=1642855066461&acceptscookies=false#abreadcrumb",
+		"author": [
+			{
+				"family": "DESTATIS",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					1,
+					22
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		},
+		"citation-key": "destatis21c"
+	},
+	{
+		"id": "eia21a",
+		"type": "report",
+		"language": "en",
+		"source": "Zotero",
+		"title": "Price Elasticity for Energy Use in Buildings in the United States",
+		"URL": "https://www.eia.gov/analysis/studies/buildings/energyuse/pdf/price_elasticities.pdf#page9",
+		"author": [
+			{
+				"family": "EIA",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					25
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		},
+		"citation-key": "eia21a"
+	},
+	{
+		"id": "bdew19",
+		"type": "report",
+		"title": "Wie heizt Deutschland 2019?",
+		"URL": "https://www.bdew.de/media/documents/Pub_20191031_Wie-heizt-Deutschland-2019.pdf",
+		"author": [
+			{
+				"family": "BDEW",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		},
+		"citation-key": "bdew19"
+	},
+	{
+		"id": "bbsr21",
+		"type": "webpage",
+		"language": "de",
+		"title": "Klimafaktoren für Energieausweise",
+		"URL": "https://www.bbsr-energieeinsparung.de/EnEVPortal/DE/Energieausweise/Regelungen/Klimafaktoren/Klimafaktoren_node.html",
+		"author": [
+			{
+				"family": "BBSR",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		},
+		"citation-key": "bbsr21"
+	},
+	{
+		"id": "halbig_namyslo14",
+		"type": "article-journal",
+		"container-title": "EneV aktuell",
+		"issue": "4",
+		"language": "de",
+		"page": "11-13",
+		"title": "Neue Witterungsbereinigung für Energieausweise auf der Basis des Referenzklimas Potsdam",
+		"author": [
+			{
+				"family": "Halbig",
+				"given": "Guido"
+			},
+			{
+				"family": "Namyslo",
+				"given": "Joachim"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2014"
+				]
+			]
+		},
+		"citation-key": "halbig_namyslo14"
+	},
+	{
+		"id": "leth-petersen_togeby01",
+		"type": "article-journal",
+		"abstract": "Panel data covering the period 1984᎐1995 on energy consumption and technical characteristics of apartment blocks from Denmark are analysed in order to measure effects of policy measures aimed at reducing the consumption of energy for space heating. Results indicate that building regulations have been important in reducing energy consumption in new buildings. Furthermore, conditional price responses are estimated to be relatively small or non-existent, indicating small short-run effects of fuel taxes on energy consumption in apartment blocks. Finally, a consultancy scheme implemented with the purpose of improving knowledge about the potential for energy savings is found to have had moderate effects. ᮊ 2001 Elsevier Science B.V. All rights reserved.",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/S0140-9883(00)00078-5",
+		"ISSN": "01409883",
+		"issue": "4",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "387-403",
+		"source": "DOI.org (Crossref)",
+		"title": "Demand for space heating in apartment blocks: measuring effects of policy measures aiming at reducing energy consumption",
+		"title-short": "Demand for space heating in apartment blocks",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140988300000785",
+		"volume": "23",
+		"author": [
+			{
+				"family": "Leth-Petersen",
+				"given": "Søren"
+			},
+			{
+				"family": "Togeby",
+				"given": "Mikael"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2001",
+					7
+				]
+			]
+		},
+		"citation-key": "leth-petersen_togeby01"
+	},
+	{
+		"id": "meier_rehdanz10",
+		"type": "article-journal",
+		"abstract": "In Great Britain, several policy measures have been implemented in order to increase energy efﬁciency and reduce carbon emissions. In the domestic sector, this could, for example, be achieved by improving space heating efﬁciency and thus decreasing heating expenditure. However, in order to efﬁciently design and implement such policy measures, a better understanding of the determinants affecting heating expenditure is needed. In this paper we examine the following determinants: socio-economic factors, building characteristics, heating technologies and weather conditions. In contrast to most other studies we use panel data to investigate household demand for heating in Great Britain. Our data sample is the result of an annual set of interviews with more than 5000 households, starting in 1991 and ending in 2005. The sample represents a total of 64,000 observations over the ﬁfteen-year period. Our aim is to derive price and income elasticities both for Britain as a whole and for different types of household. Our results suggest that differences exist between owner-occupied and renter households. These households react differently to changes in income and prices. Our results also imply that a number of socio-economic criteria have a signiﬁcant inﬂuence on heating expenditure, independently of the fuel used for heating. Understanding the impacts of different factors on heating expenditure and impact differences between types of household is helpful in designing target-oriented policy measures.",
+		"container-title": "Energy Economics",
+		"DOI": "10.1016/j.eneco.2009.11.008",
+		"ISSN": "01409883",
+		"issue": "5",
+		"journalAbbreviation": "Energy Economics",
+		"language": "en",
+		"page": "949-959",
+		"source": "DOI.org (Crossref)",
+		"title": "Determinants of residential space heating expenditures in Great Britain",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140988309002266",
+		"volume": "32",
+		"author": [
+			{
+				"family": "Meier",
+				"given": "Helena"
+			},
+			{
+				"family": "Rehdanz",
+				"given": "Katrin"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2010",
+					9
+				]
+			]
+		},
+		"citation-key": "meier_rehdanz10"
+	},
+	{
+		"id": "levesque_etal21",
+		"type": "article-journal",
+		"abstract": "Abstract\n            \n              Buildings energy consumption is one of the most important contributors to greenhouse gas (GHG) emissions worldwide, responsible for 23% of energy-related CO\n              2\n              emissions. Decarbonising the energy demand of buildings will require two types of strategies: first, an overall reduction in energy demand, which could, to some extent, be achieved at negative costs; and second through a reduction of the carbon content of energy via fuel switching and supply-side decarbonisation. This study assesses the contributions of each of these strategies for the decarbonisation of the buildings sector in line with a 1.5°C global warming. We show that in a 1.5°C scenario combining mitigation policies and a reduction of market failures in efficiency markets, 81% of the reductions in buildings emissions are achieved through the reduction of the carbon content of energy, while the remaining 19% are due to efficiency improvements which reduce energy demand by 31%. Without supply-side decarbonisation, efficiency improvements almost entirely suppress the doubling of emissions that would otherwise be expected, but fail to induce an absolute decline in emissions. Our modelling and scenarios show the impact of both climate change mitigation policies and of the alleviation of market failures pervading through energy efficiency markets. The results show that the reduction of the carbon content of energy through fuel switching and supply-side decarbonisation is of paramount importance for the decarbonisation of buildings.",
+		"container-title": "Environmental Research Letters",
+		"DOI": "10.1088/1748-9326/abdf07",
+		"ISSN": "1748-9326",
+		"issue": "5",
+		"journalAbbreviation": "Environ. Res. Lett.",
+		"language": "en",
+		"page": "054071",
+		"source": "DOI.org (Crossref)",
+		"title": "Deep decarbonisation of buildings energy services through demand and supply transformations in a 1.5°C scenario",
+		"URL": "https://iopscience.iop.org/article/10.1088/1748-9326/abdf07",
+		"volume": "16",
+		"author": [
+			{
+				"family": "Levesque",
+				"given": "Antoine"
+			},
+			{
+				"family": "Pietzcker",
+				"given": "Robert C"
+			},
+			{
+				"family": "Baumstark",
+				"given": "Lavinia"
+			},
+			{
+				"family": "Luderer",
+				"given": "Gunnar"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					1
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					5,
+					1
+				]
+			]
+		},
+		"citation-key": "levesque_etal21"
+	},
+	{
+		"id": "europeancomission19",
+		"type": "report",
+		"event-place": "Brussels",
+		"language": "en",
+		"number": "COM(2019) 640 final",
+		"publisher-place": "Brussels",
+		"title": "The European Green Deal",
+		"URL": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52019DC0640&from=EN",
+		"author": [
+			{
+				"family": "European Comission",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					1
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		},
+		"citation-key": "europeancomission19"
+	},
+	{
+		"id": "burger_etal19",
+		"type": "article-journal",
+		"container-title": "Energy Efficiency",
+		"DOI": "10.1007/s12053-018-9660-6",
+		"ISSN": "1570-646X, 1570-6478",
+		"issue": "1",
+		"journalAbbreviation": "Energy Efficiency",
+		"language": "en",
+		"page": "73-87",
+		"source": "DOI.org (Crossref)",
+		"title": "German Energiewende—different visions for a (nearly) climate neutral building sector in 2050",
+		"URL": "http://link.springer.com/10.1007/s12053-018-9660-6",
+		"volume": "12",
+		"author": [
+			{
+				"family": "Bürger",
+				"given": "Veit"
+			},
+			{
+				"family": "Hesse",
+				"given": "Tilman"
+			},
+			{
+				"family": "Köhler",
+				"given": "Benjamin"
+			},
+			{
+				"family": "Palzer",
+				"given": "Andreas"
+			},
+			{
+				"family": "Engelmann",
+				"given": "Peter"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					1
+				]
+			]
+		},
+		"citation-key": "burger_etal19"
+	},
+	{
+		"id": "aldy_etal10",
+		"type": "article-journal",
+		"abstract": "This paper provides (for the nonspecialist) a highly streamlined discussion of the main issues, and controversies, in the design of climate mitigation policy. The first part of the paper discusses how much action to reduce greenhouse gas emissions at the global level is efficient under both the cost-effectiveness and welfare-maximizing paradigms. We then discuss various issues in the implementation of domestic emissions control policy, instrument choice, and incentives for technological innovation. Finally, we discuss alternative policy architectures at the international level. (JEL Q54, Q58)",
+		"container-title": "Journal of Economic Literature",
+		"DOI": "10.1257/jel.48.4.903",
+		"ISSN": "0022-0515",
+		"issue": "4",
+		"journalAbbreviation": "Journal of Economic Literature",
+		"language": "en",
+		"page": "903-934",
+		"source": "DOI.org (Crossref)",
+		"title": "Designing Climate Mitigation Policy",
+		"URL": "https://pubs.aeaweb.org/doi/10.1257/jel.48.4.903",
+		"volume": "48",
+		"author": [
+			{
+				"family": "Aldy",
+				"given": "Joseph E"
+			},
+			{
+				"family": "Krupnick",
+				"given": "Alan J"
+			},
+			{
+				"family": "Newell",
+				"given": "Richard G"
+			},
+			{
+				"family": "Parry",
+				"given": "Ian W. H"
+			},
+			{
+				"family": "Pizer",
+				"given": "William A"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2010",
+					12,
+					1
+				]
+			]
+		},
+		"citation-key": "aldy_etal10"
+	},
+	{
+		"id": "stiglitz19",
+		"type": "report",
+		"event-place": "Cambridge, MA",
+		"language": "en",
+		"note": "DOI: 10.3386/w25939",
+		"number": "w25939",
+		"page": "w25939",
+		"publisher": "National Bureau of Economic Research",
+		"publisher-place": "Cambridge, MA",
+		"source": "DOI.org (Crossref)",
+		"title": "Addressing Climate Change through Price and Non-Price Interventions",
+		"URL": "http://www.nber.org/papers/w25939.pdf",
+		"author": [
+			{
+				"family": "Stiglitz",
+				"given": "Joseph"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					3
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					6
+				]
+			]
+		},
+		"citation-key": "stiglitz19"
+	},
+	{
+		"id": "uba16",
+		"type": "report",
+		"title": "CO2-Emissionsfaktoren für fossile Brennstoffe",
+		"URL": "https://www.umweltbundesamt.de/sites/default/files/medien/1968/publikationen/co2-emissionsfaktoren_fur_fossile_brennstoffe_korrektur.pdf",
+		"author": [
+			{
+				"family": "UBA",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					2
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016"
+				]
+			]
+		},
+		"citation-key": "uba16"
+	},
+	{
+		"id": "loulou_labriet08",
+		"type": "article-journal",
+		"container-title": "Computational Management Science",
+		"DOI": "10.1007/s10287-007-0046-z",
+		"ISSN": "1619-697X, 1619-6988",
+		"issue": "1-2",
+		"journalAbbreviation": "CMS",
+		"language": "en",
+		"page": "7-40",
+		"source": "DOI.org (Crossref)",
+		"title": "ETSAP-TIAM: the TIMES integrated assessment model Part I: Model structure",
+		"title-short": "ETSAP-TIAM",
+		"URL": "http://link.springer.com/10.1007/s10287-007-0046-z",
+		"volume": "5",
+		"author": [
+			{
+				"family": "Loulou",
+				"given": "Richard"
+			},
+			{
+				"family": "Labriet",
+				"given": "Maryse"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					4
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2008",
+					2
+				]
+			]
+		},
+		"citation-key": "loulou_labriet08"
+	},
+	{
+		"id": "pindyck_rubinfeld18",
+		"type": "book",
+		"collection-title": "The Pearson series in economics",
+		"edition": "Ninth edition",
+		"event-place": "NY NY",
+		"ISBN": "978-0-13-418424-1",
+		"language": "eng",
+		"number-of-pages": "759",
+		"publisher": "Pearson",
+		"publisher-place": "NY NY",
+		"source": "K10plus ISBN",
+		"title": "Microeconomics",
+		"author": [
+			{
+				"family": "Pindyck",
+				"given": "Robert S."
+			},
+			{
+				"family": "Rubinfeld",
+				"given": "Daniel L."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018"
+				]
+			]
+		},
+		"citation-key": "pindyck_rubinfeld18"
+	},
+	{
+		"id": "varian10",
+		"type": "book",
+		"edition": "8. ed",
+		"event-place": "New York, NY",
+		"ISBN": "978-0-393-93424-3",
+		"language": "eng",
+		"number-of-pages": "739",
+		"publisher": "Norton",
+		"publisher-place": "New York, NY",
+		"source": "K10plus ISBN",
+		"title": "Intermediate microeconomics: a modern approach",
+		"title-short": "Intermediate microeconomics",
+		"author": [
+			{
+				"family": "Varian",
+				"given": "Hal R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		},
+		"citation-key": "varian10"
+	},
+	{
+		"id": "varian10a",
+		"type": "book",
+		"edition": "8. ed",
+		"event-place": "New York, NY",
+		"ISBN": "978-0-393-93424-3",
+		"language": "eng",
+		"number-of-pages": "739",
+		"publisher": "Norton",
+		"publisher-place": "New York, NY",
+		"source": "K10plus ISBN",
+		"title": "Intermediate microeconomics: a modern approach",
+		"title-short": "Intermediate microeconomics",
+		"author": [
+			{
+				"family": "Varian",
+				"given": "Hal R."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2010"
+				]
+			]
+		},
+		"citation-key": "varian10a"
 	}
 ]
