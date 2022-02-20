@@ -26,8 +26,12 @@ Mir ist bekannt, dass bei Verstößen gegen diese Grundsätze ein Verfahren wege
 \
 &nbsp;
 
-\begin{tabular}{m{8cm}m{8cm}}
-Berlin, den 28.02.2022 & \\
-\textit{Ort, Datum} & \textit{Unterschrift} \\
+
+\begin{tabular}{m{6cm}m{2cm}m{6cm}}
+Berlin, den 28.02.2022 &  &              \\ \cline{1-1} \cline{3-3} 
+\textit{Ort, Datum}            &  & \textit{Unterschrift} \\
+                       &  &              \\
+                       &  &             
 \end{tabular}
+
 

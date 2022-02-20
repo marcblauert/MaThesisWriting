@@ -4322,31 +4322,430 @@
 		"citation-key": "varian10"
 	},
 	{
-		"id": "varian10a",
-		"type": "book",
-		"edition": "8. ed",
-		"event-place": "New York, NY",
-		"ISBN": "978-0-393-93424-3",
-		"language": "eng",
-		"number-of-pages": "739",
-		"publisher": "Norton",
-		"publisher-place": "New York, NY",
-		"source": "K10plus ISBN",
-		"title": "Intermediate microeconomics: a modern approach",
-		"title-short": "Intermediate microeconomics",
+		"id": "gwartney76",
+		"type": "chapter",
+		"container-title": "Economics Private and Public Choice",
+		"ISBN": "978-0-12-311050-3",
+		"language": "en",
+		"note": "DOI: 10.1016/B978-0-12-311050-3.50021-8",
+		"page": "289-309",
+		"publisher": "Elsevier",
+		"source": "DOI.org (Crossref)",
+		"title": "Demand and Consumer Choice",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/B9780123110503500218",
 		"author": [
 			{
-				"family": "Varian",
-				"given": "Hal R."
+				"family": "Gwartney",
+				"given": "James D."
 			}
 		],
-		"issued": {
+		"accessed": {
 			"date-parts": [
 				[
-					"2010"
+					"2022",
+					2,
+					6
 				]
 			]
 		},
-		"citation-key": "varian10a"
+		"issued": {
+			"date-parts": [
+				[
+					"1976"
+				]
+			]
+		},
+		"citation-key": "gwartney76"
+	},
+	{
+		"id": "lim_etal21",
+		"type": "article-journal",
+		"abstract": "Since the price for residential heat (RH) from district heating system in South Korea is regulated by the government rather than being freely determined in the market, it is difﬁcult to estimate the demand function for RH properly using the distorted market data. Thus, undistorted data on price and demand are required in obtaining the demand function. This article tries to estimate the demand function for RH by applying the price sensitivity measurement (PSM) technique, with some variation, and then use this to obtain information about the price and income elasticities. To this end, in the PSM survey 1000 households were ﬁrst asked about their consumption of RH and their expenditure on that consumption and then asked about how much they would lower their demand for RH in response to four hypothetical increases in the price for RH (10%, 20%, 50%, and 100%). Thus, ﬁve sets of price and consumption of RH were available for each household. The demand function for RH was estimated using a total of 5000 observations. The price and income elasticities were estimated with statistical signiﬁcance to be about −0.478 and 0.033, respectively. These values can be utilized in decision-making and/or policy-making related to RH management.",
+		"container-title": "Sustainability",
+		"DOI": "10.3390/su13137242",
+		"ISSN": "2071-1050",
+		"issue": "13",
+		"journalAbbreviation": "Sustainability",
+		"language": "en",
+		"page": "7242",
+		"source": "DOI.org (Crossref)",
+		"title": "Price and Income Elasticities of Residential Heat Demand from District Heating System: A Price Sensitivity Measurement Experiment in South Korea",
+		"title-short": "Price and Income Elasticities of Residential Heat Demand from District Heating System",
+		"URL": "https://www.mdpi.com/2071-1050/13/13/7242",
+		"volume": "13",
+		"author": [
+			{
+				"family": "Lim",
+				"given": "Seul-Ye"
+			},
+			{
+				"family": "Min",
+				"given": "Jeoung-Sik"
+			},
+			{
+				"family": "Yoo",
+				"given": "Seung-Hoon"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					28
+				]
+			]
+		},
+		"citation-key": "lim_etal21"
+	},
+	{
+		"id": "lim_etal12",
+		"type": "article-journal",
+		"abstract": "This paper investigates the demand function for diesel in Korea covering the period 1986–2011. The short-run and long-run elasticities of diesel demand with respect to price and income are empirically examined using a co-integration and error-correction model. The short-run and long-run price elasticities are estimated to be −0.357 and −0.547, respectively. The short-run and long-run income elasticities are computed to be 1.589 and 1.478, respectively. Thus, diesel demand is relatively inelastic to price change and elastic to income change in both the short-run and long-run. Therefore, a demand-side management through raising the price of diesel will be ineffective and tightening the regulation of using diesel more efficiently appears to be more effective in Korea. The demand for diesel is expected to continuously increase as the economy grows.",
+		"container-title": "Energies",
+		"DOI": "10.3390/en5125055",
+		"ISSN": "1996-1073",
+		"issue": "12",
+		"journalAbbreviation": "Energies",
+		"language": "en",
+		"page": "5055-5064",
+		"source": "DOI.org (Crossref)",
+		"title": "Short-Run and Long-Run Elasticities of Diesel Demand in Korea",
+		"URL": "http://www.mdpi.com/1996-1073/5/12/5055",
+		"volume": "5",
+		"author": [
+			{
+				"family": "Lim",
+				"given": "Kyoung-Min"
+			},
+			{
+				"family": "Kim",
+				"given": "Myunghwan"
+			},
+			{
+				"family": "Kim",
+				"given": "Chang"
+			},
+			{
+				"family": "Yoo",
+				"given": "Seung-Hoon"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2012",
+					11,
+					28
+				]
+			]
+		},
+		"citation-key": "lim_etal12"
+	},
+	{
+		"id": "stiglitz_stern17",
+		"type": "report",
+		"language": "eng",
+		"title": "Report of the High-Level Commission on Carbon Prices",
+		"URL": "https://static1.squarespace.com/static/54ff9c5ce4b0a53decccfb4c/t/59b7f2409f8dce5316811916/1505227332748/CarbonPricing_FullReport.pdf",
+		"author": [
+			{
+				"family": "Stiglitz",
+				"given": "Joseph E."
+			},
+			{
+				"family": "Stern",
+				"given": "Nicholas"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					7
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		},
+		"citation-key": "stiglitz_stern17"
+	},
+	{
+		"id": "http://zotero.org/users/3542409/items/MVS8P8DB",
+		"type": "article",
+		"title": "Pub_20190603_Energy-Market-Germany-2019.pdf",
+		"citation-key": ""
+	},
+	{
+		"id": "bohi_zimmerman84",
+		"type": "article-journal",
+		"container-title": "Annual Review of Energy",
+		"DOI": "10.1146/annurev.eg.09.110184.000541",
+		"ISSN": "0362-1626",
+		"issue": "1",
+		"journalAbbreviation": "Annu. Rev. Energy.",
+		"language": "en",
+		"page": "105-154",
+		"source": "DOI.org (Crossref)",
+		"title": "An Update on Econometric Studies of Energy Demand Behavior",
+		"URL": "https://www.annualreviews.org/doi/10.1146/annurev.eg.09.110184.000541",
+		"volume": "9",
+		"author": [
+			{
+				"family": "Bohi",
+				"given": "D R"
+			},
+			{
+				"family": "Zimmerman",
+				"given": "M B"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					9
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1984",
+					11
+				]
+			]
+		},
+		"citation-key": "bohi_zimmerman84"
+	},
+	{
+		"id": "houthakker51",
+		"type": "article-journal",
+		"archive": "JSTOR",
+		"container-title": "Journal of the Royal Statistical Society. Series A (General)",
+		"DOI": "10.2307/2980781",
+		"ISSN": "00359238",
+		"issue": "3",
+		"note": "publisher: [Royal Statistical Society, Wiley]",
+		"page": "359-371",
+		"title": "Some Calculations on Electricity Consumption in Great Britain",
+		"URL": "http://www.jstor.org/stable/2980781",
+		"volume": "114",
+		"author": [
+			{
+				"family": "Houthakker",
+				"given": "H. S."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					11
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1951"
+				]
+			]
+		},
+		"citation-key": "houthakker51"
+	},
+	{
+		"id": "cutler41",
+		"type": "article-journal",
+		"archive": "JSTOR",
+		"container-title": "The Journal of Land & Public Utility Economics",
+		"DOI": "10.2307/3158428",
+		"ISSN": "15489000",
+		"issue": "2",
+		"note": "publisher: [Board of Regents of the University of Wisconsin System, University of Wisconsin Press]",
+		"page": "242-245",
+		"title": "The Elasticity of the Residential Demand for Electricity",
+		"URL": "http://www.jstor.org/stable/3158428",
+		"volume": "17",
+		"author": [
+			{
+				"family": "Cutler",
+				"given": "Howard A."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					11
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1941"
+				]
+			]
+		},
+		"citation-key": "cutler41"
+	},
+	{
+		"id": "miller_alberini16",
+		"type": "article-journal",
+		"container-title": "Energy Policy",
+		"DOI": "10.1016/j.enpol.2016.07.031",
+		"ISSN": "03014215",
+		"journalAbbreviation": "Energy Policy",
+		"language": "en",
+		"page": "235-249",
+		"source": "DOI.org (Crossref)",
+		"title": "Sensitivity of price elasticity of demand to aggregation, unobserved heterogeneity, price trends, and price endogeneity: Evidence from U.S. Data",
+		"title-short": "Sensitivity of price elasticity of demand to aggregation, unobserved heterogeneity, price trends, and price endogeneity",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301421516303937",
+		"volume": "97",
+		"author": [
+			{
+				"family": "Miller",
+				"given": "Mark"
+			},
+			{
+				"family": "Alberini",
+				"given": "Anna"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					10
+				]
+			]
+		},
+		"citation-key": "miller_alberini16"
+	},
+	{
+		"id": "bushnell_mansur05",
+		"type": "article-journal",
+		"container-title": "Journal of Industrial Economics",
+		"DOI": "10.1111/j.1467-6451.2005.00267.x",
+		"ISSN": "0022-1821, 1467-6451",
+		"issue": "4",
+		"journalAbbreviation": "J Industrial Economics",
+		"language": "en",
+		"page": "493-513",
+		"source": "DOI.org (Crossref)",
+		"title": "CONSUMPTION UNDER NOISY PRICE SIGNALS: A STUDY OF ELECTRICITY RETAIL RATE DEREGULATION IN SAN DIEGO*",
+		"title-short": "CONSUMPTION UNDER NOISY PRICE SIGNALS",
+		"URL": "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6451.2005.00267.x",
+		"volume": "53",
+		"author": [
+			{
+				"family": "Bushnell",
+				"given": "James B."
+			},
+			{
+				"family": "Mansur",
+				"given": "Erin T."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2005",
+					12
+				]
+			]
+		},
+		"citation-key": "bushnell_mansur05"
+	},
+	{
+		"id": "metcalf_hassett99",
+		"type": "article-journal",
+		"container-title": "Review of Economics and Statistics",
+		"DOI": "10.1162/003465399558274",
+		"ISSN": "0034-6535, 1530-9142",
+		"issue": "3",
+		"journalAbbreviation": "Review of Economics and Statistics",
+		"language": "en",
+		"page": "516-528",
+		"source": "DOI.org (Crossref)",
+		"title": "Measuring the Energy Savings from Home Improvement Investments: Evidence from Monthly Billing Data",
+		"title-short": "Measuring the Energy Savings from Home Improvement Investments",
+		"URL": "https://direct.mit.edu/rest/article/81/3/516-528/57136",
+		"volume": "81",
+		"author": [
+			{
+				"family": "Metcalf",
+				"given": "Gilbert E."
+			},
+			{
+				"family": "Hassett",
+				"given": "Kevin A."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					19
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1999",
+					8
+				]
+			]
+		},
+		"citation-key": "metcalf_hassett99"
 	}
 ]
