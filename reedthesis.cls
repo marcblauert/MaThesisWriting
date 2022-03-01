@@ -40,6 +40,7 @@
 \usepackage{longtable}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{booktabs}
 \usepackage[normalem]{ulem}
 \useunder{\uline}{\ul}{}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex

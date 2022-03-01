@@ -13,11 +13,9 @@ options(width = 70)
 
 ## Data {#data}
 
-Several data sources were used for the analysis presented in this thesis. The section is structured as follows. First, the data sources for the variables used in the analysis are being introduced and shortly described. Then, in a second part, the data cleaning process is described and reasoned for where necessary.
+**Energy bills panel data**
 
-### Panel on space heat consumption and energy prices {#ista_data}
-
-The data on space heat consumption and energy prices -- which is the backbone of the analysis -- was obtained from a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin[^3]. The sample contains information on an average of 260,000 multi-unit residential buildings in Germany from 2003 to 2019. This means that the smallest buildings observed have two living units; single-family houses with just one unit, on the other hand, are not observed. 
+Several data sources were used for the analysis. The data on space heat consumption and energy prices -- which is the backbone of the analysis -- was obtained from a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin[^3]. The sample contains information on an average of 260,000 multi-unit residential buildings in Germany from 2003 to 2019. This means that the smallest buildings observed have two living units; single-family houses with just one unit, on the other hand, are not observed. 
 
 The sample is structured around annual heating bills at the building-level. While the consumption data in the panel already start in 2003, the energy prices are only observable with a more extensive data delivery at the end of 2008. However, since a relevant number of observations billed in 2008 already have the majority of the billing period in 2007, the panel data used in the analysis ranges from 2007 to 2019. Spatially, the data have a good coverage and spreads over all German federal states.
 
@@ -29,10 +27,57 @@ The data structure for prices in the data set is similar to that for consumption
 
 Besides consumption and price data, the panel also features additional building characteristics that must be considered relevant for the analysis. This includes the exact dates of the billing period which allows for assigning a bill to a year. Additionally, the data also features an unique identifier per building. This is important as it allows to identify changes on the building-level over time and to use buildings as a unit for clustering (panel structure). Furthermore, the data set also provides important information on the individual properties of the buildings, including the type of energy carrier used in a billing period, total building living space in square meters, number of living units per building, as well as its spatial location on the postal code level.
 
+\begin{table}[]
+\centering
+\caption{Variables and data sources}
+\label{tab:variables}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{Variable} & \textbf{} & \textbf{Type} & \textbf{Unit} & \textbf{Data source} \\ \midrule
+ &  &  &  &  \\
+\textit{\begin{tabular}[c]{@{}l@{}}Demand\\ (building-level)\end{tabular}} & Space heat demand & Continuous & ln(kWh/sqm) & Ista \\
+\textit{} &  &  &  &  \\
+\textit{\begin{tabular}[c]{@{}l@{}}Price\\ (building-level)\end{tabular}} & Energy price & Continuous & ln(cents/kWh) & Ista \\
+\textit{} &  &  &  &  \\
+\multirow{4}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Billing data\\ (building-level)\end{tabular}}} & Heating surface & Continuous & ln(sqm) & Ista \\
+ & Energy carrier & Categorical & Gas / Oil / District heating & Ista \\
+ & Building ID & Categorical & - & Ista \\
+ & Year & Categorical & - & Ista \\
+\textit{} &  &  &  &  \\
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ (building-level)\end{tabular}}} & Construction year & Continuous & - & Ista (sub-sample) \\
+ & Heating system installation year & Continuous & - & Ista (sub-sample) \\
+ & Renovation & Categorical & - & Ista (sub-sample) \\
+\textit{} &  &  &  &  \\
+\textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ (postal code area)\end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
+\textit{} &  &  &  &  \\
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Socio-economic factors\\ (district-level)\end{tabular}}} & Average household income & Continuous & ln(Euros/a) & Statistische Ämter (2021) \\
+ & Retirement rate & Continuous & \% & DESTATIS (2021) \\
+ & Population density & Continuous & ln(inhabitants/sq. km) & DESTATIS (2021) \\ \bottomrule
+\end{tabular}%
+}
+\end{table}
+
+
 ### Additional sources of data {#ista_data}
+
+
+123 [^3]
+
+[^3]: The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided to DIW Berlin for scientific use. Due to the sensitive nature of the data, it is classified as confidential and was only accessed using the internal servers at DIW Berlin. Making the data available to an external party for own scientific purposes or reproduction of results is therefore not possible.
 
 **Degree days**
 Degree days data was retrieved from 
+
+
+- As part of the project, a "Gradtagzahlen-Deutschland.xlsx" tool was developed that is based on DWD data from 1991 onwards.
+- The following are determined: Monthly temperature averages, heating days, degree day figures or heating degree days for all postcodes in Germany.
+- Degree day figures are determined as a weighted average from the measurement data of the three geographically closest stations
+- Use of temperature measurements as well as global radiation data for different inclinations
+- Correction for altitude values of the locations
+
+Translated with www.DeepL.com/Translator (free version)
+
 
 
 
@@ -58,6 +103,16 @@ An additional concern is whether usage decisions depend on the price in the curr
 
 
 **Frequentist estimation approaches**
+
+In line with the previous literature [@meier_rehdanz10; @schmitz_madlener20], the fixed-effects model takes the following form:
+
+```{=tex}
+\begin{equation}
+ln(D)_{it} = \alpha + \beta ln(P)_{it} + \gamma X_{it} + \delta_i + \eta_t + \varepsilon_{it}
+(\#eq:fixedeff)
+\end{equation}
+```
+
 
 **Bayesian estimation approaches**
 

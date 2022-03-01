@@ -13,6 +13,33 @@ options(width = 70)
 
 ## Descriptive statistics {#descriptives}
 
+\begin{table}[]
+\centering
+\caption{Summary statistics}
+\label{tab:summarytable}
+\begin{tabular}{@{}llc@{}}
+\toprule
+\textbf{Variable}             & \textbf{Unit}            & \textbf{Median (IQR)}   \\ \midrule
+Space heat consumption, eff.  & {[}kWh/sqm.{]}           & 113 (86, 145)           \\
+Energy price, real            & {[}Cents/kWh{]}          & 6.49 (5.77, 7.69)       \\
+                              &                          &                         \\
+Degree days                   &                          & 3,446 (3,214, 3,733)    \\
+Building heating surface      & {[}sqm{]}                & 404 (260, 707)          \\
+Building housing units        &                          & 6 (3, 10)               \\
+District household income     & {[}€/a{]}                & 20,695 (18,786, 22,568) \\
+District retirement share     & {[}\%{]}                 & 0.207 (0.193, 0.220)    \\
+District population density   & {[}inhabitants/sq. km{]} & 572 (217, 1,960)        \\
+                              &                          &                         \\
+\textit{Energy carrier group} & {\ul \textit{}}          &                         \\
+Gas                           &                          & 1,647,563 (61\%)        \\
+Oil                           &                          & 802,451 (30\%)          \\
+District heating              &                          & 268,232 (9.9\%)         \\ \midrule
+\textit{(N = 2,718,246; No missings)}  &                          & \multicolumn{1}{l}{}   
+\end{tabular}
+\end{table}
+
+
+
 ## Full sample analysis {#full_results}
 
 
@@ -51,42 +78,4 @@ table_destination %>%
 
 ```
 
-\captionsetup[table]{labelformat=empty,skip=1pt}
-\begin{longtable}{lc}
-\toprule
-\textbf{Variable} & \textbf{N = 2,993,841} \\ 
-\midrule
-Space heat consumption, eff. [kWh/sqm.] &  \\ 
-Mean (SD) & 119 (47) \\ 
-Median [Range] & 113 [21, 521] \\ 
-Energy price, real [Cents/kWh] &  \\ 
-Mean (SD) & 7.01 (2.06) \\ 
-Median [Range] & 6.56 [2.00, 99.50] \\ 
-Degree days &  \\ 
-Mean (SD) & 3,496 (386) \\ 
-Median [Range] & 3,445 [2,284, 7,003] \\ 
-(Missing) & 3,209 \\ 
-Energy carrier category &  \\ 
-District heating & 290,010 (9.7\%) \\ 
-Gas & 1,806,199 (60\%) \\ 
-Oil & 875,945 (29\%) \\ 
-Others & 21,687 (0.7\%) \\ 
-Building heating surface [sqm.] &  \\ 
-Mean (SD) & 694 (1,050) \\ 
-Median [Range] & 402 [31, 73,437] \\ 
-Building housing units &  \\ 
-Mean (SD) & 10 (16) \\ 
-Median [Range] & 6 [2, 1,694] \\ 
-Regional household income [€] &  \\ 
-Mean (SD) & 20,732 (2,925) \\ 
-Median [Range] & 20,568 [13,821, 42,555] \\ 
-(Missing) & 3,270 \\ 
-Regional share retirement [>65 yrs] &  \\ 
-Mean (SD) & 0.209 (0.024) \\ 
-Median [Range] & 0.207 [0.145, 0.327] \\ 
-(Missing) & 6,777 \\ 
- \bottomrule
-\end{longtable}
-\begin{minipage}{\linewidth}
-\emph{This data is simulated}\\ 
-\end{minipage}
+
