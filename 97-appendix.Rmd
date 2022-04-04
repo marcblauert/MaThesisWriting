@@ -13,10 +13,117 @@ pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 options(width = 70)
 ```
 
-# First Appendix
+# Additional materials
+
+\singlespacing
+\newpage
+
+```{r buildings-distribution, echo = FALSE, fig.cap = "Spatial and temporal coverage by the buildings observed", out.width = "77%", fig.align = "center"}
+knitr::include_graphics(path = "figure/buildings_distribution.pdf")
+```
+\noindent
+Figure \@ref(fig:buildings-distribution) shows the spatial and temporal distribution of observations at building-level in the main sample. The maps show that the spatial coverage is good. There are very few districts without observations (transparent) and only a few districts with less than 10 observed buildings per year (dark blue). For most district-year combinations, more than 100 buildings are observed. In some large cities and metropolitan areas, numbers of more than 10,000 buildings are reached. Fewer observations are available for 2007 (43,696 observations) and 2008 (43,536 observations), as price data were included for the first time in these years. For the decade between 2009 and 2019, an annual minimum of 201,856 and an average of 239,183 buildings are observed. Note the use of the logarithmic scale in the maps.
 
 \newpage
 
-```{r buildings-distribution, echo = FALSE, fig.cap = "Spatial and temporal distribution of buildings observed", out.width = "100%", fig.align = "center"}
-knitr::include_graphics(path = "figure/buildings_distribution.pdf")
+```{r degree-days-distribution, echo = FALSE, fig.cap = "Spatial and temporal variation in degree days", out.width = "77%", fig.align = "center"}
+knitr::include_graphics(path = "figure/distribution_degree_days.pdf")
 ```
+
+
+\noindent
+Figure \@ref(fig:degree-days-distribution) show the spatial and temporal variation of climatic conditions measured in degree days. Degree days are extracted from @iwu21. The spatial resolution used is the postcode level as the level with the highest granularity, which is also used in the regressions. Higher annual degree day numbers are associated with lower outdoor temperatures and vice versa. The maps show variations between the observed annual periods. While 2010 in particular, but also 2012 and 2013 are cooler years than the sample average, 2014, 2018 and 2019, on the other hand, were considerably warmer.
+
+\newpage
+
+```{r correlation-plot, echo = FALSE, fig.cap = "Pearson’s correlation matrix", out.width = "90%", fig.align = "center"}
+knitr::include_graphics(path = "figure/correlation_matrix.pdf")
+```
+\noindent
+The values in Figure \@ref(fig:correlation-plot) represent Pearson's correlation coefficients. Values closer to 1 indicate a stronger positive relationship, values closer to -1 indicate a stronger negative relationship. Values close to zero indicate no relationship. None of the correlations observed between the variables exceed moderate values, ruling out possible multicollinearity issues. Energy price is negatively correlated with energy demand, indicating that the expected negative effect of price on demand indeed exists. Note that tall variables are ln-transformed.
+
+\newpage
+
+\begin{table}[]
+\centering
+\caption{Comparison between full sample and sub-sample}
+\label{tab:sample-comparison}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Variable                                                                                       & Energy carrier group & \begin{tabular}[c]{@{}l@{}}Full sample\\ (N = 2.719.270)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Sub-sample\\ (N = 4.410)\end{tabular} & Difference {[}\%{]}       \\ \midrule
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Energy demand\\ {[}kWh/m2{]}\end{tabular}}          & Gas                  & 122.5 {[}56.4; 209.33{]}                                              & 121.39 {[}55.4; 211.32{]}                                        & -0.91 {[}-1.81; 0.94{]}   \\
+                                                                                               & Oil                  & 122.36 {[}58.67; 204{]}                                               & 116.97 {[}53.57; 198.17{]}                                       & -4.61 {[}-9.52; -2.94{]}  \\
+                                                                                               & District heating     & 89.38 {[}43.23; 156.88{]}                                             & 83.98 {[}41.92; 141.01{]}                                        & -6.43 {[}-3.12; -11.25{]} \\
+\multicolumn{5}{l}{} \\                                                                                                 
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Energy price, real \\ {[}Cents/kWh{]}\end{tabular}}        & Gas                  & 6.28 {[}4.56; 8.14{]}                                                 & 6.22 {[}4.59; 8.04{]}                                            & -0.96 {[}0.65; -1.24{]}   \\
+                                                                                               & Oil                  & 7.14 {[}5.1; 9.18{]}                                                  & 7.21 {[}5.2; 9.23{]}                                             & 0.97 {[}1.92; 0.54{]}     \\
+                                                                                               & District heating     & 10.45 {[}6.86; 15.07{]}                                               & 10.76 {[}7.17; 16.15{]}                                          & 2.88 {[}4.32; 6.69{]}     \\
+\multicolumn{5}{l}{} \\   
+\multirow{3}{*}{Degree days}                                                                   & Gas                  & 3467.6 {[}2921.14; 4180.42{]}                                         & 3461.14 {[}2914.56; 4180.4{]}                                    & -0.19 {[}-0.23; 0{]}      \\
+                                                                                               & Oil                  & 3568.13 {[}2971.7; 4269.19{]}                                         & 3582.48 {[}2946.19; 4318.42{]}                                   & 0.4 {[}-0.87; 1.14{]}     \\
+                                                                                               & District heating     & 3441.1 {[}2924.64; 4137.61{]}                                         & 3447.97 {[}2948.92; 4180.11{]}                                   & 0.2 {[}0.82; 1.02{]}      \\
+\multicolumn{5}{l}{} \\   
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Building heating \\ surface {[}sqm{]}\end{tabular}} & Gas                  & 648.84 {[}163; 1849.4{]}                                              & 727.47 {[}168.04; 1817{]}                                        & 10.81 {[}3; -1.78{]}      \\
+                                                                                               & Oil                  & 452.82 {[}160; 1195.6{]}                                              & 489.55 {[}167.1; 1362.8{]}                                       & 7.5 {[}4.25; 12.27{]}     \\
+                                                                                               & District heating     & 1714.09 {[}255; 5030.18{]}                                            & 2034.55 {[}297.52; 6968.98{]}                                    & 15.75 {[}14.29; 27.82{]}  \\ \midrule
+\multicolumn{5}{l}{\textit{*) Mean {[}90\% CI{]}}}                                                                                                                                                                                                                                          
+\end{tabular}%
+}
+\end{table}
+
+\noindent
+Table \@ref(tab:sample-comparison) compares the total sample and the sub-sample with respect to key variables. It contains the mean values for the two samples and the lower and upper limits of a 90% interval divided by the energy carrier. It also gives the relative difference between the total sample and the sub-sample in percent. The statistics show that in the sub-sample with the available epc information, the buildings are on average 7.5 % to 15.8 % larger, depending on the energy carrier. This deviation is presumably due to the fact that larger buildings are more often managed by larger property managers who decide to systematically exchange their information with ista and also obtain their energy performance certificates through this standardised channel. The larger building heating area is likely also the reason for the deviations between the total sample and the sub-sample in energy demand for oil (-4.6%) and district heating (-6.4%). However, the deviations are within reasonable limits. Energy price and degree days from both samples are in good agreement.
+
+\newpage
+
+```{r heterogeneity-year-state-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity for years and federal states", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/year_state_heterogeneity_plot.pdf")
+```
+\noindent
+Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual examination of the heterogeneity of price elasticity between years (Panel A) and federal states (Panel B). For this purpose, the observations in the sub-sample are grouped by year/federal state and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the years/federal states as groups. Between years, all lines are almost parallel, indicating that there is no relevant difference in price elasticity between years. For the federal states, the lines scatter a little. At the same time, however, no strong pattern can be discerned through clusters such as differences between formerly eastern and western federal states or through other regional clusters.
+
+\newpage
+
+```{r heterogeneity-other-vars-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity for degree days, heating surface, district income, and district retirement share", out.width = "95%", fig.align = "center"}
+knitr::include_graphics(path = "figure/other_vars_heterogeneity_plot.pdf")
+```
+\noindent
+Figure \@ref(fig:heterogeneity-other-vars-plot) presents a visual examination of the heterogeneity of price elasticity for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, observations in the sub-sample are ln-transformed, grouped into three equally sized groups,[^99] and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and show no difference in price elasticity. For the other three variables, a slight dispersion of the grouped lines can be observed. But again, there are no pronounced differences that would prompt a more detailed investigation.
+
+[^99]: E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63).
+
+\newpage
+
+
+
+
+
+
+
+
+
+**Delete later**
+
+```{r tabletest, echo=FALSE, results="asis"}
+d <- import("data/flights.csv")
+
+table_destination <- d %>% 
+  group_by(dest_name) %>% 
+  summarise(n = n())
+
+table_destination %>% 
+  kbl(col.names = c("Destination", "Number of connections"), 
+      caption = "Number of flight connections per destination", 
+      longtable = T, 
+      booktabs = T,
+      digits = 2) %>% 
+  kable_styling(latex_options = "repeat_header",
+                font_size = 10) %>%
+  footnote(number = c("This table was created based on the flights dataset.", "Source: R Packages."))
+
+# if too wide: 
+# kable_styling(latex_options = "scale_down")
+```
+
+

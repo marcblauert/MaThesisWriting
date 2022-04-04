@@ -11,21 +11,25 @@ options(width = 70)
 
 # Data and Methods {#methods}
 
-## Data {#data}
+## Data and processing {#data}
 
-**Energy bills panel data**
+In order to transfer the theoretical model set up in Section \@ref(conceptual_model) into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from various sources were combined and processed.
 
-Several data sources were used for the analysis. The data on space heat consumption and energy prices -- which is the backbone of the analysis -- was obtained from a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin[^3]. The sample contains information on an average of 260,000 multi-unit residential buildings in Germany from 2003 to 2019. This means that the smallest buildings observed have two living units; single-family houses with just one unit, on the other hand, are not observed. 
+**Energy billing data**
 
-The sample is structured around annual heating bills at the building-level. While the consumption data in the panel already start in 2003, the energy prices are only observable with a more extensive data delivery at the end of 2008. However, since a relevant number of observations billed in 2008 already have the majority of the billing period in 2007, the panel data used in the analysis ranges from 2007 to 2019. Spatially, the data have a good coverage and spreads over all German federal states.
+The key dataset in this process is a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin. The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided for scientific use.[^31] The sample contains information on multi-unit residential buildings in Germany and ranges from 2003 to 2019. The smallest buildings observed have two living units; single-family houses with just one unit are not observed. The observations in the dataset represent annual heating bills at the building-level. The dataset contains the two main variables for the analysis: space heating demand and energy prices. It also contains additional building-level information on the heating surface, the energy carrier, and a building ID and the billing dates to create a panel data structure. While the demand data is available from the start, energy prices are first observed in 2007. Thus, the time period analysed in this thesis ranges from 2007 to 2019.
 
-[^3]: The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided to DIW Berlin for scientific use. Due to the sensitive nature of the data, it is classified as confidential and was only accessed using the internal servers at DIW Berlin. Making the data available to an external party for own scientific purposes or reproduction of results is therefore not possible.
+[^31]: Due to the sensitivity of the data, it is to be classified as confidential. Access was exclusively via DIW Berlin's internal servers. Due to data protection regulations, it is not possible to make the data available to external parties for the purpose of reproducing the results.
 
-In the sample, the consumption data is given in kilowatt hours (kWh) consumed per building and per annual billing. Importantly, the data set also includes information on the relative share of energy consumed for space heating and the relative share for hot water production. While one group of buildings also uses central heating for hot water production, other buildings do not produce hot water. In order not to distort the overall picture of energy consumed, only the share of space heating that is relevant for all buildings is considered. In order to obtain a comparable metric for the different sized buildings, the total consumption at building level is divided by the total heating area in square meters. This results in the space heating consumption in kWh per square meter as the consumption variable (kWh/sqm.).
+**Space heat demand (kWh/sqm/a):** The demand data in the billing dataset is provided as total energy consumed per building and per annual billing period in kilowatt hours (kWh). To isolate the share of energy consumed for the key purpose of space heating, the share of energy used for hot water production is deduced for those buildings where hot water production is also done via the central heating system. In a second step, in order to obtain a comparable metric for the differently sized buildings in the sample, the total space heating demand at building level is divided by the building heating surface in square meters (sqm). This results in the annual space heat demand per square meter as the demand variable. For a summary of the variables and their data sources see Table \@ref(tab:variables).
 
-The data structure for prices in the data set is similar to that for consumption data. Total annual costs in euros are given on the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. This gives a per-unit cost in cents per kWh (cents/kWh). A breakdown according to fixed and variable cost components is not reported in the data. Prices are provided as nominal prices.
+**Energy prices (Cents/kWh):** The structure of the price data in the dataset is similar to that of energy demand. Total annual costs in Euros are given at the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. To make the cost scale more intuitive, it is transferred from Euros to Cents. This gives a per-unit cost in Cents per kWh. A breakdown according to fixed and variable cost components is not reported in the data. Additionally, energy prices are provided in nominal prices thus in order to obtain real prices, nominal prices are adjusted using the German annual consumer price index (CPI) with 2015 as the index year [@destatis21].
 
-Besides consumption and price data, the panel also features additional building characteristics that must be considered relevant for the analysis. This includes the exact dates of the billing period which allows for assigning a bill to a year. Additionally, the data also features an unique identifier per building. This is important as it allows to identify changes on the building-level over time and to use buildings as a unit for clustering (panel structure). Furthermore, the data set also provides important information on the individual properties of the buildings, including the type of energy carrier used in a billing period, total building living space in square meters, number of living units per building, as well as its spatial location on the postal code level.
+**(Billing) Year:** The billing data contains the exact dates of the billing period of an individual building. While most billing periods mirror the calendar year, some buildings have billing periods occurring during the year. Therefore, the start and end dates of the billing periods are used to make an allocation to billing years. For billing periods during the year, the allocation is based on which of the two calendar years contains the majority of days in the billing period.
+
+**Energy carrier:** There are three main groups of energy sources included in the data: Gas, Oil and District Heating. In order to obtain these three overarching categories, the individual energy source descriptions from the original data set are combined under these categories. In addition, all buildings with other heating sources whose occurrence is insignificant compared to the other three categories (e.g. electricity, coal combustion) are grouped under the category *Others*, which is later excluded from the analysis due to the heterogeneity of the group.
+
+**Heating surface (sqm):** Information on the heating surface of a building is given as square meters at building level. The heating area does not correspond to the total floor area of a building, as it excludes the unheated areas within the buildings (e.g., building corridors or basements).
 
 \begin{table}[]
 \centering
@@ -45,9 +49,9 @@ Besides consumption and price data, the panel also features additional building 
  & Building ID & Categorical & - & Ista \\
  & Year & Categorical & - & Ista \\
 \textit{} &  &  &  &  \\
-\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ (building-level)\end{tabular}}} & Construction year & Continuous & - & Ista (sub-sample) \\
- & Heating system installation year & Continuous & - & Ista (sub-sample) \\
- & Renovation & Categorical & - & Ista (sub-sample) \\
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ (building-level)\end{tabular}}} & Construction year & Continuous & - & Ista (EPC sample) \\
+ & Heating system installation year & Continuous & - & Ista (EPC sample) \\
+ & Renovation & Categorical & - & Ista (EPC sample) \\
 \textit{} &  &  &  &  \\
 \textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ (postal code area)\end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
 \textit{} &  &  &  &  \\
@@ -58,26 +62,17 @@ Besides consumption and price data, the panel also features additional building 
 }
 \end{table}
 
+\ 
 
-### Additional sources of data {#ista_data}
+**Supplementary data sources**
 
-
-123 [^3]
-
-[^3]: The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided to DIW Berlin for scientific use. Due to the sensitive nature of the data, it is classified as confidential and was only accessed using the internal servers at DIW Berlin. Making the data available to an external party for own scientific purposes or reproduction of results is therefore not possible.
-
-**Degree days**
-Degree days data was retrieved from 
+**Degree days:** Degree days were retrieved from an tool provided by the *Institut für Wohnen und Umwelt (IWU)* at the postal code level [@iwu21]. The data from the IWU-tool originates from the 800 weather stations of the German Meteorological Service (DWD) and are provided on a monthly basis. Within the Excel-based tool the settings of a mean room temperature of 20°C and a heating limit of 15°C are chosen to reflect the VDI based definition of degree days [@vdi13]. In addition, an assignment of the postal code area to the three nearest DWD weather stations with weighting according to geographical distance is chosen in order to better take into account possible distortions due to differences in altitude between a single weather station and the centroid of a postal code area. The extracted monthly degree day figures per postal code area are then aggregated to annual periods on a rolling basis and matched with the annual building-level energy billing observations.
 
 
-- As part of the project, a "Gradtagzahlen-Deutschland.xlsx" tool was developed that is based on DWD data from 1991 onwards.
-- The following are determined: Monthly temperature averages, heating days, degree day figures or heating degree days for all postcodes in Germany.
-- Degree day figures are determined as a weighted average from the measurement data of the three geographically closest stations
-- Use of temperature measurements as well as global radiation data for different inclinations
-- Correction for altitude values of the locations
 
-Translated with www.DeepL.com/Translator (free version)
+Spatial and temporal distribution:
 
+In Appendix \@ref(fig:buildings-distribution) the spatial and temporal distribution of observations is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
 
 
 

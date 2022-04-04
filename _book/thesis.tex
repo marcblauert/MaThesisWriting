@@ -76,7 +76,7 @@
 \title{Short-Term Price Elasticities of Heating Demand: A Statistical Analysis of Energy Billing Data in Germany}
 \author{Marc Blauert}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{2022-03-01}
+\date{2022-04-04}
 \division{Albrecht Daniel Thaer-Institute}
 \advisor{Prof.~Dr.~Karsten Neuhoff}
 \institution{Humboldt University of Berlin}
@@ -318,7 +318,7 @@ which can be referred to as the elasticity case and will reappear at a later poi
 
 To make the assumption of constant elasticity more intuitive, it seems useful to return to the subject of interest and show the behavior of demand curves for space heating under varying price elasticities of demand. Generally, the literature distinguishes between three different types of elasticities. If the demand response for a good is greater than the change in its price (\(\epsilon < -1\)), it is called price elastic. If the demand response is exactly equal to the change in price (\(\epsilon = -1\)), it is said to be unit-elastic. Finally, if the demand response is smaller than the price change (\(0 > \epsilon > -1\)) -- and therefore indicating a lower responsiveness -- it is called price inelastic (\protect\hyperlink{ref-pindyck_rubinfeld18}{Pindyck \& Rubinfeld, 2018}).\footnote{It should be noted that in the literature the minus of the demand elasticity \(\epsilon\) is sometimes omitted, as it is assumed that it is generally negative. However, I personally find it more intuitive not to do so -- especially when working empirically where positive estimates are a possibility -- and will therefore continue to use the negative values in this thesis.}
 
-Figure \ref{fig:elasticities-conceptual} visually represents these different price elasticities for the demand of space heating.\footnote{Please note that in the graph, energy price as the independent variable is plotted on the horizontal axis and energy demand (the level of consumption) as the response variable on the vertical axis. I consider this convention -- which is common in most of science -- to be more intuitive than the traditional Marshallian cross diagram in Economics, where the price is plotted on the vertical axis.} To construct the demand curves, a common arbitrary intersection point is chosen for the curves. Specifically, this intersection has a consumption value of 130 kilowatt hours (kWh) per square metre (sqm) and a price of 6 cents per kWh. These values can be considered realistic for an average building in Germany, as we will see later in this thesis when working with the sample data.
+Figure \ref{fig:elasticities-conceptual} visually represents these different price elasticities for the demand of space heating.\footnote{Please note that in the graph, energy price as the independent variable is plotted on the horizontal axis and energy demand as the response variable on the vertical axis. I consider this convention -- which is common in most of science -- to be more intuitive than the traditional Marshallian cross diagram in Economics, where the price is plotted on the vertical axis.} To construct the demand curves, a common arbitrary intersection point is chosen for the curves. Specifically, this intersection has a demand value of 130 kilowatt hours (kWh) per square metre (sqm) and a price of 6 cents per kWh. These values can be considered realistic for an average building in Germany, as we will see later in this thesis when working with the sample data.
 \begin{figure}
 
 {\centering \includegraphics[width=1\linewidth]{figure/elasticities_plot} 
@@ -327,18 +327,18 @@ Figure \ref{fig:elasticities-conceptual} visually represents these different pri
 
 \caption{Demand curves with different price elasticities of demand}\label{fig:elasticities-conceptual}
 \end{figure}
-The graph shows a total of four demand curves. In addition to the unit-elastic curve (\(\epsilon = -1\)), there is also an elastic (\(\epsilon = -1.5\)) and two inelastic (\(\epsilon = -0.25, \epsilon = -0.5\)) demand curves. The special feature of the unit elastic demand curve is that it gives the same result for total expenditure on heating costs for all combinations of price times demand. This is not the case with the other elasticities. First, a look to the right of the intersection (higher prices). In the elastic case (yellow curve), total expenditures fall when the price is higher, which means that households can adjust their demand downwards more. In the opposite, inelastic cases (purple and blue curves), on the other hand, households would reduce their demand less and therefore also have higher total expenditure. Conversely, to the left of the intersection point (lower prices), more elastic demand (yellow curve) leads to a higher level of consumption and thus also to higher total expenditure than in the inelastic cases (purple and blue curves), where consumption changes only gradually.
+The graph shows a total of four demand curves. In addition to the unit-elastic curve (\(\epsilon = -1\)), there is also an elastic (\(\epsilon = -1.5\)) and two inelastic (\(\epsilon = -0.25, \epsilon = -0.5\)) demand curves. The special feature of the unit elastic demand curve is that it gives the same result for total expenditure on heating costs for all combinations of price times demand. This is not the case with the other elasticities. First, a look to the right of the intersection (higher prices). In the elastic case (yellow curve), total expenditures fall when the price is higher, which means that households can adjust their demand downwards more. In the opposite, inelastic cases (purple and blue curves), on the other hand, households would reduce their demand less and therefore also have higher total expenditure. Conversely, to the left of the intersection point (lower prices), more elastic demand (yellow curve) leads to a higher level of energy demand and thus also to higher total expenditure than in the inelastic cases (purple and blue curves), where demand changes only gradually.
 
 If we now take a step back and consider what kind of good the demand for space heating represents and what price elasticity of demand one might expect, it seems reasonable to assume that the elasticity is rather inelastic. There are two indications leading to this assumption. First, heating energy is to be regarded as an essential good that is associated with a minimal level of demand -- especially in the winter months. Essential goods tend to follow a more inelastic demand pattern than other types of goods (\protect\hyperlink{ref-gwartney76}{Gwartney, 1976}). Households can only reduce their demand to a certain extent (right side of the intersection), but on the other hand, they do not have a strong rationality for a large increase in heating demand beyond a comfortable level of warmth (left side of the intersection). The second indication for a rather inelastic demand is that due to the dependency on the existing heating system -- especially for the tenant households investigated in this thesis -- there is not really a viable option to substitute space heating from one source with space heating from another.
 
-Another important dimension for distinguishing different price elasticities of demand is time. More precisely, the time that elapses between a price signal and the measurement of the demand response. Here, the literature distinguishes between short-term and long-term price elasticities (also called short- and long-run elasticities) (\protect\hyperlink{ref-pindyck_rubinfeld18}{Pindyck \& Rubinfeld, 2018}). Short-term elasticities are those that are estimated in temporal proximity to the price change -- in this case, that would be the energy price change within a billing year and the associated change in consumption in the same period (or in the year after the price change). Long-term elasticities, on the other hand, imply that more time has elapsed for consumers to fully adjust to a price change and also to make long-term investment decisions that would change the overall level of consumption (\protect\hyperlink{ref-pindyck_rubinfeld18}{Pindyck \& Rubinfeld, 2018}). For the subject at hand, such decisions may include changes in the isolation of a building or an exchange of the heating system. Thus, long-term demand elasticities tend to be larger than their short-term counterparts (\protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}). Therefore, the two types can be seen as mirroring the two different channels through which a pricing policy can influence consumer behavior (see Section \ref{relevance}).
+Another important dimension for distinguishing different price elasticities of demand is time. More precisely, the time that elapses between a price signal and the measurement of the demand response. Here, the literature distinguishes between short-term and long-term price elasticities (also called short- and long-run elasticities) (\protect\hyperlink{ref-pindyck_rubinfeld18}{Pindyck \& Rubinfeld, 2018}). Short-term elasticities are those that are estimated in temporal proximity to the price change -- in this case, that would be the energy price change within a billing year and the associated change in demand in the same period (or in the year after the price change). Long-term elasticities, on the other hand, imply that more time has elapsed for consumers to fully adjust to a price change and also to make long-term investment decisions that would change the overall level of demand (\protect\hyperlink{ref-pindyck_rubinfeld18}{Pindyck \& Rubinfeld, 2018}). For the subject at hand, such decisions may include changes in the isolation of a building or an exchange of the heating system. Thus, long-term demand elasticities tend to be larger than their short-term counterparts (\protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}). Therefore, the two types can be seen as mirroring the two different channels through which a pricing policy can influence consumer behavior (see Section \ref{relevance}).
 
 In the literature, long-term price elasticities are usually estimated using dynamic models, where the elasticity estimated between two periods is only a fraction of the long-term elasticity (e.g., \protect\hyperlink{ref-alberini_etal11}{Alberini et al., 2011}). However, I have chosen follow the example of \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener} (\protect\hyperlink{ref-schmitz_madlener20}{2020}) and only estimate short-term elasticities.This is because I believe that the long-term approaches do not apply well to the given context in which I am analyzing a subset of the total residential building segment consisting of rental buildings where households have relatively few opportunities to make long-term adjustments that would significantly affect the energy efficiency or carbon intensity of the energy of their apartments.
 
 \hypertarget{review}{%
 \section{Literature review}\label{review}}
 
-The study of the price elasticity of energy demand is a broad field of academic research which also has a long history dating back to the mid-twentieth century (e.g. \protect\hyperlink{ref-cutler41}{Cutler, 1941}; \protect\hyperlink{ref-houthakker51}{Houthakker, 1951}). In the more recent past, as well numerous studies have been published. These studies differ considerably in terms of their focus and design. Several conceptual factors can systematically influence the elasticity estimates. The most important of these factors is the type of energy application analysed: The price responsiveness of household space heating demand has only limited informative value for the price responsiveness of electricity consumption or transport fuel demand. The same is true for varying consumer groups: Households are likely to react differently to energy price changes than industrial consumers. Beyond, other conceptual factors which may as well affect estimates are the statistical methods used (time-series analysis, panel analysis, cross-sectional analysis), varying sources of data (national accounts, aggregate sector-level data, micro-data), varying spatial and temporal focus, measurement heterogeneity, and price trends (\protect\hyperlink{ref-csereklyei20}{Csereklyei, 2020}; \protect\hyperlink{ref-miller_alberini16}{Miller \& Alberini, 2016}). While many of the earlier studies either had only a national granularity or, when using micro data, focused predominantly on the US or European countries, a considerable number of studies have also been published recently that cover emerging countries (especially China) as well as other countries.
+The study of the price elasticity of energy demand is a broad field of academic research which also has a long history dating back to the mid-twentieth century (e.g. \protect\hyperlink{ref-cutler41}{Cutler, 1941}; \protect\hyperlink{ref-houthakker51}{Houthakker, 1951}). In the more recent past, as well numerous studies have been published. These studies differ considerably in terms of their focus and design. Several conceptual factors can systematically influence the elasticity estimates. The most important of these factors is the type of energy application analysed: The price responsiveness of household space heating demand has only limited informative value for the price responsiveness of electricity demand or transport fuel demand. The same is true for varying consumer groups: Households are likely to react differently to energy price changes than industrial consumers. Beyond, other conceptual factors which may as well affect estimates are the statistical methods used (time-series analysis, panel analysis, cross-sectional analysis), varying sources of data (national accounts, aggregate sector-level data, micro-data), varying spatial and temporal focus, measurement heterogeneity, and price trends (\protect\hyperlink{ref-csereklyei20}{Csereklyei, 2020}; \protect\hyperlink{ref-miller_alberini16}{Miller \& Alberini, 2016}). While many of the earlier studies either had only a national granularity or, when using micro data, focused predominantly on the US or European countries, a considerable number of studies have also been published recently that cover emerging countries (especially China) as well as other countries.
 
 \textbf{Meta-estimates as first indication of elasticity magnitudes}
 
@@ -346,7 +346,7 @@ To organize this comprehensive body of literature with a wide range of energy ap
 
 In their analysis, \protect\hyperlink{ref-labandeira_etal17}{Labandeira et al.} (\protect\hyperlink{ref-labandeira_etal17}{2017}) include a total of 428 papers, all published between 1990 and 2016. For the demand of natural gas, they find an average short-term (long-term) price elasticity of -0.18 (-0.57) based on 230 individual estimates. And for heating oil they find a comparable average short-term (long-term) elasticity of -0.19 (-0.54), which, however, is based on only 44 individual estimates (\protect\hyperlink{ref-labandeira_etal17}{Labandeira et al., 2017}). An average elasticity for space heating -- which is generally less focused on in the literature due to its relatively low prevalence -- is not given.
 
-The above average estimates of the price elasticity of demand for gas and oil, however, come with an important caveat. While they are broken down by energy carrier, they are drawn from a wide range of consumer groups. This means that the underlying studies include not only those that examine demand response patterns for residential consumption, but also others that examine these patterns for the commercial building stock and/or the industrial sector. \protect\hyperlink{ref-labandeira_etal17}{Labandeira et al.} (\protect\hyperlink{ref-labandeira_etal17}{2017}) also provide average price elasticities stratified by consumer groups, but these are on the other hand not clustered by energy source. When differentiated along the dimension of consumer groups, they report that the average estimates are slightly higher in the residential household sector (short-term: -0.22; long-term: -0.62) than in the industrial sector (short-term: -0.17; long-term: -0.51), which seems reasonable given that households likely have more ability to change their consumption levels than the industrial sector with more fixed production patterns and the ability to forward costs. Overall, however, the average elasticity estimates are all in a similar size range and together convey the message that demand is strongly inelastic in the short-term, confirming the theoretical arguments that energy is an essential good in many applications and also has limited substitutability (see section \ref{theory}).
+The above average estimates of the price elasticity of demand for gas and oil, however, come with an important caveat. While they are broken down by energy carrier, they are drawn from a wide range of consumer groups. This means that the underlying studies include not only those that examine demand response patterns for residential consumption, but also others that examine these patterns for the commercial building stock and/or the industrial sector. \protect\hyperlink{ref-labandeira_etal17}{Labandeira et al.} (\protect\hyperlink{ref-labandeira_etal17}{2017}) also provide average price elasticities stratified by consumer groups, but these are on the other hand not clustered by energy source. When differentiated along the dimension of consumer groups, they report that the average estimates are slightly higher in the residential household sector (short-term: -0.22; long-term: -0.62) than in the industrial sector (short-term: -0.17; long-term: -0.51), which seems reasonable given that households likely have more ability to change their level of demand than the industrial sector with more fixed production patterns and the ability to forward costs. Overall, however, the average elasticity estimates are all in a similar size range and together convey the message that demand is strongly inelastic in the short-term, confirming the theoretical arguments that energy is an essential good in many applications and also has limited substitutability (see section \ref{theory}).
 
 The meta-estimates are useful in providing a high-level overview. However, as already mentioned, they include estimates from a wide range of energy applications that not necessarily reflect the demand response for the specific application of space heating in residential buildings. Furthermore, they are average estimates which may have the effect of masking discrepancies and variations between studies. Therefore, the following section presents individual studies that explicitly focus on the space heating demand of the residential sector.
 
@@ -383,19 +383,26 @@ Metcalf and Hassett (1999) & \begin{tabular}[c]{@{}l@{}}US, household-level, pan
 \end{table}
 In a more recent study, also based on the SOEP social survey data but covering a more comprehensive time period between 1996 and 2014, \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener} (\protect\hyperlink{ref-schmitz_madlener20}{2020}) find a price elasticity of heating and hot water demand of -0.31 to -0.43, depending on model specifications. They do not differentiate the elasticities by energy carrier. The price elasticities are derived from household expenditure elasticities, as demand is not directly observed. In contrast to \protect\hyperlink{ref-rehdanz07}{Rehdanz} (\protect\hyperlink{ref-rehdanz07}{2007}), the study uses a panel structure where observations are clustered by household and year using fixed effects. This produces much lower price elasticity estimates, which are more consistent with the meta-estimates presented in the previous section. Moreover, the study discovers that price elasticity is heterogeneous across different socio-economic groups. Given the household-level information at their disposal, they find that higher-income households are less sensitive to energy price changes than lower-income households. Likewise, homeowners show less sensitivity than renters (\protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}).
 
-Also for Germany, \protect\hyperlink{ref-schulte_heindl17}{Schulte \& Heindl} (\protect\hyperlink{ref-schulte_heindl17}{2017}) investigate the price and expenditure elasticities of private energy demand in Germany between 1993 and 2008. For their analysis, they use survey data from the \emph{Einkommens- und Verbrauchsstichprobe (EVS)} and analyse them with a demand system approach (in particular, they estimate a quadratic expenditure system). For space heating, they find an own-price elasticity of -0.50 across all households. They further observe that the price elasticity changes with the level of total household expenditure, with households in higher expenditure strata reacting more strongly to price changes (\protect\hyperlink{ref-schulte_heindl17}{Schulte \& Heindl, 2017}). Put differently, this means that following an increase in price level low income households tend to decrease energy consumption to a lesser extent as compared to households with a higher income. Thus, in relation to the income dimension the results must be understood as contradictory to those of \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener} (\protect\hyperlink{ref-schmitz_madlener20}{2020}).
+Also for Germany, \protect\hyperlink{ref-schulte_heindl17}{Schulte \& Heindl} (\protect\hyperlink{ref-schulte_heindl17}{2017}) investigate the price and expenditure elasticities of private energy demand in Germany between 1993 and 2008. For their analysis, they use survey data from the \emph{Einkommens- und Verbrauchsstichprobe (EVS)} and analyse them with a demand system approach (in particular, they estimate a quadratic expenditure system). For space heating, they find an own-price elasticity of -0.50 across all households. They further observe that the price elasticity changes with the level of total household expenditure, with households in higher expenditure strata reacting more strongly to price changes (\protect\hyperlink{ref-schulte_heindl17}{Schulte \& Heindl, 2017}). Put differently, this means that following an increase in price level low income households tend to lower energy demand to a lesser extent as compared to households with a higher income. Thus, in relation to the income dimension the results must be understood as contradictory to those of \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener} (\protect\hyperlink{ref-schmitz_madlener20}{2020}).
 
 All three studies on Germany rely on data from household-level social surveys. Therefore, the studies take a strong perspective on the impact of household income on energy price sensitivity. As the data for this study is aggregated at the building-level and not at the household-level, however, the focus of this thesis is to some extent different. The focus is rather on the overall price response based on actual price and consumption values, which are not available in the social surveys, and on the response in interaction with other characteristics and changes at the building level.
 
 Besides the studies focusing on Germany, Table \ref{tab:estimates-literature} also reports the evidence from five selected international studies focusing on the price elasticities of space heating demand. \protect\hyperlink{ref-alberini_etal11}{Alberini et al.} (\protect\hyperlink{ref-alberini_etal11}{2011}) examine household demand for gas (and electricity) in single-family homes and duplexes using household-level social survey data in 50 metropolitan areas in the United States (US) over the period 1995-2007. As a modelling approach, they use static and dynamic panel models. For the static models reflecting the approach taken in this thesis, they find an own price elasticity of private gas demand between -0.57 and -0.69, depending on the model specification. These estimates are in their magnitude comparable to the results of an earlier study by \protect\hyperlink{ref-metcalf_hassett99}{Metcalf \& Hassett} (\protect\hyperlink{ref-metcalf_hassett99}{1999}) who use the 1984, 1987 and 1990 waves of the US Residential Energy Consumption Survey (RECS) to examine homeowners' investments in energy efficiency measures and as part of their study find price elasticities of residential gas demand to range between −0.48 and −0.71. In contrast to these estimates, a recent study by \protect\hyperlink{ref-auffhammer_rubin18}{Auffhammer \& Rubin} (\protect\hyperlink{ref-auffhammer_rubin18}{2018}) finds that the short-term price elasticity of residential gas demand is even more inelastic, ranging from -0.17 to -0.23, not for the whole US but for California in particular. The study by \protect\hyperlink{ref-auffhammer_rubin18}{Auffhammer \& Rubin} (\protect\hyperlink{ref-auffhammer_rubin18}{2018}) is especially interesting for this thesis because it is the only one that also uses energy billing data. The data analysed covers the period 2003-2014 and consists of monthly energy bills at the household-level. So although the type of data source used to derive the estimates is the most similar to the approach taken in this thesis, there are still two relevant differences: firstly, gas tariffs in the US nay change monthly rather than annually, as is the case in the German dataset used for this analysis, and secondly, the data in \protect\hyperlink{ref-auffhammer_rubin18}{Auffhammer \& Rubin} (\protect\hyperlink{ref-auffhammer_rubin18}{2018}) relates to individual households rather than the aggregate building-level.
 
-In addition to these three studies focusing on the US, table \ref{tab:estimates-literature} also contains the results of a Danish study by \protect\hyperlink{ref-leth-petersen_togeby01}{Leth-Petersen \& Togeby} (\protect\hyperlink{ref-leth-petersen_togeby01}{2001}). They use a panel data approach and analyse data from the period 1984-1995. Interestingly, they also use the building-level as the level of analysis. More specifically, they study apartment buildings with a base area of more than 1,500 square meters (sqm) in Denmark. As an empirical strategy, they rely on fixed effects models. As a result, they find very inelastic demand responses for space heating. For oil, the short-term price elasticity is found to be -0.08 and for district heating as low as -0.02, meaning almost no demand response to a changing price at all. Another study by \protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz} (\protect\hyperlink{ref-meier_rehdanz10}{2010}) looks at the United Kingdom (UK) and analyses a household-level social survey panel for the 15-year period 1991-2005. For their model they use a log-linear approach. They find that the short-term price elasticity of demand for gas ranges from -0.34 to -0.56, depending on the specification. For residential oil consumption, the results are in the same order of magnitude, but narrower, between -0.40 and -0.49. In addition, they find that the type of occupant is a relevant dimension for a different price responsiveness. While renters adjusted their consumption more, homeowners showed a more inelastic response.
+In addition to these three studies focusing on the US, Table \ref{tab:estimates-literature} also contains the results of a Danish study by \protect\hyperlink{ref-leth-petersen_togeby01}{Leth-Petersen \& Togeby} (\protect\hyperlink{ref-leth-petersen_togeby01}{2001}). They use a panel data approach and analyse data from the period 1984-1995. Interestingly, they also use the building-level as the level of analysis. More specifically, they study apartment buildings with a base area of more than 1,500 square meters (sqm) in Denmark. As an empirical strategy, they rely on fixed effects models. As a result, they find very inelastic demand responses for space heating. For oil, the short-term price elasticity is found to be -0.08 and for district heating as low as -0.02, meaning almost no demand response to a changing price at all. Another study by \protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz} (\protect\hyperlink{ref-meier_rehdanz10}{2010}) looks at the United Kingdom (UK) and analyses a household-level social survey panel for the 15-year period 1991-2005. For their model they use a log-linear approach. They find that the short-term price elasticity of demand for gas ranges from -0.34 to -0.56, depending on the specification. For residential oil demand, the results are in the same order of magnitude, but narrower, between -0.40 and -0.49. In addition, they find that the type of occupant is a relevant dimension for a different price responsiveness. While renters adjusted their demand level more, homeowners showed a more inelastic response.
 
 \textbf{Synthesis of estimates from the literature}
 
-If one aims to summarize the literature on the price elasticity of residential space heating demand presented previously, commonalities and differences emerge. The most important commonality is that the price elasticity of energy demand in general and household space heating demand in particular is inelastic in almost all empirical estimations. However, when looking at the individual studies, differences in the magnitude of the estimates appear. While the meta-results by \protect\hyperlink{ref-labandeira_etal17}{Labandeira et al.} (\protect\hyperlink{ref-labandeira_etal17}{2017}) as well as a number of individual studies indicate a strongly inelastic demand response (e.g. \protect\hyperlink{ref-auffhammer_rubin18}{Auffhammer \& Rubin, 2018}; \protect\hyperlink{ref-leth-petersen_togeby01}{Leth-Petersen \& Togeby, 2001}), other individual studies still indicate an inelastic but stronger demand response (e.g., \protect\hyperlink{ref-alberini_etal11}{Alberini et al., 2011}; \protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz, 2010}; \protect\hyperlink{ref-metcalf_hassett99}{Metcalf \& Hassett, 1999}; \protect\hyperlink{ref-rehdanz07}{Rehdanz, 2007}; \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}; \protect\hyperlink{ref-schulte_heindl17}{Schulte \& Heindl, 2017}). These differences in magnitude may be partly due to the different local and temporal conditions of the studies or due to differences in the data and methodology. However, other aspects such as climatic conditions, the building stock or behavioral aspects related to a specific population may also be important. Therefore, it should be noted that all three studies that focused on Germany found somewhat more sensitive price elasticities ranging from -0.3 to -0.6.\footnote{Note that the extreme results of \protect\hyperlink{ref-rehdanz07}{Rehdanz} (\protect\hyperlink{ref-rehdanz07}{2007}) for oil as an energy source, which come only from a cross-sectional regression analysis, are omitted here. Since only two isolated periods are considered, these results must be considered more prone to extreme results than is the case with a longer panel.}
+When summarizing the literature on the price elasticity of residential space heating demand presented previously, commonalities and differences emerge. The most important commonality is that the price elasticity of energy demand in general and household space heating demand in particular is inelastic in almost all empirical estimations. But at the level of individual studies, differences in the magnitude of the estimates persist. While the meta-results by \protect\hyperlink{ref-labandeira_etal17}{Labandeira et al.} (\protect\hyperlink{ref-labandeira_etal17}{2017}) as well as a number of individual studies indicate a strongly inelastic demand response (e.g. \protect\hyperlink{ref-auffhammer_rubin18}{Auffhammer \& Rubin, 2018}; \protect\hyperlink{ref-leth-petersen_togeby01}{Leth-Petersen \& Togeby, 2001}), other individual studies still indicate an inelastic but stronger demand response (e.g., \protect\hyperlink{ref-alberini_etal11}{Alberini et al., 2011}; \protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz, 2010}; \protect\hyperlink{ref-metcalf_hassett99}{Metcalf \& Hassett, 1999}; \protect\hyperlink{ref-rehdanz07}{Rehdanz, 2007}; \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}; \protect\hyperlink{ref-schulte_heindl17}{Schulte \& Heindl, 2017}). These differences in magnitude may be partly due to the different local and temporal conditions of the studies or due to differences in the data and methodology. Such aspects may also include behavioral aspects related to a specific population. Figure \ref{fig:literature-estimates-plot} graphically represents the short-term elasticity estimates from Table \ref{tab:estimates-literature}. As a synthesis, all studies that focused on Germany found somewhat more sensitive price elasticities ranging from -0.3 to -0.6.\footnote{Note that the extreme results of \protect\hyperlink{ref-rehdanz07}{Rehdanz} (\protect\hyperlink{ref-rehdanz07}{2007}) for the carrier oil, which come only from a cross-sectional regression analysis, are omitted here. Since only two isolated periods are considered, these results must be considered more prone to extreme results than is the case with a longer panel.} And also most estimates from other countries can be allocated to that range of price sensitivity.
+\begin{figure}
 
-Another common feature of all the individual studies presented is that they do not focus on one-off extreme price shocks as an identification strategy, but rather on gradual price developments. They are mostly built around a panel data set covering a longer period of time. The period studied in this paper is also a longer period with rather gradual price developments. This should therefore be seen as an important aspect that will facilitate the comparability of the results of this study with the literature estimates presented.
+{\centering \includegraphics[width=1\linewidth]{figure/plot_literature_estimates} 
+
+}
+
+\caption{Price elasticity of space heat demand estimates from individual studies}\label{fig:literature-estimates-plot}
+\end{figure}
+Importantly, another common feature that links all the individual studies presented is that they do not focus on one-off extreme price shocks as an identification strategy, but on gradual price developments. They are mostly built around a panel data set covering a longer period of time. The period examined in this study also covers more than a decade with rather gradual price developments. This should therefore be considered an important condition that facilitates the comparability of the results of this study with the estimates presented in the literature.
 
 \hypertarget{conceptual_model}{%
 \section{Conceptual model development}\label{conceptual_model}}
@@ -404,7 +411,7 @@ In the previous two subsections, the theory around price elasticities of demand 
 
 \textbf{Energy price affecting space heat demand}
 
-The starting point for the conceptual model is the relationship between space heating demand and energy price. Here, the basic assumption from the theory of price and demand is that the demand for space heating is influenced by the energy price. When the price goes up, demand moves down along the demand curve and vice versa. Transferred to a statistical terminology this implies that space heat demand is the response variable of a model and energy price the main explanatory variable. To support the development of the conceptual model visually, Figure \ref{fig:dag} depicts it as a directed acyclic graph (DAG).\footnote{Please note that the arrows between heat demand and the variables used to explain demand are of relevance here. Other relationships between the explanatory variables are hinted at for the sake of completeness, but are not examined in the course of the thesis.} The heating demand, whose variance we want to explain, is shown in the center (yellow bubble). Since the effect of energy price (purple bubble) on space heating demand is to be regarded as the price elasticity, it is marked with a red arrow.
+The starting point for the conceptual model is the relationship between space heating demand and energy price. Here, the basic assumption from the theory of price and demand is that the demand for space heating is influenced by the energy price. When the price goes up, demand moves down along the demand curve and vice versa (see Figure \ref{fig:elasticities-conceptual}). Transferred to a statistical terminology this implies that space heat demand is the response variable of a model and energy price the main explanatory variable. To support the development of the conceptual model visually, Figure \ref{fig:dag} depicts it as a directed acyclic graph (DAG).\footnote{Please note that the relationships between space heat demand and the variables used to explain it are of relevance here. Other relationships among explanatory variables are hinted at for the sake of completeness, but are not explicitly examined in the course of the thesis.} In the center, the space heat demand is shown, the variance of which is to be explained (yellow bubble). Since the effect of energy price (purple bubble) on space heating demand is to be regarded as the price elasticity, it is marked with a red arrow.
 \begin{figure}
 
 {\centering \includegraphics[width=1\linewidth]{figure/conceptual_dag_red} 
@@ -413,39 +420,51 @@ The starting point for the conceptual model is the relationship between space he
 
 \caption[Conceptual model as directed acyclic graph]{Conceptual model as directed acyclic graph}\label{fig:dag}
 \end{figure}
-In addition to the energy price, there are a whole range of other variables that may influence the level of space heating demand. These are shown in the DAG as additional explanatory variables (blue bubbles) and as grouping variables (green bubbles). In order to establish the additional variables relevant for the model, I used a structured procedure. First, I used the recent work of \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener} (\protect\hyperlink{ref-schmitz_madlener20}{2020}) as a basis to create a list of potential variables. Secondly, I used the additional studies presented in section \ref{review} to cross-validate their relevance and to screen for further variables. This structured approach leads to the variables presented in the following.
+In addition to the energy price, there are a whole range of other variables that may influence the level of space heating demand. These are shown in the DAG as additional explanatory variables (blue bubbles) and as grouping variables (green bubbles). In order to establish the additional variables relevant for the model, I used a structured procedure. First, I used the recent work of \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener} (\protect\hyperlink{ref-schmitz_madlener20}{2020}) as a basis to create a list of potential variables. Secondly, I used the additional studies presented in Section \ref{review} to cross-validate their relevance and to screen for further variables. This structured approach leads to the variables presented in the following.
 
 \textbf{Climatic condition}
 
-Firstly, the consideration of the local climatic condition in a billing period is of importance, as it can have a strong influence on the amount of heating demand (\protect\hyperlink{ref-hesse20}{\textbf{hesse20?}}). In the previous literature using micro-level panel data, climatic conditions are always considered are usually approximated by the outdoor temperature, measured in degree days. In line with (\protect\hyperlink{ref-vdi13}{\textbf{vdi13?}}), degree days in this study are defined as the temperature difference between a mean room temperature of 20°C and the daily mean of the outdoor temperature, provided it is below the heating limit of 15°C.\footnote{While this paper uses heating area as a continuous variable, other studies with a less detailed database often use building size categories, which can be seen as a similar approach.} The intuition is that with lower mean outdoor temperatures, transmission and heat losses increase and thus the demand for space heating increases to compensate for the heat losses. Lower mean outdoor temperatures are associated with more degree days in a period. Thus, one would expect a higher space heating demand when the degree days in an annual heating cycle are higher and vice versa. Varying degree days may occur on a temporal (one year is warmer/cooler than another) but also on a spatial scale (places at higher altitudes or in the interior of the continent have structurally lower temperatures).
+Firstly, the consideration of the local climatic condition in a billing period is of importance, as it can have a strong influence on the heating demand (\protect\hyperlink{ref-hesse20}{Heße, 2020}). In the individual studies presented in Section \ref{review} climatic conditions are always considered. Usually, climatic conditions are approximated by the outdoor temperature, measured in (heating) degree days. In line with \protect\hyperlink{ref-vdi13}{VDI} (\protect\hyperlink{ref-vdi13}{2013}), degree days in this study are defined as the temperature difference between a mean room temperature of 20°C and the daily mean of the outdoor temperature, provided it is below the heating limit of 15°C.\footnote{It should be noted that the definition of degree days used here differs from the internationally frequently used definition of heating degree days (HDD), which is calculated by difference between the average outdoor temperature below a heating threshold over time -- regardless of an additionally defined room temperature. In this thesis, the VDI based definition of degree days was chosen, as this is the common methodology in Germany, which is also used, for example, to create a comparable scoring for building energy performance certificates (see \protect\hyperlink{ref-halbig_namyslo14}{Halbig \& Namyslo} (\protect\hyperlink{ref-halbig_namyslo14}{2014})).} The intuition is that with lower mean outdoor temperatures, transmission heat losses increase and thus the demand for space heating increases to compensate for those heat losses. Lower mean outdoor temperatures are associated with a higher aggregated number of degree days in a period. Thus, one would expect a higher space heating demand when the degree days in an annual heating cycle are higher and vice versa. Varying degree days may occur on a temporal (one year is warmer/cooler than another) but also on a spatial scale (places at higher altitudes or in the interior of the continent have structurally lower temperatures).
 
-\textbf{Building characteristics}
+\textbf{Building-level characteristics}
 
-In addition, various building characteristics are included in the model as additional explanatory variables. The heating area of a building can influence the heat demand. As the ratio of the building's external surface area to the heating surface area decreases in larger buildings, heat loss decreases and accordingly a relatively lower space heating demand can be expected. The intuition is therefore that in buildings with a large heating surface, the space heating demand should be lower.\footnote{While this paper uses heating area as a continuous variable, other studies with a less detailed database often use building size categories, which can be seen as a similar approach.} The type of energy carrier is another building characteristic, which was used in almost all previous studies (see Section \ref{review}). The intuition here is that different types of carriers (gas, oil, district heating) are associated with different heating technologies, which can lead to structural differences in energy use and efficiency. This effect could be amplified by the fact that certain heating technologies were introduced in certain periods in the past, which means that, for example, the average oil heating system may be older and therefore less energy efficient than the average gas heating system.
+In addition, various building characteristics are included in the model as additional explanatory variables. Firstly, the size of a building can influence the heat demand, as in larger buildings the ratio between the external surface of the building and the heating surface decreases and thus the relative share of transmission heat losses per unit of heating surface is lower correspondingly. Therefore, it can be assumed that in buildings with a larger heating surface -- which approximates the size of a building -- the space heating demand per unit would be lower, if all other factors are to be the same.\footnote{While this paper uses heating area as a continuous variable, other studies with a less detailed database often use building size categories, which can be seen as a similar approach.}
 
-Additionally, also the three building-level characteristics construction year of the building, heating system installation year, and comprehensive renovation are included. Those variables are only available for a subset of the overall energy billing sample (see Section \ref{data}). Thus, they are considered but not in all models. The intuition for the building construction year is that older buildings were subject to either no or less stringent new construction energy efficiency standards which most importantly include the \emph{Wärmeschutzverordnung (WSVO)} which was introduced in 1977 and later replaced by the waves of the \emph{Energieeinsparverordnung (EnEV)}. Thus, the intuition is that older buildings have a higher space heat consumption. Similarly, older heating systems are also less energy efficient and therefore lead to a higher space heat consumption. Furthermore, the information is also important to observe if a heating system has been exchanged in the period observed. Lastly, the comprehensive renovation variable is used to observe if a major renovation on multiple components of a building have taken place during the observed period. The intuition here is that with a more comprehensive renovation the energy efficiency of a building is likely to improve and therefore the hear demand would decline.
+Energy carrier used for the heating system is another building-level characteristic, which was used in almost all previous studies (see Section \ref{review}). The intuition behind this is that gas, oil, and district heating are different types of energy carriers associated with different heating technologies, which can lead to structural differences in energy use and efficiency. This effect could be amplified by the fact that certain heating technologies were introduced in certain periods in the past, which means that, for example, the average oil heating system may be older and therefore less energy efficient than the average gas heating system due to technological advancement.
+
+Furthermore, there are three additional building-level characteristics which are included in the model but are different from the previous two variables as they are only available for a subset of the overall sample (see detailed account in Section \ref{data}). Namely, those variables are building construction year, heating system installation year, and comprehensive renovation. Due to their limited availability, these variables will be considered in some but not in all model specifications later in this thesis.
+
+The assumption behind the relevance of building construction year is that older buildings were either subject to no or a less stringent energy efficiency standard for newly constructed buildings. The \emph{Wärmeschutzverordnung (WSVO)} introduced in 1977 was the first of its kind in Germany and required that the energy demand was to be below a threshold of about 250 kWh per square meter (\protect\hyperlink{ref-michelsen_rosenschon12}{\textbf{michelsen\_rosenschon12?}}). Since then, this threshold has been gradually lowered to around 60-70 kWh per square meter over the course of the various waves of the \emph{Energieeinsparverordnung (EnEV)} and most recently the \emph{Gebäudeenergiegesetz (GEG)} introduced in 2020 (\protect\hyperlink{ref-nei22}{\textbf{nei22?}}). Thus, the basic intuition is that older buildings have an on average higher space heat demand than newer buildings. Similarly, to the building construction year, older heating systems are also less energy efficient and therefore lead to an on average higher space heat consumption. Thus, the intuition here is the same.
+
+Lastly, the \emph{comprehensive renovation} variable is integrated to observe if a major renovation on multiple parts of a building have taken place during the observed period (roof, insulation of top floor ceiling, outer wall insulation, windows, insulation of basement ceiling, heating system). The intuition here is that with a more comprehensive renovation the energy efficiency of a building is likely to improve and therefore the heat demand would decline in the periods after a comprehensive renovation of a building has taken place.
 
 \textbf{District socio-economic variables}
 
-Besides these building-related characteristics, additional socio-economic variables can also influence heating demand. In the literature that draws its data from social surveys, household-level socio-economic information such as income, number of inhabitants, age, education level or employment status is usually part of the core survey data. Since the present study relies on building-level billing data, this approach is not feasible because the data is not available and because the level of analysis is the building and not the household level. Nevertheless, socio-economic variables could also play a role at this aggregated level as well. Therefore, three socio-economic variables at the district-level are included in the model to capture potential overlaying effects. Those are, the average regional household income where in line with most of the literature the intuition would be that with a lower income the heat demand would be lower. However, it may also be that income on a regional level rather serves as an approximation of the overall affluence of the district and therefore effects such as less economic means available for investments into building efficiency dominate the effect, so that a lower regional income is rather associated with higher space heat demand. Additionally, the regional retirement share is considered as a variable. Here, the intuition is that with high retirement rates in a region more people are at home most of their time which in turn might lead to higher space heat demand. Lastly, the population density of a district is considered to observe if there may be structural differences in heating demand between metropolitan areas on the one hand and rural areas on the other.
+Besides building-related characteristics, additional socio-economic variables may also affect the level of heating demand. In the literature that draws its data from social surveys, household-level socio-economic information such as income, number of inhabitants, age, education level or employment status is usually part of the core survey data. Since this study relies on building-level energy billing data, integrating this kind of socio-economic information is not feasible because of two reasons. First, the data is not available from the billing data and, secondly, because the level of analysis in this thesis is the aggregate building and not the individual household level. Nevertheless, socio-economic variables may also play a role at this aggregated level as well.
+
+Therefore, three socio-economic variables at the district-level are included in the model which are inspired by the variables used in the household level studies and may capture overlaying effects. The first of the three variables is average household income at the district level. In line with most of the literature, one would expect lower income to lead to lower heating demand as households have fewer funds at their disposal. However, it could also be that income at the district level is more of an approximation of the general affluence of a district and therefore effects such as lower economic resources available for investment in building efficiency outweigh a household budget effect of demand and possibly lead to the opposite outcome. Secondly, the district retirement share is considered as an additional variable. Here, the intuition is that with high retirement rates in a region more people are at home most of their time which in turn might lead to higher space heat demand. Lastly, the population density of a district is considered to observe if there may be structural differences in heating demand between metropolitan areas on the one hand and rural areas on the other.
 
 \hypertarget{methods}{%
 \chapter{Data and Methods}\label{methods}}
 
 \hypertarget{data}{%
-\section{Data}\label{data}}
+\section{Data and processing}\label{data}}
 
-\textbf{Energy bills panel data}
+In order to transfer the theoretical model set up in Section @ref(conceptual\_model) into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from various sources were combined and processed.
 
-Several data sources were used for the analysis. The data on space heat consumption and energy prices -- which is the backbone of the analysis -- was obtained from a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin\footnote{The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided to DIW Berlin for scientific use. Due to the sensitive nature of the data, it is classified as confidential and was only accessed using the internal servers at DIW Berlin. Making the data available to an external party for own scientific purposes or reproduction of results is therefore not possible.}. The sample contains information on an average of 260,000 multi-unit residential buildings in Germany from 2003 to 2019. This means that the smallest buildings observed have two living units; single-family houses with just one unit, on the other hand, are not observed.
+\textbf{Energy billing data}
 
-The sample is structured around annual heating bills at the building-level. While the consumption data in the panel already start in 2003, the energy prices are only observable with a more extensive data delivery at the end of 2008. However, since a relevant number of observations billed in 2008 already have the majority of the billing period in 2007, the panel data used in the analysis ranges from 2007 to 2019. Spatially, the data have a good coverage and spreads over all German federal states.
+The key dataset in this process is a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin. The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided for scientific use.\footnote{Due to the sensitivity of the data, it is to be classified as confidential. Access was exclusively via DIW Berlin's internal servers. Due to data protection regulations, it is not possible to make the data available to external parties for the purpose of reproducing the results.} The sample contains information on multi-unit residential buildings in Germany and ranges from 2003 to 2019. The smallest buildings observed have two living units; single-family houses with just one unit are not observed. The observations in the dataset represent annual heating bills at the building-level. The dataset contains the two main variables for the analysis: space heating demand and energy prices. It also contains additional building-level information on the heating surface, the energy carrier, and a building ID and the billing dates to create a panel data structure. While the demand data is available from the start, energy prices are first observed in 2007. Thus, the time period analysed in this thesis ranges from 2007 to 2019.
 
-In the sample, the consumption data is given in kilowatt hours (kWh) consumed per building and per annual billing. Importantly, the data set also includes information on the relative share of energy consumed for space heating and the relative share for hot water production. While one group of buildings also uses central heating for hot water production, other buildings do not produce hot water. In order not to distort the overall picture of energy consumed, only the share of space heating that is relevant for all buildings is considered. In order to obtain a comparable metric for the different sized buildings, the total consumption at building level is divided by the total heating area in square meters. This results in the space heating consumption in kWh per square meter as the consumption variable (kWh/sqm.).
+\textbf{Space heat demand (kWh/sqm/a):} The demand data in the billing dataset is provided as total energy consumed per building and per annual billing period in kilowatt hours (kWh). To isolate the share of energy consumed for the key purpose of space heating, the share of energy used for hot water production is deduced for those buildings where hot water production is also done via the central heating system. In a second step, in order to obtain a comparable metric for the differently sized buildings in the sample, the total space heating demand at building level is divided by the building heating surface in square meters (sqm). This results in the annual space heat demand per square meter as the demand variable. For a summary of the variables and their data sources see Table \ref{tab:variables}.
 
-The data structure for prices in the data set is similar to that for consumption data. Total annual costs in euros are given on the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. This gives a per-unit cost in cents per kWh (cents/kWh). A breakdown according to fixed and variable cost components is not reported in the data. Prices are provided as nominal prices.
+\textbf{Energy prices (Cents/kWh):} The structure of the price data in the dataset is similar to that of energy demand. Total annual costs in Euros are given at the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. To make the cost scale more intuitive, it is transferred from Euros to Cents. This gives a per-unit cost in Cents per kWh. A breakdown according to fixed and variable cost components is not reported in the data. Additionally, energy prices are provided in nominal prices thus in order to obtain real prices, nominal prices are adjusted using the German annual consumer price index (CPI) with 2015 as the index year (\protect\hyperlink{ref-destatis21}{DESTATIS, 2021}).
 
-Besides consumption and price data, the panel also features additional building characteristics that must be considered relevant for the analysis. This includes the exact dates of the billing period which allows for assigning a bill to a year. Additionally, the data also features an unique identifier per building. This is important as it allows to identify changes on the building-level over time and to use buildings as a unit for clustering (panel structure). Furthermore, the data set also provides important information on the individual properties of the buildings, including the type of energy carrier used in a billing period, total building living space in square meters, number of living units per building, as well as its spatial location on the postal code level.
+\textbf{(Billing) Year:} The billing data contains the exact dates of the billing period of an individual building. While most billing periods mirror the calendar year, some buildings have billing periods occurring during the year. Therefore, the start and end dates of the billing periods are used to make an allocation to billing years. For billing periods during the year, the allocation is based on which of the two calendar years contains the majority of days in the billing period.
+
+\textbf{Energy carrier:} There are three main groups of energy sources included in the data: Gas, Oil and District Heating. In order to obtain these three overarching categories, the individual energy source descriptions from the original data set are combined under these categories. In addition, all buildings with other heating sources whose occurrence is insignificant compared to the other three categories (e.g.~electricity, coal combustion) are grouped under the category \emph{Others}, which is later excluded from the analysis due to the heterogeneity of the group.
+
+\textbf{Heating surface (sqm):} Information on the heating surface of a building is given as square meters at building level. The heating area does not correspond to the total floor area of a building, as it excludes the unheated areas within the buildings (e.g., building corridors or basements).
 \begin{table}[]
 \centering
 \caption{Variables and data sources}
@@ -464,9 +483,9 @@ Besides consumption and price data, the panel also features additional building 
  & Building ID & Categorical & - & Ista \\
  & Year & Categorical & - & Ista \\
 \textit{} &  &  &  &  \\
-\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ (building-level)\end{tabular}}} & Construction year & Continuous & - & Ista (sub-sample) \\
- & Heating system installation year & Continuous & - & Ista (sub-sample) \\
- & Renovation & Categorical & - & Ista (sub-sample) \\
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ (building-level)\end{tabular}}} & Construction year & Continuous & - & Ista (EPC sample) \\
+ & Heating system installation year & Continuous & - & Ista (EPC sample) \\
+ & Renovation & Categorical & - & Ista (EPC sample) \\
 \textit{} &  &  &  &  \\
 \textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ (postal code area)\end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
 \textit{} &  &  &  &  \\
@@ -476,27 +495,15 @@ Besides consumption and price data, the panel also features additional building 
 \end{tabular}%
 }
 \end{table}
-\hypertarget{ista_data}{%
-\subsection{Additional sources of data}\label{ista_data}}
+~
 
-123\footnote{The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided to DIW Berlin for scientific use. Due to the sensitive nature of the data, it is classified as confidential and was only accessed using the internal servers at DIW Berlin. Making the data available to an external party for own scientific purposes or reproduction of results is therefore not possible.}
+\textbf{Supplementary data sources}
 
-\textbf{Degree days}
-Degree days data was retrieved from
-\begin{itemize}
-\tightlist
-\item
-  As part of the project, a ``Gradtagzahlen-Deutschland.xlsx'' tool was developed that is based on DWD data from 1991 onwards.
-\item
-  The following are determined: Monthly temperature averages, heating days, degree day figures or heating degree days for all postcodes in Germany.
-\item
-  Degree day figures are determined as a weighted average from the measurement data of the three geographically closest stations
-\item
-  Use of temperature measurements as well as global radiation data for different inclinations
-\item
-  Correction for altitude values of the locations
-\end{itemize}
-Translated with www.DeepL.com/Translator (free version)
+\textbf{Degree days:} Degree days were retrieved from an tool provided by the \emph{Institut für Wohnen und Umwelt (IWU)} at the postal code level (\protect\hyperlink{ref-iwu21}{IWU, 2021}). The data from the IWU-tool originates from the 800 weather stations of the German Meteorological Service (DWD) and are provided on a monthly basis. Within the Excel-based tool the settings of a mean room temperature of 20° and a heating limit of 15°C are chosen to reflect the VDI based definition of degree days (\protect\hyperlink{ref-vdi13}{VDI, 2013}). In addition, an assignment of the postal code area to the three nearest DWD weather stations with weighting according to geographical distance is chosen in order to better take into account possible distortions due to differences in altitude between a single weather station and the centroid of a postal code area. The extracted monthly degree day figures per postal code area are then aggregated to annual periods on a rolling basis and matched with the annual building-level energy billing observations.
+
+Spatial and temporal distribution:
+
+In Appendix \ref{fig:buildings-distribution} the spatial and temporal distribution of observations is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
 
 \hypertarget{empirical_model}{%
 \section{Estimation methods and empirical model design}\label{empirical_model}}
@@ -557,6 +564,13 @@ We also find that aggregating our data can result in both higher and lower price
 
 \hypertarget{descriptives}{%
 \section{Descriptive statistics}\label{descriptives}}
+\begin{figure}
+
+{\centering \includegraphics[width=0.65\linewidth]{figure/occurance_buildings} 
+
+}
+
+\end{figure}
 \begin{table}[]
 \centering
 \caption{Summary statistics}
@@ -581,15 +595,200 @@ District heating              &                          & 268,232 (9.9\%)      
 \textit{(N = 2,718,246; No missings)}  &                          & \multicolumn{1}{l}{}   
 \end{tabular}
 \end{table}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/demand_descriptive} 
+
+}
+
+\caption{Distribution of energy demand}\label{fig:demand-descriptive-graph}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/prices_descriptive} 
+
+}
+
+\caption{Distribution of nominal and real energy prices}\label{fig:price-descriptive-graph}
+\end{figure}
 \hypertarget{full_results}{%
 \section{Full sample analysis}\label{full_results}}
-
+\begin{table}[]
+\centering
+\caption{Regression table for full sample analysis}
+\label{tab:reg-table-full-sample}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\cline{3-8}
+ &  & \multicolumn{6}{c}{Response variable in all model specifications: Ln of space heat demand} \\
+ &  & \multicolumn{2}{c}{OLS regression} & \multicolumn{1}{c}{} & \multicolumn{3}{c}{Fixed Effects (FE) regression} \\
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} \\ \cline{1-1} \cline{3-4} \cline{6-8} 
+(Intercept) &  & 5.399 *** & 3.593 *** &  &  &  &  \\
+ &  & (0.002) & (0.028) &  &  &  &  \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ energy price\end{tabular} &  & -0.365 *** & -0.365 *** &  & -0.251 *** & -0.243 *** & -0.243 *** \\
+ &  & (0.001) & (0.001) &  & (0.001) & (0.001) & (0.001) \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ degree days\end{tabular} &  &  & 0.626 *** &  &  & 0.779 *** & 0.779 *** \\
+ &  &  & (0.002) &  &  & (0.003) & (0.003) \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ heating surface\end{tabular} &  &  & -0.133 *** &  &  & -0.405 *** & -0.405 *** \\
+ &  &  & (0.000) &  &  & (0.003) & (0.003) \\
+\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ Oil\end{tabular} &  &  & 0.031 *** &  &  & 0.097 *** & 0.097 *** \\
+ &  &  & (0.001) &  &  & (0.002) & (0.002) \\
+\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ District heating\end{tabular} &  &  & -0.061 *** &  &  & -0.020 *** & -0.020 *** \\
+ &  &  & (0.001) &  &  & (0.002) & (0.002) \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ district income\end{tabular} &  &  & -0.277 *** &  &  & 0.022 ** & 0.022 ** \\
+ &  &  & (0.002) &  &  & (0.008) & (0.008) \\
+\begin{tabular}[c]{@{}l@{}}Ln of district\\ population density\end{tabular} &  &  & 0.043 *** &  &  & 0,000 &  \\
+ &  &  & (0.000) &  &  & (0.005) &  \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ retirement share\end{tabular} &  &  & -0.084 *** &  &  & 0.435 *** & 0.435 *** \\
+ &  &  & (0.010) &  &  & (0.030) & (0.030) \\ \cline{1-1} \cline{3-4} \cline{6-8} 
+N &  & 2718246 & 2718246 &  & 2718246 & 2718246 & 2718246 \\
+R2 &  & 0,049 & 0,156 &  & 0,822 & 0,829 & 0,829 \\
+logLik &  & -1322263,852 & -1159565,133 &  &  &  &  \\
+AIC &  & 2644533,703 & 2319150,267 &  &  &  &  \\ \cline{1-1} \cline{3-4} \cline{6-8} 
+\multicolumn{8}{l}{*** p \textless 0.001;  ** p \textless 0.01;  * p \textless 0.05.}
+\end{tabular}%
+}
+\end{table}
 Notes (copied from other papers):
 
 -Accounting for unobserved heterogeneity reduces the elasticities by 15\% to 32\% relative to a model that does not include any effects at all, where the own price elasticity of electricity demand is −1.).
 
 \hypertarget{full_results}{%
 \section{Subsample analysis}\label{full_results}}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/elasticity_predictions_subsample} 
+
+}
+
+\caption{Predicted price elasticities of demand by energy carrier}\label{fig:elasticity-predictions-subsample-graph}
+\end{figure}
+\hypertarget{discussion}{%
+\chapter{Discussion}\label{discussion}}
+
+NOTES - Energy taxation and climate change:
+- Fuel consumption demand is determined by demand functions that depend primarily on income and prices
+- Those who disfavor fuel taxes often claim they are strongly regressive. Earlier studies have shown that this depends on the country studied and on the details of the methods used, for instance if lifetime or temporary income is used, if substitution or other reactions are allowed for in the analysis. There is a tendency to progressivity in low income countries but regressivity in high income countries.
+- Indirect channel of long-term price change and anticipation of those changes leading to investments in low-carbon UBA: Remediation measures drawn by lot through the BEHG are partly subsidized through the BEG or the tax incentive and are accounted for there (CO2 price as door opener for subsidy)
+
+\hypertarget{discussion-of-elasticity-results}{%
+\section{Discussion of elasticity results}\label{discussion-of-elasticity-results}}
+
+\hypertarget{the-role-of-energy-prices-and-interaction-with-complementary-measures}{%
+\section{The role of energy prices and interaction with complementary measures}\label{the-role-of-energy-prices-and-interaction-with-complementary-measures}}
+\begin{itemize}
+\item
+  For district heating larger share of costs are fixed; may drive the effect of larger price elasticities as data does not differentiate between fixed and variable cost components and with lower energy demand the per-unit cost rate increses due to the larger
+\item
+  Prices not the only option for action, potential overestimation of price relevance
+\item
+  Warmmietenmodell (Now only the renters are effected which will mainly trigger short-term price reactions; for decarbonisation need to tap the long-term channel; Lessors must be incentivized to initialize efficiency measures; one option: split prices but then long-term price signal is still partly muted; Warmmietmodell as an alternative where both parties renters and lessors have full economic incentive of pricing measures)
+\end{itemize}
+\hypertarget{conclusion}{%
+\chapter{Conclusion}\label{conclusion}}
+
+\eqref{eq:ep}
+
+\appendix
+
+\hypertarget{additional-materials}{%
+\chapter{Additional materials}\label{additional-materials}}
+
+\singlespacing
+\newpage
+\begin{figure}
+
+{\centering \includegraphics[width=0.77\linewidth]{figure/buildings_distribution} 
+
+}
+
+\caption{Spatial and temporal coverage by the buildings observed}\label{fig:buildings-distribution}
+\end{figure}
+\noindent
+Figure \ref{fig:buildings-distribution} shows the spatial and temporal distribution of observations at building-level in the main sample. The maps show that the spatial coverage is good. There are very few districts without observations (transparent) and only a few districts with less than 10 observed buildings per year (dark blue). For most district-year combinations, more than 100 buildings are observed. In some large cities and metropolitan areas, numbers of more than 10,000 buildings are reached. Fewer observations are available for 2007 (43,696 observations) and 2008 (43,536 observations), as price data were included for the first time in these years. For the decade between 2009 and 2019, an annual minimum of 201,856 and an average of 239,183 buildings are observed. Note the use of the logarithmic scale in the maps.
+
+\newpage
+\begin{figure}
+
+{\centering \includegraphics[width=0.77\linewidth]{figure/distribution_degree_days} 
+
+}
+
+\caption{Spatial and temporal variation in degree days}\label{fig:degree-days-distribution}
+\end{figure}
+\noindent
+Figure \ref{fig:degree-days-distribution} show the spatial and temporal variation of climatic conditions measured in degree days. Degree days are extracted from \protect\hyperlink{ref-iwu21}{IWU} (\protect\hyperlink{ref-iwu21}{2021}). The spatial resolution used is the postcode level as the level with the highest granularity, which is also used in the regressions. Higher annual degree day numbers are associated with lower outdoor temperatures and vice versa. The maps show variations between the observed annual periods. While 2010 in particular, but also 2012 and 2013 are cooler years than the sample average, 2014, 2018 and 2019, on the other hand, were considerably warmer.
+
+\newpage
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{figure/correlation_matrix} 
+
+}
+
+\caption{Pearson’s correlation matrix}\label{fig:correlation-plot}
+\end{figure}
+\noindent
+The values in Figure \ref{fig:correlation-plot} represent Pearson's correlation coefficients. Values closer to 1 indicate a stronger positive relationship, values closer to -1 indicate a stronger negative relationship. Values close to zero indicate no relationship. None of the correlations observed between the variables exceed moderate values, ruling out possible multicollinearity issues. Energy price is negatively correlated with energy demand, indicating that the expected negative effect of price on demand indeed exists. Note that tall variables are ln-transformed.
+
+\newpage
+\begin{table}[]
+\centering
+\caption{Comparison between full sample and sub-sample}
+\label{tab:sample-comparison}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Variable                                                                                       & Energy carrier group & \begin{tabular}[c]{@{}l@{}}Full sample\\ (N = 2.719.270)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Sub-sample\\ (N = 4.410)\end{tabular} & Difference {[}\%{]}       \\ \midrule
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Energy demand\\ {[}kWh/m2{]}\end{tabular}}          & Gas                  & 122.5 {[}56.4; 209.33{]}                                              & 121.39 {[}55.4; 211.32{]}                                        & -0.91 {[}-1.81; 0.94{]}   \\
+                                                                                               & Oil                  & 122.36 {[}58.67; 204{]}                                               & 116.97 {[}53.57; 198.17{]}                                       & -4.61 {[}-9.52; -2.94{]}  \\
+                                                                                               & District heating     & 89.38 {[}43.23; 156.88{]}                                             & 83.98 {[}41.92; 141.01{]}                                        & -6.43 {[}-3.12; -11.25{]} \\
+\multicolumn{5}{l}{} \\                                                                                                 
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Energy price, real \\ {[}Cents/kWh{]}\end{tabular}}        & Gas                  & 6.28 {[}4.56; 8.14{]}                                                 & 6.22 {[}4.59; 8.04{]}                                            & -0.96 {[}0.65; -1.24{]}   \\
+                                                                                               & Oil                  & 7.14 {[}5.1; 9.18{]}                                                  & 7.21 {[}5.2; 9.23{]}                                             & 0.97 {[}1.92; 0.54{]}     \\
+                                                                                               & District heating     & 10.45 {[}6.86; 15.07{]}                                               & 10.76 {[}7.17; 16.15{]}                                          & 2.88 {[}4.32; 6.69{]}     \\
+\multicolumn{5}{l}{} \\   
+\multirow{3}{*}{Degree days}                                                                   & Gas                  & 3467.6 {[}2921.14; 4180.42{]}                                         & 3461.14 {[}2914.56; 4180.4{]}                                    & -0.19 {[}-0.23; 0{]}      \\
+                                                                                               & Oil                  & 3568.13 {[}2971.7; 4269.19{]}                                         & 3582.48 {[}2946.19; 4318.42{]}                                   & 0.4 {[}-0.87; 1.14{]}     \\
+                                                                                               & District heating     & 3441.1 {[}2924.64; 4137.61{]}                                         & 3447.97 {[}2948.92; 4180.11{]}                                   & 0.2 {[}0.82; 1.02{]}      \\
+\multicolumn{5}{l}{} \\   
+\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Building heating \\ surface {[}sqm{]}\end{tabular}} & Gas                  & 648.84 {[}163; 1849.4{]}                                              & 727.47 {[}168.04; 1817{]}                                        & 10.81 {[}3; -1.78{]}      \\
+                                                                                               & Oil                  & 452.82 {[}160; 1195.6{]}                                              & 489.55 {[}167.1; 1362.8{]}                                       & 7.5 {[}4.25; 12.27{]}     \\
+                                                                                               & District heating     & 1714.09 {[}255; 5030.18{]}                                            & 2034.55 {[}297.52; 6968.98{]}                                    & 15.75 {[}14.29; 27.82{]}  \\ \midrule
+\multicolumn{5}{l}{\textit{*) Mean {[}90\% CI{]}}}                                                                                                                                                                                                                                          
+\end{tabular}%
+}
+\end{table}
+\noindent
+Table \ref{tab:sample-comparison} compares the total sample and the sub-sample with respect to key variables. It contains the mean values for the two samples and the lower and upper limits of a 90\% interval divided by the energy carrier. It also gives the relative difference between the total sample and the sub-sample in percent. The statistics show that in the sub-sample with the available epc information, the buildings are on average 7.5 \% to 15.8 \% larger, depending on the energy carrier. This deviation is presumably due to the fact that larger buildings are more often managed by larger property managers who decide to systematically exchange their information with ista and also obtain their energy performance certificates through this standardised channel. The larger building heating area is likely also the reason for the deviations between the total sample and the sub-sample in energy demand for oil (-4.6\%) and district heating (-6.4\%). However, the deviations are within reasonable limits. Energy price and degree days from both samples are in good agreement.
+
+\newpage
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/year_state_heterogeneity_plot} 
+
+}
+
+\caption{Investigation of heterogeneity for years and federal states}\label{fig:heterogeneity-year-state-plot}
+\end{figure}
+\noindent
+Figure \ref{fig:heterogeneity-year-state-plot} presents a visual examination of the heterogeneity of price elasticity between years (Panel A) and federal states (Panel B). For this purpose, the observations in the sub-sample are grouped by year/federal state and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the years/federal states as groups. Between years, all lines are almost parallel, indicating that there is no relevant difference in price elasticity between years. For the federal states, the lines scatter a little. At the same time, however, no strong pattern can be discerned through clusters such as differences between formerly eastern and western federal states or through other regional clusters.
+
+\newpage
+\begin{figure}
+
+{\centering \includegraphics[width=0.95\linewidth]{figure/other_vars_heterogeneity_plot} 
+
+}
+
+\caption{Investigation of heterogeneity for degree days, heating surface, district income, and district retirement share}\label{fig:heterogeneity-other-vars-plot}
+\end{figure}
+\noindent
+Figure \ref{fig:heterogeneity-other-vars-plot} presents a visual examination of the heterogeneity of price elasticity for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, observations in the sub-sample are ln-transformed, grouped into three equally sized groups,\footnote{E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63).} and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and show no difference in price elasticity. For the other three variables, a slight dispersion of the grouped lines can be observed. But again, there are no pronounced differences that would prompt a more detailed investigation.
+
+\newpage
+
+\textbf{Delete later}
 
 \begingroup\fontsize{10}{12}\selectfont
 \begin{longtable}[t]{lr}
@@ -663,33 +862,8 @@ Washington Dulles Intl & 89\\*
 \end{longtable}
 \endgroup{}
 
-\hypertarget{discussion}{%
-\chapter{Discussion}\label{discussion}}
+\onehalfspacing
 
-NOTES - Energy taxation and climate change:
-- Fuel consumption demand is determined by demand functions that depend primarily on income and prices
-- Those who disfavor fuel taxes often claim they are strongly regressive. Earlier studies have shown that this depends on the country studied and on the details of the methods used, for instance if lifetime or temporary income is used, if substitution or other reactions are allowed for in the analysis. There is a tendency to progressivity in low income countries but regressivity in high income countries.
-- Indirect channel of long-term price change and anticipation of those changes leading to investments in low-carbon UBA: Remediation measures drawn by lot through the BEHG are partly subsidized through the BEG or the tax incentive and are accounted for there (CO2 price as door opener for subsidy)
-
-\hypertarget{conclusion}{%
-\chapter{Conclusion}\label{conclusion}}
-
-\eqref{eq:ep}
-
-\appendix
-
-\hypertarget{first-appendix}{%
-\chapter{First Appendix}\label{first-appendix}}
-
-\newpage
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{figure/buildings_distribution} 
-
-}
-
-\caption{Spatial and temporal distribution of buildings observed}\label{fig:buildings-distribution}
-\end{figure}
 \hypertarget{declaration-of-authorship-eigenstuxe4ndigkeitserkluxe4rung}{%
 \chapter*{Declaration of Authorship (Eigenständigkeitserklärung)}\label{declaration-of-authorship-eigenstuxe4ndigkeitserkluxe4rung}}
 \addcontentsline{toc}{chapter}{Declaration of Authorship (Eigenständigkeitserklärung)}
@@ -755,6 +929,9 @@ Cutler, H. A. (1941). The Elasticity of the Residential Demand for Electricity. 
 \leavevmode\vadjust pre{\hypertarget{ref-destatis18}{}}%
 DESTATIS. (2018). Fernwärmeversorgung 2017: Abgegebene Wärmemenge leicht gesunken. Retrieved January 19, 2022, from \url{https://www.destatis.de/DE/Presse/Pressemitteilungen/2018/11/PD18_434_434.html}
 
+\leavevmode\vadjust pre{\hypertarget{ref-destatis21}{}}%
+DESTATIS. (2021, November 12). Verbraucherpreisindex: Deutschland, Jahre (61111-0001). Retrieved November 12, 2021, from \url{https://www-genesis.destatis.de/genesis//online?operation=table\&code=61111-0001\&bypass=true\&levelindex=1\&levelid=1636748679996\#abreadcrumb}
+
 \leavevmode\vadjust pre{\hypertarget{ref-erk20}{}}%
 ERK. (2020). \emph{Bericht zur Vorjahresschätzung der deutschen Treibhausgasemissionen für das Jahr 2020}. Retrieved from \url{https://expertenrat-klima.de/content/uploads/2021/04/210415_Bericht_Expertenrat_Klimafragen_2021-2.pdf}
 
@@ -764,11 +941,20 @@ European Comission. (2019). \emph{The European Green Deal} (No. COM(2019) 640 fi
 \leavevmode\vadjust pre{\hypertarget{ref-gwartney76}{}}%
 Gwartney, J. D. (1976). Demand and Consumer Choice. In \emph{Economics Private and Public Choice} (pp. 289--309). Elsevier. http://doi.org/\href{https://doi.org/10.1016/B978-0-12-311050-3.50021-8}{10.1016/B978-0-12-311050-3.50021-8}
 
+\leavevmode\vadjust pre{\hypertarget{ref-halbig_namyslo14}{}}%
+Halbig, G., \& Namyslo, J. (2014). Neue Witterungsbereinigung für Energieausweise auf der Basis des Referenzklimas Potsdam. \emph{EneV aktuell}, (4), 11--13.
+
 \leavevmode\vadjust pre{\hypertarget{ref-hennes_etal21}{}}%
 Hennes, O., Jeddi, S., Madlener, R., Schmitz, H., Wagner, J., Wolff, S., \& Zinke, J. (2021). Auswirkungen von CO2-Preisen auf den Gebäude‑, Verkehrs- und Energiesektor. \emph{Zeitschrift für Energiewirtschaft}, \emph{45}(2), 91--107. http://doi.org/\href{https://doi.org/10.1007/s12398-021-00305-0}{10.1007/s12398-021-00305-0}
 
+\leavevmode\vadjust pre{\hypertarget{ref-hesse20}{}}%
+Heße, W. (2020). \emph{Energieeffiziente Wärmeversorgung von Gebäuden: Tatsächliche Versorgungsverhältnisse und Maßnahmen zur Effizienzsteigerung}. Wiesbaden: Springer Fachmedien Wiesbaden. http://doi.org/\href{https://doi.org/10.1007/978-3-658-27571-6}{10.1007/978-3-658-27571-6}
+
 \leavevmode\vadjust pre{\hypertarget{ref-houthakker51}{}}%
 Houthakker, H. S. (1951). Some Calculations on Electricity Consumption in Great Britain. \emph{Journal of the Royal Statistical Society. Series A (General)}, \emph{114}(3), 359--371. http://doi.org/\href{https://doi.org/10.2307/2980781}{10.2307/2980781}
+
+\leavevmode\vadjust pre{\hypertarget{ref-iwu21}{}}%
+IWU. (2021, October 7). IWU-Tool „Gradtagzahlen-Deutschland.xlsx``. Retrieved January 22, 2022, from \url{https://www.iwu.de/publikationen/fachinformationen/energiebilanzen/}
 
 \leavevmode\vadjust pre{\hypertarget{ref-labandeira_etal17}{}}%
 Labandeira, X., Labeaga, J. M., \& López-Otero, X. (2017). A meta-analysis on the price elasticity of energy demand. \emph{Energy Policy}, \emph{102}, 549--568. http://doi.org/\href{https://doi.org/10.1016/j.enpol.2017.01.002}{10.1016/j.enpol.2017.01.002}
@@ -792,7 +978,7 @@ Metcalf, G. E., \& Hassett, K. A. (1999). Measuring the Energy Savings from Home
 Miller, M., \& Alberini, A. (2016). Sensitivity of price elasticity of demand to aggregation, unobserved heterogeneity, price trends, and price endogeneity: Evidence from U.S. Data. \emph{Energy Policy}, \emph{97}, 235--249. http://doi.org/\href{https://doi.org/10.1016/j.enpol.2016.07.031}{10.1016/j.enpol.2016.07.031}
 
 \leavevmode\vadjust pre{\hypertarget{ref-pindyck_rubinfeld18}{}}%
-Pindyck, R. S., \& Rubinfeld, D. L. (2018). \emph{Microeconomics} (Ninth edition). NY NY: Pearson.
+Pindyck, R. S., \& Rubinfeld, D. L. (2018). \emph{Microeconomics} (9th Edition). New York, NY: Pearson.
 
 \leavevmode\vadjust pre{\hypertarget{ref-rehdanz07}{}}%
 Rehdanz, K. (2007). Determinants of residential space heating expenditures in Germany. \emph{Energy Economics}, \emph{29}(2), 167--182. http://doi.org/\href{https://doi.org/10.1016/j.eneco.2006.04.002}{10.1016/j.eneco.2006.04.002}
@@ -819,7 +1005,10 @@ Techem. (2019). \emph{Energiekennwerte 2019}. Eschborn: Techem. Retrieved from \
 UBA. (2016). \emph{CO2-Emissionsfaktoren für fossile Brennstoffe}. Retrieved from \url{https://www.umweltbundesamt.de/sites/default/files/medien/1968/publikationen/co2-emissionsfaktoren_fur_fossile_brennstoffe_korrektur.pdf}
 
 \leavevmode\vadjust pre{\hypertarget{ref-varian10}{}}%
-Varian, H. R. (2010). \emph{Intermediate microeconomics: a modern approach} (8. ed). New York, NY: Norton.
+Varian, H. R. (2010). \emph{Intermediate microeconomics: a modern approach} (8th Edition). New York, NY: Norton.
+
+\leavevmode\vadjust pre{\hypertarget{ref-vdi13}{}}%
+VDI. (2013). \emph{Richtlinie 3807 Blatt 1: Verbrauchskennwerte für Gebäude}. Retrieved from \url{https://www.vdi.de/richtlinien/details/vdi-3807-blatt-1-verbrauchskennwerte-fuer-gebaeude-grundlagen-1}
 
 \end{CSLReferences}
 

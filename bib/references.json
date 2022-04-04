@@ -4264,15 +4264,14 @@
 	{
 		"id": "pindyck_rubinfeld18",
 		"type": "book",
-		"collection-title": "The Pearson series in economics",
-		"edition": "Ninth edition",
-		"event-place": "NY NY",
-		"ISBN": "978-0-13-418424-1",
+		"collection-title": "The Pearson Series In Economics",
+		"edition": "9th Edition",
+		"event-place": "New York, NY",
+		"ISBN": "978-3-86894-352-8",
 		"language": "eng",
 		"number-of-pages": "759",
 		"publisher": "Pearson",
-		"publisher-place": "NY NY",
-		"source": "K10plus ISBN",
+		"publisher-place": "New York, NY",
 		"title": "Microeconomics",
 		"author": [
 			{
@@ -4296,7 +4295,7 @@
 	{
 		"id": "varian10",
 		"type": "book",
-		"edition": "8. ed",
+		"edition": "8th Edition",
 		"event-place": "New York, NY",
 		"ISBN": "978-0-393-93424-3",
 		"language": "eng",
@@ -4671,7 +4670,7 @@
 		"language": "en",
 		"page": "493-513",
 		"source": "DOI.org (Crossref)",
-		"title": "CONSUMPTION UNDER NOISY PRICE SIGNALS: A STUDY OF ELECTRICITY RETAIL RATE DEREGULATION IN SAN DIEGO*",
+		"title": "Consumption under noisy price signals: A study of electricity retail rate deregulation in San Diego",
 		"title-short": "CONSUMPTION UNDER NOISY PRICE SIGNALS",
 		"URL": "https://onlinelibrary.wiley.com/doi/10.1111/j.1467-6451.2005.00267.x",
 		"volume": "53",
@@ -4747,5 +4746,71 @@
 			]
 		},
 		"citation-key": "metcalf_hassett99"
+	},
+	{
+		"id": "hesse20",
+		"type": "book",
+		"event-place": "Wiesbaden",
+		"ISBN": "978-3-658-27570-9",
+		"language": "de",
+		"note": "DOI: 10.1007/978-3-658-27571-6",
+		"publisher": "Springer Fachmedien Wiesbaden",
+		"publisher-place": "Wiesbaden",
+		"source": "DOI.org (Crossref)",
+		"title": "Energieeffiziente Wärmeversorgung von Gebäuden: Tatsächliche Versorgungsverhältnisse und Maßnahmen zur Effizienzsteigerung",
+		"title-short": "Energieeffiziente Wärmeversorgung von Gebäuden",
+		"URL": "http://link.springer.com/10.1007/978-3-658-27571-6",
+		"author": [
+			{
+				"family": "Heße",
+				"given": "Wolfgang"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		},
+		"citation-key": "hesse20"
+	},
+	{
+		"id": "vdi13",
+		"type": "report",
+		"title": "Richtlinie 3807 Blatt 1: Verbrauchskennwerte für Gebäude",
+		"URL": "https://www.vdi.de/richtlinien/details/vdi-3807-blatt-1-verbrauchskennwerte-fuer-gebaeude-grundlagen-1",
+		"author": [
+			{
+				"family": "VDI",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					2,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		},
+		"citation-key": "vdi13"
 	}
 ]

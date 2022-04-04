@@ -13,6 +13,13 @@ options(width = 70)
 
 ## Descriptive statistics {#descriptives}
 
+
+```{r occurance-buildings, echo = FALSE, fig.cap = "", out.width = "65%", fig.align = "center"}
+knitr::include_graphics(path = "figure/occurance_buildings.pdf")
+```
+
+
+
 \begin{table}[]
 \centering
 \caption{Summary statistics}
@@ -39,8 +46,57 @@ District heating              &                          & 268,232 (9.9\%)      
 \end{table}
 
 
+```{r demand-descriptive-graph, echo = FALSE, fig.cap = "Distribution of energy demand", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/demand_descriptive.pdf")
+```
+
+
+```{r price-descriptive-graph, echo = FALSE, fig.cap = "Distribution of nominal and real energy prices", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/prices_descriptive.pdf")
+```
+
 
 ## Full sample analysis {#full_results}
+
+
+\begin{table}[]
+\centering
+\caption{Regression table for full sample analysis}
+\label{tab:reg-table-full-sample}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\cline{3-8}
+ &  & \multicolumn{6}{c}{Response variable in all model specifications: Ln of space heat demand} \\
+ &  & \multicolumn{2}{c}{OLS regression} & \multicolumn{1}{c}{} & \multicolumn{3}{c}{Fixed Effects (FE) regression} \\
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} \\ \cline{1-1} \cline{3-4} \cline{6-8} 
+(Intercept) &  & 5.399 *** & 3.593 *** &  &  &  &  \\
+ &  & (0.002) & (0.028) &  &  &  &  \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ energy price\end{tabular} &  & -0.365 *** & -0.365 *** &  & -0.251 *** & -0.243 *** & -0.243 *** \\
+ &  & (0.001) & (0.001) &  & (0.001) & (0.001) & (0.001) \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ degree days\end{tabular} &  &  & 0.626 *** &  &  & 0.779 *** & 0.779 *** \\
+ &  &  & (0.002) &  &  & (0.003) & (0.003) \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ heating surface\end{tabular} &  &  & -0.133 *** &  &  & -0.405 *** & -0.405 *** \\
+ &  &  & (0.000) &  &  & (0.003) & (0.003) \\
+\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ Oil\end{tabular} &  &  & 0.031 *** &  &  & 0.097 *** & 0.097 *** \\
+ &  &  & (0.001) &  &  & (0.002) & (0.002) \\
+\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ District heating\end{tabular} &  &  & -0.061 *** &  &  & -0.020 *** & -0.020 *** \\
+ &  &  & (0.001) &  &  & (0.002) & (0.002) \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ district income\end{tabular} &  &  & -0.277 *** &  &  & 0.022 ** & 0.022 ** \\
+ &  &  & (0.002) &  &  & (0.008) & (0.008) \\
+\begin{tabular}[c]{@{}l@{}}Ln of district\\ population density\end{tabular} &  &  & 0.043 *** &  &  & 0,000 &  \\
+ &  &  & (0.000) &  &  & (0.005) &  \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ retirement share\end{tabular} &  &  & -0.084 *** &  &  & 0.435 *** & 0.435 *** \\
+ &  &  & (0.010) &  &  & (0.030) & (0.030) \\ \cline{1-1} \cline{3-4} \cline{6-8} 
+N &  & 2718246 & 2718246 &  & 2718246 & 2718246 & 2718246 \\
+R2 &  & 0,049 & 0,156 &  & 0,822 & 0,829 & 0,829 \\
+logLik &  & -1322263,852 & -1159565,133 &  &  &  &  \\
+AIC &  & 2644533,703 & 2319150,267 &  &  &  &  \\ \cline{1-1} \cline{3-4} \cline{6-8} 
+\multicolumn{8}{l}{*** p \textless 0.001;  ** p \textless 0.01;  * p \textless 0.05.}
+\end{tabular}%
+}
+\end{table}
+
+
 
 
 
@@ -51,31 +107,10 @@ Notes (copied from other papers):
 
 ## Subsample analysis {#full_results}
 
-
-
-```{r tabletest, echo=FALSE, results="asis"}
-d <- import("data/flights.csv")
-
-table_destination <- d %>% 
-  group_by(dest_name) %>% 
-  summarise(n = n())
-
-table_destination %>% 
-  kbl(col.names = c("Destination", "Number of connections"), 
-      caption = "Number of flight connections per destination", 
-      longtable = T, 
-      booktabs = T,
-      digits = 2) %>% 
-  kable_styling(latex_options = "repeat_header",
-                font_size = 10) %>%
-  footnote(number = c("This table was created based on the flights dataset.", "Source: R Packages."))
-
-# if too wide: 
-# kable_styling(latex_options = "scale_down")
-
-
-
-
+```{r elasticity-predictions-subsample-graph, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/elasticity_predictions_subsample.pdf")
 ```
+
+
 
 
