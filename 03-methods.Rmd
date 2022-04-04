@@ -9,11 +9,11 @@ pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 options(width = 70)
 ```
 
-# Data and Methods {#methods}
+# Methods {#methods}
 
 ## Data and processing {#data}
 
-In order to transfer the theoretical model set up in Section \@ref(conceptual_model) into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from various sources were combined and processed.
+In order to transfer the theoretical model set up in Section \@ref(conceptual-model) into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from various sources were combined and processed.
 
 **Energy billing data**
 
@@ -40,24 +40,24 @@ The key dataset in this process is a large-scale building-level panel of energy 
 \toprule
 \textbf{Variable} & \textbf{} & \textbf{Type} & \textbf{Unit} & \textbf{Data source} \\ \midrule
  &  &  &  &  \\
-\textit{\begin{tabular}[c]{@{}l@{}}Demand\\ (building-level)\end{tabular}} & Space heat demand & Continuous & ln(kWh/sqm) & Ista \\
+\textit{\begin{tabular}[c]{@{}l@{}}Demand\\ \end{tabular}} & Space heat demand & Continuous & ln(kWh/sqm) & Ista (billing data) \\
 \textit{} &  &  &  &  \\
-\textit{\begin{tabular}[c]{@{}l@{}}Price\\ (building-level)\end{tabular}} & Energy price & Continuous & ln(cents/kWh) & Ista \\
+\textit{\begin{tabular}[c]{@{}l@{}}Price\\ \end{tabular}} & Energy price & Continuous & ln(Cents/kWh) & Ista (billing data)\\
 \textit{} &  &  &  &  \\
-\multirow{4}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Billing data\\ (building-level)\end{tabular}}} & Heating surface & Continuous & ln(sqm) & Ista \\
- & Energy carrier & Categorical & Gas / Oil / District heating & Ista \\
- & Building ID & Categorical & - & Ista \\
- & Year & Categorical & - & Ista \\
+\multirow{4}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Additional billing \\information\\ \end{tabular}}} & Heating surface & Continuous & ln(sqm) & Ista (billing data)\\
+ & Energy carrier & Categorical & Gas / Oil / District heating & Ista (billing data)\\
+ & Building ID & Categorical & - & Ista (billing data)\\
+ & Year & Categorical & - & Ista (billing data)\\
 \textit{} &  &  &  &  \\
-\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ (building-level)\end{tabular}}} & Construction year & Continuous & - & Ista (EPC sample) \\
- & Heating system installation year & Continuous & - & Ista (EPC sample) \\
- & Renovation & Categorical & - & Ista (EPC sample) \\
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ \end{tabular}}} & Construction year & Continuous & - & Ista (EPC data) \\
+ & Heating system installation year & Continuous & - & Ista (EPC data) \\
+ & Renovation & Categorical & - & Ista (EPC data) \\
 \textit{} &  &  &  &  \\
-\textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ (postal code area)\end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
+\textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ \end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
 \textit{} &  &  &  &  \\
-\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Socio-economic factors\\ (district-level)\end{tabular}}} & Average household income & Continuous & ln(Euros/a) & Statistische Ämter (2021) \\
- & Retirement rate & Continuous & \% & DESTATIS (2021) \\
- & Population density & Continuous & ln(inhabitants/sq. km) & DESTATIS (2021) \\ \bottomrule
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Socio-economic factors\\ \end{tabular}}} &  District household income & Continuous & ln(Euros/a) & Statistische Ämter (2021) \\
+ & District retirement share & Continuous & \% & DESTATIS (2021) \\
+ & Postal code population density & Continuous & ln(inhabitants/sq. km) & DESTATIS (2021) \\ \bottomrule
 \end{tabular}%
 }
 \end{table}
@@ -66,17 +66,15 @@ The key dataset in this process is a large-scale building-level panel of energy 
 
 **Supplementary data sources**
 
-**Degree days:** Degree days were retrieved from an tool provided by the *Institut für Wohnen und Umwelt (IWU)* at the postal code level [@iwu21]. The data from the IWU-tool originates from the 800 weather stations of the German Meteorological Service (DWD) and are provided on a monthly basis. Within the Excel-based tool the settings of a mean room temperature of 20°C and a heating limit of 15°C are chosen to reflect the VDI based definition of degree days [@vdi13]. In addition, an assignment of the postal code area to the three nearest DWD weather stations with weighting according to geographical distance is chosen in order to better take into account possible distortions due to differences in altitude between a single weather station and the centroid of a postal code area. The extracted monthly degree day figures per postal code area are then aggregated to annual periods on a rolling basis and matched with the annual building-level energy billing observations.
+**Degree days:** Degree days were retrieved from an tool compiled by the *Institut für Wohnen und Umwelt (IWU)* at the postal code level [@iwu21]. The degree days data from the IWU-tool builds on daily temperature data from the 800 weather stations of the German Meteorological Service (DWD) that are aggregated on a monthly basis. Within the Excel-based tool, the settings of a mean room temperature of 20°C and a heating limit of 15°C are chosen to reflect the VDI based definition of degree days [@vdi13]. In addition, an assignment of the postal code area to the three nearest DWD weather stations with weighting according to geographical distance is chosen in order to better take into account possible distortions due to differences in altitude between a single weather station and the centroid of a postal code area. The extracted monthly degree day figures per postal code area are then aggregated to annual periods on a rolling basis and matched with the annual building-level energy billing observations. The postal code level was chosen because it corresponds to the spatial information on the location of the buildings contained in the billing data and therefore represents the most accurate allocation possible.
 
+**District household income (Euros/a):** As district income the per capita disposable income of private households per person provided by the joint statistical portal of the federal and state governments is used [@statistischeamter21]. The figure comprises the primary income of private households, deducting transfers paid and adding transfers received. Disposable income is chosen because it can be considered the most suitable indicator for funds available for households. The district-level is chosen as it is the most granular household income statistics available.
 
+**District retirement share (%):** To construct the district retirement share variable, population data at the district level with a segmentation by age groups is used [@destatis21c]. As an approximation for the actual proportion of retirees, the percentage of persons within a district and year who are older than 65 years is calculated. This approach was chosen because no detailed statistics are available on the number of people in retirement at the district-level.
 
-Spatial and temporal distribution:
+**Postal code population density (inh./sq. km):** To generate the population density variable, data from Open Street Maps with pre-assigned population figures to post code areas based on the 2011 Census were used [@osm21; @osm21a]. The postal code and not the district level was chosen because, firstly, a higher granularity of data was available and, secondly, the use of districts as the level of analysis would have obscured much of the heterogeneity within districts. To calculate population density, the number of inhabitants per postal code was divided by the base area in square kilometers (sq. km).
 
-In Appendix \@ref(fig:buildings-distribution) the spatial and temporal distribution of observations is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
-
-
-
-## Estimation methods and empirical model design {#empirical_model}
+## Estimation methods and empirical model {#empirical_model}
 
 **Establishing causality**
 
@@ -112,6 +110,42 @@ ln(D)_{it} = \alpha + \beta ln(P)_{it} + \gamma X_{it} + \delta_i + \eta_t + \va
 **Bayesian estimation approaches**
 
 ## Workflow {#workflow}
+
+In Figure xxx the workflow of the empirical analysis is depicted. The upper part of the workflow describes the data processing and the merging of data. The lower part shows the regression analyses carried out using the entire sample.
+
+**Explanation of data processing and cleaning**
+
+The energy billing data requires several steps of data cleaning, which are shown in the upper part of the workflow (Figure xxx). After the data cleaning, 2,721,210 of the original 4,494,943 annual billing observations remain for the analysis. The criteria used to remove observations from the billing dataset are ordered by the number of observations removed in each step.
+
+The most important reason for exclusion from the sample is the absence of price data. In the period 2003-2006, price data are not available for any of the observations. This leads to the exclusion of 909,458 observations. In addition, price data are also missing for a part of the observations in the period 2009-2019. Due to these gaps in the price data, a further 543,544 observations are excluded from the dataset.
+
+
+
+```{r workflow1, echo = FALSE, fig.cap = "Workflow of data processing and full sample analysis", out.width = "103%", fig.align = "center"}
+knitr::include_graphics(path = "figure/workflow_diagramm_1.pdf")
+```
+
+
+
+
+Spatial and temporal distribution:
+
+In Appendix \@ref(fig:buildings-distribution) the spatial and temporal distribution of observations is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Notizen aus anderen Publikationen
+
 
 Since we model conditional demand only, the results should be considered as short-term elasticities. In contrast, medium- and long-term income elasticities tend to be higher. Households with increased income are likely to move into larger homes over the medium term, which would increase their heating expenditures as well (Nesbakken 1999).  --> Short-run elasticities as a lower bar estimate that produces a conservative estimate.
 

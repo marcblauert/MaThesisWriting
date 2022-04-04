@@ -404,12 +404,12 @@ When summarizing the literature on the price elasticity of residential space hea
 \end{figure}
 Importantly, another common feature that links all the individual studies presented is that they do not focus on one-off extreme price shocks as an identification strategy, but on gradual price developments. They are mostly built around a panel data set covering a longer period of time. The period examined in this study also covers more than a decade with rather gradual price developments. This should therefore be considered an important condition that facilitates the comparability of the results of this study with the estimates presented in the literature.
 
-\hypertarget{conceptual_model}{%
-\section{Conceptual model development}\label{conceptual_model}}
+\hypertarget{conceptual-model}{%
+\section{Conceptual model development}\label{conceptual-model}}
 
 In the previous two subsections, the theory around price elasticities of demand (see section \ref{theory}) and evidence from the prior literature (see section \ref{review}) in the context of space heating demand have been presented. To complete this foundation, this subsection uses the theory, but more importantly the approaches of prior studies, to identify relevant variables in the relationship between space heating demand and energy price. The aim is to create a conceptual model, which will then be translated into a statistical model and empirically examined in the further course of this thesis.
 
-\textbf{Energy price affecting space heat demand}
+\textbf{Price elasticity}
 
 The starting point for the conceptual model is the relationship between space heating demand and energy price. Here, the basic assumption from the theory of price and demand is that the demand for space heating is influenced by the energy price. When the price goes up, demand moves down along the demand curve and vice versa (see Figure \ref{fig:elasticities-conceptual}). Transferred to a statistical terminology this implies that space heat demand is the response variable of a model and energy price the main explanatory variable. To support the development of the conceptual model visually, Figure \ref{fig:dag} depicts it as a directed acyclic graph (DAG).\footnote{Please note that the relationships between space heat demand and the variables used to explain it are of relevance here. Other relationships among explanatory variables are hinted at for the sake of completeness, but are not explicitly examined in the course of the thesis.} In the center, the space heat demand is shown, the variance of which is to be explained (yellow bubble). Since the effect of energy price (purple bubble) on space heating demand is to be regarded as the price elasticity, it is marked with a red arrow.
 \begin{figure}
@@ -442,15 +442,15 @@ Lastly, the \emph{comprehensive renovation} variable is integrated to observe if
 
 Besides building-related characteristics, additional socio-economic variables may also affect the level of heating demand. In the literature that draws its data from social surveys, household-level socio-economic information such as income, number of inhabitants, age, education level or employment status is usually part of the core survey data. Since this study relies on building-level energy billing data, integrating this kind of socio-economic information is not feasible because of two reasons. First, the data is not available from the billing data and, secondly, because the level of analysis in this thesis is the aggregate building and not the individual household level. Nevertheless, socio-economic variables may also play a role at this aggregated level as well.
 
-Therefore, three socio-economic variables at the district-level are included in the model which are inspired by the variables used in the household level studies and may capture overlaying effects. The first of the three variables is average household income at the district level. In line with most of the literature, one would expect lower income to lead to lower heating demand as households have fewer funds at their disposal. However, it could also be that income at the district level is more of an approximation of the general affluence of a district and therefore effects such as lower economic resources available for investment in building efficiency outweigh a household budget effect of demand and possibly lead to the opposite outcome. Secondly, the district retirement share is considered as an additional variable. Here, the intuition is that with high retirement rates in a region more people are at home most of their time which in turn might lead to higher space heat demand. Lastly, the population density of a district is considered to observe if there may be structural differences in heating demand between metropolitan areas on the one hand and rural areas on the other.
+Therefore, three socio-economic variables at the district-level and postal code level are included in the model which are inspired by the variables used in the household level studies and may capture overlaying effects. The first of the three variables is average household income at the district-level. In line with most of the literature, one would expect lower income to lead to lower heating demand as households have fewer funds at their disposal. However, it could also be that income at the district level is more of an approximation of the general affluence of a district and therefore effects such as lower economic resources available for investment in building efficiency outweigh a household budget effect of demand and possibly lead to the opposite outcome. Secondly, the district retirement share is considered as an additional variable. Here, the intuition is that with high retirement rates in a region more people are at home most of their time which in turn might lead to higher space heat demand. Lastly, the population density within a postal code area is considered to observe if there may be structural differences in heating demand between densely populated metropolitan areas on the one hand and sparsely populated rural areas on the other.
 
 \hypertarget{methods}{%
-\chapter{Data and Methods}\label{methods}}
+\chapter{Methods}\label{methods}}
 
 \hypertarget{data}{%
 \section{Data and processing}\label{data}}
 
-In order to transfer the theoretical model set up in Section @ref(conceptual\_model) into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from various sources were combined and processed.
+In order to transfer the theoretical model set up in Section \ref{conceptual-model} into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from various sources were combined and processed.
 
 \textbf{Energy billing data}
 
@@ -458,7 +458,7 @@ The key dataset in this process is a large-scale building-level panel of energy 
 
 \textbf{Space heat demand (kWh/sqm/a):} The demand data in the billing dataset is provided as total energy consumed per building and per annual billing period in kilowatt hours (kWh). To isolate the share of energy consumed for the key purpose of space heating, the share of energy used for hot water production is deduced for those buildings where hot water production is also done via the central heating system. In a second step, in order to obtain a comparable metric for the differently sized buildings in the sample, the total space heating demand at building level is divided by the building heating surface in square meters (sqm). This results in the annual space heat demand per square meter as the demand variable. For a summary of the variables and their data sources see Table \ref{tab:variables}.
 
-\textbf{Energy prices (Cents/kWh):} The structure of the price data in the dataset is similar to that of energy demand. Total annual costs in Euros are given at the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. To make the cost scale more intuitive, it is transferred from Euros to Cents. This gives a per-unit cost in Cents per kWh. A breakdown according to fixed and variable cost components is not reported in the data. Additionally, energy prices are provided in nominal prices thus in order to obtain real prices, nominal prices are adjusted using the German annual consumer price index (CPI) with 2015 as the index year (\protect\hyperlink{ref-destatis21}{DESTATIS, 2021}).
+\textbf{Energy prices (Cents/kWh):} The structure of the price data in the dataset is similar to that of energy demand. Total annual costs in Euros are given at the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. To make the cost scale more intuitive, it is transferred from Euros to Cents. This gives a per-unit cost in Cents per kWh. A breakdown according to fixed and variable cost components is not reported in the data. Additionally, energy prices are provided in nominal prices thus in order to obtain real prices, nominal prices are adjusted using the German annual consumer price index (CPI) with 2015 as the index year (\protect\hyperlink{ref-destatis21}{DESTATIS, 2021b}).
 
 \textbf{(Billing) Year:} The billing data contains the exact dates of the billing period of an individual building. While most billing periods mirror the calendar year, some buildings have billing periods occurring during the year. Therefore, the start and end dates of the billing periods are used to make an allocation to billing years. For billing periods during the year, the allocation is based on which of the two calendar years contains the majority of days in the billing period.
 
@@ -474,24 +474,24 @@ The key dataset in this process is a large-scale building-level panel of energy 
 \toprule
 \textbf{Variable} & \textbf{} & \textbf{Type} & \textbf{Unit} & \textbf{Data source} \\ \midrule
  &  &  &  &  \\
-\textit{\begin{tabular}[c]{@{}l@{}}Demand\\ (building-level)\end{tabular}} & Space heat demand & Continuous & ln(kWh/sqm) & Ista \\
+\textit{\begin{tabular}[c]{@{}l@{}}Demand\\ \end{tabular}} & Space heat demand & Continuous & ln(kWh/sqm) & Ista (billing data) \\
 \textit{} &  &  &  &  \\
-\textit{\begin{tabular}[c]{@{}l@{}}Price\\ (building-level)\end{tabular}} & Energy price & Continuous & ln(cents/kWh) & Ista \\
+\textit{\begin{tabular}[c]{@{}l@{}}Price\\ \end{tabular}} & Energy price & Continuous & ln(Cents/kWh) & Ista (billing data)\\
 \textit{} &  &  &  &  \\
-\multirow{4}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Billing data\\ (building-level)\end{tabular}}} & Heating surface & Continuous & ln(sqm) & Ista \\
- & Energy carrier & Categorical & Gas / Oil / District heating & Ista \\
- & Building ID & Categorical & - & Ista \\
- & Year & Categorical & - & Ista \\
+\multirow{4}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Additional billing \\information\\ \end{tabular}}} & Heating surface & Continuous & ln(sqm) & Ista (billing data)\\
+ & Energy carrier & Categorical & Gas / Oil / District heating & Ista (billing data)\\
+ & Building ID & Categorical & - & Ista (billing data)\\
+ & Year & Categorical & - & Ista (billing data)\\
 \textit{} &  &  &  &  \\
-\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ (building-level)\end{tabular}}} & Construction year & Continuous & - & Ista (EPC sample) \\
- & Heating system installation year & Continuous & - & Ista (EPC sample) \\
- & Renovation & Categorical & - & Ista (EPC sample) \\
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}EPC data\\ \end{tabular}}} & Construction year & Continuous & - & Ista (EPC data) \\
+ & Heating system installation year & Continuous & - & Ista (EPC data) \\
+ & Renovation & Categorical & - & Ista (EPC data) \\
 \textit{} &  &  &  &  \\
-\textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ (postal code area)\end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
+\textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ \end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
 \textit{} &  &  &  &  \\
-\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Socio-economic factors\\ (district-level)\end{tabular}}} & Average household income & Continuous & ln(Euros/a) & Statistische Ämter (2021) \\
- & Retirement rate & Continuous & \% & DESTATIS (2021) \\
- & Population density & Continuous & ln(inhabitants/sq. km) & DESTATIS (2021) \\ \bottomrule
+\multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Socio-economic factors\\ \end{tabular}}} &  District household income & Continuous & ln(Euros/a) & Statistische Ämter (2021) \\
+ & District retirement share & Continuous & \% & DESTATIS (2021) \\
+ & Postal code population density & Continuous & ln(inhabitants/sq. km) & DESTATIS (2021) \\ \bottomrule
 \end{tabular}%
 }
 \end{table}
@@ -499,14 +499,16 @@ The key dataset in this process is a large-scale building-level panel of energy 
 
 \textbf{Supplementary data sources}
 
-\textbf{Degree days:} Degree days were retrieved from an tool provided by the \emph{Institut für Wohnen und Umwelt (IWU)} at the postal code level (\protect\hyperlink{ref-iwu21}{IWU, 2021}). The data from the IWU-tool originates from the 800 weather stations of the German Meteorological Service (DWD) and are provided on a monthly basis. Within the Excel-based tool the settings of a mean room temperature of 20° and a heating limit of 15°C are chosen to reflect the VDI based definition of degree days (\protect\hyperlink{ref-vdi13}{VDI, 2013}). In addition, an assignment of the postal code area to the three nearest DWD weather stations with weighting according to geographical distance is chosen in order to better take into account possible distortions due to differences in altitude between a single weather station and the centroid of a postal code area. The extracted monthly degree day figures per postal code area are then aggregated to annual periods on a rolling basis and matched with the annual building-level energy billing observations.
+\textbf{Degree days:} Degree days were retrieved from an tool compiled by the \emph{Institut für Wohnen und Umwelt (IWU)} at the postal code level (\protect\hyperlink{ref-iwu21}{IWU, 2021}). The degree days data from the IWU-tool builds on daily temperature data from the 800 weather stations of the German Meteorological Service (DWD) that are aggregated on a monthly basis. Within the Excel-based tool, the settings of a mean room temperature of 20°C and a heating limit of 15°C are chosen to reflect the VDI based definition of degree days (\protect\hyperlink{ref-vdi13}{VDI, 2013}). In addition, an assignment of the postal code area to the three nearest DWD weather stations with weighting according to geographical distance is chosen in order to better take into account possible distortions due to differences in altitude between a single weather station and the centroid of a postal code area. The extracted monthly degree day figures per postal code area are then aggregated to annual periods on a rolling basis and matched with the annual building-level energy billing observations. The postal code level was chosen because it corresponds to the spatial information on the location of the buildings contained in the billing data and therefore represents the most accurate allocation possible.
 
-Spatial and temporal distribution:
+\textbf{District household income (Euros/a):} As district income the per capita disposable income of private households per person provided by the joint statistical portal of the federal and state governments is used (\protect\hyperlink{ref-statistischeamter21}{Statistische Ämter, 2021}). The figure comprises the primary income of private households, deducting transfers paid and adding transfers received. Disposable income is chosen because it can be considered the most suitable indicator for funds available for households. The district-level is chosen as it is the most granular household income statistics available.
 
-In Appendix \ref{fig:buildings-distribution} the spatial and temporal distribution of observations is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
+\textbf{District retirement share (\%):} To construct the district retirement share variable, population data at the district level with a segmentation by age groups is used (\protect\hyperlink{ref-destatis21c}{DESTATIS, 2021a}). As an approximation for the actual proportion of retirees, the percentage of persons within a district and year who are older than 65 years is calculated. This approach was chosen because no detailed statistics are available on the number of people in retirement at the district-level.
+
+\textbf{Postal code population density (inh./sq. km):} To generate the population density variable, data from Open Street Maps with pre-assigned population figures to post code areas based on the 2011 Census were used (\protect\hyperlink{ref-osm21}{OSM, 2021b}, \protect\hyperlink{ref-osm21a}{2021a}). The postal code and not the district level was chosen because, firstly, a higher granularity of data was available and, secondly, the use of districts as the level of analysis would have obscured much of the heterogeneity within districts. To calculate population density, the number of inhabitants per postal code was divided by the base area in square kilometers (sq. km).
 
 \hypertarget{empirical_model}{%
-\section{Estimation methods and empirical model design}\label{empirical_model}}
+\section{Estimation methods and empirical model}\label{empirical_model}}
 
 \textbf{Establishing causality}
 
@@ -534,6 +536,28 @@ ln(D)_{it} = \alpha + \beta ln(P)_{it} + \gamma X_{it} + \delta_i + \eta_t + \va
 
 \hypertarget{workflow}{%
 \section{Workflow}\label{workflow}}
+
+In Figure xxx the workflow of the empirical analysis is depicted. The upper part of the workflow describes the data processing and the merging of data. The lower part shows the regression analyses carried out using the entire sample.
+
+\textbf{Explanation of data processing and cleaning}
+
+The energy billing data requires several steps of data cleaning, which are shown in the upper part of the workflow (Figure xxx). After the data cleaning, 2,721,210 of the original 4,494,943 annual billing observations remain for the analysis. The criteria used to remove observations from the billing dataset are ordered by the number of observations removed in each step.
+
+The most important reason for exclusion from the sample is the absence of price data. In the period 2003-2006, price data are not available for any of the observations. This leads to the exclusion of 909,458 observations. In addition, price data are also missing for a part of the observations in the period 2009-2019. Due to these gaps in the price data, a further 543,544 observations are excluded from the dataset.
+\begin{figure}
+
+{\centering \includegraphics[width=1.03\linewidth]{figure/workflow_diagramm_1} 
+
+}
+
+\caption{Workflow of data processing and full sample analysis}\label{fig:workflow1}
+\end{figure}
+Spatial and temporal distribution:
+
+In Appendix \ref{fig:buildings-distribution} the spatial and temporal distribution of observations is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
+
+\hypertarget{notizen-aus-anderen-publikationen}{%
+\section{Notizen aus anderen Publikationen}\label{notizen-aus-anderen-publikationen}}
 
 Since we model conditional demand only, the results should be considered as short-term elasticities. In contrast, medium- and long-term income elasticities tend to be higher. Households with increased income are likely to move into larger homes over the medium term, which would increase their heating expenditures as well (Nesbakken 1999). --\textgreater{} Short-run elasticities as a lower bar estimate that produces a conservative estimate.
 
@@ -929,8 +953,11 @@ Cutler, H. A. (1941). The Elasticity of the Residential Demand for Electricity. 
 \leavevmode\vadjust pre{\hypertarget{ref-destatis18}{}}%
 DESTATIS. (2018). Fernwärmeversorgung 2017: Abgegebene Wärmemenge leicht gesunken. Retrieved January 19, 2022, from \url{https://www.destatis.de/DE/Presse/Pressemitteilungen/2018/11/PD18_434_434.html}
 
+\leavevmode\vadjust pre{\hypertarget{ref-destatis21c}{}}%
+DESTATIS. (2021a). Bevölkerung: Kreise, Stichtag, Altersgruppen (12411-0017) {[}Text{]}. Retrieved January 22, 2022, from \url{https://www-genesis.destatis.de/genesis/online?operation=previous\&levelindex=0\&step=0\&titel=Tabellenaufbau\&levelid=1642855066461\&acceptscookies=false\#abreadcrumb}
+
 \leavevmode\vadjust pre{\hypertarget{ref-destatis21}{}}%
-DESTATIS. (2021, November 12). Verbraucherpreisindex: Deutschland, Jahre (61111-0001). Retrieved November 12, 2021, from \url{https://www-genesis.destatis.de/genesis//online?operation=table\&code=61111-0001\&bypass=true\&levelindex=1\&levelid=1636748679996\#abreadcrumb}
+DESTATIS. (2021b, November 12). Verbraucherpreisindex: Deutschland, Jahre (61111-0001). Retrieved November 12, 2021, from \url{https://www-genesis.destatis.de/genesis//online?operation=table\&code=61111-0001\&bypass=true\&levelindex=1\&levelid=1636748679996\#abreadcrumb}
 
 \leavevmode\vadjust pre{\hypertarget{ref-erk20}{}}%
 ERK. (2020). \emph{Bericht zur Vorjahresschätzung der deutschen Treibhausgasemissionen für das Jahr 2020}. Retrieved from \url{https://expertenrat-klima.de/content/uploads/2021/04/210415_Bericht_Expertenrat_Klimafragen_2021-2.pdf}
@@ -977,6 +1004,12 @@ Metcalf, G. E., \& Hassett, K. A. (1999). Measuring the Energy Savings from Home
 \leavevmode\vadjust pre{\hypertarget{ref-miller_alberini16}{}}%
 Miller, M., \& Alberini, A. (2016). Sensitivity of price elasticity of demand to aggregation, unobserved heterogeneity, price trends, and price endogeneity: Evidence from U.S. Data. \emph{Energy Policy}, \emph{97}, 235--249. http://doi.org/\href{https://doi.org/10.1016/j.enpol.2016.07.031}{10.1016/j.enpol.2016.07.031}
 
+\leavevmode\vadjust pre{\hypertarget{ref-osm21a}{}}%
+OSM. (2021a). Einwohnerzahl auf PLZ-Gebiete abbilden. Retrieved from \url{https://blog.suche-postleitzahl.org/post/132153774751/einwohnerzahl-auf-plz-gebiete-abbilden}
+
+\leavevmode\vadjust pre{\hypertarget{ref-osm21}{}}%
+OSM. (2021b). Postleitzahlen Deutschland. Retrieved from \url{https://www.suche-postleitzahl.org/downloads}
+
 \leavevmode\vadjust pre{\hypertarget{ref-pindyck_rubinfeld18}{}}%
 Pindyck, R. S., \& Rubinfeld, D. L. (2018). \emph{Microeconomics} (9th Edition). New York, NY: Pearson.
 
@@ -991,6 +1024,9 @@ Schmitz, H., \& Madlener, R. (2020). Heterogeneity in price responsiveness for r
 
 \leavevmode\vadjust pre{\hypertarget{ref-schulte_heindl17}{}}%
 Schulte, I., \& Heindl, P. (2017). Price and income elasticities of residential energy demand in Germany. \emph{Energy Policy}, \emph{102}, 512--528. http://doi.org/\href{https://doi.org/10.1016/j.enpol.2016.12.055}{10.1016/j.enpol.2016.12.055}
+
+\leavevmode\vadjust pre{\hypertarget{ref-statistischeamter21}{}}%
+Statistische Ämter. (2021). Einkommen der privaten Haushalte in den kreisfreien Städten und Landkreisen der Bundesrepublik Deutschland 1995 bis 2019. Retrieved November 12, 2021, from \url{http://www.statistikportal.de/de/vgrdl/ergebnisse-kreisebene/einkommen-kreise}
 
 \leavevmode\vadjust pre{\hypertarget{ref-stede_etal20}{}}%
 Stede, J., Schütze, F., \& Wietschel, J. (2020). Wärmemonitor 2019: Klimaziele bei Wohngebäuden trotz sinkender CO2-Emissionen derzeit außer Reichweite (Version 2.0). \emph{DIW Wochenbericht}. http://doi.org/\href{https://doi.org/10.18723/DIW_WB:2020-40-1}{10.18723/DIW\_WB:2020-40-1}
