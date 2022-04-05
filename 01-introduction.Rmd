@@ -64,11 +64,11 @@ In this context it should be noted that the data sample used in this thesis also
 
 ## Research questions and objective {#objective}
 
-Against the background of the tightened climate targets, the recently introduced carbon pricing, and the sharp price increases for heating fuels, the question of the price elasticity of heating demand is once again moving to the center of public attention. The aim of this work is to investigate the price elasticity of heating demand in multi-family houses in Germany based on a large-scale sample of energy bills. The guiding research questions for the analysis are:
+Against the background of the tightened emissions reduction targets, the recently introduced carbon pricing, and the sharp price increases for heating fuels, the question of the price elasticity of heating demand is once again moving to the center of public attention. The aim of this work is to investigate the price elasticity of heating demand in multi-family houses in Germany based on a large-scale sample of energy bills. The guiding research questions for the analysis are:
 
--   How does a change in energy price affect the level of energy consumption?
--   What other variables might affect energy consumption and need to be taken into account so that their effects are not falsely attributed to energy prices?
--   And, are there potential factors for heterogeneity within the sample that would be obscured when only estimating an overall elasticity?
+-   How does a change in energy price affect the level of demand for space heating?
+-   What other variables might affect demand for space heating and need to be taken into account so that their effects are not falsely attributed to energy prices?
+-   And, are there potential factors for heterogeneity in the sample that may be obscured when only estimating an overall price elasticity of demand?
 
 By using energy bills as a data source, the study aims to complement existing studies based on different sources. Furthermore, the period studied is more recent and can therefore complement older studies. Also, the analysis aims not only to estimate an overall elasticity, but also to investigate potential factors for heterogeneity. The statistical analysis aims to use several different modelling approaches, both Frequentist and Bayesian. As far as the author is aware, the Bayesian approach has not been used in previous research in this field. Furthermore, the elasticity estimates from this work may also be relevant for other countries and regions that have comparable conditions to Germany in terms of building stock and energy demand and also face the challenge of decarbonising the building sector in the coming decades. Here, my results would serve as an empirical guide to the short-term demand effects for any kind of price-related policy instrument.
 

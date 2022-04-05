@@ -76,7 +76,7 @@
 \title{Short-Term Price Elasticities of Heating Demand: A Statistical Analysis of Energy Billing Data in Germany}
 \author{Marc Blauert}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{2022-04-04}
+\date{2022-04-05}
 \division{Albrecht Daniel Thaer-Institute}
 \advisor{Prof.~Dr.~Karsten Neuhoff}
 \institution{Humboldt University of Berlin}
@@ -277,15 +277,15 @@ In this context it should be noted that the data sample used in this thesis also
 \hypertarget{objective}{%
 \section{Research questions and objective}\label{objective}}
 
-Against the background of the tightened climate targets, the recently introduced carbon pricing, and the sharp price increases for heating fuels, the question of the price elasticity of heating demand is once again moving to the center of public attention. The aim of this work is to investigate the price elasticity of heating demand in multi-family houses in Germany based on a large-scale sample of energy bills. The guiding research questions for the analysis are:
+Against the background of the tightened emissions reduction targets, the recently introduced carbon pricing, and the sharp price increases for heating fuels, the question of the price elasticity of heating demand is once again moving to the center of public attention. The aim of this work is to investigate the price elasticity of heating demand in multi-family houses in Germany based on a large-scale sample of energy bills. The guiding research questions for the analysis are:
 \begin{itemize}
 \tightlist
 \item
-  How does a change in energy price affect the level of energy consumption?
+  How does a change in energy price affect the level of demand for space heating?
 \item
-  What other variables might affect energy consumption and need to be taken into account so that their effects are not falsely attributed to energy prices?
+  What other variables might affect demand for space heating and need to be taken into account so that their effects are not falsely attributed to energy prices?
 \item
-  And, are there potential factors for heterogeneity within the sample that would be obscured when only estimating an overall elasticity?
+  And, are there potential factors for heterogeneity in the sample that may be obscured when only estimating an overall price elasticity of demand?
 \end{itemize}
 By using energy bills as a data source, the study aims to complement existing studies based on different sources. Furthermore, the period studied is more recent and can therefore complement older studies. Also, the analysis aims not only to estimate an overall elasticity, but also to investigate potential factors for heterogeneity. The statistical analysis aims to use several different modelling approaches, both Frequentist and Bayesian. As far as the author is aware, the Bayesian approach has not been used in previous research in this field. Furthermore, the elasticity estimates from this work may also be relevant for other countries and regions that have comparable conditions to Germany in terms of building stock and energy demand and also face the challenge of decarbonising the building sector in the coming decades. Here, my results would serve as an empirical guide to the short-term demand effects for any kind of price-related policy instrument.
 
@@ -458,7 +458,7 @@ The key dataset in this process is a large-scale building-level panel of energy 
 
 \textbf{Space heat demand (kWh/sqm/a):} The demand data in the billing dataset is provided as total energy consumed per building and per annual billing period in kilowatt hours (kWh). To isolate the share of energy consumed for the key purpose of space heating, the share of energy used for hot water production is deduced for those buildings where hot water production is also done via the central heating system. In a second step, in order to obtain a comparable metric for the differently sized buildings in the sample, the total space heating demand at building level is divided by the building heating surface in square meters (sqm). This results in the annual space heat demand per square meter as the demand variable. For a summary of the variables and their data sources see Table \ref{tab:variables}.
 
-\textbf{Energy prices (Cents/kWh):} The structure of the price data in the dataset is similar to that of energy demand. Total annual costs in Euros are given at the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. To make the cost scale more intuitive, it is transferred from Euros to Cents. This gives a per-unit cost in Cents per kWh. A breakdown according to fixed and variable cost components is not reported in the data. Additionally, energy prices are provided in nominal prices thus in order to obtain real prices, nominal prices are adjusted using the German annual consumer price index (CPI) with 2015 as the index year (\protect\hyperlink{ref-destatis21}{DESTATIS, 2021b}).
+\textbf{Energy prices (Cents/kWh):} The structure of the price data in the dataset is similar to that of energy demand. Total annual costs in Euros are given at the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. To make the cost scale more intuitive, it is transferred from Euros to Cents. This gives a per-unit cost in Cents per kWh. A breakdown according to fixed and variable cost components is not reported in the data. Additionally, energy prices are provided in nominal prices thus in order to obtain real prices, nominal prices are deflated using the German annual consumer price index (CPI) with 2015 as the index year (\protect\hyperlink{ref-destatis21}{DESTATIS, 2021b}).
 
 \textbf{(Billing) Year:} The billing data contains the exact dates of the billing period of an individual building. While most billing periods mirror the calendar year, some buildings have billing periods occurring during the year. Therefore, the start and end dates of the billing periods are used to make an allocation to billing years. For billing periods during the year, the allocation is based on which of the two calendar years contains the majority of days in the billing period.
 
@@ -532,18 +532,30 @@ In line with the previous literature (\protect\hyperlink{ref-meier_rehdanz10}{Me
 ln(D)_{it} = \alpha + \beta ln(P)_{it} + \gamma X_{it} + \delta_i + \eta_t + \varepsilon_{it}
 \label{eq:fixedeff}
 \end{equation}
+With a panel data set, the same units are sampled in two or more time periods. For each unit (individual, school, city, and so on) i we have multiple years of data
+
+Main benefit of panel data: with multiple years of data we can control for unobserved characteristics that do not change (or change slowly) over time. Very useful for policy analysis
+
+Econometric methods extend to unbalanced panels, and software takes care of algebraic details
+
+However, one should ask: Why are some periods missing for some units? (For example, is reporting achievement scores by schools optional or not enforced?)
+
+An unbalanced panel (e.g., the second dataset above) is a dataset in which at least one panel member is not observed every period. Therefore, if an unbalanced panel contains N panel members and T periods, then the following strict inequality holds for the number of observations (n) in the dataset: n \textless{} N×T.
+
+individuals observed in multiple time periods
+
 \textbf{Bayesian estimation approaches}
 
 \hypertarget{workflow}{%
 \section{Workflow}\label{workflow}}
 
-In Figure xxx the workflow of the empirical analysis is depicted. The upper part of the workflow describes the data processing and the merging of data. The lower part shows the regression analyses carried out using the entire sample.
+\textbf{ADD CORRECT VERSIONS OF WORKFLOW LATER}
 
-\textbf{Explanation of data processing and cleaning}
+In Figure \ref{fig:workflow1} the first part of the workflow of the empirical analysis is depicted. The upper part describes the data processing and the merging of data. The bottom part shows the regression analyses performed on the full sample using ordinary least squares (OLS) and fixed effects (FE) regressions. In Figure \ref{fig:workflow1} the second part of the workflow is shown. After using Frequentist estimation techniques on the full sample, the analysis moves to the application of Bayesian regression analysis. For this purpose, a random sub-sample is created for which also the information from the energy performance certificates (EPC) is available. Additionally, the sub-sample is used to investigate potential factors of heterogeneity within the sample.
 
-The energy billing data requires several steps of data cleaning, which are shown in the upper part of the workflow (Figure xxx). After the data cleaning, 2,721,210 of the original 4,494,943 annual billing observations remain for the analysis. The criteria used to remove observations from the billing dataset are ordered by the number of observations removed in each step.
+\textbf{Full sample: Data processing and matching}
 
-The most important reason for exclusion from the sample is the absence of price data. In the period 2003-2006, price data are not available for any of the observations. This leads to the exclusion of 909,458 observations. In addition, price data are also missing for a part of the observations in the period 2009-2019. Due to these gaps in the price data, a further 543,544 observations are excluded from the dataset.
+The energy billing data requires several steps of data processing to clean the data, which are shown in the upper part of Figure \ref{fig:workflow1}. After the data cleaning, 2,719,270 of the original 4,494,943 annual billing observations (60.5\%) remain for the full sample analysis. The criteria applied in the cleaning process are ordered by their relevance (number of observations removed).
 \begin{figure}
 
 {\centering \includegraphics[width=1.03\linewidth]{figure/workflow_diagramm_1} 
@@ -552,9 +564,15 @@ The most important reason for exclusion from the sample is the absence of price 
 
 \caption{Workflow of data processing and full sample analysis}\label{fig:workflow1}
 \end{figure}
-Spatial and temporal distribution:
+The most important reason for exclusion from the sample is the absence of price data. In the period 2003-2006, price data are not available for any of the observations. This leads to the exclusion of 909,458 observations. In addition, price data are also missing for a part of the observations in the period 2009-2019. Due to these gaps in the price data, a further 543,544 observations are excluded from the dataset. A further 233,888 observations are removed from the sample because they are associated with buildings that occur only once in the sample. The decision to apply this criterion was mainly due to the fact that singular building IDs occurred mainly in the period 2007-2008, suggesting that IDs from this period are not linked with observations in later periods. Furthermore, observing a building at least twice during the analysed period allowed for cross-validation of matching building attributes and therefore better reliability of the data. Another 53,674 observations were removed from the sample because the buildings are heated with an energy carrier other than gas, oil, or district heating. Due to the small number of buildings compared to the total sample size and due to the heterogeneity of the group (both very modern buildings with heat pumps and un-renovated buildings with coal heating), it was decided to exclude all other energy carriers from the sample. In addition, another 1,722 observations were excluded as duplicates (matching building ID and year) and 65 observations due to a deviating length of the billing period (deviation of more than +/- 10 days).
 
-In Appendix \ref{fig:buildings-distribution} the spatial and temporal distribution of observations is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
+In addition to the rationales described above, there are two other reasons for excluding observations, both of which are related to outliers in the energy price data. Firstly, it was identified through exploratory testing that the price data contains fictitious cost values (e.g.~1,000.00 Euros for the entire building) that are used as placeholders and do not reflect the actual costs. These fictitious cost values arise because ista, as a billing service provider, does not always have information about the costs incurred by the building owners and therefore uses the placeholders for technical reasons. The actual costs are only entered later by the building owners and do not appear in the sample. This practice leads to the formation of outliers in the price data, as the fictitious cost values do not necessarily reflect the size and characteristics of a building. In total, 31,665 observations are removed due to fictitious cost values. In a second step, outliers in the price data were also excluded that either showed strong deviations from the reasonable price level for the period under observation (\textless2 cents/kWh or \textgreater100 cents/kWh) or strong price changes from one period to another (\textgreater10 or \textless-10 cents/kWh compared to the previous year). The exclusion thresholds were based on expert judgement and were chosen to ensure that only extremely unrealistic observations were included. This additional step excludes a further 1,717 observations from the sample. Compared to the other cleaning steps described before, the exploratory examination of the data showed that the two price-related reasons exerted a strong influence on the results of the analysis and therefore represent an important step in the analysis.
+
+The processed billing data are then matched with the external data sources (see figure \ref{fig:workflow1}). Due to missing degree days data or changes in the administrative areas, a further 1,940 observations are removed from the sample here, which ultimately leads to 2,719,270 remaining observations. After the processing, these observations are both complete and systematically checked for data errors that may have affected the outcome of the analysis.
+
+In Appendix \ref{fig:buildings-distribution} the spatial and temporal distribution of observations in the processed full sample is shown on the district-level. On the temporal dimension, structurally fewer observations of around 40,000 are available in 2007 and 2008, as price data were first recorded in these years. In the decade between 2009 and 2019, a minimum of 201,856 and an average of 239,183 buildings are observed annually, with good spatial coverage. There are only a few districts where no buildings are observed within a year, and for most district-year combinations more than 10 and up to more than 10,000 buildings are observed.
+
+\textbf{Full sample: Regression analysis}
 
 \hypertarget{notizen-aus-anderen-publikationen}{%
 \section{Notizen aus anderen Publikationen}\label{notizen-aus-anderen-publikationen}}
