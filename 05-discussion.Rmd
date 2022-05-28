@@ -20,10 +20,42 @@ NOTES - Energy taxation and climate change:
 
 ## Discussion of elasticity results
 
-## The role of energy prices and interaction with complementary measures
+## The role of energy prices and interaction with complementary measures (policy-mix)
 
 
 - For district heating larger share of costs are fixed; may drive the effect of larger price elasticities as data does not differentiate between fixed and variable cost components and with lower energy demand the per-unit cost rate increses due to the larger 
 
 - Prices not the only option for action, potential overestimation of price relevance
+
 - Warmmietenmodell (Now only the renters are effected which will mainly trigger short-term price reactions; for decarbonisation need to tap the long-term channel; Lessors must be incentivized to initialize efficiency measures; one option: split prices but then long-term price signal is still partly muted; Warmmietmodell as an alternative where both parties renters and lessors have full economic incentive of pricing measures)
+
+
+Relevance of Policy Mix - UBA (2022) study:
+
+- Simulate the effect of various price paths for the BEHG until 2030 and simulate for the buildings sector (also consider the transportation and industry sector) how those varying price paths affect the level of sectoral emissions.
+
+- Shortcoming: They do not consider demand effects from price changes --> short-term effects that this theses argues for; prices are only endogenous effects on the long-term investment desicions.
+
+- Additional Shortcoming: Simulate choice of heat supply system, but not additional renovations, for example of the building envelope
+
+- With the findings from this thesis it must therefore be assumed that actual emissions would be lower than simulated in the model not considering demand adjustments from higher energy prices
+
+- Three scenarios: 1. BaU CO2 price of 125€/t in 2030; 2. Foresight, anticipation of energy prices for coming 5/10 yrs; 3. Foresight AND shorter lifetimes of heating systems (75% of usual life-time) for increased replacement.
+
+- BaU: 86 Mt CO2e in 2030, KSG 2021 sector goal for buildings: 67 Mt CO2e in 2030; 28.4% above the target
+
+- Only the scenarios with adjusted replacement rates + foresight meet or fall below the KSG (2021) targets (amended 2021 version).
+
+- Anticipation of higher CO2 prices over long time span has high impact; but effect about three times as large when combined with shorter lifetimes of heating systems
+
+- In scenarios with the assumption that heat supply systems are replaced more quickly due to the rising CO2 price, the heating replacement rate increases to around 5%. In sensitivities in which no shorter lifetimes of the heat supply systems are assumed, the heating replacement rate is significantly lower.
+
+- Investitionsentscheidungen sind bedarfsgetrieben --> Policy Mix kann hier abhilfe Schaffen (bonus-malus system)
+
+- Another key finding is that significantly greater savings can be achieved if the capital good is replaced before the end of its respective service life. Due to the long-term capital stocks, the effects are greatest in the buildings and industry sectors, while in the transport sector the additional effect of early replacement is limited due to the comparatively short holding periods of vehicles.
+
+- Zusammenspiel: nur wenn fossile Investitionsgüter wirtschaftlich unattraktiv sind, wird durch die Austauschratenerhöhung die gewünschte Wirkung erzielt. Zusätzloiche Maßnahmen könnten sein: Verbesserung von Informationsverfügbarkeit, Ordnungsrecht oder finanzielle Förderungen. Besondere Bedeutung ist dabei einem verlässlich kommunizierten Preispfad des BEHG zuzumessen.
+
+- Das im Rahmen der aktuellen Beratungen zum Fit-for-55-Paket der EU zu erwartende verschärfte, neue ESR-Ziel wie auch die daraus abgeleitete neue BEHG-Höchstmenge wird in keiner CO2-Preissensitivität eingehalten.--> Einhaltung der ambitionierteren BEHG-Ziele höhere CO2-Preise als hier analysiert zu erwarten sind bzw. darüberhinausgehende klimapolitische Instrumente erforderlich sind
+
+- Damit bestätigt sich mit dieser Modellierungsarbeit auch die wirtschaftstheoretische Herleitung (vgl. Kemfert et al. (2021)), dass zur Erreichung der Klimaschutzziele ein Politik-Mix zielführend ist, welcher die CO2-Bepreisung mit ordnungsrechtlichen Instrumenten, Förderprogrammen und weiteren Instrumenten (z.B. dem Abbau klimaschädlicher Subventionen) kombiniert.

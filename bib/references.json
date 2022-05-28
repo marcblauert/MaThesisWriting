@@ -4495,7 +4495,7 @@
 	},
 	{
 		"id": "http://zotero.org/users/3542409/items/MVS8P8DB",
-		"type": "article",
+		"type": "document",
 		"title": "Pub_20190603_Energy-Market-Germany-2019.pdf",
 		"citation-key": ""
 	},
@@ -4812,5 +4812,167 @@
 			]
 		},
 		"citation-key": "vdi13"
+	},
+	{
+		"id": "michelsen_rosenschon12",
+		"type": "article-journal",
+		"container-title": "Economics Bulletin",
+		"journalAbbreviation": "Economics Bulletin",
+		"page": "3488-3502",
+		"title": "The effects of building energy codes in rental housing: The German experience",
+		"volume": "32",
+		"author": [
+			{
+				"family": "Michelsen",
+				"given": "Claus"
+			},
+			{
+				"family": "Rosenschon",
+				"given": "S."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012",
+					1,
+					1
+				]
+			]
+		},
+		"citation-key": "michelsen_rosenschon12"
+	},
+	{
+		"id": "nei22",
+		"type": "post-weblog",
+		"language": "de-DE",
+		"title": "EnEV-Referenzgebäude",
+		"URL": "https://nei-dt.de/fachinformationen/neubau-standards/enev-referenzgebaeude/",
+		"author": [
+			{
+				"family": "NEI",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					3,
+					27
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		},
+		"citation-key": "nei22"
+	},
+	{
+		"id": "holland86",
+		"type": "article-journal",
+		"container-title": "Journal of the American Statistical Association",
+		"DOI": "10.1080/01621459.1986.10478354",
+		"ISSN": "0162-1459",
+		"issue": "396",
+		"journalAbbreviation": "null",
+		"note": "publisher: Taylor & Francis",
+		"page": "945-960",
+		"title": "Statistics and Causal Inference",
+		"URL": "https://www.tandfonline.com/doi/abs/10.1080/01621459.1986.10478354",
+		"volume": "81",
+		"author": [
+			{
+				"family": "Holland",
+				"given": "Paul W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1986",
+					12,
+					1
+				]
+			]
+		},
+		"citation-key": "holland86"
+	},
+	{
+		"id": "nichols07",
+		"type": "article-journal",
+		"abstract": "Problems with inferring causal relationships from nonexperimental data are briefly reviewed, and four broad classes of methods designed to allow estimation of and inference about causal parameters are described: panel regression, matching or reweighting, instrumental variables, and regression discontinuity. Practical examples are offered, and discussion focuses on checking required assumptions to the extent possible.",
+		"container-title": "The Stata Journal: Promoting communications on statistics and Stata",
+		"DOI": "10.1177/1536867X0800700403",
+		"ISSN": "1536-867X, 1536-8734",
+		"issue": "4",
+		"journalAbbreviation": "The Stata Journal",
+		"language": "en",
+		"page": "507-541",
+		"source": "DOI.org (Crossref)",
+		"title": "Causal Inference with Observational Data",
+		"URL": "http://journals.sagepub.com/doi/10.1177/1536867X0800700403",
+		"volume": "7",
+		"author": [
+			{
+				"family": "Nichols",
+				"given": "Austin"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					4,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2007",
+					12
+				]
+			]
+		},
+		"citation-key": "nichols07"
+	},
+	{
+		"id": "uba22",
+		"type": "report",
+		"abstract": "Climate mitigation contribution of different CO2 price paths in the transport, building and industry sectors covered by the Fuel Emissions Trading Act (BEHG) Within the scope of this project, it is modelled how different CO2 prices within the framework of the Fuel Emissions Trading Act (BEHG) as well as further assumptions affect the achievement of the 2030 target. This is implemented by an iterative modelling of the sectors transport, industry, and buildings.",
+		"language": "de",
+		"page": "55",
+		"source": "Zotero",
+		"title": "Klimaschutzbeitrag verschiedener CO2-Preispfade in den BEHG-Sektoren Verkehr, Gebäude und Industrie",
+		"URL": "https://www.umweltbundesamt.de/publikationen/klimaschutzbeitrag-verschiedener-co2-preispfade-in",
+		"author": [
+			{
+				"family": "UBA",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					5,
+					18
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		},
+		"citation-key": "uba22"
 	}
 ]

@@ -15,21 +15,30 @@ options(width = 70)
 
 In order to transfer the theoretical model set up in Section \@ref(conceptual-model) into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from various sources were combined and processed.
 
-**Energy billing data**
+**Energy billing dataset**
 
-The key dataset in this process is a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin. The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided for scientific use.[^31] The sample contains information on multi-unit residential buildings in Germany and ranges from 2003 to 2019. The smallest buildings observed have two living units; single-family houses with just one unit are not observed. The observations in the dataset represent annual heating bills at the building-level. The dataset contains the two main variables for the analysis: space heating demand and energy prices. It also contains additional building-level information on the heating surface, the energy carrier, and a building ID and the billing dates to create a panel data structure. While the demand data is available from the start, energy prices are first observed in 2007. Thus, the time period analysed in this thesis ranges from 2007 to 2019.
+The key dataset in this process is a large-scale building-level panel of energy bills made available though the Climate Policy Department at DIW Berlin. The data originates from the energy- and billing service provider ista Deutschland GmbH and was provided for scientific use.[^31] The sample contains information on multi-unit residential buildings in Germany and ranges from 2003 to 2019. The smallest buildings observed have two living units; single-family houses with just one unit are not observed. The observations in the dataset represent annual heating bills at the building-level. The dataset contains the two main variables for the analysis: space heating demand and energy prices. It also contains additional building-level information on the heating surface, number of housing units, the energy carrier, and a building ID and the billing dates to create a panel data structure. While the demand data is available from the start, energy prices are first observed in 2007. Thus, the time period analysed in this thesis ranges from 2007 to 2019.
 
 [^31]: Due to the sensitivity of the data, it is to be classified as confidential. Access was exclusively via DIW Berlin's internal servers. Due to data protection regulations, it is not possible to make the data available to external parties for the purpose of reproducing the results.
 
-**Space heat demand (kWh/sqm/a):** The demand data in the billing dataset is provided as total energy consumed per building and per annual billing period in kilowatt hours (kWh). To isolate the share of energy consumed for the key purpose of space heating, the share of energy used for hot water production is deduced for those buildings where hot water production is also done via the central heating system. In a second step, in order to obtain a comparable metric for the differently sized buildings in the sample, the total space heating demand at building level is divided by the building heating surface in square meters (sqm). This results in the annual space heat demand per square meter as the demand variable. For a summary of the variables and their data sources see Table \@ref(tab:variables).
+**Space heat demand (kWh/sqm/a):** The demand data in the billing dataset is provided as total energy consumed per building and per annual billing period in kilowatt hours (kWh). To isolate the share of energy consumed for the purpose of space heating, the share of energy used for hot water production is deduced for those buildings where hot water production is also done via the central heating system. In a second step, in order to obtain a comparable metric for the differently sized buildings in the sample, the total space heating demand at building level is divided by the building heating surface in square meters (sqm). This results in the annual space heat demand per square meter as the demand variable. For a summary of the variables and their data sources see Table \@ref(tab:variables).
 
-**Energy prices (Cents/kWh):** The structure of the price data in the dataset is similar to that of energy demand. Total annual costs in Euros are given at the building-level. Based on the relative consumption shares for space heating and hot water generation, the share of space heating in the total costs can be isolated. In a second step, the proportional costs for space heating is converted into per-unit costs by dividing them by the respective amount of space heating consumed in kWh. To make the cost scale more intuitive, it is transferred from Euros to Cents. This gives a per-unit cost in Cents per kWh. A breakdown according to fixed and variable cost components is not reported in the data. Additionally, energy prices are provided in nominal prices thus in order to obtain real prices, nominal prices are deflated using the German annual consumer price index (CPI) with 2015 as the index year [@destatis21].
+**Energy prices (Cents/kWh):** The structure of the price data in the dataset is similar to that of the demand data. The energy price data is provided as total annual costs at the building-level in Euros. Again, relying on the supplementary information on the relative shares of energy use for space heating and hot water generation in buildings where hot water is provided via the central heating system, the cost share for space heating alone is identified. In a second step, the cost share for space heating is then translated into average per-unit costs by dividing total costs for space heating by the respective demand for space heating in kWh. To make the cost scale more intuitive, prices are furthermore converted from Euros to Cents. This yields a per-unit energy price variable (Cents/kWh). Additionally, since energy prices are provided as nominal prices, they are deflated using the German annual consumer price index (CPI) with 2015 as the index year [@destatis21]. The use of the CPI to deflate energy prices represents the standard procedure in the literature, which is also used by @schmitz_madlener20, for example.
+
+Energy contracts for private households in Germany usually consist of a fixed cost component (flat-rate basic charge) and a variable cost component (consumption-based price per kWh).[^32] The data does not contain a breakdown of fixed and variable costs, but only the total costs, which are then converted into average costs per-unit (the sum of fixed and variable costs divided by the quantity demanded) as described in the previous paragraph. There is much debate in the literature about whether the household demand response to changes in energy prices depends on the average price or instead on the marginal price. The use of marginal prices would be necessary if the variable price component were to change based on the quantity consumed ("block pricing") and could also be dynamically adjusted by the utility, as is the case for many private household contracts in the USA, for example [see @auffhammer_rubin18]. Since those factors do not apply for the energy contracts underlying the billing data used in this thesis, I assume the use of the average per-unit energy price to be suitable, as it was also done in other studies [e.g., @metcalf_hassett99; @rehdanz07; @schmitz_madlener20]
+
+
+[^32]: On the basis of exemplary heating bills provided by ista, it was possible to determine that this was also the case for the data in the billing sample.
+
+Aufhammer über Rehdanz: where it appears average price equalled marginal price
+
+There is considerable debate in the literature whether household energy demand depends on the marginal or average price, which may differ in the presence of fixed fee and block pricing. Shin (1985) argues that households will respond to average price, which is easily calculated from the electricity bill, rather than to the actual block marginal price, which is costly to determine, and develops an empirical strategy for testing this conjecture. The average price is also used in Metcalf and Hassett (1999),5 and Borenstein (2008, 2009) and Ito (2010) find no evidence that consumers “bunching up” around the block where the price changes, as one would expect if consumers truly respond to marginal price.
 
 **(Billing) Year:** The billing data contains the exact dates of the billing period of an individual building. While most billing periods mirror the calendar year, some buildings have billing periods occurring during the year. Therefore, the start and end dates of the billing periods are used to make an allocation to billing years. For billing periods during the year, the allocation is based on which of the two calendar years contains the majority of days in the billing period.
 
-**Energy carrier:** There are three main groups of energy sources included in the data: Gas, Oil and District Heating. In order to obtain these three overarching categories, the individual energy source descriptions from the original data set are combined under these categories. In addition, all buildings with other heating sources whose occurrence is insignificant compared to the other three categories (e.g. electricity, coal combustion) are grouped under the category *Others*, which is later excluded from the analysis due to the heterogeneity of the group.
+**Energy carrier:** There are three main types of energy carriers included in the dataset: Gas, oil, and district heating. To obtain these three categories, energy carrier descriptions from the dataset are grouped under these categories (e.g, *Gas low* and *Gas high* are grouped under *Gas*). In addition, all other heating carriers which have only limited occurrence in the sample (e.g. electricity for heat pumps, coal combustion) are grouped under the category *Others* and later excluded from the analysis due to the relatively small number of observations and heterogeneity of carrier types within the group (see Section \@ref(workflow)).
 
-**Heating surface (sqm):** Information on the heating surface of a building is given as square meters at building level. The heating area does not correspond to the total floor area of a building, as it excludes the unheated areas within the buildings (e.g., building corridors or basements).
+**Heating surface (sqm):** Information on the heating surface of a building is given in square meters at building-level. The heating surface does not correspond to the total floor area of a building, as it excludes the unheated surfaces within a buildings (e.g., building corridors or basements). Heating area was chosen over the number of housing units as an alternative approximation for the size of a building. The reasons for this are that it was assumed that the heating surface better reflects the ratio between the interior and exterior area of a building since it does not suffer from varying sizes of housing units.
 
 \begin{table}[]
 \centering
@@ -56,13 +65,17 @@ The key dataset in this process is a large-scale building-level panel of energy 
 \textit{\begin{tabular}[c]{@{}l@{}}Climatic conditions\\ \end{tabular}} & Degree days & Continuous & ln(degree days) & IWU (2021) \\
 \textit{} &  &  &  &  \\
 \multirow{3}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Socio-economic factors\\ \end{tabular}}} &  District household income & Continuous & ln(Euros/a) & Statistische Ämter (2021) \\
- & District retirement share & Continuous & \% & DESTATIS (2021) \\
- & Postal code population density & Continuous & ln(inhabitants/sq. km) & DESTATIS (2021) \\ \bottomrule
+ & District retirement share & Continuous & \% & DESTATIS (2021a) \\
+ & Postal code population density & Continuous & ln(inhabitants/sq. km) & OSM (2021), OSM (2021a) \\ \bottomrule
 \end{tabular}%
 }
 \end{table}
 
 \ 
+
+**Energy performance certificates (EPC) dataset**
+
+[STILL MISSING]
 
 **Supplementary data sources**
 
@@ -70,32 +83,39 @@ The key dataset in this process is a large-scale building-level panel of energy 
 
 **District household income (Euros/a):** As district income the per capita disposable income of private households per person provided by the joint statistical portal of the federal and state governments is used [@statistischeamter21]. The figure comprises the primary income of private households, deducting transfers paid and adding transfers received. Disposable income is chosen because it can be considered the most suitable indicator for funds available for households. The district-level is chosen as it is the most granular household income statistics available.
 
-**District retirement share (%):** To construct the district retirement share variable, population data at the district level with a segmentation by age groups is used [@destatis21c]. As an approximation for the actual proportion of retirees, the percentage of persons within a district and year who are older than 65 years is calculated. This approach was chosen because no detailed statistics are available on the number of people in retirement at the district-level.
+**District retirement share (%):** To construct the district retirement share variable, population data at the district-level with a segmentation by age groups is used [@destatis21c]. As an approximation for the actual proportion of retirees, the percentage of persons within a district and year who are 65 years of age and older is calculated. This approach was chosen because no detailed statistics are available on the number of people in retirement at the district-level. The boundary value of 65 was chosen as the age group closest to the current retirement age in Germany and since the same threshold was also chosen in the literature (e.g., @alberini_etal11) 
 
-**Postal code population density (inh./sq. km):** To generate the population density variable, data from Open Street Maps with pre-assigned population figures to post code areas based on the 2011 Census were used [@osm21; @osm21a]. The postal code and not the district level was chosen because, firstly, a higher granularity of data was available and, secondly, the use of districts as the level of analysis would have obscured much of the heterogeneity within districts. To calculate population density, the number of inhabitants per postal code was divided by the base area in square kilometers (sq. km).
+**(Postal code) Population density (inh./sq. km):** To generate the population density variable, data from Open Street Maps with pre-assigned population figures to postal code areas based on the 2011 Census were used [@osm21; @osm21a]. The postal code level and not the district level was chosen because, firstly, a higher granularity of data was available and, secondly, the use of districts as the level of analysis may obscure heterogeneity within districts. Especially when they are rural districts with a city. To determine the population density variable, the number of inhabitants per postal code was divided by the base area in square kilometers (sq. km), giving the population density as the average number of inhabitants per sq. km.
 
-## Estimation methods and empirical model {#empirical_model}
+## Empirical approach and model {#empirical_model}
 
-**Establishing causality**
+**Causality and observational data**
 
-**Endogeneity issues**
+The conceptual DAG presented in Section \@ref(conceptual-model) and the derived rationales for the cause-and-effect relationships between space heat demand and energy price in an environment where the other explanatory variables also exert an effect on energy demand are all based on the assumption of causal inference. Causal inference can be described as indicating that an observed relationship between two variables is reflected by a causal link and not just mere correlation [@holland86]. The analysis in this thesis is build on externally provided observational data. Using observational data to draw causal inference about a treatment effect -- in the given case, inference about the price sensitivity of private households for space heating demand in multi-family buildings in Germany -- is inherently difficult since the treatment is not controllable and therefore cannot be randomly assigned [@nichols07]. Since an experimental research design, which would arguably provide the most unbiased source of evidence, is not feasible for this research, it is all the more important to point out potential sources of bias in the estimation process relying on observational data and address those biases where possible.
 
+**Potential biases**
 
-Prices: Form nominal --> real
+Reducing potential sources of bias was approached in several steps. First, the large set of additional explanatory variables already described was used to reduce bias from omitted variables. This means that by taking into account, for example, degree days or the heating surface area of a building, additional effects on heating demand are captured that might otherwise be wrongly attributed to the energy price alone. Regarding the omitted variables, a shortcoming is that due to the aggregated data structure at the building-level, it is not possible to integrate detailed socio-economic factors at the household-level, such as household income, number of inhabitants, age, education level or employment status. These variables represent relevant factors that potentially influence energy demand and are therefore considered in studies that rely on data from household-level social surveys [e.g. @meier_rehdanz10; @rehdanz07; @schmitz_madlener20]. With the given data structure, it is not possible to completely overcome this source of omitted variable bias. However, to at least partially address the non-availability of these variables in the billing dataset, socio-economic controls at the district or postal code level are used to attempt to capture underlying socio-economic effects at a higher level.
 
+Another source of potential bias may result from data errors. Use of observational data should therefore not be regarded as a mechanistic procedure, but instead rely on the application of domain-specific knowledge to critically assess and scrutinize the observational data available. With regards to data errors, use of domain-specific knowledge and expert judgement was particularly relevant in the data cleaning process of the analysis described in detail in the following Section \@ref(workflow). In the assessment of the energy price variable, outliers are identified which stem from errors in the data and if left unaddressed would have distorted the outcome of the analysis.
 
-There is considerable debate in the literature whether household energy demand depends on the marginal or average price, which may differ in the presence of fixed fee and block pricing. Shin (1985) argues that households will respond to average price, which is easily calculated from the electricity bill, rather than to the actual block marginal price, which is costly to determine, and develops an empirical strategy for testing this conjecture. The average price is also used in Metcalf and Hassett (1999),5 and Borenstein (2008, 2009) and Ito (2010) find no evidence that consumers “bunching up” around the block where the price changes, as one would expect if consumers truly respond to marginal price. If demand is assumed to depend on the marginal block price, then price and consumption are simulta-neously determined, and instrumental variable estimation techniques must be used (Burtless and Hausman, 1978; McFadden et al., 1978; Wilder and Willenborg, 1975; Hewitt and Hanemann, 1995; Reiss and White, 2005).
-For lack of exact information about the block rates faced by the consumers, however, we are forced to use average price. 
+In addition, it was checked if the measurement of the variables incorporated a systematic error in the measurement process. Several variables used in the analysis may be subject to measurement error. For example, the degree days data are based on a spatial interpolation of the values from the three nearest DWD weather stations to the centroid of a postal code, which introduces a first level of error. It is then assumed that the degree days assigned to a postal code apply to every building within that postal code, even though there may be greater distances and differences in elevation between the centroid and the building's location. However, errors such as those described exemplarily for the degree days variable do not necessarily represent a problem, since a systematic deviation is required for the existence of a systematic error (bias). Rather, the described exemplary derivations from a true value for outdoor temperature indicate a random inaccuracy in the measurement of the variable, which is less serious in general and especially given the very large number of observations in the sample. The same logic applies, for example, to the construction of the energy demand variable. While aggregation at the building level introduces some inaccuracy compared to a hypothetical measurements at the household-level, it does not lead to a systematic error.
 
+**Simultaneity problem**
 
-Zu Blockpreisen:
-Blockpreise stellen eine gesonderte Ausprägungsform von Paketpreisen dar, und sind beispielsweise bei Stromlieferanten vorzufinden (ebd.). Hier ändern sich die Preise je Mengenintervall, d.h. im Beispiel der Stromversorger nimmt der Preis mit steigendem Mengenintervall ab. Die Idee dahinter ist die, dass die Nachfrage nach Energieversorgung zwar mit zunehmender Haushaltsgröße steigt, die Zahlungsbereitschaft für die gewünschte Menge beim Ausgangspreis jedoch sinkt, sodass durch Blockpreise dieses Dilemma ausgeglichen werden kann und somit zusätzliche Gewinne generiert werden können (ebd., S.288).
+Furthermore, when estimating price elasticities of demand, one additional relevant challenge for the identification of a causal effect is the potential simultaneous determination of price and demand leading to a market equilibrium 
 
-Aus Alberini (2011):
-An additional concern is whether usage decisions depend on the price in the current (billing) period, on that of earlier periods, or a moving average of the prices of recent periods (Poyer and Williams, 1993).For good measure, in what follows we experiment with current price, as well as price of the previous period.
+- Use of multiple estimation techniques (panel regression, Bayesian mutilevel models)
 
+- Issue of Simultaneity (See Aufhammer)
 
-**Frequentist estimation approaches**
+- If demand is assumed to depend on the marginal block price, then price and consumption are simultaneously determined, and instrumental variable estimation techniques must be used (Burtless and Hausman, 1978; McFadden et al., 1978; Wilder and Willenborg, 1975; Hewitt and Hanemann, 1995; Reiss and White, 2005). For lack of exact information about the block rates faced by the consumers, however, we are forced to use average price.
+
+- Perhaps most importantly, research on the elasticity of demand for natural gas must also consider multiple potential sources of endogeneity. The first source of endogeneity is the classic simultaneity that stems from the fact that quantity and price result from the equilibrium in a system of equations. Unlike the electricity sector, for natural-gas customers’ rates change on a monthly basis—updating as a function of gas wholesale prices paid by the retail utilities.
+
+- From Aufhammer wegen IV approach: We instrument the utilities’ consumer-facing prices with the weekly average spot price of natural gas at a major natural gas distribution hub in Louisiana (the Henry Hub). This instrument is valid, as we know the formula of how utilities pass-through the price (providing a strong first stage), and the price is determined prior to within-bill consumption (strengthening the exclusion restriction).
+
+**Frequentist estimation approach**
 
 In line with the previous literature [@meier_rehdanz10; @schmitz_madlener20], the fixed-effects model takes the following form:
 
@@ -107,85 +127,153 @@ ln(D)_{it} = \alpha + \beta ln(P)_{it} + \gamma X_{it} + \delta_i + \eta_t + \va
 ```
 
 
-With a panel data set, the same units are sampled in two or more time periods. For each unit (individual, school, city, and so on) i we have multiple years of data
+Panel data:
 
-Main benefit of panel data: with multiple years of data we can control for unobserved characteristics that do not change (or change slowly) over time. Very useful for policy analysis
+- With a panel data set, the same units are sampled in two or more time periods. For each unit (individual, school, city, and so on) i we have multiple years of data
 
-Econometric methods extend to unbalanced panels, and software takes care of algebraic details
+- Main benefit of panel data: with multiple years of data we can control for unobserved characteristics that do not change (or change slowly) over time. Very useful for policy analysis
 
-However, one should ask: Why are some periods missing for some units? (For example, is reporting achievement scores by schools optional or not enforced?)
+- Econometric methods extend to unbalanced panels, and software takes care of algebraic details
 
-An unbalanced panel (e.g., the second dataset above) is a dataset in which at least one panel member is not observed every period. Therefore, if an unbalanced panel contains N panel members and T periods, then the following strict inequality holds for the number of observations (n) in the dataset: n < N×T.
+- However, one should ask: Why are some periods missing for some units? (For example, is reporting achievement scores by schools optional or not enforced?)
 
-individuals observed in multiple time periods
+- An unbalanced panel (e.g., the second dataset above) is a dataset in which at least one panel member is not observed every period. Therefore, if an unbalanced panel contains N panel members and T periods, then the following strict inequality holds for the number of observations (n) in the dataset: n < N×T.
+
+- individuals observed in multiple time periods
 
 
+- Miller Alberini (2016): We also find that aggregating our data can result in both higher and lower price elasticity estimates, depending on the dataset used, and that controlling for unit-level fixed effects with panel data generally results in more inelastic demand functions.
 
-**Bayesian estimation approaches**
+- Aus Alberini (2011): An additional concern is whether usage decisions depend on the price in the current (billing) period, on that of earlier periods, or a moving average of the prices of recent periods (Poyer and Williams, 1993).For good measure, in what follows we experiment with current price, as well as price of the previous period.
+
+- Since we model conditional demand only, the results should be considered as short-term elasticities. In contrast, medium- and long-term income elasticities tend to be higher. Households with increased income are likely to move into larger homes over the medium term, which would increase their heating expenditures as well (Nesbakken 1999).  --> Short-run elasticities as a lower bar estimate that produces a conservative estimate.
+
+- Csereklyei (2020): It is widely anticipated that responses in electricity consumption to changes in prices will be rather slow, as it takes time for energy-using durable stock to change (Miller and Alberini, 2016). Thus, short-run or annual price elasticity estimates are expected to be rather inelastic, while one anticipates significantly larger long-run estimates.
+
+
+**Bayesian estimation approach**
+
+All from Labanderira et al.
+
+discrete decision to purchase durable goods that consume energy and the decision to consume energy is rarely considered.renovations may disturbe the picture the panel data provides
+
+On the other hand, most empirical studies in this area have used single-equation econometric models that require separability restrictions. This is a severe disadvantage as it is not possible to estimate cross-price effects between different energy products or consider the effects of non-energy products on the price elasticity of energy goods. 
+
+Sample period. It is widely accepted that the economic cycle has a strong influence on energy consumption due to income and (indirect cycle-related) price effects. In the case of economic crises, for example, a depression of energy prices may occur; reduced disposable income may lead agents to reduce consumption through improvements in energy efficiency, adjustments to other types of consumption or changes towards other more inexpensive energy goods.
 
 ## Workflow {#workflow}
 
-**ADD CORRECT VERSIONS OF WORKFLOW LATER**
-
 In Figure \@ref(fig:workflow1) the first part of the workflow of the empirical analysis is depicted. The upper part describes the data processing and the merging of data. The bottom part shows the regression analyses performed on the full sample using ordinary least squares (OLS) and fixed effects (FE) regressions. In Figure \@ref(fig:workflow1) the second part of the workflow is shown. After using Frequentist estimation techniques on the full sample, the analysis moves to the application of Bayesian regression analysis. For this purpose, a random sub-sample is created for which also the information from the energy performance certificates (EPC) is available. Additionally, the sub-sample is used to investigate potential factors of heterogeneity within the sample.
 
-**Full sample: Data processing and matching**
+**Processing of billing sample and matching with supplementary data**
 
 The energy billing data requires several steps of data processing to clean the data, which are shown in the upper part of Figure \@ref(fig:workflow1). After the data cleaning, 2,719,270 of the original 4,494,943 annual billing observations (60.5%) remain for the full sample analysis. The criteria applied in the cleaning process are ordered by their relevance (number of observations removed).
 
-```{r workflow1, echo = FALSE, fig.cap = "Workflow of data processing and full sample analysis", out.width = "103%", fig.align = "center"}
+```{r workflow1, echo = FALSE, fig.cap = "Workflow of data processing and regression analysis based on full sample", out.width = "103%", fig.align = "center"}
 knitr::include_graphics(path = "figure/workflow_diagramm_1.pdf")
 ```
 
 The most important reason for exclusion from the sample is the absence of price data. In the period 2003-2006, price data are not available for any of the observations. This leads to the exclusion of 909,458 observations. In addition, price data are also missing for a part of the observations in the period 2009-2019. Due to these gaps in the price data, a further 543,544 observations are excluded from the dataset. A further 233,888 observations are removed from the sample because they are associated with buildings that occur only once in the sample. The decision to apply this criterion was mainly due to the fact that singular building IDs occurred mainly in the period 2007-2008, suggesting that IDs from this period are not linked with observations in later periods. Furthermore, observing a building at least twice during the analysed period allowed for cross-validation of matching building attributes and therefore better reliability of the data. Another 53,674 observations were removed from the sample because the buildings are heated with an energy carrier other than gas, oil, or district heating. Due to the small number of buildings compared to the total sample size and due to the heterogeneity of the group (both very modern buildings with heat pumps and un-renovated buildings with coal heating), it was decided to exclude all other energy carriers from the sample. In addition, another 1,722 observations were excluded as duplicates (matching building ID and year) and 65 observations due to a deviating length of the billing period (deviation of more than +/- 10 days).
 
-In addition to the rationales described above, there are two other reasons for excluding observations, both of which are related to outliers in the energy price data. Firstly, it was identified through exploratory testing that the price data contains fictitious cost values (e.g. 1,000.00 Euros for the entire building) that are used as placeholders and do not reflect the actual costs. These fictitious cost values arise because ista, as a billing service provider, does not always have information about the costs incurred by the building owners and therefore uses the placeholders for technical reasons. The actual costs are only entered later by the building owners and do not appear in the sample. This practice leads to the formation of outliers in the price data, as the fictitious cost values do not necessarily reflect the size and characteristics of a building. In total, 31,665 observations are removed due to fictitious cost values. In a second step, outliers in the price data were also excluded that either showed strong deviations from the reasonable price level for the period under observation (<2 cents/kWh or >100 cents/kWh) or strong price changes from one period to another (>10 or <-10 cents/kWh compared to the previous year). The exclusion thresholds were based on expert judgement and were chosen to ensure that only extremely unrealistic observations were included. This additional step excludes a further 1,717 observations from the sample. Compared to the other cleaning steps described before, the exploratory examination of the data showed that the two price-related reasons exerted a strong influence on the results of the analysis and therefore represent an important step in the analysis.
+In addition to the factors described above, there are two other reasons for excluding observations from the sample. Both reasons are related to outliers in the energy price data. Compared to the other cleaning steps described above, performing the analysis with and without these two steps in place has shown that they can have a strong effect on the results of the analysis and are therefore particularly important.
+
+First, it was determined through exploratory testing and confirmed by ista that the price data contains fictitious cost values (e.g., 1,000.00 Euros for the entire building) that are used as placeholders and do not reflect actual costs. These fictitious cost values arise because ista, as a billing service provider, does not always have information about the costs incurred by the building owners and therefore uses the placeholders for technical reasons. The actual costs are only entered later by the building owners and therefore do not appear in the sample. This practice leads to the formation of outliers in the energy price data, as the fictitious cost values do not necessarily reflect the size and characteristics of a building. A total of 31,665 observations are removed due to fictitious cost values identified by searching for round cost rates without cent amounts that occur unusually often in the sample.
+
+Second, despite the removal of the fictitious cost values, some spurious outliers remained in the price data. An exploratory review of individual cases revealed that the remaining price outliers were likely due to data errors (e.g., unrealistic heating areas), which is not unusual given the very large number of observations in the sample. Although a relatively small number, the price outliers can significantly interfere with the results of the analysis. Therefore, it was decided to also exclude the remaining observations that showed unrealistic deviations from the reasonable price level expected during the observation period (real prices: <2 cents/kWh or >100 cents/kWh) or large price changes from one period to another (real prices: >10 or <-10 cents/kWh compared to the previous year). The exclusion thresholds were based on expert judgments and were chosen to exclude only highly of implausible observations. Use of the thresholds resulted in the exclusion of an additional 1,717 observations from the sample.
 
 The processed billing data are then matched with the external data sources (see figure \@ref(fig:workflow1)). Due to missing degree days data or changes in the administrative areas, a further 1,940 observations are removed from the sample here, which ultimately leads to 2,719,270 remaining observations. After the processing, these observations are both complete and systematically checked for data errors that may have affected the outcome of the analysis.
 
+**Regression analysis based on full sample**
 
-**Full sample: Regression analysis**
+[STILL MISSING]
+
+**Sub-sampling and Bayesian regression analysis**
+
+[STILL MISSING]
+
+## Descriptive statistics {#descriptives}
+
+**Unbalanced occurrence of buildings**
+
+How often an individual building is observed in the processed and matched billing sample (full sample) is shown graphically in Figure \@ref(fig:occurrence-buildings). After excluding buildings that appeared only once in the sample (see Section \@ref(workflow)), buildings are observed on average 6.77 times during the observation period. The histogram shows that not all buildings are observed throughout the whole observation period, leading to the panel being unbalanced. While a relatively large number of buildings are observed only twice, the distribution exhibits a second peak at nine and ten times observed. This means that information on a relevant proportion of the buildings in the sample is available almost throughout the entire observation period.
+
+```{r occurrence-buildings, echo = FALSE, fig.cap = "Number of occurrences of buildings in the full sample", out.width = "75%", fig.align = "center"}
+knitr::include_graphics(path = "figure/occurance_buildings.pdf")
+```
+
+**Spatial and temporal coverage of sample**
+
+In addition to how often an individual building is observed in the sample, also the spatial and temporal distribution of observations is of relevance. Figure \@ref(fig:buildings-distribution) graphically depicts the spatial and temporal coverage of the full sample on the district-level.[^41] On the spatial dimension, the maps show that the coverage is good. There are very few districts without any building observed (transparent) and only a few districts with less than 10 buildings observed per year (dark blue). For most district-year combinations, more than 100 buildings are observed. In some large cities and metropolitan areas, numbers of more than 10,000 buildings annually are reached. The good spatial coverage of the data implies that results drawn from the sample have validity for Germany as a whole and are in their explanatory power not limited to certain regions or clusters.
+
+[^41]: Please note the use of the logarithmic scale in Figure \@ref(fig:buildings-distribution).
+
+On the temporal dimension, fewer observations are available in 2007 (43,696 observations) and 2008 (43,536 observations), as the energy price data was first included in these years. For the years between 2009 and 2019, an annual minimum of 201,856 and an average of 239,183 buildings are observed. Which means that the explanatory power of the results applies in particular to the period between 2009 and 2019. At the same time, exploratory testing of the data with and without consideration of the years 2007 and 2008 did not lead to a relevant change in the results meaning that the results are applicable to the whole time period under investigation.
+
+```{r buildings-distribution, echo = FALSE, fig.cap = "Spatial and temporal coverage by the buildings observed", out.width = "77%", fig.align = "center"}
+knitr::include_graphics(path = "figure/buildings_distribution.pdf")
+```
+
+**Summary statistics**
+
+Table \@ref(tab:summary-statistics) provides summary statistics for the full sample reporting the median values and the interquartile range (IQR). Besides the overall sample, also separate statistics for the three carrier types gas, oil, and district heating are included. About 60.6% of the observations in the sample are associated with gas as the energy carrier. A further 29.5% are associated with oil as the carrier type and 9.9% with district heating. For space heat demand, as the response variable, the median value (IQR) for the sample overall is 113 (86, 145) kWh/sqm and for energy price as the main explanatory variable the median (IQR) of the sample is 6.49 (5.77, 7.69) Cents/kWh.
+
+\begin{table}[]
+\centering
+\caption{Summary statistics}
+\label{tab:summary-statistics}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llllll@{}}
+\toprule
+Variable {[}Median (IQR){]} &
+  Unit &
+  \begin{tabular}[c]{@{}l@{}}Overall\\ N = 2,718,246\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Gas\\ N = 1,647,563 (60.6\%)\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Oil\\ N = 802,451 (29.5\%)\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}District heating\\ N = 268,232 (9.9\%)\end{tabular} \\ \midrule
+                                         &                 &                      &                      &                      &                      \\
+Space heat demand, eff.                  & {[}kWh/sqm{]}   & 113 (86, 145)        & 116 (89, 149)        & 117 (91, 148)        & 83 (63, 109)         \\
+Energy price, real                       & {[}Cents/kWh{]} & 6.49 (5.77, 7.69)    & 6.18 (5.56, 6.79)    & 7.06 (6.08, 8.25)    & 10.12 (8.71, 11.84)  \\
+                                         &                 &                      &                      &                      &                      \\
+Degree days                              &                 & 3,446 (3,214, 3,733) & 3,418 (3,192, 3,697) & 3,536 (3,273, 3,826) & 3,397 (3,191, 3,642) \\
+Heating surface                          & {[}sqm{]}       & 404 (260, 707)       & 424 (271, 701)       & 305 (226, 466)       & 1,118 (556, 2,118)   \\
+Housing units                            &                 & 6 (3, 10)            & 6 (3, 10)            & 4 (3, 6)             & 16 (8, 32)           \\
+                                         &                 &                      &                      &                      &                      \\
+\begin{tabular}[c]{@{}l@{}}District household income,\\ per capita\end{tabular} &
+  {[}€/a{]} &
+  20,695 (18,786, 22,568) &
+  20,658 (18,731, 22,563) &
+  21,098 (19,388, 22,861) &
+  19,217 (17,667, 21,327) \\
+District retirement share                & {[}\%{]}        & 0.207 (0.193, 0.220) & 0.209 (0.194, 0.222) & 0.205 (0.193, 0.216) & 0.210 (0.192, 0.230) \\
+Postal code population density &
+  \begin{tabular}[c]{@{}l@{}}{[}inhabitants/\\ sq. km{]}\end{tabular} &
+  572 (217, 1,960) &
+  662 (255, 2,121) &
+  320 (149, 839) &
+  2,053 (505, 4,821) \\ \midrule
+\textit{Note: Median (IQR), No missings} &                 &                      &                      &                      &                      \\ \bottomrule
+\end{tabular}%
+}
+\end{table}
 
 
+In terms of energy demand and price, there are pronounced and relevant differences between the three types of energy carriers. The demand for gas and oil as energy carriers is higher than for district heating. The prices for gas are the lowest with relatively small fluctuations. Prices for oil are slightly higher, but show greater variation. Prices for district heating are by far the highest and also show the greatest variations. Additionally, buildings with a district heating system installed are three to four times the size of buildings with gas or oil heating installed (cf. heating surface and housing units in Table \@ref(tab:summary-statistics)).
 
+**Focus on energy demand and prices**
 
+Figure \@ref(fig:demand-descriptive-graph) provides a more detailed visual summary of the demand variable. The aggregated demand distribution of the three carrier types and years tapers off towards the upper end. The lowest annual demands are around 25 kWh/sqm/a. The distribution peaks at just over 100 kWh/sqm/a and then tapers off to very high demand values of up to 350 kWh/sqm/a (Panel A). With a differentiated display by energy carrier (Panel B), the graph confirms the findings from Table \@ref(tab:summary-statistics). While the demands for gas and oil are on an almost similar higher level, demand in buildings with district heating is considerably lower. The major share of this difference in demand is most likely attributable to the difference in building size. Because buildings heated with district heating are on average three to four times larger than buildings with oil or gas heating, they have a better ratio of heating area to building exterior area, resulting in lower heat losses per square meter heated. Given the significance of the difference in demand, it was further scrutinized if the age of the building and the age of the heating system may deviate between gas and oil buildings on the one side and buildings with district heating on the other side. Newer buildings and newer heating systems would be expected to go along with lower energy demand. Appendix \@ref(tab:age-building-heating-system) provides this comparison, which finds no differences between energy carriers of a magnitude that would suggest a strong impact on demand.
 
+```{r demand-descriptive-graph, echo = FALSE, fig.cap = "Distribution of energy demand", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/demand_descriptive.pdf")
+```
 
+In addition, Panel B of Figure \@ref(fig:demand-descriptive-graph) provides two additional relevant pieces of information regarding the energy demand variable. First, for all three carrier types the effective demand decreases over time. This is most likely due to multiple factors one of which would be the demand response investigated in this thesis. Additionally, over time, newer more energy efficient buildings are added to the sample, while some old and highly inefficient buildings drop from the sample. Furthermore, the building stock remaining in the sample may undergo renovation measures leading to lower energy demand. Lastly, increasing outside temperatures due to climate change may also lead to the decline in effective demand observed. Linked to this is the second aspect, which can also be derived from the graph: Effective demand follows a similar pattern for all carriers, which can, however, also turn out to be higher or lower from year to year and only declines in the overall trend. This annual fluctuations in effective energy demand is linked to the variations in outside temperature. In Appendix \@ref(fig:degree-days-distribution) the distribution of degree days is depicted on a spatial and temporal scale. The consistent trend between degree days and energy demand that corroborates the intuition that higher degree days (lower outside temperatures) leads to higher energy demand, illustrate the relevance of considering climatic conditions in the analysis as an important additional determinant.
 
+Figure \@ref(fig:price-descriptive-graph) depicts the distribution of nominal (Panel A) and real (Panel B) energy prices also by energy carrier. The points represent the average price in one year. The vertical bars represent the standard deviation. While the energy prices for gas are relatively stable over the period under observation, prices for oil show stronger volatility. As already established previously, prices for district heating are higher than those for gas and oil (cf. Table \@ref(tab:summary-statistics)). Furthermore, the prices for district heating are not as volatile, but show a huge range of variation, which is reflected in the much larger standard deviations.
 
+```{r price-descriptive-graph, echo = FALSE, fig.cap = "Distribution of nominal and real energy prices", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/prices_descriptive.pdf")
+```
 
+While nominal prices are relatively stable in the overall trend for the period for all three carriers, the trend changes after adjusting for inflation. After accounting for inflation, the overall trend points to declining real prices, with the effects being more pronounced for gas and oil. For the intuition about the price elasticity of space heating demand, this means that one would expect an overall increase in demand from the price effect alone. However, both directions can be observed in the year-to-year movements: rising and falling energy prices. After having described the data and energy demand and energy prices as the two main variables in detail, the following section will present the results of the regression analysis on investigating which short-term price elasticities of space heating demand can be observed in the data.
 
-
-
-
-
-## Notizen aus anderen Publikationen
-
-
-Since we model conditional demand only, the results should be considered as short-term elasticities. In contrast, medium- and long-term income elasticities tend to be higher. Households with increased income are likely to move into larger homes over the medium term, which would increase their heating expenditures as well (Nesbakken 1999).  --> Short-run elasticities as a lower bar estimate that produces a conservative estimate.
-
-
-Csereklyei (2020):
-It is widely anticipated that responses in electricity consumption to changes in prices will be rather slow, as it takes time for energy-using durable stock to change (Miller and Alberini, 2016). Thus, short-run or annual price elasticity estimates are expected to be rather inelastic, while one anticipates significantly larger long-run estimates.
-
-Miller and Alberini (2016) furthermore report that the use of IV estimates can change the reported elasticities by up to 80%.
-
-
-All from Labanderira et al.
-
-discrete decision to purchase durable goods that consume energy and the decision to consume energy is rarely considered. 
-renovations may disturbe the picture the panel data provides
-
-On the other hand, most empirical studies in this area have used single-equation econometric models that require separability re- strictions. This is a severe disadvantage as it is not possible to estimate cross-price effects between different energy products or consider the effects of non-energy products on the price elasticity of energy goods. 
-
-
-Sample period. It is widely accepted that the economic cycle has a strong influence on energy consumption due to income and (indirect cycle-related) price effects. In the case of economic crises, for example, a depression of energy prices may occur; reduced dis- posable income may lead agents to reduce consumption through improvements in energy efficiency, adjustments to other types of consumption or changes towards other more inexpensive energy goods.
-
-
-From Aufhammer wegen IV approach:
-We instrument the utilities’ consumer-facing prices with the weekly average spot price of natural gas at a major natural gas distribution hub in Louisiana (the Henry Hub). This instrument is valid, as we know the formula of how utilities pass-through the price (providing a strong first stage), and the price is determined prior to within-bill consumption (strengthening the exclusion restriction).
-
-No change in the energy taxation (Energiesteuergesetz) in the observed period; letzte Neufassung aus 2006 mit Effekten für 2007
-
-Miller Alberini (2016):
-We also find that aggregating our data can result in both higher and lower price elasticity estimates, depending on the dataset used, and that controlling for unit-level fixed effects with panel data generally results in more inelastic demand functions. Addressing the endogeneity of price and/or measurement error in price with instrumental variables has a small but noticeable effect on the price elasticities. Finally, controlling for housing characteristics and capital stock produces a lower price elasticity.

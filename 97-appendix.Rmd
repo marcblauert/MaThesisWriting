@@ -13,17 +13,9 @@ pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 options(width = 70)
 ```
 
-# Additional materials
+# Supplementary materials
 
 \singlespacing
-\newpage
-
-```{r buildings-distribution, echo = FALSE, fig.cap = "Spatial and temporal coverage by the buildings observed", out.width = "77%", fig.align = "center"}
-knitr::include_graphics(path = "figure/buildings_distribution.pdf")
-```
-\noindent
-Figure \@ref(fig:buildings-distribution) shows the spatial and temporal distribution of observations at building-level in the main sample. The maps show that the spatial coverage is good. There are very few districts without observations (transparent) and only a few districts with less than 10 observed buildings per year (dark blue). For most district-year combinations, more than 100 buildings are observed. In some large cities and metropolitan areas, numbers of more than 10,000 buildings are reached. Fewer observations are available for 2007 (43,696 observations) and 2008 (43,536 observations), as price data were included for the first time in these years. For the decade between 2009 and 2019, an annual minimum of 201,856 and an average of 239,183 buildings are observed. Note the use of the logarithmic scale in the maps.
-
 \newpage
 
 ```{r degree-days-distribution, echo = FALSE, fig.cap = "Spatial and temporal variation in degree days", out.width = "77%", fig.align = "center"}
@@ -32,7 +24,7 @@ knitr::include_graphics(path = "figure/distribution_degree_days.pdf")
 
 
 \noindent
-Figure \@ref(fig:degree-days-distribution) show the spatial and temporal variation of climatic conditions measured in degree days. Degree days are extracted from @iwu21. The spatial resolution used is the postcode level as the level with the highest granularity, which is also used in the regressions. Higher annual degree day numbers are associated with lower outdoor temperatures and vice versa. The maps show variations between the observed annual periods. While 2010 in particular, but also 2012 and 2013 are cooler years than the sample average, 2014, 2018 and 2019, on the other hand, were considerably warmer.
+Figure \@ref(fig:degree-days-distribution) show the spatial and temporal variation of outside temperature measured in degree days. Degree days data was taken from @iwu21 and are used as an additional determinant of space heat demand in the regression analysis. Data is shown on the postal code level. Higher annual degree days are associated with lower temperatures and vice versa. In terms of spatial variation, the maps show cooler temperatures (higher degree days) mainly in the higher altitude regions, but also in eastern Germany, which is further inland from the European continent. In terms of temporal variation, 2010 in particular, but also 2012 and 2013 were cooler years than the average year in the sample. 2014, 2018 and 2019, on the other hand, were significantly warmer years.
 
 \newpage
 
@@ -43,6 +35,47 @@ knitr::include_graphics(path = "figure/correlation_matrix.pdf")
 The values in Figure \@ref(fig:correlation-plot) represent Pearson's correlation coefficients. Values closer to 1 indicate a stronger positive relationship, values closer to -1 indicate a stronger negative relationship. Values close to zero indicate no relationship. None of the correlations observed between the variables exceed moderate values, ruling out possible multicollinearity issues. Energy price is negatively correlated with energy demand, indicating that the expected negative effect of price on demand indeed exists. Note that tall variables are ln-transformed.
 
 \newpage
+
+
+\begin{table}[]
+\centering
+\caption{Descriptive statistics for age of buildings and heating systems}
+\label{tab:age-building-heating-system}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Variable &
+  \begin{tabular}[c]{@{}l@{}}Overall\\ N = 2,718,246\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Gas\\ N = 1,647,563\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Oil\\ N = 802,451\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}District heating\\ N = 268,232\end{tabular} \\ \midrule
+                                      &                    &                 &               &               \\
+{\ul Building construction year}      &                    &                 &               &               \\
+Until 1918                            & 34,536 (9.5\%)     & 22,004 (10.0\%) & 6,622 (6.1\%) & 5,910 (17\%)  \\
+1919-1948                             & 22,652 (6.2\%)     & 14,494 (6.6\%)  & 4,742 (4.3\%) & 3,416 (9.7\%) \\
+1949-1978                             & 121,949 (33\%)     & 68,253 (31\%)   & 42,973 (39\%) & 10,723 (30\%) \\
+1979-1995                             & 126,299 (35\%)     & 76,869 (35\%)   & 40,072 (37\%) & 9,358 (26\%)  \\
+1996-2009                             & 58,582 (16\%)      & 38,409 (17\%)   & 14,411 (13\%) & 5,762 (16\%)  \\
+After 2010                            & 1,172 (0.3\%)      & 738 (0.3\%)     & 288 (0.3\%)   & 146 (0.4\%)   \\
+(Missing)                             & 2,353,056          & 1,426,796       & 693,343       & 232,917       \\
+                                      &                    &                 &               &               \\
+\multicolumn{2}{l}{{\ul Heating system installation year}} &                 &               &               \\
+Until 1978                            & 11,486 (3.5\%)     & 6,360 (3.2\%)   & 4,296 (4.5\%) & 830 (2.6\%)   \\
+1979-1995                             & 118,401 (36\%)     & 71,848 (36\%)   & 36,359 (38\%) & 10,194 (32\%) \\
+1996-2009                             & 151,172 (46\%)     & 93,734 (47\%)   & 41,161 (43\%) & 16,277 (51\%) \\
+After 2010                            & 46,556 (14\%)      & 27,564 (14\%)   & 14,532 (15\%) & 4,460 (14\%)  \\
+(Missing)                             & 2,390,631          & 1,448,057       & 706,103       & 236,471       \\
+                                      &                    &                 &               &               \\ \midrule
+\textit{Note: n (\%)}                 &                    &                 &               &               \\ \bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\noindent
+Table \@ref(tab:age-building-heating-system) provides descriptive statistics for the age of buildings and heating systems grouped by the type of energy carrier. For those buildings, where information is available, a relatively larger share of district heating systems are installed in older buildings but at a more recent date. Overall, however, the differences are moderate and cannot explain the difference in energy demand between buildings with gas and oil heating on the one side (relatively higher consumption) and district heating on the other side (relatively lower consumption). Instead, it is presumably the size of the buildings that induces to the lower demand levels for buildings with district heating (cf. Table \@ref(tab:summary-statistics). At the same time, it should be noted that the validity of the age classification of buildings and heating system installation year presented here is limited, as the information is available only for 15.5% and 13.7% of the total number of observations, respectively.
+
+\newpage
+
 
 \begin{table}[]
 \centering
@@ -94,36 +127,4 @@ Figure \@ref(fig:heterogeneity-other-vars-plot) presents a visual examination of
 [^99]: E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63).
 
 \newpage
-
-
-
-
-
-
-
-
-
-**Delete later**
-
-```{r tabletest, echo=FALSE, results="asis"}
-d <- import("data/flights.csv")
-
-table_destination <- d %>% 
-  group_by(dest_name) %>% 
-  summarise(n = n())
-
-table_destination %>% 
-  kbl(col.names = c("Destination", "Number of connections"), 
-      caption = "Number of flight connections per destination", 
-      longtable = T, 
-      booktabs = T,
-      digits = 2) %>% 
-  kable_styling(latex_options = "repeat_header",
-                font_size = 10) %>%
-  footnote(number = c("This table was created based on the flights dataset.", "Source: R Packages."))
-
-# if too wide: 
-# kable_styling(latex_options = "scale_down")
-```
-
 

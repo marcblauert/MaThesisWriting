@@ -41,6 +41,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{adjustbox}
 \usepackage{lscape}
 \usepackage[normalem]{ulem}
 \useunder{\uline}{\ul}{}

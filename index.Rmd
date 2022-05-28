@@ -36,13 +36,14 @@ output:
 # for the .RMD files. If you are NOT producing a PDF, delete or silence
 # lines 25-39 in this YAML header.
 
-abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "00-abstract.Rmd")), collapse = "\n  ")`'
+abstract: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "abstract.Rmd")), collapse = "\n  ")`'
   #The preface pretty much says it all. Second paragraph of abstract starts here.
 # If you'd rather include the preliminary content in files instead of inline
 # like below, use a command like that for the abstract above.  Note that a tab 
 # is needed on the line after the `|`.
-acknowledgements: |
-  People I need to thank: Franziska, Till, Abteilung beim DIW --> Bereitstellung Daten, Betreuer.
+acknowledgements: '`r if(knitr:::is_latex_output()) paste(readLines(here::here("prelims", "acknowledgements.Rmd")), collapse = "\n  ")`'
+  
+  
 #preface: |
 #  This is an example of a thesis setup to use the reed thesis document class 
 #  (for LaTeX) and the R bookdown package, in general.

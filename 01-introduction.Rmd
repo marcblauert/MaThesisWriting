@@ -54,7 +54,7 @@ The second impact channel, on the other hand, is that higher prices for fossil f
 
 Additionally, the empirical assessment of the demand effect may be particularly important in the current phase of strong energy price increases following from the economic imbalances after the external shock of the COVID-19 pandemic and Russia's war of aggression on Ukraine. While the current price spikes can lead to stronger short-term demand responses, only a fraction of the response is due to the structural component of CO~2~ pricing and -- if the effect does not last long enough to trigger significant long-term investments -- would disappear when oil and gas prices might return to lower levels. In order not to overestimate the effect of the structural pricing component of the CO~2~ price, empirical estimates from past price reactions could be used to separate the effect into a CO~2~ and a commodity price-related element.
 
-#### Different types of data to estimate elasticities {-}
+#### Different data sources to estimate price elasticities {-}
 
 A second line of argument for the relevance of this study is that the existing empirical evidence on the price elasticity of heating demand is based on different types of data sources, but few studies have been conducted on actual billing data.
 
