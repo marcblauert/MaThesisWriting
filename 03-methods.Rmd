@@ -27,12 +27,9 @@ The key dataset in this process is a large-scale building-level panel of energy 
 
 Energy contracts for private households in Germany usually consist of a fixed cost component (flat-rate basic charge) and a variable cost component (consumption-based price per kWh).[^32] The data does not contain a breakdown of fixed and variable costs, but only the total costs, which are then converted into average costs per-unit (the sum of fixed and variable costs divided by the quantity demanded) as described in the previous paragraph. There is much debate in the literature about whether the household demand response to changes in energy prices depends on the average price or instead on the marginal price. The use of marginal prices would be necessary if the variable price component were to change based on the quantity consumed ("block pricing") and could also be dynamically adjusted by the utility, as is the case for many private household contracts in the USA, for example [see @auffhammer_rubin18]. Since those factors do not apply for the energy contracts underlying the billing data used in this thesis, I assume the use of the average per-unit energy price to be suitable, as it was also done in other studies [e.g., @metcalf_hassett99; @rehdanz07; @schmitz_madlener20]
 
-
 [^32]: On the basis of exemplary heating bills provided by ista, it was possible to determine that this was also the case for the data in the billing sample.
 
-Aufhammer über Rehdanz: where it appears average price equalled marginal price
-
-There is considerable debate in the literature whether household energy demand depends on the marginal or average price, which may differ in the presence of fixed fee and block pricing. Shin (1985) argues that households will respond to average price, which is easily calculated from the electricity bill, rather than to the actual block marginal price, which is costly to determine, and develops an empirical strategy for testing this conjecture. The average price is also used in Metcalf and Hassett (1999),5 and Borenstein (2008, 2009) and Ito (2010) find no evidence that consumers “bunching up” around the block where the price changes, as one would expect if consumers truly respond to marginal price.
+Another problem is whether the demand decisions depend on the price in the same period or on the price of the previous period, so that the calculation of the previous period influences the current demand decisions. Following the approach of @schmitz_madlener20, I generally construct the model with the price in the same period. However, to check the robustness of the results, I also run models with the price of the previous period.
 
 **(Billing) Year:** The billing data contains the exact dates of the billing period of an individual building. While most billing periods mirror the calendar year, some buildings have billing periods occurring during the year. Therefore, the start and end dates of the billing periods are used to make an allocation to billing years. For billing periods during the year, the allocation is based on which of the two calendar years contains the majority of days in the billing period.
 
@@ -95,9 +92,9 @@ The conceptual DAG presented in Section \@ref(conceptual-model) and the derived 
 
 **Potential biases**
 
-Reducing potential sources of bias was approached in several steps. First, the large set of additional explanatory variables already described was used to reduce bias from omitted variables. This means that by taking into account, for example, degree days or the heating surface area of a building, additional effects on heating demand are captured that might otherwise be wrongly attributed to the energy price alone. Regarding the omitted variables, a shortcoming is that due to the aggregated data structure at the building-level, it is not possible to integrate detailed socio-economic factors at the household-level, such as household income, number of inhabitants, age, education level or employment status. These variables represent relevant factors that potentially influence energy demand and are therefore considered in studies that rely on data from household-level social surveys [e.g. @meier_rehdanz10; @rehdanz07; @schmitz_madlener20]. With the given data structure, it is not possible to completely overcome this source of omitted variable bias. However, to at least partially address the non-availability of these variables in the billing dataset, socio-economic controls at the district or postal code level are used to attempt to capture underlying socio-economic effects at a higher level.
+Reducing potential sources of bias was approached in several steps. First, the set of explanatory variables already described was used to reduce bias from omitted variables. This means that by taking into account, for example, degree days or the heating surface area of a building, additional effects on heating demand are captured that might otherwise be wrongly attributed to the energy price alone. Regarding the omitted variables, a shortcoming is that due to the aggregated data structure at the building-level, it is not possible to integrate detailed socio-economic factors at the household-level, such as household income, number of inhabitants, age, education level, or employment status. These variables represent factors that potentially influence energy demand and are therefore considered in studies that rely on data from household-level social surveys [e.g., @meier_rehdanz10; @rehdanz07; @schmitz_madlener20]. With the given data structure at the building-level and no additional information on the socio-economic characteristics of the inhabitants, it is not possible to overcome this source of omitted variable bias. However, to address the unavailability of these variables in the billing dataset to the extent possible, socioeconomic controls at the district or postcode level are used to try to capture the underlying socioeconomic effects at a higher level.
 
-Another source of potential bias may result from data errors. Use of observational data should therefore not be regarded as a mechanistic procedure, but instead rely on the application of domain-specific knowledge to critically assess and scrutinize the observational data available. With regards to data errors, use of domain-specific knowledge and expert judgement was particularly relevant in the data cleaning process of the analysis described in detail in the following Section \@ref(workflow). In the assessment of the energy price variable, outliers are identified which stem from errors in the data and if left unaddressed would have distorted the outcome of the analysis.
+Another source of potential bias may result from data errors. Generally, use of observational data should not be regarded as a mechanistic procedure, but instead rely on the application of domain-specific knowledge to critically assess and scrutinize the observational data available. With regards to the potentially distorting effects of data errors, use of domain-specific knowledge and expert judgement was particularly relevant in the process of cleaning and processing the billing dataset. The process is described in detail in the following Section \@ref(workflow). Specifically, when evaluating the energy price variable, outliers are found that are due to errors in the data and which, if they had not been remedied, would have distorted the result of the analysis.
 
 In addition, it was checked if the measurement of the variables incorporated a systematic error in the measurement process. Several variables used in the analysis may be subject to measurement error. For example, the degree days data are based on a spatial interpolation of the values from the three nearest DWD weather stations to the centroid of a postal code, which introduces a first level of error. It is then assumed that the degree days assigned to a postal code apply to every building within that postal code, even though there may be greater distances and differences in elevation between the centroid and the building's location. However, errors such as those described exemplarily for the degree days variable do not necessarily represent a problem, since a systematic deviation is required for the existence of a systematic error (bias). Rather, the described exemplary derivations from a true value for outdoor temperature indicate a random inaccuracy in the measurement of the variable, which is less serious in general and especially given the very large number of observations in the sample. The same logic applies, for example, to the construction of the energy demand variable. While aggregation at the building level introduces some inaccuracy compared to a hypothetical measurements at the household-level, it does not lead to a systematic error.
 
@@ -117,41 +114,65 @@ Furthermore, when estimating price elasticities of demand, one additional releva
 
 **Frequentist estimation approach**
 
-In line with the previous literature [@meier_rehdanz10; @schmitz_madlener20], the fixed-effects model takes the following form:
+For the analysis, I use several statistical methods. For the full sample analysis, I rely on a Frequentist estimation approach given the large number of data points in the billing dataset. Generally, I follow an approach where I begin with constructing a simple model specification and then extend it to a more elaborate statistical model. The goal partly being to compare model estimates by varying methods.
+
+To start with, I formulate the statistical model as a simple cross-sectional multiple linear regression model based on ordinary least squares (OLS) [@bailey17; @wooldridge13]:
+
+```{=tex}
+\begin{equation}
+ln(D) = \alpha + \beta ln(P) + \gamma X + \varepsilon
+(\#eq:ols-eq)
+\end{equation}
+```
+
+where the response variable $ln(D)$ denotes the natural logarithm of the annual space heating demand per square meter, the main explanatory variable $ln(P)$ denotes the natural logarithm of the average energy price (Cents/kWh) in the same period, $X$ is a vector representing the additional explanatory variables (building characteristics, degree days, district socio-economic variables) and $\varepsilon$ denotes the error term of the model. Referring back to equation \@ref(eq:demand2) from the theory section, the ln-form of both sides of the equation implies that the coefficient $\beta$ of $ln(P)$ represents the price elasticity of space heating demand. For the cross-sectional OLS regression, I first run the model without the vector of additional explanatory variables ($X$) and then with it included.
+
+Since the billing dataset has a panel data structure, where buildings are observed as the same unit in more than one year, it is possible to go beyond cross-sectional OLS and apply panel data estimation techniques. The main advantage of panel data methods over cross-sectional estimation, where observations of all buildings are considered to be systematically the same, is that they take into account the presence of systematic and unobserved differences between units that may be correlated with observed predictors whose effects on the response are to be measured [@wooldridge13]. By acknowledging that there are unobserved inter-individual differences between the units (buildings) and also an intra-individual dynamic over time (years), panel data methods are considered a powerful tool, especially for observational data where controlling for all relevant factors is inherently difficult [@bailey17].
+
+It is likely that the demand for space heating observed is impacted by various unobserved building-specific constant or semi-constant factors, such as a building's energetic condition or its usage properties. Thus, inferences drawn from cross-sectional data are likely to be invalid since building-specific fixed-effects are falsely attributed the observed model predictors, including the energy price. In addition to controlling for these building-specific effects, it is also necessary to control for distortions due to temporal trends. For example, new buildings with higher energetic standards could be added to the sample over the course of the observation period and old buildings might drop out of the sample due to demolition. Such effects, which affect the structural composition of the sample over time, may result in space heating demand in the later periods being systematically lower than that in the earlier periods. In previous studies, the switch from a cross-sectional model to the use of unit-level fixed effects with panel data resulted in a more inelastic estimates for the price elasticity of space heating demand [@miller_alberini16].
+
+Furthermore, the choice of panel estimation method should provide reliable results even when strict exogeneity fails to hold. Therefore, I adopt a two-way fixed effects (FE) model, which is considered one of the more robust estimation methods and is also a commonly used approach in the previous literature on the price elasticity of heating demand [e.g., @meier_rehdanz10; @lange_etal14; @schmitz_madlener20]:
 
 ```{=tex}
 \begin{equation}
 ln(D)_{it} = \alpha + \beta ln(P)_{it} + \gamma X_{it} + \delta_i + \eta_t + \varepsilon_{it}
-(\#eq:fixedeff)
+(\#eq:fe-eq)
 \end{equation}
 ```
 
+The FE model structure extends the cross-sectional OLS model. The response variable $ln(D)_{it}$ again denotes the natural logarithm of the annual space heating demand per square meter but extended by the information on building $i$ at time period $t$. The same applies to $ln(P)_{it}$ as the average energy price (Cents/kWh) and $X_{it}$ as the vector of additional explanatory variables. The newly added term $\delta_i$ denotes the time-invariant building fixed-effects and $\eta_t$ the annual time fixed-effects. $\varepsilon_{it}$ again denotes the error term.
 
-Panel data:
+Consistent with the approach for the OLS cross-sectional model, I first run the model without $X_{it}$ as the vector of additional explanatory variables to obtain an estimate if only the energy price is used to explain demand, and then include the vector of additional explanatory variables in a second step. Additionally, I also drop variables with limited explanatory power from $X_{it}$ to arrive at a final FE model. Furthermore, I also run a model where $ln(P)_{it}$ is substituted by $ln(P)_{i,t-1}$ so taking the lag of the price variable in $t-1$ instead of the price in the same period to explain the space heating demand in $t$.
 
-- With a panel data set, the same units are sampled in two or more time periods. For each unit (individual, school, city, and so on) i we have multiple years of data
-
-- Main benefit of panel data: with multiple years of data we can control for unobserved characteristics that do not change (or change slowly) over time. Very useful for policy analysis
-
-- Econometric methods extend to unbalanced panels, and software takes care of algebraic details
-
-- However, one should ask: Why are some periods missing for some units? (For example, is reporting achievement scores by schools optional or not enforced?)
-
-- An unbalanced panel (e.g., the second dataset above) is a dataset in which at least one panel member is not observed every period. Therefore, if an unbalanced panel contains N panel members and T periods, then the following strict inequality holds for the number of observations (n) in the dataset: n < N×T.
-
-- individuals observed in multiple time periods
-
-
-- Miller Alberini (2016): We also find that aggregating our data can result in both higher and lower price elasticity estimates, depending on the dataset used, and that controlling for unit-level fixed effects with panel data generally results in more inelastic demand functions.
-
-- Aus Alberini (2011): An additional concern is whether usage decisions depend on the price in the current (billing) period, on that of earlier periods, or a moving average of the prices of recent periods (Poyer and Williams, 1993).For good measure, in what follows we experiment with current price, as well as price of the previous period.
-
-- Since we model conditional demand only, the results should be considered as short-term elasticities. In contrast, medium- and long-term income elasticities tend to be higher. Households with increased income are likely to move into larger homes over the medium term, which would increase their heating expenditures as well (Nesbakken 1999).  --> Short-run elasticities as a lower bar estimate that produces a conservative estimate.
-
-- Csereklyei (2020): It is widely anticipated that responses in electricity consumption to changes in prices will be rather slow, as it takes time for energy-using durable stock to change (Miller and Alberini, 2016). Thus, short-run or annual price elasticity estimates are expected to be rather inelastic, while one anticipates significantly larger long-run estimates.
-
+All the models described represent the conditional demand. It therefore has to be inferred that the results reflect the short-term price elasticities of demand. The use of other dynamic estimation approaches to estimate long-term elasticities, as for example @alberini_etal11 or @csereklyei20 have done, would go beyond the scope of this paper and are not pursued here. Furthermore, the short-term elasticities estimated in this thesis can be considered as lower bounds compared to the higher long-term estimates and thus reflect a conservative estimate.
 
 **Bayesian estimation approach**
+
+Model bm2:
+
+```{=tex}
+\begin{align*}
+ln(D)_{it} & \sim \operatorname{Normal}(\mu_it, \sigma) \\
+\mu_it & \sim \alpha_building[i], time [t]
+\sigma & \sim \operatorname{Exponential}(1)
+
+n_i & \sim \operatorname{Poisson}(\lambda_i) \\
+\lambda_i & = \text{seconds}_i \, \phi (1 - \text{female}_i \delta ) (1 - \exp(-k \,\text{age}_i))^\theta \\
+\phi   & \sim \operatorname{Log-Normal}(\log 1, 0.10) \\
+k      & \sim \operatorname{Log-Normal}(\log 2, 0.25) \\
+\theta & \sim \operatorname{Log-Normal}(\log 5, 0.25) \\
+\delta & \sim \operatorname{Log-Normal}(\log 0.25, 0.25)
+\end{align*}
+```
+
+Model bm3 (including interaction term):
+
+Notes for description:
+
+- Multilevel partial pooling model with varying intercepts (separate intercept for each group with information sharing among groups when estimating those intercepts)
+
+- https://cu-psych-computing.github.io/cu-psych-comp-tutorial/tutorials/r-extra/brms/multilevel-models-with-brms/
+
 
 All from Labanderira et al.
 
@@ -170,14 +191,16 @@ In Figure \@ref(fig:workflow1) the first part of the workflow of the empirical a
 The energy billing data requires several steps of data processing to clean the data, which are shown in the upper part of Figure \@ref(fig:workflow1). After the data cleaning, 2,719,270 of the original 4,494,943 annual billing observations (60.5%) remain for the full sample analysis. The criteria applied in the cleaning process are ordered by their relevance (number of observations removed).
 
 ```{r workflow1, echo = FALSE, fig.cap = "Workflow of data processing and regression analysis based on full sample", out.width = "103%", fig.align = "center"}
-knitr::include_graphics(path = "figure/workflow_diagramm_1.pdf")
+knitr::include_graphics(path = "figure/workflow_diagramm_part1.pdf")
 ```
 
 The most important reason for exclusion from the sample is the absence of price data. In the period 2003-2006, price data are not available for any of the observations. This leads to the exclusion of 909,458 observations. In addition, price data are also missing for a part of the observations in the period 2009-2019. Due to these gaps in the price data, a further 543,544 observations are excluded from the dataset. A further 233,888 observations are removed from the sample because they are associated with buildings that occur only once in the sample. The decision to apply this criterion was mainly due to the fact that singular building IDs occurred mainly in the period 2007-2008, suggesting that IDs from this period are not linked with observations in later periods. Furthermore, observing a building at least twice during the analysed period allowed for cross-validation of matching building attributes and therefore better reliability of the data. Another 53,674 observations were removed from the sample because the buildings are heated with an energy carrier other than gas, oil, or district heating. Due to the small number of buildings compared to the total sample size and due to the heterogeneity of the group (both very modern buildings with heat pumps and un-renovated buildings with coal heating), it was decided to exclude all other energy carriers from the sample. In addition, another 1,722 observations were excluded as duplicates (matching building ID and year) and 65 observations due to a deviating length of the billing period (deviation of more than +/- 10 days).
 
 In addition to the factors described above, there are two other reasons for excluding observations from the sample. Both reasons are related to outliers in the energy price data. Compared to the other cleaning steps described above, performing the analysis with and without these two steps in place has shown that they can have a strong effect on the results of the analysis and are therefore particularly important.
 
-First, it was determined through exploratory testing and confirmed by ista that the price data contains fictitious cost values (e.g., 1,000.00 Euros for the entire building) that are used as placeholders and do not reflect actual costs. These fictitious cost values arise because ista, as a billing service provider, does not always have information about the costs incurred by the building owners and therefore uses the placeholders for technical reasons. The actual costs are only entered later by the building owners and therefore do not appear in the sample. This practice leads to the formation of outliers in the energy price data, as the fictitious cost values do not necessarily reflect the size and characteristics of a building. A total of 31,665 observations are removed due to fictitious cost values identified by searching for round cost rates without cent amounts that occur unusually often in the sample.
+First, it was determined through exploratory testing and confirmed by ista that the price data contains fictitious cost values (e.g., 1,000.00 Euros for the entire building) that are used as placeholders and do not reflect actual costs. These fictitious cost values arise because ista, as a billing service provider, does not always have information about the costs incurred by the building owners and therefore uses the placeholders for internal technical reasons. The actual costs are only entered later by the building owners and therefore do not appear in the sample.[^3489] This practice leads to the formation of outliers in the energy price data, as the fictitious cost values do not necessarily reflect the size and characteristics of a building. A total of 31,665 observations are removed due to fictitious cost values identified by searching for round cost rates without cent amounts that occur unusually often in the sample.
+
+[^3489]: The internal practice of ista was reconstructed on the basis of an email exchange for the Wärmemonitor 2019, in which it was confirmed that the price data contain fictitious cost values.
 
 Second, despite the removal of the fictitious cost values, some spurious outliers remained in the price data. An exploratory review of individual cases revealed that the remaining price outliers were likely due to data errors (e.g., unrealistic heating areas), which is not unusual given the very large number of observations in the sample. Although a relatively small number, the price outliers can significantly interfere with the results of the analysis. Therefore, it was decided to also exclude the remaining observations that showed unrealistic deviations from the reasonable price level expected during the observation period (real prices: <2 cents/kWh or >100 cents/kWh) or large price changes from one period to another (real prices: >10 or <-10 cents/kWh compared to the previous year). The exclusion thresholds were based on expert judgments and were chosen to exclude only highly of implausible observations. Use of the thresholds resulted in the exclusion of an additional 1,717 observations from the sample.
 
@@ -187,9 +210,13 @@ The processed billing data are then matched with the external data sources (see 
 
 [STILL MISSING]
 
-**Sub-sampling and Bayesian regression analysis**
+**Stratified subsampling and Bayesian regression analysis**
 
 [STILL MISSING]
+
+```{r workflow2, echo = FALSE, fig.cap = "Workflow of stratified subsampling and Bayesian regression analysis based on subsample", out.width = "103%", fig.align = "center"}
+knitr::include_graphics(path = "figure/workflow_diagramm_part2.pdf")
+```
 
 ## Descriptive statistics {#descriptives}
 

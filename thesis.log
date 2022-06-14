@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.24)  28 MAY 2022 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.24)  8 JUN 2022 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,11 +1038,7 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
    defining Unicode char U+2212 (decimal 8722)
-(./thesis.aux
-
-LaTeX Warning: Label `full_results' multiply defined.
-
-)
+No file thesis.aux.
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
@@ -1121,7 +1117,6 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 203.
 LaTeX Info: Redefining \pageref on input line 203.
 LaTeX Info: Redefining \nameref on input line 203.
-(./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
@@ -1178,24 +1173,24 @@ Non-PDF special ignored!
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1
 
 
-] (./thesis.toc [2
-
-
-])
+]
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[3] (./thesis.lot)
+[2
+
+
+]
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[4
+[3
 
-] (./thesis.lof)
+]
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
-[5
+[4
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 235.
@@ -1209,7 +1204,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 235.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 235.
-[6
+[5
 
 ]
 Chapter 1.
@@ -1225,7 +1220,11 @@ l.252
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[2] <figure/price_effect_behg.pdf, id=258, 716.6775pt x 375.4025pt>
+[2]
+
+LaTeX Warning: Reference `fig:behg' on page 3 undefined on input line 268.
+
+<figure/price_effect_behg.pdf, id=93, 716.6775pt x 375.4025pt>
 File: figure/price_effect_behg.pdf Graphic file (type pdf)
 <use figure/price_effect_behg.pdf>
 Package pdftex.def Info: figure/price_effect_behg.pdf used on input line 271.
@@ -1238,11 +1237,32 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 300.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [6] [7]
+) [6]
+
+LaTeX Warning: Reference `literature' on page 7 undefined on input line 308.
+
+
+LaTeX Warning: Reference `methods' on page 7 undefined on input line 308.
+
+
+LaTeX Warning: Reference `results' on page 7 undefined on input line 308.
+
+
+LaTeX Warning: Reference `discussion' on page 7 undefined on input line 308.
+
+
+LaTeX Warning: Reference `conclusion' on page 7 undefined on input line 308.
+
+[7]
 Chapter 2.
 [8
 
-] <figure/elasticities_plot.pdf, id=366, 505.89pt x 361.35pt>
+]
+
+LaTeX Warning: Reference `fig:elasticities-conceptual' on page 9 undefined on i
+nput line 337.
+
+<figure/elasticities_plot.pdf, id=200, 505.89pt x 361.35pt>
 File: figure/elasticities_plot.pdf Graphic file (type pdf)
 <use figure/elasticities_plot.pdf>
 Package pdftex.def Info: figure/elasticities_plot.pdf used on input line 340.
@@ -1251,12 +1271,23 @@ Package pdftex.def Info: figure/elasticities_plot.pdf used on input line 340.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [9] [10 <./figure/elasticities_plot.pdf>]
+
+LaTeX Warning: Reference `relevance' on page 11 undefined on input line 350.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [12]
+
+LaTeX Warning: Reference `theory' on page 13 undefined on input line 365.
+
+
+LaTeX Warning: Reference `tab:estimates-literature' on page 13 undefined on inp
+ut line 371.
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 374.
@@ -1268,9 +1299,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [14]
+
+LaTeX Warning: Reference `tab:estimates-literature' on page 15 undefined on inp
+ut line 406.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[15] <figure/plot_literature_estimates.pdf, id=487, 505.89pt x 216.81pt>
+[15]
+
+LaTeX Warning: Reference `tab:estimates-literature' on page 16 undefined on inp
+ut line 408.
+
+
+LaTeX Warning: Reference `fig:literature-estimates-plot' on page 16 undefined o
+n input line 412.
+
+
+LaTeX Warning: Reference `tab:estimates-literature' on page 16 undefined on inp
+ut line 412.
+
+<figure/plot_literature_estimates.pdf, id=317, 505.89pt x 216.81pt>
 File: figure/plot_literature_estimates.pdf Graphic file (type pdf)
 <use figure/plot_literature_estimates.pdf>
 Package pdftex.def Info: figure/plot_literature_estimates.pdf used on input lin
@@ -1280,10 +1329,24 @@ e 415.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [16]
+
+LaTeX Warning: Reference `theory' on page 17 undefined on input line 426.
+
+
+LaTeX Warning: Reference `review' on page 17 undefined on input line 426.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[17 <./figure/plot_literature_estimates.pdf>] <figure/conceptual_dag_red.pdf, i
-d=514, 796.9775pt x 542.025pt>
+[17 <./figure/plot_literature_estimates.pdf>]
+
+LaTeX Warning: Reference `fig:elasticities-conceptual' on page 18 undefined on 
+input line 430.
+
+
+LaTeX Warning: Reference `fig:dag' on page 18 undefined on input line 432.
+
+<figure/conceptual_dag_red.pdf, id=341, 796.9775pt x 542.025pt>
 File: figure/conceptual_dag_red.pdf Graphic file (type pdf)
 <use figure/conceptual_dag_red.pdf>
 Package pdftex.def Info: figure/conceptual_dag_red.pdf used on input line 435.
@@ -1292,9 +1355,23 @@ Package pdftex.def Info: figure/conceptual_dag_red.pdf used on input line 435.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [18]
+
+LaTeX Warning: Reference `review' on page 19 undefined on input line 441.
+
+
+LaTeX Warning: Reference `review' on page 19 undefined on input line 445.
+
+
 Underfull \vbox (badness 2142) has occurred while \output is active []
 
 [19 <./figure/conceptual_dag_red.pdf>]
+
+LaTeX Warning: Reference `review' on page 20 undefined on input line 451.
+
+
+LaTeX Warning: Reference `data' on page 20 undefined on input line 455.
+
+
 Underfull \vbox (badness 7722) has occurred while \output is active []
 
 [20]
@@ -1302,6 +1379,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [21] [22]
 Chapter 3.
+
+LaTeX Warning: Reference `conceptual-model' on page 23 undefined on input line 
+473.
+
+
+LaTeX Warning: Reference `tab:variables' on page 23 undefined on input line 479
+.
+
 [23
 
 ]
@@ -1309,372 +1394,49 @@ Underfull \vbox (badness 6893) has occurred while \output is active []
 
 [24]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 494.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[26] [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[28] [29] [30] [31] <figure/workflow_diagramm_1.pdf, id=667, 767.86874pt x 542.
-025pt>
-File: figure/workflow_diagramm_1.pdf Graphic file (type pdf)
-<use figure/workflow_diagramm_1.pdf>
-Package pdftex.def Info: figure/workflow_diagramm_1.pdf used on input line 620.
-
-(pdftex.def)             Requested size: 446.62805pt x 315.27621pt.
-
-Overfull \hbox (13.00806pt too wide) in paragraph at lines 620--621
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[32] [33 <./figure/workflow_diagramm_1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[34] <figure/occurance_buildings.pdf, id=712, 424.58624pt x 228.855pt>
-File: figure/occurance_buildings.pdf Graphic file (type pdf)
-<use figure/occurance_buildings.pdf>
-Package pdftex.def Info: figure/occurance_buildings.pdf used on input line 652.
-
-(pdftex.def)             Requested size: 325.215pt x 175.30048pt.
-[35 <./figure/occurance_buildings.pdf>] <figure/buildings_distribution.pdf, id=
-735, 462.72874pt x 572.1375pt>
-File: figure/buildings_distribution.pdf Graphic file (type pdf)
-<use figure/buildings_distribution.pdf>
-Package pdftex.def Info: figure/buildings_distribution.pdf used on input line 6
-65.
-(pdftex.def)             Requested size: 333.88924pt x 412.83788pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[36]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 674.
-
-[37 <./figure/buildings_distribution.pdf>] <figure/demand_descriptive.pdf, id=7
-59, 677.53125pt x 448.67625pt>
-File: figure/demand_descriptive.pdf Graphic file (type pdf)
-<use figure/demand_descriptive.pdf>
-Package pdftex.def Info: figure/demand_descriptive.pdf used on input line 719.
-(pdftex.def)             Requested size: 433.62pt x 287.15866pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[38] [39 <./figure/demand_descriptive.pdf>] <figure/prices_descriptive.pdf, id=
-786, 578.16pt x 505.89pt>
-File: figure/prices_descriptive.pdf Graphic file (type pdf)
-<use figure/prices_descriptive.pdf>
-Package pdftex.def Info: figure/prices_descriptive.pdf used on input line 730.
-(pdftex.def)             Requested size: 433.62pt x 379.41655pt.
-[40 <./figure/prices_descriptive.pdf>] [41]
-Chapter 4.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 743.
+LaTeX Warning: Reference `workflow' on page 25 undefined on input line 489.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 779.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 795.
-
-<figure/elasticity_predictions_subsample.pdf, id=810, 602.25pt x 545.03625pt>
-File: figure/elasticity_predictions_subsample.pdf Graphic file (type pdf)
-<use figure/elasticity_predictions_subsample.pdf>
-Package pdftex.def Info: figure/elasticity_predictions_subsample.pdf used on in
-put line 817.
-(pdftex.def)             Requested size: 433.62pt x 392.44244pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[42
-
-pdfTeX warning (ext4): destination with the same identifier (name{full_results}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.824 \chapter{Discussion}\label{discussion}}
-                                             ] [43] [44 <./figure/elasticity_pr
-edictions_subsample.pdf>]
-Chapter 5.
-
-Underfull \vbox (badness 3780) has occurred while \output is active []
-
-[45
-
-] [46]
-
-Package Fancyhdr Warning: \headheight is too small (14.5pt): 
- Make it at least 27.11652pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47]
-Chapter 6.
-[48
-
-]
-Appendix A.
-[49
-
-] <figure/distribution_degree_days.pdf, id=867, 381.5856pt x 519.80196pt>
-File: figure/distribution_degree_days.pdf Graphic file (type pdf)
-<use figure/distribution_degree_days.pdf>
-Package pdftex.def Info: figure/distribution_degree_days.pdf used on input line
- 889.
-(pdftex.def)             Requested size: 333.88924pt x 454.84938pt.
-[50 <./figure/distribution_degree_days.pdf>] <figure/correlation_matrix.pdf, id
-=882, 445.665pt x 348.30125pt>
-File: figure/correlation_matrix.pdf Graphic file (type pdf)
-<use figure/correlation_matrix.pdf>
-Package pdftex.def Info: figure/correlation_matrix.pdf used on input line 901.
-(pdftex.def)             Requested size: 390.25534pt x 305.002pt.
-[51 <./figure/correlation_matrix.pdf>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 911.
-
-[52]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 948.
-
-[53] <figure/year_state_heterogeneity_plot.pdf, id=913, 650.43pt x 650.43pt>
-File: figure/year_state_heterogeneity_plot.pdf Graphic file (type pdf)
-<use figure/year_state_heterogeneity_plot.pdf>
-Package pdftex.def Info: figure/year_state_heterogeneity_plot.pdf used on input
- line 981.
-(pdftex.def)             Requested size: 433.62pt x 433.63216pt.
-[54 <./figure/year_state_heterogeneity_plot.pdf>] <figure/other_vars_heterogene
-ity_plot.pdf, id=934, 794.97pt x 771.88374pt>
-File: figure/other_vars_heterogeneity_plot.pdf Graphic file (type pdf)
-<use figure/other_vars_heterogeneity_plot.pdf>
-Package pdftex.def Info: figure/other_vars_heterogeneity_plot.pdf used on input
- line 993.
-(pdftex.def)             Requested size: 411.93767pt x 399.98027pt.
-[55 <./figure/other_vars_heterogeneity_plot.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1019--1021
-
- []
-
-
-Overfull \hbox (0.71855pt too wide) in paragraph at lines 1022--1030
-[] 
- []
-
-[56
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 1044--1046
-\T1/lmr/m/n/12 (+20) Re-trieved from []$\T1/lmtt/m/n/12 https : / / ag -[] ener
-giebilanzen . de / daten -[] und -[] fakten /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
-[]$\T1/lmtt/m/n/12 https : / / www . bmwi . de / Redaktion / DE / Binaer / Ener
-giedaten / energiedaten -[]
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 1065--1067
-\T1/lmr/m/n/12 (+20) ity. \T1/lmr/m/it/12 (+20) The Jour-nal of Land & Pub-lic 
-Util-ity Eco-nomics\T1/lmr/m/n/12 (+20) , \T1/lmr/m/it/12 (+20) 17\T1/lmr/m/n/1
-2 (+20) (2), 242--245.
- []
+               Default added (so using `tbp') on input line 492.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[57
+[25] [26]
 
+LaTeX Warning: Reference `conceptual-model' on page 27 undefined on input line 
+543.
 
-]
-Underfull \hbox (badness 1087) in paragraph at lines 1071--1073
-[]\T1/lmr/m/n/12 (+20) DESTATIS. (2021a). Bevölkerung: Kreise, Stich-tag, Al-te
-rs-grup-pen (12411-
- []
+[27]
 
-
-Underfull \hbox (badness 1107) in paragraph at lines 1071--1073
-\T1/lmr/m/n/12 (+20) 0017) [Text]. Re-trieved Jan-uary 22, 2022, from []$\T1/lm
-tt/m/n/12 https : / / www -[] genesis .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
-\T1/lmtt/m/n/12 destatis . de / genesis / online ? operation = previous & level
-index = 0 & step =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
-\T1/lmtt/m/n/12 0 & titel = Tabellenaufbau & levelid = 1642855066461 & acceptsc
-ookies = false #
- []
-
-
-Underfull \hbox (badness 3168) in paragraph at lines 1074--1076
-[]\T1/lmr/m/n/12 (+20) DESTATIS. (2021b, Novem-ber 12). Ver-braucher-preisin-de
-x: Deutsch-land,
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 1074--1076
-\T1/lmr/m/n/12 (+20) Jahre (61111-0001). Re-trieved Novem-ber 12, 2021, from []
-$\T1/lmtt/m/n/12 https : / / www -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1076
-\T1/lmtt/m/n/12 genesis . destatis . de / genesis / /online ? operation = table
- & code = 61111 -[]
- []
-
-
-Underfull \hbox (badness 1199) in paragraph at lines 1089--1091
-[]\T1/lmr/m/n/12 (+20) Hennes, O., Jeddi, S., Madlener, R., Schmitz, H., Wag-ne
-r, J., Wolff, S.,
- []
-
-
-Overfull \hbox (5.11787pt too wide) in paragraph at lines 1095--1097
-\T1/lmr/m/it/12 (-20) ti-cal As-so-ci-a-tion\T1/lmr/m/n/12 (-20) , \T1/lmr/m/it
-/12 (-20) 81\T1/lmr/m/n/12 (-20) (396), 945--960. http://doi.org/[]10.1080/0162
-1459.1986.10478354[] 
- []
+LaTeX Warning: Reference `workflow' on page 28 undefined on input line 549.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[58]
-Underfull \hbox (badness 1394) in paragraph at lines 1116--1118
-\T1/lmr/m/n/12 (+20) ing ex-pen-di-tures in Great Britain. \T1/lmr/m/it/12 (+20
-) En-ergy Eco-nomics\T1/lmr/m/n/12 (+20) , \T1/lmr/m/it/12 (+20) 32\T1/lmr/m/n/
-12 (+20) (5), 949--959.
- []
+[28] [29]
 
+LaTeX Warning: Reference `eq:demand2' on page 30 undefined on input line 577.
 
+[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 1134--1136
-\T1/lmtt/m/n/12 / / blog . suche -[] postleitzahl . org / post / 132153774751 /
- einwohnerzahl -[] auf -[]
- []
-
-
-Overfull \hbox (13.669pt too wide) in paragraph at lines 1143--1145
-\T1/lmr/m/n/12 (-20) many. \T1/lmr/m/it/12 (-20) En-ergy Eco-nomics\T1/lmr/m/n/
-12 (-20) , \T1/lmr/m/it/12 (-20) 29\T1/lmr/m/n/12 (-20) (2), 167--182. http://d
-oi.org/[]10.1016/j.eneco.2006.04.002[] 
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 1146--1148
-\T1/lmr/m/it/12 (+20) und den Verkehrssek-tor in Deutsch-land\T1/lmr/m/n/12 (+2
-0) . Re-trieved from []$\T1/lmtt/m/n/12 https : / / ag -[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1148
-\T1/lmtt/m/n/12 energiebilanzen . de / wp -[] content / uploads / 2020 / 10 / r
-wi _ anwendungsbilanz _
- []
-
-
-Overfull \hbox (41.86864pt too wide) in paragraph at lines 1152--1154
-\T1/lmr/m/n/12 (-20) mand in Ger-many. \T1/lmr/m/it/12 (-20) En-ergy Pol-icy\T1
-/lmr/m/n/12 (-20) , \T1/lmr/m/it/12 (-20) 102\T1/lmr/m/n/12 (-20) , 512--528. h
-ttp://doi.org/[]10.1016/j.enpol.2016.12.055[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1166
-[]$\T1/lmtt/m/n/12 https : / / www . techem . com / content / dam / techem / ne
-wsroom / studien / Techem -[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[60]
-Underfull \hbox (badness 2662) in paragraph at lines 1167--1169
-[]\T1/lmr/m/n/12 (+20) UBA. (2016). \T1/lmr/m/it/12 (+20) CO2-Emissionsfaktoren
- für fos-sile Brennstoffe\T1/lmr/m/n/12 (+20) . Re-trieved
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1169
-\T1/lmr/m/n/12 (+20) from []$\T1/lmtt/m/n/12 https : / / www . umweltbundesamt 
-. de / sites / default / files / medien /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1167--1169
-\T1/lmtt/m/n/12 1968 / publikationen / co2 -[] emissionsfaktoren _ fur _ fossil
-e _ brennstoffe _
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1180.
-[61]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1180.
-(./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1180.
-
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9E7AF3244A3AB6A01227AB538A1F44AE;1582.
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1180.
- ) 
+[31]
+Runaway argument?
+ ln(D)_{it} & \sim \operatorname {Normal}(\mu _it, \sigma ) \\ \mu _i\ETC.
+! Paragraph ended before \align* was complete.
+<to be read again> 
+                   \par 
+l.601 
+       
 Here is how much of TeX's memory you used:
- 13746 strings out of 493014
- 208195 string characters out of 6133351
- 355630 words of memory out of 5000000
- 16557 multiletter control sequences out of 15000+600000
- 76202 words of font info for 154 fonts, out of 8000000 for 9000
+ 13544 strings out of 493014
+ 204057 string characters out of 6133351
+ 343149 words of memory out of 5000000
+ 16457 multiletter control sequences out of 15000+600000
+ 75204 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,20n,92p,2478b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
-16/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2016/texmf-d
-ist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/
-dvips/lm/lm-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
-mbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/lm/lmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
-lm/lmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri12.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (68 pages, 8256462 bytes).
-PDF statistics:
- 1147 PDF objects out of 1200 (max. 8388607)
- 978 compressed objects within 10 object streams
- 209 named destinations out of 1000 (max. 500000)
- 12543 words of extra memory for PDF output out of 14400 (max. 10000000)
 
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -76,7 +76,7 @@
 \title{Short-Term Price Elasticities of Heating Demand: A Statistical Analysis of Energy Billing Data in Germany}
 \author{Marc Blauert}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
-\date{2022-05-28}
+\date{2022-06-06}
 \division{Albrecht Daniel Thaer-Institute}
 \advisor{Prof.~Dr.~Karsten Neuhoff}
 \institution{Humboldt University of Berlin}
@@ -149,7 +149,7 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \Acknowledgements{
-I would like to express my sincere thanks to my two supervisors, Prof.~Dr.~Karsten Neuhoff and Prof.~Dr.~Tobias Krüger, for their supervision and support during the preparation of this thesis. In addition, I would especially like to thank Dr.~Franziska Schütze for the frequent in-depth discussions and the many valuable practical tips she gave me during the course of the work. The same applies to the fruitful discussions and the advice I received from all the other colleagues in the Climate Policy Department at DIW Berlin, either in person or as part of the joint Brownbag discussion. I would also like to thank the whole Climate Policy Department of DIW Berlin for being open to my thesis idea and for providing me with the data able to pursue it. This also includes the inspiration and support received by Dr.~Jan Stede in the phase of first developing the idea.
+I would like to express my sincere thanks to my two supervisors, Prof.~Dr.~Karsten Neuhoff and Prof.~Dr.~Tobias Krüger, for their supervision and support during the preparation of this thesis. In addition, I would especially like to thank Dr.~Franziska Schütze for the frequent in-depth discussions and the many valuable practical tips she gave me during the course of the work. The same applies to the fruitful discussions and the advice I received from all the other colleagues in the Climate Policy Department at DIW Berlin, either in person or as part of the joint Brownbag discussion. I would also like to thank the whole Climate Policy Department of DIW Berlin for being open to my thesis idea and for providing me with the data able to pursue it. This also includes the inspiration and support received by Dr.~Jan Stede in the phase of developing the idea.
 
 \par
 \bigskip
@@ -173,7 +173,7 @@ The preface pretty much says it all.
 Second paragraph of abstract starts here.
 
 \bigskip \bigskip \noindent
-\begin{tabular}{m{14cm}} \hline \textbf{Link to GitHub repository:}                                                            \\ \footnotesize \url{https://github.com/marcblauert/price_elasticities_heating_demand_thesis}    \\ \hline \end{tabular}
+\begin{tabular}{m{14cm}} \hline \textbf{Code, GitHub Repository:}                                                            \\ \footnotesize \url{https://github.com/marcblauert/price_elasticities_heating_demand_thesis}    \\ \hline \end{tabular}
 }
 
 	\usepackage{setspace}\onehalfspacing
@@ -208,7 +208,7 @@ Second paragraph of abstract starts here.
 \frontmatter % this stuff will be roman-numbered
 \pagestyle{empty} % this removes page numbers from the frontmatter
   \begin{acknowledgements}
-    I would like to express my sincere thanks to my two supervisors, Prof.~Dr.~Karsten Neuhoff and Prof.~Dr.~Tobias Krüger, for their supervision and support during the preparation of this thesis. In addition, I would especially like to thank Dr.~Franziska Schütze for the frequent in-depth discussions and the many valuable practical tips she gave me during the course of the work. The same applies to the fruitful discussions and the advice I received from all the other colleagues in the Climate Policy Department at DIW Berlin, either in person or as part of the joint Brownbag discussion. I would also like to thank the whole Climate Policy Department of DIW Berlin for being open to my thesis idea and for providing me with the data able to pursue it. This also includes the inspiration and support received by Dr.~Jan Stede in the phase of first developing the idea.
+    I would like to express my sincere thanks to my two supervisors, Prof.~Dr.~Karsten Neuhoff and Prof.~Dr.~Tobias Krüger, for their supervision and support during the preparation of this thesis. In addition, I would especially like to thank Dr.~Franziska Schütze for the frequent in-depth discussions and the many valuable practical tips she gave me during the course of the work. The same applies to the fruitful discussions and the advice I received from all the other colleagues in the Climate Policy Department at DIW Berlin, either in person or as part of the joint Brownbag discussion. I would also like to thank the whole Climate Policy Department of DIW Berlin for being open to my thesis idea and for providing me with the data able to pursue it. This also includes the inspiration and support received by Dr.~Jan Stede in the phase of developing the idea.
 
     \par
     \bigskip
@@ -232,7 +232,7 @@ Second paragraph of abstract starts here.
     Second paragraph of abstract starts here.
 
     \bigskip \bigskip \noindent
-    \begin{tabular}{m{14cm}} \hline \textbf{Link to GitHub repository:}                                                            \\ \footnotesize \url{https://github.com/marcblauert/price_elasticities_heating_demand_thesis}    \\ \hline \end{tabular}
+    \begin{tabular}{m{14cm}} \hline \textbf{Code, GitHub Repository:}                                                            \\ \footnotesize \url{https://github.com/marcblauert/price_elasticities_heating_demand_thesis}    \\ \hline \end{tabular}
   \end{abstract}
 
 \mainmatter % here the regular arabic numbering starts
@@ -482,9 +482,7 @@ The key dataset in this process is a large-scale building-level panel of energy 
 
 Energy contracts for private households in Germany usually consist of a fixed cost component (flat-rate basic charge) and a variable cost component (consumption-based price per kWh).\footnote{On the basis of exemplary heating bills provided by ista, it was possible to determine that this was also the case for the data in the billing sample.} The data does not contain a breakdown of fixed and variable costs, but only the total costs, which are then converted into average costs per-unit (the sum of fixed and variable costs divided by the quantity demanded) as described in the previous paragraph. There is much debate in the literature about whether the household demand response to changes in energy prices depends on the average price or instead on the marginal price. The use of marginal prices would be necessary if the variable price component were to change based on the quantity consumed (``block pricing'') and could also be dynamically adjusted by the utility, as is the case for many private household contracts in the USA, for example (see \protect\hyperlink{ref-auffhammer_rubin18}{Auffhammer \& Rubin, 2018}). Since those factors do not apply for the energy contracts underlying the billing data used in this thesis, I assume the use of the average per-unit energy price to be suitable, as it was also done in other studies (e.g., \protect\hyperlink{ref-metcalf_hassett99}{Metcalf \& Hassett, 1999}; \protect\hyperlink{ref-rehdanz07}{Rehdanz, 2007}; \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020})
 
-Aufhammer über Rehdanz: where it appears average price equalled marginal price
-
-There is considerable debate in the literature whether household energy demand depends on the marginal or average price, which may differ in the presence of fixed fee and block pricing. Shin (1985) argues that households will respond to average price, which is easily calculated from the electricity bill, rather than to the actual block marginal price, which is costly to determine, and develops an empirical strategy for testing this conjecture. The average price is also used in Metcalf and Hassett (1999),5 and Borenstein (2008, 2009) and Ito (2010) find no evidence that consumers ``bunching up'' around the block where the price changes, as one would expect if consumers truly respond to marginal price.
+Another problem is whether the demand decisions depend on the price in the same period or on the price of the previous period, so that the calculation of the previous period influences the current demand decisions. Following the approach of \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener} (\protect\hyperlink{ref-schmitz_madlener20}{2020}), I generally construct the model with the price in the same period. However, to check the robustness of the results, I also run models with the price of the previous period.
 
 \textbf{(Billing) Year:} The billing data contains the exact dates of the billing period of an individual building. While most billing periods mirror the calendar year, some buildings have billing periods occurring during the year. Therefore, the start and end dates of the billing periods are used to make an allocation to billing years. For billing periods during the year, the allocation is based on which of the two calendar years contains the majority of days in the billing period.
 
@@ -546,9 +544,9 @@ The conceptual DAG presented in Section \ref{conceptual-model} and the derived r
 
 \textbf{Potential biases}
 
-Reducing potential sources of bias was approached in several steps. First, the large set of additional explanatory variables already described was used to reduce bias from omitted variables. This means that by taking into account, for example, degree days or the heating surface area of a building, additional effects on heating demand are captured that might otherwise be wrongly attributed to the energy price alone. Regarding the omitted variables, a shortcoming is that due to the aggregated data structure at the building-level, it is not possible to integrate detailed socio-economic factors at the household-level, such as household income, number of inhabitants, age, education level or employment status. These variables represent relevant factors that potentially influence energy demand and are therefore considered in studies that rely on data from household-level social surveys (e.g. \protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz, 2010}; \protect\hyperlink{ref-rehdanz07}{Rehdanz, 2007}; \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}). With the given data structure, it is not possible to completely overcome this source of omitted variable bias. However, to at least partially address the non-availability of these variables in the billing dataset, socio-economic controls at the district or postal code level are used to attempt to capture underlying socio-economic effects at a higher level.
+Reducing potential sources of bias was approached in several steps. First, the set of explanatory variables already described was used to reduce bias from omitted variables. This means that by taking into account, for example, degree days or the heating surface area of a building, additional effects on heating demand are captured that might otherwise be wrongly attributed to the energy price alone. Regarding the omitted variables, a shortcoming is that due to the aggregated data structure at the building-level, it is not possible to integrate detailed socio-economic factors at the household-level, such as household income, number of inhabitants, age, education level, or employment status. These variables represent factors that potentially influence energy demand and are therefore considered in studies that rely on data from household-level social surveys (e.g., \protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz, 2010}; \protect\hyperlink{ref-rehdanz07}{Rehdanz, 2007}; \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}). With the given data structure at the building-level and no additional information on the socio-economic characteristics of the inhabitants, it is not possible to overcome this source of omitted variable bias. However, to address the unavailability of these variables in the billing dataset to the extent possible, socioeconomic controls at the district or postcode level are used to try to capture the underlying socioeconomic effects at a higher level.
 
-Another source of potential bias may result from data errors. Use of observational data should therefore not be regarded as a mechanistic procedure, but instead rely on the application of domain-specific knowledge to critically assess and scrutinize the observational data available. With regards to data errors, use of domain-specific knowledge and expert judgement was particularly relevant in the data cleaning process of the analysis described in detail in the following Section \ref{workflow}. In the assessment of the energy price variable, outliers are identified which stem from errors in the data and if left unaddressed would have distorted the outcome of the analysis.
+Another source of potential bias may result from data errors. Generally, use of observational data should not be regarded as a mechanistic procedure, but instead rely on the application of domain-specific knowledge to critically assess and scrutinize the observational data available. With regards to the potentially distorting effects of data errors, use of domain-specific knowledge and expert judgement was particularly relevant in the process of cleaning and processing the billing dataset. The process is described in detail in the following Section \ref{workflow}. Specifically, when evaluating the energy price variable, outliers are found that are due to errors in the data and which, if they had not been remedied, would have distorted the result of the analysis.
 
 In addition, it was checked if the measurement of the variables incorporated a systematic error in the measurement process. Several variables used in the analysis may be subject to measurement error. For example, the degree days data are based on a spatial interpolation of the values from the three nearest DWD weather stations to the centroid of a postal code, which introduces a first level of error. It is then assumed that the degree days assigned to a postal code apply to every building within that postal code, even though there may be greater distances and differences in elevation between the centroid and the building's location. However, errors such as those described exemplarily for the degree days variable do not necessarily represent a problem, since a systematic deviation is required for the existence of a systematic error (bias). Rather, the described exemplary derivations from a true value for outdoor temperature indicate a random inaccuracy in the measurement of the variable, which is less serious in general and especially given the very large number of observations in the sample. The same logic applies, for example, to the construction of the energy demand variable. While aggregation at the building level introduces some inaccuracy compared to a hypothetical measurements at the household-level, it does not lead to a systematic error.
 
@@ -569,36 +567,42 @@ Furthermore, when estimating price elasticities of demand, one additional releva
 \end{itemize}
 \textbf{Frequentist estimation approach}
 
-In line with the previous literature (\protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz, 2010}; \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}), the fixed-effects model takes the following form:
+For the analysis, I use several statistical methods. For the full sample analysis, I rely on a Frequentist estimation approach given the large number of data points in the billing dataset. Generally, I follow an approach where I begin with constructing a simple model specification and then extend it to a more elaborate statistical model. The goal partly being to compare model estimates by varying methods.
+
+To start with, I formulate the statistical model as a simple cross-sectional multiple linear regression model based on ordinary least squares (OLS) (\protect\hyperlink{ref-bailey17}{Bailey, 2017}; \protect\hyperlink{ref-wooldridge13}{Wooldridge, 2013}):
+\begin{equation}
+ln(D) = \alpha + \beta ln(P) + \gamma X + \varepsilon
+\label{eq:ols-eq}
+\end{equation}
+where the response variable \(ln(D)\) denotes the natural logarithm of the annual space heating demand per square meter, the main explanatory variable \(ln(P)\) denotes the natural logarithm of the average energy price (Cents/kWh) in the same period, \(X\) is a vector representing the additional explanatory variables (building characteristics, degree days, district socio-economic variables) and \(\varepsilon\) denotes the error term of the model. Referring back to equation \eqref{eq:demand2} from the theory section, the ln-form of both sides of the equation implies that the coefficient \(\beta\) of \(ln(P)\) represents the price elasticity of space heating demand. For the cross-sectional OLS regression, I first run the model without the vector of additional explanatory variables (\(X\)) and then with it included.
+
+Since the billing dataset has a panel data structure, where buildings are observed as the same unit in more than one year, it is possible to go beyond cross-sectional OLS and apply panel data estimation techniques. The main advantage of panel data methods over cross-sectional estimation, where observations of all buildings are considered to be systematically the same, is that they take into account the presence of systematic and unobserved differences between units that may be correlated with observed predictors whose effects on the response are to be measured (\protect\hyperlink{ref-wooldridge13}{Wooldridge, 2013}). By acknowledging that there are unobserved inter-individual differences between the units (buildings) and also an intra-individual dynamic over time (years), panel data methods are considered a powerful tool, especially for observational data where controlling for all relevant factors is inherently difficult (\protect\hyperlink{ref-bailey17}{Bailey, 2017}).
+
+It is likely that the demand for space heating observed is impacted by various unobserved building-specific constant or semi-constant factors, such as a building's energetic condition or its usage properties. Thus, inferences drawn from cross-sectional data are likely to be invalid since building-specific fixed-effects are falsely attributed the observed model predictors, including the energy price. In addition to controlling for these building-specific effects, it is also necessary to control for distortions due to temporal trends. For example, new buildings with higher energetic standards could be added to the sample over the course of the observation period and old buildings might drop out of the sample due to demolition. Such effects, which affect the structural composition of the sample over time, may result in space heating demand in the later periods being systematically lower than that in the earlier periods. In previous studies, the switch from a cross-sectional model to the use of unit-level fixed effects with panel data resulted in a more inelastic estimates for the price elasticity of space heating demand (\protect\hyperlink{ref-miller_alberini16}{Miller \& Alberini, 2016}).
+
+Furthermore, the choice of panel estimation method should provide reliable results even when strict exogeneity fails to hold. Therefore, I adopt a two-way fixed effects (FE) model, which is considered one of the more robust estimation methods and is also a commonly used approach in the previous literature on the price elasticity of heating demand (\protect\hyperlink{ref-lange_etal14}{Lange, Moro, \& Traynor, 2014}; e.g., \protect\hyperlink{ref-meier_rehdanz10}{Meier \& Rehdanz, 2010}; \protect\hyperlink{ref-schmitz_madlener20}{Schmitz \& Madlener, 2020}):
 \begin{equation}
 ln(D)_{it} = \alpha + \beta ln(P)_{it} + \gamma X_{it} + \delta_i + \eta_t + \varepsilon_{it}
-\label{eq:fixedeff}
+\label{eq:fe-eq}
 \end{equation}
-Panel data:
-\begin{itemize}
-\item
-  With a panel data set, the same units are sampled in two or more time periods. For each unit (individual, school, city, and so on) i we have multiple years of data
-\item
-  Main benefit of panel data: with multiple years of data we can control for unobserved characteristics that do not change (or change slowly) over time. Very useful for policy analysis
-\item
-  Econometric methods extend to unbalanced panels, and software takes care of algebraic details
-\item
-  However, one should ask: Why are some periods missing for some units? (For example, is reporting achievement scores by schools optional or not enforced?)
-\item
-  An unbalanced panel (e.g., the second dataset above) is a dataset in which at least one panel member is not observed every period. Therefore, if an unbalanced panel contains N panel members and T periods, then the following strict inequality holds for the number of observations (n) in the dataset: n \textless{} N×T.
-\item
-  individuals observed in multiple time periods
-\item
-  Miller Alberini (2016): We also find that aggregating our data can result in both higher and lower price elasticity estimates, depending on the dataset used, and that controlling for unit-level fixed effects with panel data generally results in more inelastic demand functions.
-\item
-  Aus Alberini (2011): An additional concern is whether usage decisions depend on the price in the current (billing) period, on that of earlier periods, or a moving average of the prices of recent periods (Poyer and Williams, 1993).For good measure, in what follows we experiment with current price, as well as price of the previous period.
-\item
-  Since we model conditional demand only, the results should be considered as short-term elasticities. In contrast, medium- and long-term income elasticities tend to be higher. Households with increased income are likely to move into larger homes over the medium term, which would increase their heating expenditures as well (Nesbakken 1999). --\textgreater{} Short-run elasticities as a lower bar estimate that produces a conservative estimate.
-\item
-  Csereklyei (2020): It is widely anticipated that responses in electricity consumption to changes in prices will be rather slow, as it takes time for energy-using durable stock to change (Miller and Alberini, 2016). Thus, short-run or annual price elasticity estimates are expected to be rather inelastic, while one anticipates significantly larger long-run estimates.
-\end{itemize}
+The FE model structure extends the cross-sectional OLS model. The response variable \(ln(D)_{it}\) again denotes the natural logarithm of the annual space heating demand per square meter but extended by the information on building \(i\) at time period \(t\). The same applies to \(ln(P)_{it}\) as the average energy price (Cents/kWh) and \(X_{it}\) as the vector of additional explanatory variables. The newly added term \(\delta_i\) denotes the time-invariant building fixed-effects and \(\eta_t\) the annual time fixed-effects. \(\varepsilon_{it}\) again denotes the error term.
+
+Consistent with the approach for the OLS cross-sectional model, I first run the model without \(X_{it}\) as the vector of additional explanatory variables to obtain an estimate if only the energy price is used to explain demand, and then include the vector of additional explanatory variables in a second step. Additionally, I also drop variables with limited explanatory power from \(X_{it}\) to arrive at a final FE model. Furthermore, I also run a model where \(ln(P)_{it}\) is substituted by \(ln(P)_{i,t-1}\) so taking the lag of the price variable in \(t-1\) instead of the price in the same period to explain the space heating demand in \(t\).
+
+All the models described represent the conditional demand. It therefore has to be inferred that the results reflect the short-term price elasticities of demand. The use of other dynamic estimation approaches to estimate long-term elasticities, as for example \protect\hyperlink{ref-alberini_etal11}{Alberini et al.} (\protect\hyperlink{ref-alberini_etal11}{2011}) or \protect\hyperlink{ref-csereklyei20}{Csereklyei} (\protect\hyperlink{ref-csereklyei20}{2020}) have done, would go beyond the scope of this paper and are not pursued here. Furthermore, the short-term elasticities estimated in this thesis can be considered as lower bounds compared to the higher long-term estimates and thus reflect a conservative estimate.
+
 \textbf{Bayesian estimation approach}
 
+Model
+\begin{align*}
+ln(D)_{it} & \sim \operatorname{Normal}(\mu_i, \sigma) \\
+n_i & \sim \operatorname{Poisson}(\lambda_i) \\
+\lambda_i & = \text{seconds}_i \, \phi (1 - \text{female}_i \delta ) (1 - \exp(-k \,\text{age}_i))^\theta \\
+\phi   & \sim \operatorname{Log-Normal}(\log 1, 0.10) \\
+k      & \sim \operatorname{Log-Normal}(\log 2, 0.25) \\
+\theta & \sim \operatorname{Log-Normal}(\log 5, 0.25) \\
+\delta & \sim \operatorname{Log-Normal}(\log 0.25, 0.25)
+\end{align*}
 All from Labanderira et al.
 
 discrete decision to purchase durable goods that consume energy and the decision to consume energy is rarely considered.renovations may disturbe the picture the panel data provides
@@ -617,7 +621,7 @@ In Figure \ref{fig:workflow1} the first part of the workflow of the empirical an
 The energy billing data requires several steps of data processing to clean the data, which are shown in the upper part of Figure \ref{fig:workflow1}. After the data cleaning, 2,719,270 of the original 4,494,943 annual billing observations (60.5\%) remain for the full sample analysis. The criteria applied in the cleaning process are ordered by their relevance (number of observations removed).
 \begin{figure}
 
-{\centering \includegraphics[width=1.03\linewidth]{figure/workflow_diagramm_1} 
+{\centering \includegraphics[width=1.03\linewidth]{figure/workflow_diagramm_part1} 
 
 }
 
@@ -627,7 +631,7 @@ The most important reason for exclusion from the sample is the absence of price 
 
 In addition to the factors described above, there are two other reasons for excluding observations from the sample. Both reasons are related to outliers in the energy price data. Compared to the other cleaning steps described above, performing the analysis with and without these two steps in place has shown that they can have a strong effect on the results of the analysis and are therefore particularly important.
 
-First, it was determined through exploratory testing and confirmed by ista that the price data contains fictitious cost values (e.g., 1,000.00 Euros for the entire building) that are used as placeholders and do not reflect actual costs. These fictitious cost values arise because ista, as a billing service provider, does not always have information about the costs incurred by the building owners and therefore uses the placeholders for technical reasons. The actual costs are only entered later by the building owners and therefore do not appear in the sample. This practice leads to the formation of outliers in the energy price data, as the fictitious cost values do not necessarily reflect the size and characteristics of a building. A total of 31,665 observations are removed due to fictitious cost values identified by searching for round cost rates without cent amounts that occur unusually often in the sample.
+First, it was determined through exploratory testing and confirmed by ista that the price data contains fictitious cost values (e.g., 1,000.00 Euros for the entire building) that are used as placeholders and do not reflect actual costs. These fictitious cost values arise because ista, as a billing service provider, does not always have information about the costs incurred by the building owners and therefore uses the placeholders for internal technical reasons. The actual costs are only entered later by the building owners and therefore do not appear in the sample.\footnote{The internal practice of ista was reconstructed on the basis of an email exchange for the Wärmemonitor 2019, in which it was confirmed that the price data contain fictitious cost values.} This practice leads to the formation of outliers in the energy price data, as the fictitious cost values do not necessarily reflect the size and characteristics of a building. A total of 31,665 observations are removed due to fictitious cost values identified by searching for round cost rates without cent amounts that occur unusually often in the sample.
 
 Second, despite the removal of the fictitious cost values, some spurious outliers remained in the price data. An exploratory review of individual cases revealed that the remaining price outliers were likely due to data errors (e.g., unrealistic heating areas), which is not unusual given the very large number of observations in the sample. Although a relatively small number, the price outliers can significantly interfere with the results of the analysis. Therefore, it was decided to also exclude the remaining observations that showed unrealistic deviations from the reasonable price level expected during the observation period (real prices: \textless2 cents/kWh or \textgreater100 cents/kWh) or large price changes from one period to another (real prices: \textgreater10 or \textless-10 cents/kWh compared to the previous year). The exclusion thresholds were based on expert judgments and were chosen to exclude only highly of implausible observations. Use of the thresholds resulted in the exclusion of an additional 1,717 observations from the sample.
 
@@ -637,10 +641,17 @@ The processed billing data are then matched with the external data sources (see 
 
 {[}STILL MISSING{]}
 
-\textbf{Sub-sampling and Bayesian regression analysis}
+\textbf{Stratified subsampling and Bayesian regression analysis}
 
 {[}STILL MISSING{]}
+\begin{figure}
 
+{\centering \includegraphics[width=1.03\linewidth]{figure/workflow_diagramm_part2} 
+
+}
+
+\caption{Workflow of stratified subsampling and Bayesian regression analysis based on subsample}\label{fig:workflow2}
+\end{figure}
 \hypertarget{descriptives}{%
 \section{Descriptive statistics}\label{descriptives}}
 
@@ -738,6 +749,8 @@ While nominal prices are relatively stable in the overall trend for the period f
 \hypertarget{results}{%
 \chapter{Results}\label{results}}
 
+The results section is structured in two parts. First, the results from the analysis of the full sample is presented (reflects the Frequentist regression analysis described in the first part of the workflow, see Figure \ref{fig:workflow1}). Subsequently, in the second part, the results of the Bayesian regression analysis based on the stratified subsample are reported (relects the Bayesian regression analysis presented in the second part of the workflow, see Figure \ref{fig:workflow2}).
+
 \hypertarget{full_results}{%
 \section{Full sample analysis}\label{full_results}}
 \begin{table}[]
@@ -776,6 +789,49 @@ AIC &  & 2644533,703 & 2319150,267 &  &  &  &  \\ \cline{1-1} \cline{3-4} \cline
 \end{tabular}%
 }
 \end{table}
+\hypertarget{full_results}{%
+\section{Subsample analysis}\label{full_results}}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/density-distribution-comparison-samples} 
+
+}
+
+\caption{Comparison of density distribution for energy demand and price between full sample and subsample}\label{fig:density-distribution-comparison-samples}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/posterior-distributions} 
+
+}
+
+\caption{Posterior distributions for the price elasticities of space heating demand based on the subsample}\label{fig:posterior-distributions}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=1.04\linewidth]{figure/bm2_prediction} 
+
+}
+
+\caption{Predicted price elasticities of demand based on multilevel model}\label{fig:elasticity-predictions-bm2}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/carrier_heterogeneity_plot} 
+
+}
+
+\caption{Investigation of heterogeneity between energy carrier groups}\label{fig:heterogeneity-energy-carrier-plot}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/posterior-distribution-interaction} 
+
+}
+
+\caption{Posterior distributions for the price elasticities of space heating demand by energy carrier group based on the subsample}\label{fig:posterior-distribution-interaction}
+\end{figure}
+!!! Die nachfolgenden Tabellen müssen noch an neu durchgelaufenen Modelle angepasst werden
 \begin{table}[]
 \caption{Summary of coefficients for energy price in Bayesian models}
 \label{tab:price-coefs-brms}
@@ -806,20 +862,18 @@ b.2  & -2856.7                        & 80.4                         \\
 b.1  & -3100.5                        & 81.6                         \\ \bottomrule
 \end{tabular}
 \end{table}
+\begin{figure}
+
+{\centering \includegraphics[width=1.04\linewidth]{figure/elasticity_predictions_subsample} 
+
+}
+
+\caption{Predicted price elasticities of demand by energy carrier group}\label{fig:elasticity-predictions-energy-carrier}
+\end{figure}
 Notes (copied from other papers):
 
 -Accounting for unobserved heterogeneity reduces the elasticities by 15\% to 32\% relative to a model that does not include any effects at all, where the own price elasticity of electricity demand is −1.).
 
-\hypertarget{full_results}{%
-\section{Subsample analysis}\label{full_results}}
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{figure/elasticity_predictions_subsample} 
-
-}
-
-\caption{Predicted price elasticities of demand by energy carrier}\label{fig:elasticity-predictions-subsample-graph}
-\end{figure}
 \hypertarget{discussion}{%
 \chapter{Discussion}\label{discussion}}
 
@@ -990,14 +1044,38 @@ Figure \ref{fig:heterogeneity-year-state-plot} presents a visual examination of 
 \newpage
 \begin{figure}
 
-{\centering \includegraphics[width=0.95\linewidth]{figure/other_vars_heterogeneity_plot} 
+{\centering \includegraphics[width=0.95\linewidth]{figure/other_variables_heterogeneity_plot} 
 
 }
 
-\caption{Investigation of heterogeneity for degree days, heating surface, district income, and district retirement share}\label{fig:heterogeneity-other-vars-plot}
+\caption{Investigation of heterogeneity for degree days, heating surface, district income, and district retirement share}\label{fig:other-variables-heterogeneity-plot}
 \end{figure}
 \noindent
-Figure \ref{fig:heterogeneity-other-vars-plot} presents a visual examination of the heterogeneity of price elasticity for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, observations in the sub-sample are ln-transformed, grouped into three equally sized groups,\footnote{E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63).} and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and show no difference in price elasticity. For the other three variables, a slight dispersion of the grouped lines can be observed. But again, there are no pronounced differences that would prompt a more detailed investigation.
+Figure \ref{fig:other-variables-heterogeneity-plot} presents a visual examination of the heterogeneity of price elasticity for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, observations in the sub-sample are ln-transformed, grouped into three equally sized groups,\footnote{E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63).} and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and show no difference in price elasticity. For the other three variables, a slight dispersion of the grouped lines can be observed. But again, there are no pronounced differences that would prompt a more detailed investigation.
+
+\newpage
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/plot_b1} 
+
+}
+
+\caption{Predicted price elasticities of demand based on price as only predictor}\label{fig:elasticity-predictions-b1}
+\end{figure}
+\noindent
+Figure \ref{fig:elasticity-predictions-b1} presents (\ldots)
+
+\newpage
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{figure/plot-model-comparison} 
+
+}
+
+\caption{Graphical model comparison for subsample analysis}\label{fig:plot-model-comparison}
+\end{figure}
+\noindent
+Figure \ref{fig:plot-model-comparison} presents a visual examination of the model fit for all models used on the subsample.
 
 \newpage
 
@@ -1053,6 +1131,9 @@ Aldy, J. E., Krupnick, A. J., Newell, R. G., Parry, I. W. H., \& Pizer, W. A. (2
 \leavevmode\vadjust pre{\hypertarget{ref-auffhammer_rubin18}{}}%
 Auffhammer, M., \& Rubin, E. (2018). \emph{Natural Gas Price Elasticities and Optimal Cost Recovery Under Consumer Heterogeneity: Evidence from 300 million natural gas bills} (No. w24295) (p. w24295). Cambridge, MA: National Bureau of Economic Research. Retrieved from \url{http://www.nber.org/papers/w24295.pdf}
 
+\leavevmode\vadjust pre{\hypertarget{ref-bailey17}{}}%
+Bailey, M. A. (2017). \emph{Real econometrics: The right tools to answer important questions}. New York: Oxford University Press.
+
 \leavevmode\vadjust pre{\hypertarget{ref-bmwi21}{}}%
 BMWi. (2021). \emph{Gesamtausgabe der Energiedaten}. BMWi. Retrieved from \url{https://www.bmwi.de/Redaktion/DE/Binaer/Energiedaten/energiedaten-gesamt-xls.xlsx?__blob=publicationFile\&v=133}
 
@@ -1103,6 +1184,9 @@ IWU. (2021, October 7). IWU-Tool „Gradtagzahlen-Deutschland.xlsx``. Retrieved 
 
 \leavevmode\vadjust pre{\hypertarget{ref-labandeira_etal17}{}}%
 Labandeira, X., Labeaga, J. M., \& López-Otero, X. (2017). A meta-analysis on the price elasticity of energy demand. \emph{Energy Policy}, \emph{102}, 549--568. http://doi.org/\href{https://doi.org/10.1016/j.enpol.2017.01.002}{10.1016/j.enpol.2017.01.002}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lange_etal14}{}}%
+Lange, I., Moro, M., \& Traynor, L. (2014). Green hypocrisy?: Environmental attitudes and residential space heating expenditure. \emph{Ecological Economics}, \emph{107}, 76--83. http://doi.org/\href{https://doi.org/10.1016/j.ecolecon.2014.07.021}{10.1016/j.ecolecon.2014.07.021}
 
 \leavevmode\vadjust pre{\hypertarget{ref-leth-petersen_togeby01}{}}%
 Leth-Petersen, S., \& Togeby, M. (2001). Demand for space heating in apartment blocks: measuring effects of policy measures aiming at reducing energy consumption. \emph{Energy Economics}, \emph{23}(4), 387--403. http://doi.org/\href{https://doi.org/10.1016/S0140-9883(00)00078-5}{10.1016/S0140-9883(00)00078-5}
@@ -1172,6 +1256,9 @@ Varian, H. R. (2010). \emph{Intermediate microeconomics: a modern approach} (8th
 
 \leavevmode\vadjust pre{\hypertarget{ref-vdi13}{}}%
 VDI. (2013). \emph{Richtlinie 3807 Blatt 1: Verbrauchskennwerte für Gebäude}. Retrieved from \url{https://www.vdi.de/richtlinien/details/vdi-3807-blatt-1-verbrauchskennwerte-fuer-gebaeude-grundlagen-1}
+
+\leavevmode\vadjust pre{\hypertarget{ref-wooldridge13}{}}%
+Wooldridge, J. M. (2013). \emph{Introductory econometrics: a modern approach} (5th edn). Mason: South-Western Cengage Learning.
 
 \end{CSLReferences}
 

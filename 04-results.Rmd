@@ -11,8 +11,10 @@ options(width = 70)
 
 # Results {#results}
 
+The results section is structured in two parts. First, the results from the analysis of the full sample is presented (reflects the Frequentist regression analysis described in the first part of the workflow, see Figure \@ref(fig:workflow1)). Subsequently, in the second part, the results of the Bayesian regression analysis based on the stratified subsample are reported (relects the Bayesian regression analysis presented in the second part of the workflow, see Figure \@ref(fig:workflow2)).
 
 ## Full sample analysis {#full_results}
+
 
 
 \begin{table}[]
@@ -54,6 +56,40 @@ AIC &  & 2644533,703 & 2319150,267 &  &  &  &  \\ \cline{1-1} \cline{3-4} \cline
 
 
 
+## Subsample analysis {#full_results}
+
+
+
+```{r density-distribution-comparison-samples, echo = FALSE, fig.cap = "Comparison of density distribution for energy demand and price between full sample and subsample", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/density-distribution-comparison-samples.pdf")
+```
+
+
+
+```{r posterior-distributions, echo = FALSE, fig.cap = "Posterior distributions for the price elasticities of space heating demand based on the subsample", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/posterior-distributions.pdf")
+```
+
+
+
+```{r elasticity-predictions-bm2, echo = FALSE, fig.cap = "Predicted price elasticities of demand based on multilevel model", out.width = "104%", fig.align = "center"}
+knitr::include_graphics(path = "figure/bm2_prediction.pdf")
+```
+
+
+```{r heterogeneity-energy-carrier-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity between energy carrier groups", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/carrier_heterogeneity_plot.pdf")
+```
+
+
+
+```{r posterior-distribution-interaction, echo = FALSE, fig.cap = "Posterior distributions for the price elasticities of space heating demand by energy carrier group based on the subsample", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/posterior-distribution-interaction.pdf")
+```
+
+
+!!! Die nachfolgenden Tabellen müssen noch an neu durchgelaufenen Modelle angepasst werden
+
 \begin{table}[]
 \caption{Summary of coefficients for energy price in Bayesian models}
 \label{tab:price-coefs-brms}
@@ -87,18 +123,14 @@ b.1  & -3100.5                        & 81.6                         \\ \bottomr
 \end{tabular}
 \end{table}
 
-
-Notes (copied from other papers):
-
--Accounting for unobserved heterogeneity reduces the elasticities by 15% to 32% relative to a model that does not include any effects at all, where the own price elasticity of electricity demand is −1.).
-
-
-## Subsample analysis {#full_results}
-
-```{r elasticity-predictions-subsample-graph, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier", out.width = "100%", fig.align = "center"}
+```{r elasticity-predictions-energy-carrier, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier group", out.width = "104%", fig.align = "center"}
 knitr::include_graphics(path = "figure/elasticity_predictions_subsample.pdf")
 ```
 
 
+
+Notes (copied from other papers):
+
+-Accounting for unobserved heterogeneity reduces the elasticities by 15% to 32% relative to a model that does not include any effects at all, where the own price elasticity of electricity demand is −1.).
 
 

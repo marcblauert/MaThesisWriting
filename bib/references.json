@@ -4974,5 +4974,107 @@
 			]
 		},
 		"citation-key": "uba22"
+	},
+	{
+		"id": "wooldridge13",
+		"type": "book",
+		"call-number": "HB139 .W665 2013",
+		"edition": "5th edn",
+		"event-place": "Mason",
+		"ISBN": "978-1-111-53104-1",
+		"number-of-pages": "881",
+		"publisher": "South-Western Cengage Learning",
+		"publisher-place": "Mason",
+		"source": "Library of Congress ISBN",
+		"title": "Introductory econometrics: a modern approach",
+		"title-short": "Introductory econometrics",
+		"author": [
+			{
+				"family": "Wooldridge",
+				"given": "Jeffrey M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		},
+		"citation-key": "wooldridge13"
+	},
+	{
+		"id": "bailey17",
+		"type": "book",
+		"call-number": "HB139 .B344 2017",
+		"event-place": "New York",
+		"ISBN": "978-0-19-029682-7",
+		"number-of-pages": "592",
+		"publisher": "Oxford University Press",
+		"publisher-place": "New York",
+		"source": "Library of Congress ISBN",
+		"title": "Real econometrics: The right tools to answer important questions",
+		"title-short": "Real econometrics",
+		"author": [
+			{
+				"family": "Bailey",
+				"given": "Michael A."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		},
+		"citation-key": "bailey17"
+	},
+	{
+		"id": "lange_etal14",
+		"type": "article-journal",
+		"container-title": "Ecological Economics",
+		"DOI": "10.1016/j.ecolecon.2014.07.021",
+		"ISSN": "09218009",
+		"journalAbbreviation": "Ecological Economics",
+		"language": "en",
+		"page": "76-83",
+		"source": "DOI.org (Crossref)",
+		"title": "Green hypocrisy?: Environmental attitudes and residential space heating expenditure",
+		"title-short": "Green hypocrisy?",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0921800914002237",
+		"volume": "107",
+		"author": [
+			{
+				"family": "Lange",
+				"given": "Ian"
+			},
+			{
+				"family": "Moro",
+				"given": "Mirko"
+			},
+			{
+				"family": "Traynor",
+				"given": "Laura"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					6,
+					5
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					11
+				]
+			]
+		},
+		"citation-key": "lange_etal14"
 	}
 ]

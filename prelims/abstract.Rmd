@@ -1,0 +1,17 @@
+The preface pretty much says it all.  \par
+
+Second paragraph of abstract starts here.
+
+
+
+
+\bigskip
+\bigskip
+\noindent
+
+\begin{tabular}{m{14cm}}
+\hline
+\textbf{Code, GitHub Repository:}                                                            \\ 
+\footnotesize \url{https://github.com/marcblauert/price_elasticities_heating_demand_thesis}    \\
+\hline
+\end{tabular}

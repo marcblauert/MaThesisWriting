@@ -118,13 +118,30 @@ Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual examination of
 
 \newpage
 
-```{r heterogeneity-other-vars-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity for degree days, heating surface, district income, and district retirement share", out.width = "95%", fig.align = "center"}
-knitr::include_graphics(path = "figure/other_vars_heterogeneity_plot.pdf")
+```{r other-variables-heterogeneity-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity for degree days, heating surface, district income, and district retirement share", out.width = "95%", fig.align = "center"}
+knitr::include_graphics(path = "figure/other_variables_heterogeneity_plot.pdf")
 ```
 \noindent
-Figure \@ref(fig:heterogeneity-other-vars-plot) presents a visual examination of the heterogeneity of price elasticity for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, observations in the sub-sample are ln-transformed, grouped into three equally sized groups,[^99] and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and show no difference in price elasticity. For the other three variables, a slight dispersion of the grouped lines can be observed. But again, there are no pronounced differences that would prompt a more detailed investigation.
+Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual examination of the heterogeneity of price elasticity for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, observations in the sub-sample are ln-transformed, grouped into three equally sized groups,[^99] and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and show no difference in price elasticity. For the other three variables, a slight dispersion of the grouped lines can be observed. But again, there are no pronounced differences that would prompt a more detailed investigation.
 
 [^99]: E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63).
 
 \newpage
+
+```{r elasticity-predictions-b1, echo = FALSE, fig.cap = "Predicted price elasticities of demand based on price as only predictor", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/plot_b1.pdf")
+```
+\noindent
+Figure \@ref(fig:elasticity-predictions-b1) presents (...)
+
+\newpage
+
+```{r plot-model-comparison, echo = FALSE, fig.cap = "Graphical model comparison for subsample analysis", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/plot-model-comparison.pdf")
+```
+\noindent
+Figure \@ref(fig:plot-model-comparison) presents a visual examination of the model fit for all models used on the subsample.
+
+\newpage
+
 

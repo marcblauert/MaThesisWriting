@@ -32,6 +32,7 @@ Q = AP^{\varepsilon}
 (\#eq:demand)
 \end{equation}
 ```
+
 where $A$ represents an arbitrary constant and $\epsilon$ again is the price elasticity of demand. Taking the logarithms of the demand function removes $\epsilon$ from the exponent and yields
 
 ```{=tex}
