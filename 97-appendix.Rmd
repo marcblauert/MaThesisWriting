@@ -32,7 +32,7 @@ Figure \@ref(fig:degree-days-distribution) show the spatial and temporal variati
 knitr::include_graphics(path = "figure/correlation_matrix.pdf")
 ```
 \noindent
-The values in Figure \@ref(fig:correlation-plot) represent Pearson's correlation coefficients. Values closer to 1 indicate a stronger positive relationship, values closer to -1 indicate a stronger negative relationship. Values close to zero indicate no relationship. None of the correlations observed between the variables exceed moderate values, ruling out possible multicollinearity issues. Energy price is negatively correlated with energy demand, indicating that the expected negative effect of price on demand indeed exists. Note that tall variables are ln-transformed.
+The values in Figure \@ref(fig:correlation-plot) represent Pearson's correlation coefficients. Values closer to 1 indicate a stronger positive relationship, values closer to -1 indicate a stronger negative relationship. Values close to zero indicate no relationship. None of the correlations observed between the variables exceed moderate values, ruling out possible multicollinearity issues. Energy price is negatively correlated with energy demand, indicating that the expected negative effect of price on demand indeed exists. Note that all variables except the district retirement share, which is already a ratio, are ln-transformed and reflect the data transformation used in the regression analysis.
 
 \newpage
 
@@ -72,7 +72,7 @@ After 2010                            & 46,556 (14\%)      & 27,564 (14\%)   & 1
 \end{table}
 
 \noindent
-Table \@ref(tab:age-building-heating-system) provides descriptive statistics for the age of buildings and heating systems grouped by the type of energy carrier. For those buildings, where information is available, a relatively larger share of district heating systems are installed in older buildings but at a more recent date. Overall, however, the differences are moderate and cannot explain the difference in energy demand between buildings with gas and oil heating on the one side (relatively higher consumption) and district heating on the other side (relatively lower consumption). Instead, it is presumably the size of the buildings that induces to the lower demand levels for buildings with district heating (cf. Table \@ref(tab:summary-statistics). At the same time, it should be noted that the validity of the age classification of buildings and heating system installation year presented here is limited, as the information is available only for 15.5% and 13.7% of the total number of observations, respectively.
+Table \@ref(tab:age-building-heating-system) provides descriptive statistics for the age of buildings and heating systems grouped by the type of energy carrier. For those buildings, where information is available, a relatively larger share of district heating systems are installed in older buildings but at a more recent date. Overall, however, the differences are moderate and cannot explain the difference in energy demand between buildings with gas and oil heating on the one side (relatively higher consumption) and district heating on the other side (relatively lower consumption). Instead, it is presumably the size of the buildings that induces to the lower demand levels for buildings with district heating (cf. Table \@ref(tab:summary-statistics). At the same time, it should be noted that the validity of the age classification of buildings and heating system installation year presented here is limited, as the information is available only for 15.5% and 13.7% of the total number of observations, respectively. This is also the reason why the two variables were not included as variables in the regression analysis.
 
 \newpage
 
@@ -129,7 +129,7 @@ Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual examinati
 \newpage
 
 ```{r elasticity-predictions-b1, echo = FALSE, fig.cap = "Predicted price elasticities of demand based on price as only predictor", out.width = "100%", fig.align = "center"}
-knitr::include_graphics(path = "figure/plot_b1.pdf")
+knitr::include_graphics(path = "figure/b1_prediction.pdf")
 ```
 \noindent
 Figure \@ref(fig:elasticity-predictions-b1) presents (...)

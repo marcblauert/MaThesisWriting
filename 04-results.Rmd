@@ -11,54 +11,62 @@ options(width = 70)
 
 # Results {#results}
 
-The results section is structured in two parts. First, the results from the analysis of the full sample is presented (reflects the Frequentist regression analysis described in the first part of the workflow, see Figure \@ref(fig:workflow1)). Subsequently, in the second part, the results of the Bayesian regression analysis based on the stratified subsample are reported (relects the Bayesian regression analysis presented in the second part of the workflow, see Figure \@ref(fig:workflow2)).
+The results section is structured in two subsections. First, the results from the analysis of the full sample are presented (reflects first part of workflow, see Figure \@ref(fig:workflow1)). And subsequently the results of the deepened analysis based on the stratified subsample are reported (reflects the second part of the workflow, see Figure \@ref(fig:workflow2)).
 
-## Full sample analysis {#full_results}
+## Full sample results {#full_sample_results}
 
+The results of the full sample analysis are shown in Table \@ref(tab:reg-table). The overarching finding for the price elasticity of space heating demand is that the elasticities in all model specifications are *negative* and *relatively inelastic*. The price elasticities being negative, on the one hand, confirms that the basic intuition of falling demand with rising prices is reflected in the data. The relatively inelastic elasticities, on the other hand, validates the earlier assumption from the literature that space heating demand in private households -- especially in the short-term -- is an inelastic good. 
+
+Specifications (m1.ols) and (m2.ols) are the cross-sectional models based on the OLS estimator. Interestingly, the energy price coefficient remains stable when moving from Specification (m1.ols) with price as the only predictor of space heating demand to Specification (m2.ols) where the set of additional control variables is added to the model. The price elasticity coefficient in Specification (m2.ols) is to be interpreted that a 1% increase in energy price leads to a -0.365% reduction in space heating demand.
 
 
 \begin{table}[]
 \centering
 \caption{Regression table for full sample analysis}
-\label{tab:reg-table-full-sample}
+\label{tab:reg-table}
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{llrrrrrr}
-\cline{3-8}
- &  & \multicolumn{6}{c}{Response variable in all model specifications: Ln of space heat demand} \\
- &  & \multicolumn{2}{c}{OLS regression} & \multicolumn{1}{c}{} & \multicolumn{3}{c}{Fixed Effects (FE) regression} \\
-\multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & \multicolumn{1}{c}{(5)} \\ \cline{1-1} \cline{3-4} \cline{6-8} 
-(Intercept) &  & 5.399 *** & 3.593 *** &  &  &  &  \\
- &  & (0.002) & (0.028) &  &  &  &  \\
-\begin{tabular}[c]{@{}l@{}}Ln of\\ energy price\end{tabular} &  & -0.365 *** & -0.365 *** &  & -0.251 *** & -0.243 *** & -0.243 *** \\
- &  & (0.001) & (0.001) &  & (0.001) & (0.001) & (0.001) \\
-\begin{tabular}[c]{@{}l@{}}Ln of\\ degree days\end{tabular} &  &  & 0.626 *** &  &  & 0.779 *** & 0.779 *** \\
- &  &  & (0.002) &  &  & (0.003) & (0.003) \\
-\begin{tabular}[c]{@{}l@{}}Ln of\\ heating surface\end{tabular} &  &  & -0.133 *** &  &  & -0.405 *** & -0.405 *** \\
- &  &  & (0.000) &  &  & (0.003) & (0.003) \\
-\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ Oil\end{tabular} &  &  & 0.031 *** &  &  & 0.097 *** & 0.097 *** \\
- &  &  & (0.001) &  &  & (0.002) & (0.002) \\
-\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ District heating\end{tabular} &  &  & -0.061 *** &  &  & -0.020 *** & -0.020 *** \\
- &  &  & (0.001) &  &  & (0.002) & (0.002) \\
-\begin{tabular}[c]{@{}l@{}}Ln of\\ district income\end{tabular} &  &  & -0.277 *** &  &  & 0.022 ** & 0.022 ** \\
- &  &  & (0.002) &  &  & (0.008) & (0.008) \\
-\begin{tabular}[c]{@{}l@{}}Ln of district\\ population density\end{tabular} &  &  & 0.043 *** &  &  & 0,000 &  \\
- &  &  & (0.000) &  &  & (0.005) &  \\
-\begin{tabular}[c]{@{}l@{}}Ln of\\ retirement share\end{tabular} &  &  & -0.084 *** &  &  & 0.435 *** & 0.435 *** \\
- &  &  & (0.010) &  &  & (0.030) & (0.030) \\ \cline{1-1} \cline{3-4} \cline{6-8} 
-N &  & 2718246 & 2718246 &  & 2718246 & 2718246 & 2718246 \\
-R2 &  & 0,049 & 0,156 &  & 0,822 & 0,829 & 0,829 \\
-logLik &  & -1322263,852 & -1159565,133 &  &  &  &  \\
-AIC &  & 2644533,703 & 2319150,267 &  &  &  &  \\ \cline{1-1} \cline{3-4} \cline{6-8} 
-\multicolumn{8}{l}{*** p \textless 0.001;  ** p \textless 0.01;  * p \textless 0.05.}
+\begin{tabular}{llrrrrrrr}
+\cline{3-9}
+ &  & \multicolumn{7}{c}{\begin{tabular}[c]{@{}c@{}}Response variable in all model specifications:\\ Ln of space heat demand\end{tabular}} \\
+ &  & \multicolumn{2}{c}{OLS} & \multicolumn{1}{c}{} & \multicolumn{4}{c}{Fixed Effects (FE)} \\
+ &  & \multicolumn{1}{c}{(m1.ols)} & \multicolumn{1}{c}{(m2.ols)} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{(m1.fe)} & \multicolumn{1}{c}{(m2.fe)} & \multicolumn{1}{c}{(m3.fe)} & \multicolumn{1}{c}{(m3.fe, lagged)} \\ \cline{1-1} \cline{3-4} \cline{6-9} 
+(Intercept) &  & 5.399 *** & 3.593 *** &  &  &  &  &  \\
+ &  & (0.002) & (0.028) &  &  &  &  &  \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ energy price\end{tabular} &  & -0.365 *** & -0.365 *** &  & -0.251 *** & -0.243 *** & -0.243 *** &  \\
+ &  & (0.001) & (0.001) &  & (0.001) & (0.001) & (0.001) &  \\
+\begin{tabular}[c]{@{}l@{}}Ln of lagged\\ energy price (t-1)\end{tabular} &  &  &  &  &  &  &  & -0.071 *** \\
+ &  &  &  &  &  &  &  & (0.001) \\
+\begin{tabular}[c]{@{}l@{}}Ln of\\ degree days\end{tabular} &  &  & 0.626 *** &  &  & 0.779 *** & 0.779 *** & 0.850 *** \\
+ &  &  & (0.002) &  &  & (0.003) & (0.003) & (0.004) \\
+\begin{tabular}[c]{@{}l@{}}Ln of \\ heating surface\end{tabular} &  &  & -0.133 *** &  &  & -0.405 *** & -0.405 *** & -0.408 *** \\
+ &  &  & (0.000) &  &  & (0.003) & (0.003) & (0.004) \\
+\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ Oil\end{tabular} &  &  & 0.031 *** &  &  & 0.097 *** & 0.097 *** & 0.074 *** \\
+ &  &  & (0.001) &  &  & (0.002) & (0.002) & (0.002) \\
+\begin{tabular}[c]{@{}l@{}}Energy carrier:\\ District heating\end{tabular} &  &  & -0.061 *** &  &  & -0.020 *** & -0.020 *** & -0.067 *** \\
+ &  &  & (0.001) &  &  & (0.002) & (0.002) & (0.003) \\
+\begin{tabular}[c]{@{}l@{}}Ln of district\\ per capita household income\end{tabular} &  &  & -0.277 *** &  &  & 0.022 ** & 0.022 ** & 0,015 \\
+ &  &  & (0.002) &  &  & (0.008) & (0.008) & (0.010) \\
+District retirement share &  &  & -0.084 *** &  &  & 0.435 *** & 0.435 *** & 0.418 *** \\
+ &  &  & (0.010) &  &  & (0.030) & (0.030) & (0.037) \\
+\begin{tabular}[c]{@{}l@{}}Postal code\\ population density\end{tabular} &  &  & 0.043 *** &  &  & 0,000 &  &  \\
+ &  &  & (0.000) &  &  & (0.005) &  &  \\ \cline{1-1} \cline{3-4} \cline{6-9} 
+N &  & 2718246 & 2718246 &  & 2718246 & 2718246 & 2718246 & 2020628 \\
+R2 &  & 0,049 & 0,156 &  & 0,822 & 0,829 & 0,829 & 0,847 \\
+logLik &  & -1322263,852 & -1159565,133 &  &  &  &  &  \\
+AIC &  & 2644533,703 & 2319150,267 & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \cline{1-1} \cline{3-4} \cline{6-9} 
+*** p \textless 0.001;  ** p \textless 0.01;  * p \textless 0.05. &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{}
 \end{tabular}%
 }
 \end{table}
 
 
+When moving from the OLS estimator to the fixed-effects (FE) estimator in Specifications (m1.fe) - (m3.fe), the estimated price elasticities of demand become more inelastic. This effect is in line with what, for example, also @miller_alberini16 find when moving from a cross-sectional model to the use of unit-level fixed effects. The reason for this is probably unobserved factors at the building level that are not fully reflected in the building characteristics controlled for, as well as temporal effects. This time, moving from Specification (m1.fe) with price as the sole predictor of space heating demand to Specification (m2.fe) which also includes the other predictor variables, the coefficient of energy price becomes slightly more inelastic but the effect in magnitude remains minor. Specification (m3.fe) drops the population density from the equation since it is found to have no effect in Specification (m2.fe). Thus, Specification (m3.fe) reflects the final model for the full sample analysis. The price elasticity coefficient in Specification (m3.fe) is to be interpreted that a 1% increase in energy price leads to a -0.243% reduction in space heating demand. The results for the price elasticity of demand are of a comparable magnitude to previous evidence in the literature (see Figure \@ref(fig:literature-estimates-plot)).
 
-## Subsample analysis {#full_results}
+In general, almost all model predictors are found to be statistically significant with a p-value < 0.1%. However, this is not surprising given the very large number of more than 2.7 million observations. The signs of the other relevant model predictors also point in the expected direction. Since many of the predictors are also included in the model in the ln-form, they can also be interpreted in terms of percentage change. Relying again on Specification (m3.fe), this means that, for example, a rise in degree days (lower outside temperatures) of 1% would be associated with to a higher energy demand of 0.779% and a larger building heating surface of 1% would be associated with a lower energy demand of -0.405%. Furthermore, the results indicate that an oil heating system is associated with a higher heating energy demand than gas as a reference category and a district heating system with a lower demand, taking into account the other variables in the model. While the results in the OLS-based cross-sectional model indicate that an increasing district per capita household income is associated with a decreasing energy demand, this effect disappears in the FE model and is even reversed. At the same time, the magnitude of the effect in Specification (m3.fe) is so small that one must assume that the district per capita household income does not have a strong influence in explaining the variance in energy demand. For district retirement share the sign of the coefficient as well switches when moving from the OLS to the FE model. The results in Specification (m3.fe) indicate that a higher district level retirement share is associated with higher energy demand.
 
+Specification (m3.fe, lagged), also shown in the table, shows the results for the case that not the energy price in the same period, but the price in the previous period (communicated through the energy bill of the previous year) influences the demand decision. When the lagged energy price is used as a predictor, the magnitude of the demand response is reduced to one third of the effect size of the price over the same period -- from -0.243% to -0.071% following a 1% increase in energy prices. While the effect is still negative, this represents a major reduction in magnitude of the effect. However, part of the difference may be due to the fact that in Specification (m3.fe, lagged) about 0.7 million fewer observations are included in the estimation, since a building must occur in the sample in two consecutive periods (energy price in $t-1$ and energy demand in $t$) for an observation to be included. This exclusion criterion can lead to some type of selection bias, where buildings with certain characteristics that continuously appear in the sample are more heavily represented.
 
+## Subsample results {#subsample_results}
 
 ```{r density-distribution-comparison-samples, echo = FALSE, fig.cap = "Comparison of density distribution for energy demand and price between full sample and subsample", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/density-distribution-comparison-samples.pdf")
