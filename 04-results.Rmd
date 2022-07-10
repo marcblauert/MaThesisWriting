@@ -15,7 +15,9 @@ The results section is structured in two subsections. First, the results from th
 
 ## Full sample results {#full_sample_results}
 
-The results of the full sample analysis are shown in Table \@ref(tab:reg-table). The overarching finding for the price elasticity of space heating demand is that the elasticities in all model specifications are *negative* and *relatively inelastic*. The price elasticities being negative, on the one hand, confirms that the basic intuition of falling demand with rising prices is reflected in the data. The relatively inelastic elasticities, on the other hand, validates the earlier assumption from the literature that space heating demand in private households -- especially in the short-term -- is an inelastic good. 
+**Price elasticity estimates**
+
+The results of the full sample analysis are shown in Table \@ref(tab:reg-table). The overarching finding regarding the price elasticity of space heating demand is that the elasticities in all model specifications are *negative* and *relatively inelastic*. On the one hand, the price elasticities being negative confirms that the basic intuition of falling demand with rising prices is reflected in the data. The relative inelastic magnitude of the demand response, on the other hand, validates the assumption derived from the literature that space heating in private households -- especially in the short-term -- is an inelastic good. 
 
 Specifications (m1.ols) and (m2.ols) are the cross-sectional models based on the OLS estimator. Interestingly, the energy price coefficient remains stable when moving from Specification (m1.ols) with price as the only predictor of space heating demand to Specification (m2.ols) where the set of additional control variables is added to the model. The price elasticity coefficient in Specification (m2.ols) is to be interpreted that a 1% increase in energy price leads to a -0.365% reduction in space heating demand.
 
@@ -62,28 +64,55 @@ AIC &  & 2644533,703 & 2319150,267 & \multicolumn{1}{l}{} & \multicolumn{1}{l}{}
 
 When moving from the OLS estimator to the fixed-effects (FE) estimator in Specifications (m1.fe) - (m3.fe), the estimated price elasticities of demand become more inelastic. This effect is in line with what, for example, also @miller_alberini16 find when moving from a cross-sectional model to the use of unit-level fixed effects. The reason for this is probably unobserved factors at the building level that are not fully reflected in the building characteristics controlled for, as well as temporal effects. This time, moving from Specification (m1.fe) with price as the sole predictor of space heating demand to Specification (m2.fe) which also includes the other predictor variables, the coefficient of energy price becomes slightly more inelastic but the effect in magnitude remains minor. Specification (m3.fe) drops the population density from the equation since it is found to have no effect in Specification (m2.fe). Thus, Specification (m3.fe) reflects the final model for the full sample analysis. The price elasticity coefficient in Specification (m3.fe) is to be interpreted that a 1% increase in energy price leads to a -0.243% reduction in space heating demand. The results for the price elasticity of demand are of a comparable magnitude to previous evidence in the literature (see Figure \@ref(fig:literature-estimates-plot)).
 
-In general, almost all model predictors are found to be statistically significant with a p-value < 0.1%. However, this is not surprising given the very large number of more than 2.7 million observations. The signs of the other relevant model predictors also point in the expected direction. Since many of the predictors are also included in the model in the ln-form, they can also be interpreted in terms of percentage change. Relying again on Specification (m3.fe), this means that, for example, a rise in degree days (lower outside temperatures) of 1% would be associated with to a higher energy demand of 0.779% and a larger building heating surface of 1% would be associated with a lower energy demand of -0.405%. Furthermore, the results indicate that an oil heating system is associated with a higher heating energy demand than gas as a reference category and a district heating system with a lower demand, taking into account the other variables in the model. While the results in the OLS-based cross-sectional model indicate that an increasing district per capita household income is associated with a decreasing energy demand, this effect disappears in the FE model and is even reversed. At the same time, the magnitude of the effect in Specification (m3.fe) is so small that one must assume that the district per capita household income does not have a strong influence in explaining the variance in energy demand. For district retirement share the sign of the coefficient as well switches when moving from the OLS to the FE model. The results in Specification (m3.fe) indicate that a higher district level retirement share is associated with higher energy demand.
+Specification (m3.fe, lagged), also shown in the table, shows the results for the case that not the energy price in the same period, but the price in the previous period (communicated through the energy bill of the previous year) influences the demand decision of households. When the lagged energy price is used as a predictor, the magnitude of the demand response is reduced to one third of the effect size: from -0.243% when using the price in $t$ to -0.071% for the price in $t-1$ (contingent on a 1% increase in energy prices). While the demand response is still negative, this represents a major reduction in magnitude of the effect. In the literature, there are varying rationales on whether the price in the same or in previous periods informs demand decisions for space heat. In this study I follow the approach of @schmitz_madlener20 and assume that prices in the same period drive demand levels. However, the results for when using the price in previous billing period are reported to obtain a more comprehensive picture on the price elasticity estimates. Importantly, it should be noted that part of the difference between the estimates may also be due to the fact that in Specification (m3.fe, lagged) about 0.7 million fewer observations are included in the estimation, since a building must occur in the sample in two consecutive periods (energy price in $t-1$ and energy demand in $t$) for an observation to be included. This exclusion criterion may lead to some type of selection bias, where buildings with certain characteristics that continuously appear in the sample are more heavily represented.
 
-Specification (m3.fe, lagged), also shown in the table, shows the results for the case that not the energy price in the same period, but the price in the previous period (communicated through the energy bill of the previous year) influences the demand decision. When the lagged energy price is used as a predictor, the magnitude of the demand response is reduced to one third of the effect size of the price over the same period -- from -0.243% to -0.071% following a 1% increase in energy prices. While the effect is still negative, this represents a major reduction in magnitude of the effect. However, part of the difference may be due to the fact that in Specification (m3.fe, lagged) about 0.7 million fewer observations are included in the estimation, since a building must occur in the sample in two consecutive periods (energy price in $t-1$ and energy demand in $t$) for an observation to be included. This exclusion criterion can lead to some type of selection bias, where buildings with certain characteristics that continuously appear in the sample are more heavily represented.
+**Other estimates and effects**
+
+In general, almost all model predictors are found to be statistically significant with a p-value < 0.1%. However, this is not surprising given the very large number of more than 2.7 million observations [@gelman_stern06; @johnson99]. Besides the interpretation of the price elasticities, the signs of the other relevant model predictors also point in the expected direction (see rationales established in Section \@ref(conceptual-model)). As most of the predictors are also included in the model in the ln-form, they can as well be interpreted in terms of percentage point change.
+
+Referring again to the main model Specification (m3.fe), this means that, for example, a rise in degree days (lower outside temperatures) of 1% would be associated with to a higher energy demand of 0.779% and a larger building heating surface of 1% would be associated with a lower energy demand of -0.405%. Furthermore, the results indicate that an oil heating system is associated with a higher heating energy demand than gas as the reference category and a district heating system with a lower demand. While the results in the cross-sectional OLS model indicate that an increasing district per capita household income would be associated with a decreasing energy demand, this effect disappears in the FE model and is even reversed. At the same time, the magnitude of the district per capita household income effect in Specification (m3.fe) is so small that one must assume that it does not have a strong influence in explaining the variance in energy demand at all. For district retirement share the sign of the coefficient as well switches when moving from the OLS to the FE model. The results in Specification (m3.fe) indicate that a higher district level retirement share is associated with higher energy demand.
 
 ## Subsample results {#subsample_results}
 
-```{r density-distribution-comparison-samples, echo = FALSE, fig.cap = "Comparison of density distribution for energy demand and price between full sample and subsample", out.width = "100%", fig.align = "center"}
-knitr::include_graphics(path = "figure/density-distribution-comparison-samples.pdf")
-```
+**Price elasticity estimates**
 
+Figure \@ref(fig:posterior-distributions) summarizes the posterior distributions for the price elasticities of space heating demand in the Bayesian models (see Figure \@ref(fig:workflow2) to compare which model structure and predictor is used in the respective Specification). The complete model summaries -- going beyond the price coefficients -- are reported in Appendix \@ref(tab:brms-full-model-results). 
 
+Also for the Bayesian models, the estimates for the price elasticity of space heating demand are in the negative and relatively inelastic range. In contrast to the results of the total sample, however, it is noticeable that the price elasticities found in the subsample are more elastic. This could be partly due to the alternative modelling approach. But probably it is mainly the different composition of the sample that causes the difference in the estimates. That the overall findings of the full and subsample analysis agree well is also evident from the fact that the trend towards lower estimates for the price elasticity is the same when additional predictors are included and when controlling for the group-level effects of buildings and time.
+
+Specifications (b.1) and (b.2) represent the simpler model design without varying intercepts. In Specification (b.1), with energy price as the sole predictor of energy demand, the price elasticity is estimated to be -0.56 [-0.59; -0.53] (Mean estimate [95% CI]). When moving to Specification (b.2) where the additional explanatory variables are added, the estimate moves to -0.41 [-0.45; -0.38] and thus becomes wider and less price responsive (inelastic). Again, using the results from Specification (b.2) as an example, the price elasticity coefficients are o be interpreted that a 1% increase in energy price leads to a -0.41% [-0.45; -0.38] reduction in space heating demand.
 
 ```{r posterior-distributions, echo = FALSE, fig.cap = "Posterior distributions for the price elasticities of space heating demand based on the subsample", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/posterior-distributions.pdf")
 ```
 
+In the more sophisticated specifications involving multilevel partial pooling for buildings and years (bm.x models), the price elasticities become lower, similar to the FE models in the full sample analysis. In Specification (bm.1) energy price is used as a sole predictor and group-level terms are included. In Specification (bm.2) the additional explanatory variables are included. In Specification (bm.2) the estimate for the price elasticity of space heating demand is -0.30 [-0.33; -0.27], meaning that a 1% increase in energy price would lead to a -0.30% [-0.33; -0.27] reduction in space heating demand. Also similarly to the full sample analysis, the by far lowest estimate is found when using the lagged energy price variable ($t-1$) instead of the energy price in the same period ($t$) to explain the variance in space heat demand. For Specification (bm.2 Lagged) the estimate is -0.16 [-0.20; -0.12].
 
+Generally, it should be noted that due to the varying representation of energy carriers between the full- and the subsample, a direct comparison of the resulting estimates is not sensible. In the full sample there is a larger representation of observations relying on a gas heating system and fewer observations with a district heating system. These differences are removed by the stratified sampling approach.
 
-```{r elasticity-predictions-bm2, echo = FALSE, fig.cap = "Predicted price elasticities of demand based on multilevel model", out.width = "104%", fig.align = "center"}
+**Implications of varying estimates for demand scale**
+
+Figures \@ref(fig:elasticity-predictions-b1) and \@ref(fig:elasticity-predictions-bm2) illustrate what the differences found in the price elasticity estimates imply when being converted back to the actual scale of demand. Figure \@ref(fig:elasticity-predictions-b1) shows predictions for the basic Specification (b.1) where energy price acts as the sole predictor of space heating demand and group-level differences between buildings and years are not yet considered. Panel A on the left shows the observations in the subsample with model predictions on the ln-scale. Panel B on the right shows the re-scaled values on the scale of actual demand.[^1192]
+
+[^1192]: Values are re-scaled using the $exp()$ link.
+
+Methodologically, the solid line in the center represents the average energy demand at a respective price. The narrower, darker shaded prediction interval around the mean represents the 95% intervals for the posterior distribution of the expected value of the demand parameter $\mu$ (fitted interval) (see Section \@ref(empirical-model)). These posterior predictive distributions have a lower variance because only the uncertainty of the mean is included in the draws, but the residual error is ignored. The wider, lighter shaded region, on the other hand, represents the posterior predictive distributions including the residual error. The lighter shaded region is thus to be interpreted as the interval in which the model expects to find 95% of the actual energy demands in the population at each price.[^1193]
+
+[^1193]: Cf. @mcelreath20, Chapter 4 and the brms documentation on the $posterior.epred$ and $posterior_predict$ functions in R for the interpretation of the posterior predictive intervals shown in the graph.
+
+```{r elasticity-predictions-b1, echo = FALSE, fig.cap = "Predicted price elasticities of space heating demand based on simple model (b.1)", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/b1_prediction.pdf")
+```
+
+The intervals show well the uncertainty inherent in the model predictions. For the lower end of the price scale shown in Figure \@ref(fig:elasticity-predictions-b1) at 4 cents/kWh, the model expects 95% of the actual energy demands of the population to be between 70 and 315 kWh/sqm/year, which is obviously a very broad range. At the upper end of the price range, the predicted interval becomes narrower. At 20 cents/kWh, the model expects 95% of the actual energy demands to be in the range of 35 and 130 kWh/sqm/year. Overall, the predictions of the simple model thus show the negative relationship between price and demand, but are still subject to great uncertainty due to the residual error of the model.
+
+```{r elasticity-predictions-bm2, echo = FALSE, fig.cap = "Predicted price elasticities of space heating demand based on multilevel partial pooling model (bm.2)", out.width = "104%", fig.align = "center"}
 knitr::include_graphics(path = "figure/bm2_prediction.pdf")
 ```
 
+Figure \@ref(fig:elasticity-predictions-bm2) presents the same type of figure, but relies on the multilevel partial pooling model (bm.2). The additional blue line in panel A represents the simple linear model between price and demand. The different trajectory between the simple linear model (blue line) and the prediction for the model Specification (bm.2) (green line) shows that the inclusion of the additional explanatory variables and the group-level pooling for buildings and years has a strong impact on the prediction. The predicted elasticity is less elastic and the intervals are much narrower. These differences are also evident when moving to Panel B, where the predictions are again re-scaled to the demand scale. For the lower end of the price range at 4 cents/kWh, the model expects 95% of the actual energy demands in the population to be between 85 and 175 kWh/sqm/year. At the upper end, at a price of 20 cents/kWh, the interval narrows again to between 55 and 110 kWh/sqm/year.
+
+**Investigation of heterogeneity in price responsiveness**
 
 ```{r heterogeneity-energy-carrier-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity between energy carrier groups", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/carrier_heterogeneity_plot.pdf")
@@ -96,25 +125,11 @@ knitr::include_graphics(path = "figure/posterior-distribution-interaction.pdf")
 ```
 
 
-!!! Die nachfolgenden Tabellen müssen noch an neu durchgelaufenen Modelle angepasst werden
+```{r elasticity-predictions-energy-carrier, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier group", out.width = "104%", fig.align = "center"}
+knitr::include_graphics(path = "figure/elasticity_predictions_subsample.pdf")
+```
 
-\begin{table}[]
-\caption{Summary of coefficients for energy price in Bayesian models}
-\label{tab:price-coefs-brms}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllllllll@{}}
-\toprule
-Coef.                               & Model             & Estimate & Est.Error & l-95\% CI & u-95\% CI & Rhat & Bulk ESS & Tail ESS \\ \midrule
-\multirow{5}{*}{Ln of energy price} & b.1               & -0.56    & 0.02      & -0.59     & -0.52     & 1    & 3165     & 2380     \\
-                                    & b.2               & -0.50    & 0.02      & -0.54     & -0.46     & 1    & 3502     & 2521     \\
-                                    & bm.1              & -0.30    & 0.02      & -0.34     & -0.25     & 1    & 1286     & 2114     \\
-                                    & bm.2              & -0.25    & 0.02      & -0.29     & -0.20     & 1    & 2240     & 2742     \\
-                                    & bm.2 - Renovation & -0.25    & 0.02      & -0.29     & -0.20     & 1    & 2184     & 2920     \\
-Ln of energy price in t-1           & bm.2 - Price t-1  & -0.14    & 0.03      & -0.19     & -0.09     & 1    & 2326     & 2920     \\ \bottomrule
-\end{tabular}%
-}
-\end{table}
-
+**Model comparison**
 
 \begin{table}[]
 \centering
@@ -130,15 +145,4 @@ b.2  & -2856.7                        & 80.4                         \\
 b.1  & -3100.5                        & 81.6                         \\ \bottomrule
 \end{tabular}
 \end{table}
-
-```{r elasticity-predictions-energy-carrier, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier group", out.width = "104%", fig.align = "center"}
-knitr::include_graphics(path = "figure/elasticity_predictions_subsample.pdf")
-```
-
-
-
-Notes (copied from other papers):
-
--Accounting for unobserved heterogeneity reduces the elasticities by 15% to 32% relative to a model that does not include any effects at all, where the own price elasticity of electricity demand is −1.).
-
 

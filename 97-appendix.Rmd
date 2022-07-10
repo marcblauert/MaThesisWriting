@@ -77,36 +77,119 @@ Table \@ref(tab:age-building-heating-system) provides descriptive statistics for
 \newpage
 
 
-\begin{table}[]
-\centering
-\caption{Comparison between full sample and sub-sample}
-\label{tab:sample-comparison}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lllll@{}}
-\toprule
-Variable                                                                                       & Energy carrier group & \begin{tabular}[c]{@{}l@{}}Full sample\\ (N = 2.719.270)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Sub-sample\\ (N = 4.410)\end{tabular} & Difference {[}\%{]}       \\ \midrule
-\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Energy demand\\ {[}kWh/m2{]}\end{tabular}}          & Gas                  & 122.5 {[}56.4; 209.33{]}                                              & 121.39 {[}55.4; 211.32{]}                                        & -0.91 {[}-1.81; 0.94{]}   \\
-                                                                                               & Oil                  & 122.36 {[}58.67; 204{]}                                               & 116.97 {[}53.57; 198.17{]}                                       & -4.61 {[}-9.52; -2.94{]}  \\
-                                                                                               & District heating     & 89.38 {[}43.23; 156.88{]}                                             & 83.98 {[}41.92; 141.01{]}                                        & -6.43 {[}-3.12; -11.25{]} \\
-\multicolumn{5}{l}{} \\                                                                                                 
-\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Energy price, real \\ {[}Cents/kWh{]}\end{tabular}}        & Gas                  & 6.28 {[}4.56; 8.14{]}                                                 & 6.22 {[}4.59; 8.04{]}                                            & -0.96 {[}0.65; -1.24{]}   \\
-                                                                                               & Oil                  & 7.14 {[}5.1; 9.18{]}                                                  & 7.21 {[}5.2; 9.23{]}                                             & 0.97 {[}1.92; 0.54{]}     \\
-                                                                                               & District heating     & 10.45 {[}6.86; 15.07{]}                                               & 10.76 {[}7.17; 16.15{]}                                          & 2.88 {[}4.32; 6.69{]}     \\
-\multicolumn{5}{l}{} \\   
-\multirow{3}{*}{Degree days}                                                                   & Gas                  & 3467.6 {[}2921.14; 4180.42{]}                                         & 3461.14 {[}2914.56; 4180.4{]}                                    & -0.19 {[}-0.23; 0{]}      \\
-                                                                                               & Oil                  & 3568.13 {[}2971.7; 4269.19{]}                                         & 3582.48 {[}2946.19; 4318.42{]}                                   & 0.4 {[}-0.87; 1.14{]}     \\
-                                                                                               & District heating     & 3441.1 {[}2924.64; 4137.61{]}                                         & 3447.97 {[}2948.92; 4180.11{]}                                   & 0.2 {[}0.82; 1.02{]}      \\
-\multicolumn{5}{l}{} \\   
-\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Building heating \\ surface {[}sqm{]}\end{tabular}} & Gas                  & 648.84 {[}163; 1849.4{]}                                              & 727.47 {[}168.04; 1817{]}                                        & 10.81 {[}3; -1.78{]}      \\
-                                                                                               & Oil                  & 452.82 {[}160; 1195.6{]}                                              & 489.55 {[}167.1; 1362.8{]}                                       & 7.5 {[}4.25; 12.27{]}     \\
-                                                                                               & District heating     & 1714.09 {[}255; 5030.18{]}                                            & 2034.55 {[}297.52; 6968.98{]}                                    & 15.75 {[}14.29; 27.82{]}  \\ \midrule
-\multicolumn{5}{l}{\textit{*) Mean {[}90\% CI{]}}}                                                                                                                                                                                                                                          
-\end{tabular}%
-}
-\end{table}
+```{r density-distribution-comparison-samples, echo = FALSE, fig.cap = "Comparison of density distribution for energy demand and price between full sample and subsample", out.width = "100%", fig.align = "center"}
+knitr::include_graphics(path = "figure/density-distribution-comparison-samples.pdf")
+```
 
 \noindent
-Table \@ref(tab:sample-comparison) compares the total sample and the sub-sample with respect to key variables. It contains the mean values for the two samples and the lower and upper limits of a 90% interval divided by the energy carrier. It also gives the relative difference between the total sample and the sub-sample in percent. The statistics show that in the sub-sample with the available epc information, the buildings are on average 7.5 % to 15.8 % larger, depending on the energy carrier. This deviation is presumably due to the fact that larger buildings are more often managed by larger property managers who decide to systematically exchange their information with ista and also obtain their energy performance certificates through this standardised channel. The larger building heating area is likely also the reason for the deviations between the total sample and the sub-sample in energy demand for oil (-4.6%) and district heating (-6.4%). However, the deviations are within reasonable limits. Energy price and degree days from both samples are in good agreement.
+Figure \@ref(fig:density-distribution-comparison-samples) compares the density distribution for the two key variables energy demand and energy price between the full sample (transparent) and the subsample (purple area) with 400 randomly selected buildings per energy carrier group (gas, oil and district heating). The visual comparison shows that there are only relatively small deviations in energy demand (Panel A), with the distribution in the subsample being slightly shifted to the left (lower demand). The comparison of distribution in energy prices (Panel B), on the other hand, show more divergence, with the subsample distribution showing a lower peak around $Ln(price) = 2$ and also more observations in the higher price range. However, the deviations in energy demand and energy prices can be well explained by the stratified sampling approach for the subsample. The stratified sample leads primarily to a reduction in the share of gas observations and in contrast to an increase in observations related to district heating. For the demand variable, more district heating observations lead to more observations with a lower demand. For the price variable, it leads to a less pronounced peak in gas observations at the center and more district heating observations with higher prices at the upper end of the distribution.
+
+\newpage
+
+\tiny
+
+\begin{longtable}[c]{lrrrrrrr}
+\caption{Full model results for subsample analysis}
+\label{tab:brms-full-model-results}\\
+\cline{2-8}
+ & \multicolumn{1}{c}{\textbf{Estimate}} & \multicolumn{1}{c}{\textbf{Est.Error}} & \multicolumn{1}{c}{\textbf{l-95\% CI}} & \multicolumn{1}{c}{\textbf{u-95\% CI}} & \multicolumn{1}{c}{\textbf{Rhat}} & \multicolumn{1}{c}{\textbf{Bulk ESS}} & \multicolumn{1}{c}{\textbf{Tail ESS}} \\ \cline{2-8} 
+\endfirsthead
+%
+\endhead
+%
+\hline
+\endfoot
+%
+\endlastfoot
+%
+ &  &  &  &  &  &  &  \\ \hline
+\textbf{B.1} &  &  &  &  &  &  &  \\
+{\ul \textit{Population-Level-Effects:}} &  &  &  &  &  &  &  \\
+Intercept & 5.75 & 0.03 & 5.69 & 5.82 & 1.00 & 3240 & 2312 \\
+ln(Price) & -0.56 & 0.01 & -0.59 & -0.53 & 1.00 & 3240 & 2432 \\ \hline
+ &  &  &  &  &  &  &  \\ \hline
+\textbf{B.2} &  &  &  &  &  &  &  \\
+{\ul \textit{Population-Level-Effects:}} &  &  &  &  &  &  &  \\
+Intercept & 4.93 & 0.49 & 3.94 & 5.89 & 1.00 & 3423 & 2799 \\
+ln(Price) & -0.41 & 0.02 & -0.45 & -0.38 & 1.00 & 2740 & 2644 \\
+ln(Degree.days) & 0.57 & 0.04 & 0.50 & 0.65 & 1.00 & 4404 & 2986 \\
+ln(Heating.surface) & -0.15 & 0.01 & -0.16 & -0.14 & 1.00 & 3662 & 3067 \\
+Carrier.group.oil & 0.04 & 0.01 & 0.02 & 0.06 & 1.00 & 3633 & 2650 \\
+Carrier.group.district.heating & -0.06 & 0.01 & -0.09 & -0.03 & 1.00 & 2588 & 2890 \\
+ln(District.income) & -0.35 & 0.03 & -0.41 & -0.29 & 1.00 & 4126 & 2746 \\
+ln(Pop.density) & 0.05 & 0.00 & 0.04 & 0.05 & 1.00 & 3955 & 3125 \\
+District.retire & -0.05 & 0.17 & -0.37 & 0.28 & 1.00 & 4222 & 3258 \\ \hline
+ &  &  &  &  &  &  &  \\ \hline
+\textbf{BM.1} &  &  &  &  &  &  &  \\
+{\ul \textit{Population-Level-Effects:}} &  &  &  &  &  &  &  \\
+Intercept & 5.31 & 0.04 & 5.23 & 5.39 & 1.00 & 1141 & 1800 \\
+ln(Price) & -0.33 & 0.02 & -0.36 & -0.30 & 1.00 & 1565 & 1970 \\
+ &  &  &  &  &  &  &  \\
+{\ul \textit{Group-Level-Effects:}} &  &  &  &  &  &  &  \\
+$\sim$id (Number of levels: 1200) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.36 & 0.01 & 0.34 & 0.37 & 1.00 & 482 & 990 \\
+ &  &  &  &  &  &  &  \\
+$\sim$year (Number of levels: 13) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.09 & 0.02 & 0.06 & 0.14 & 1.01 & 745 & 1844 \\ \hline
+ &  &  &  &  &  &  &  \\ \hline
+\textbf{BM.2} &  &  &  &  &  &  &  \\
+{\ul \textit{Population-Level-Effects:}} &  &  &  &  &  &  &  \\
+Intercept & 1.65 & 0.77 & 0.12 & 3.14 & 1.01 & 471 & 1247 \\
+ln(Price) & -0.30 & 0.02 & -0.33 & -0.27 & 1.00 & 2318 & 2796 \\
+ln(Degree.days) & 0.69 & 0.05 & 0.60 & 0.79 & 1.00 & 1378 & 1915 \\
+Carrier.group.oil & 0.06 & 0.02 & 0.02 & 0.10 & 1.01 & 443 & 1067 \\
+Carrier.group.district.heating & -0.12 & 0.02 & -0.16 & -0.08 & 1.02 & 401 & 930 \\
+ln(District.income) & -0.20 & 0.06 & -0.32 & -0.08 & 1.01 & 364 & 934 \\
+District.retire & -0.18 & 0.25 & -0.67 & 0.30 & 1.01 & 660 & 1176 \\
+ &  &  &  &  &  &  &  \\
+{\ul \textit{Group-Level-Effects:}} &  &  &  &  &  &  &  \\
+$\sim$id (Number of levels: 1200) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.35 & 0.01 & 0.34 & 0.37 & 1.01 & 461 & 855 \\
+ &  &  &  &  &  &  &  \\
+$\sim$year (Number of levels: 13) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.03 & 0.01 & 0.02 & 0.05 & 1.00 & 1013 & 1516 \\ \hline
+ &  &  &  &  &  &  &  \\ \hline
+\textbf{BM.2 Lagged} &  &  &  &  &  &  &  \\
+{\ul \textit{Population-Level-Effects:}} &  &  &  &  &  &  &  \\
+Intercept & 0.88 & 0.92 & -0.97 & 2.70 & 1.01 & 532 & 975 \\
+ln(Price, lagged t-1) & -0.16 & 0.02 & -0.20 & -0.12 & 1.00 & 2254 & 2452 \\
+ln(Degree.days) & 0.72 & 0.06 & 0.60 & 0.83 & 1.01 & 1251 & 1975 \\
+Carrier.group.oil & 0.04 & 0.02 & 0.00 & 0.09 & 1.01 & 364 & 617 \\
+Carrier.group.district.heating & -0.20 & 0.02 & -0.25 & -0.16 & 1.00 & 460 & 903 \\
+ln(District.income) & -0.17 & 0.07 & -0.31 & -0.03 & 1.01 & 455 & 963 \\
+District.retire & -0.33 & 0.28 & -0.86 & 0.22 & 1.00 & 586 & 1219 \\
+ &  &  &  &  &  &  &  \\
+{\ul \textit{Group-Level-Effects:}} &  &  &  &  &  &  &  \\
+$\sim$id (Number of levels: 1164) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.36 & 0.01 & 0.34 & 0.37 & 1.00 & 506 & 866 \\
+ &  &  &  &  &  &  &  \\
+$\sim$year (Number of levels: 11) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.03 & 0.01 & 0.02 & 0.05 & 1.00 & 1116 & 1753 \\ \hline
+ &  &  &  &  &  &  &  \\ \hline
+\textbf{BM.3} &  &  &  &  &  &  &  \\
+{\ul \textit{Population-Level-Effects:}} &  &  &  &  &  &  &  \\
+Intercept & 2.13 & 0.77 & 0.65 & 3.71 & 1.01 & 557 & 1248 \\
+ln(Price) & -0.35 & 0.03 & -0.40 & -0.29 & 1.00 & 1309 & 2241 \\
+ln(Degree.days) & 0.68 & 0.05 & 0.58 & 0.78 & 1.01 & 1106 & 1872 \\
+Carrier.group.oil & -0.32 & 0.06 & -0.44 & -0.19 & 1.01 & 1175 & 2149 \\
+Carrier.group.district.heating & 0.31 & 0.08 & 0.15 & 0.46 & 1.00 & 1139 & 1866 \\
+ln(District.income) & -0.23 & 0.06 & -0.35 & -0.12 & 1.02 & 426 & 651 \\
+District.retire & -0.18 & 0.27 & -0.71 & 0.34 & 1.01 & 370 & 924 \\
+ln(Price):Carrier.group.oil & 0.19 & 0.03 & 0.13 & 0.26 & 1.00 & 1441 & 2276 \\
+ln(Price):Carrier.group.district.heating & -0.18 & 0.04 & -0.25 & -0.11 & 1.00 & 1202 & 2009 \\
+ &  &  &  &  &  &  &  \\
+{\ul \textit{Group-Level-Effects:}} &  &  &  &  &  &  &  \\
+$\sim$id (Number of levels: 1200) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.35 & 0.01 & 0.33 & 0.36 & 1.01 & 386 & 687 \\
+ &  &  &  &  &  &  &  \\
+$\sim$year (Number of levels: 13) &  &  &  &  &  &  &  \\
+sd(Intercept) & 0.03 & 0.01 & 0.01 & 0.04 & 1.00 & 912 & 1752 \\ \hline
+\end{longtable}
+
+\normalsize
+
+\noindent
+Table \@ref(tab:brms-full-model-results) presents the complete model summaries for the brms models in the subsample analysis. The parameters are summarized using either the mean (estimate) or the standard deviation (standard error) of the posterior distribution with 95% confidence intervals. Rhat is a measure of model convergence. Values below 1.05 indicate that chains mixed well and the model has converged. Bulk ESS and Tail ESS are diagnostics of the sampling efficiency.
 
 \newpage
 
@@ -128,19 +211,11 @@ Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual examinati
 
 \newpage
 
-```{r elasticity-predictions-b1, echo = FALSE, fig.cap = "Predicted price elasticities of demand based on price as only predictor", out.width = "100%", fig.align = "center"}
-knitr::include_graphics(path = "figure/b1_prediction.pdf")
-```
-\noindent
-Figure \@ref(fig:elasticity-predictions-b1) presents (...)
-
-\newpage
-
 ```{r plot-model-comparison, echo = FALSE, fig.cap = "Graphical model comparison for subsample analysis", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/plot-model-comparison.pdf")
 ```
 \noindent
-Figure \@ref(fig:plot-model-comparison) presents a visual examination of the model fit for all models used on the subsample.
+Figure \@ref(fig:plot-model-comparison) presents a visual examination of the model fit for all models used on the subsample analysis.
 
 \newpage
 

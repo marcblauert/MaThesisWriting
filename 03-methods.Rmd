@@ -76,7 +76,7 @@ Another problem is whether the demand decisions depend on the price in the same 
 
 **(Postal code) Population density (inh./sq. km):** To generate the population density variable, data from Open Street Maps with pre-assigned population figures to postal code areas based on the 2011 Census were used [@osm21; @osm21a]. The postal code level and not the district level was chosen because, firstly, a higher granularity of data was available and, secondly, the use of districts as the level of analysis may obscure heterogeneity within districts. Especially when they are rural districts with a city. To determine the population density variable, the number of inhabitants per postal code was divided by the base area in square kilometers (sq. km), giving the population density as the average number of inhabitants per sq. km.
 
-## Empirical approach {#empirical_model}
+## Empirical approach {#empirical-model}
 
 **Causality with observational data**
 
@@ -116,8 +116,8 @@ To start with, I formulate the statistical model for the full sample analysis as
 \begin{align*}
 ln(Demand) & = \alpha + \beta_1 \cdot ln(Price) + \beta_2 \cdot ln(Degree.days) + \\
  & \quad \beta_3 \cdot ln(Heating.surface) + \beta_{4} \cdot Carrier.group.oil + \\
- & \quad \beta_{5} \cdot Carrier.group.district.heating + \beta_{6} \cdot District.income + \\
- & \quad \beta_{7} \cdot District.retire + \beta_{8} \cdot Pop.density + \varepsilon 
+ & \quad \beta_{5} \cdot Carrier.group.district.heating + \beta_{6} \cdot ln(District.income) + \\
+ & \quad \beta_{7} \cdot District.retire + \beta_{8} \cdot ln(Pop.density) + \varepsilon 
 \end{align*}
 ```
 
@@ -133,8 +133,8 @@ In addition, the choice of panel estimation method should provide more reliable 
 \begin{align*}
 ln(Demand_{i,t}) & = \alpha + \beta_1 \cdot ln(Price_{i,t}) + \beta_2 \cdot ln(Degree.days_{i,t}) + \\
  & \quad \beta_3 \cdot ln(Heating.surface_{i,t}) + \beta_{4} \cdot Carrier.group.oil_{i,t} + \\
- & \quad \beta_{5} \cdot Carrier.group.district.heating_{i,t} + \beta_{6} \cdot District.income_{i,t} + \\
- & \quad \beta_{7} \cdot District.retire_{i,t} + \beta_{8} \cdot Pop.density_{i,t} + \\
+ & \quad \beta_{5} \cdot Carrier.group.district.heating_{i,t} + \beta_{6} \cdot ln(District.income_{i,t}) + \\
+ & \quad \beta_{7} \cdot District.retire_{i,t} + \beta_{8} \cdot ln(Pop.density_{i,t}) + \\
  & \quad \gamma_{building[i]} + \delta_{year[t]} + \varepsilon_{i,t}
 \end{align*}
 ```
@@ -145,9 +145,15 @@ In line with the approach for the OLS cross-sectional model, I first run the mod
 
 All the models described represent the conditional demand. It therefore has to be inferred that the results reflect the short-term price elasticities of demand. The use of other dynamic estimation approaches to estimate long-term elasticities, as for example @alberini_etal11 or @csereklyei20 have done, would go beyond the scope of this thesis and are therefore not pursued. Additionally, the short-term price elasticities estimated here may also be viewed as lower bound estimates of the price responsiveness compared to the usually higher long-term estimates. As they are a lower bound estimate, they can also be considered as a conservative estimate for any kind of modelling or policy advice for which they might be used.
 
+To estimate the OLS models, I rely on the lm-function in R. To estimate the FE models, I used the felm-function from the lfe-package [@gaure2013lfe].
+
 **Bayesian estimation approach**
 
 Beyond the use of OLS and FE as *classical* Frequentist methods used on the full sample, I move to the use of Bayesian inference when further analyzing a stratified random subsample of the data. In general, use of Bayesian inference has the advantage of allowing for the propagation of uncertainty in the modelling process [@mcelreath20]. Furthermore, the Bayesian framework allows for a more intuitive interpretation of modelling results being the actual chance of an event happening rather than the probability that the same outcome would occur if one were to replicate the data [@mcelreath20]. A further advantage of Bayesian inference on application where data is scarce would also be that due to the logic of updating beliefs based on evidence (data), integration of prior knowledge is possible [@gelman_etal21]. Here, I refrain from making strong assumptions on the prior distribution of model parameters and instead rely on weakly informed priors. Additionally, it should be pointed out that Bayesian inference is more computationally demanding than the methods presented above -- especially when integrating a model with a multilevel structure. This is the reason why Bayesian inference is only used on a subsample and not for the analysis of the full sample.
+
+The subsample is set up a stratified random selection of 400 buildings per energy carrier group from the full sample. In In delimitation to the full sample analysis, the subsample analysis intends to serve two purposes. First, as mentioned in the previous paragraph, use of fewer data points makes the application of Bayesian methods possible which are well-suited to propagate uncertainty. Second, potential sources of heterogeneity in the price responsiveness shall be investigated. The stratified sampling approach where all three energy carrier groups are represented equally, allows the investigation of the carrier type as an potential additional source of heterogeneity. Furthermore, having a stronger representation of district heating than in the main sample also allows for a glimpse into the near future, when more gas and oil heating will become unviable due to the gas energy crisis and rising carbon prices, and will therefore be replaced by district heating (or heat pumps [^5278]).
+
+[^5278]: Heat pumps are not considered here due to the still very limited data available on heat pump use in the billing sample.
 
 For the analysis of the subsample, I first run the simple models that mirror the specifications from the OLS but in a Bayesian setting. When moving to the FE models I resort to the use of a multilevel partial pooling model with varying intercepts [@mcelreath20]. In the FE model, where information is clustered by the same units (buildings and years), there is no information sharing between units. This may lead to less reliable especially for the buildings cluster where there are sometimes only a few observations for one building. The multilevel partial pooling model with varying intercepts for each building and annual period, on the other hand, allows for information sharing among groups when estimating those intercepts [@mcelreath20]. For Together with the weakly informed priors mentioned earlier, the main model with the multilevel structure therefore takes the following form:
 
@@ -157,7 +163,7 @@ ln(Demand_{i,t}) & \sim \operatorname{Normal}(\mu_{i,t}, \sigma) \\
 \mu_{i,t} & \sim \bar\alpha + \gamma_{building[i]} + \delta_{year[t]} + \beta_1 \cdot ln(Price_{i,t}) +  \\
  & \quad \beta_{2} \cdot ln(Degree.days_{i,t}) + \beta_{3} \cdot ln(Heating.surface_{i,t}) + \\
  & \quad \beta_{4} \cdot Carrier.group.oil_{i,t} + \beta_{5} \cdot Carrier.group.district.heating_{i,t} + \\
- & \quad \beta_{6} \cdot ln(District.income_{i,t}) + \beta_{7} \cdot District.retire_{i,t} + \beta_{8} \cdot Pop.density_{i,t} \\
+ & \quad \beta_{6} \cdot ln(District.income_{i,t}) + \beta_{7} \cdot District.retire_{i,t} + \beta_{8} \cdot ln(Pop.density_{i,t}) \\
 \bar\alpha & \sim \operatorname{Normal}(0, 1) \\
 \gamma_j & \sim \operatorname{Normal}(0, \sigma_{\gamma}) \\
 \delta_k & \sim \operatorname{Normal}(0, \sigma_{\delta}) \\
@@ -176,7 +182,7 @@ ln(Demand_{i,t}) & \sim \operatorname{Normal}(\mu_{i,t}, \sigma) \\
 \mu_{i,t} & \sim \bar\alpha + \gamma_{building[i]} + \delta_{year[t]} + \beta_1 \cdot ln(Price_{i,t}) +  \\
  & \quad \beta_{2} \cdot ln(Degree.days_{i,t}) + \beta_{3} \cdot ln(Heating.surface_{i,t}) + \\
  & \quad \beta_{4} \cdot Carrier.group.oil_{i,t} + \beta_{5} \cdot Carrier.group.district.heating_{i,t} + \\
- & \quad \beta_{6} \cdot ln(District.income_{i,t}) + \beta_{7} \cdot District.retire_{i,t} + \beta_{8} \cdot Pop.density_{i,t} + \\
+ & \quad \beta_{6} \cdot ln(District.income_{i,t}) + \beta_{7} \cdot District.retire_{i,t} + \beta_{8} \cdot ln(Pop.density_{i,t}) + \\
  & \quad \beta_{9} \cdot ln(Price_{i,t}) \cdot Carrier.group.oil_{i,t} + \\
  & \quad \beta_{10} \cdot ln(Price_{i,t}) \cdot Carrier.group.district.heating_{i,t} \\
 \bar\alpha & \sim \operatorname{Normal}(0, 1) \\
@@ -188,6 +194,8 @@ ln(Demand_{i,t}) & \sim \operatorname{Normal}(\mu_{i,t}, \sigma) \\
 ```
 
 The second model is an extension to the previous model introducing an additional interaction term between main explanatory variable $ln(Price_{i,t})$ and the categorical variable energy carrier group. Gas serves as the reference category.
+
+The Bayesian models are estimated using the brms-package by @burkner17 in R. The brms-package serves as an interface to the probabilistic programming language and interence engine Stan [@standevelopmentteam22].
 
 
 - https://cu-psych-computing.github.io/cu-psych-comp-tutorial/tutorials/r-extra/brms/multilevel-models-with-brms/
