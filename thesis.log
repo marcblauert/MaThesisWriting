@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.11)  11 JUL 2022 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.11)  13 JUL 2022 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,7 +701,7 @@ l.252
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7759) has occurred while \output is active []
 
 [2]
 <figure/price_effect_behg.pdf, id=282, 716.6775pt x 375.4025pt>
@@ -709,9 +709,6 @@ File: figure/price_effect_behg.pdf Graphic file (type pdf)
 <use figure/price_effect_behg.pdf>
 Package pdftex.def Info: figure/price_effect_behg.pdf  used on input line 271.
 (pdftex.def)             Requested size: 433.62pt x 227.13925pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [3] [4 <./figure/price_effect_behg.pdf>] [5]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 300.
 (/Users/marcblauert/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -721,7 +718,7 @@ Chapter 2.
 [8
 
 ]
-<figure/elasticities_plot.pdf, id=389, 505.89pt x 361.35pt>
+<figure/elasticities_plot.pdf, id=390, 505.89pt x 361.35pt>
 File: figure/elasticities_plot.pdf Graphic file (type pdf)
 <use figure/elasticities_plot.pdf>
 Package pdftex.def Info: figure/elasticities_plot.pdf  used on input line 340.
@@ -747,7 +744,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [15]
-<figure/plot_literature_estimates.pdf, id=491, 505.89pt x 216.81pt>
+<figure/plot_literature_estimates.pdf, id=492, 505.89pt x 216.81pt>
 File: figure/plot_literature_estimates.pdf Graphic file (type pdf)
 <use figure/plot_literature_estimates.pdf>
 Package pdftex.def Info: figure/plot_literature_estimates.pdf  used on input line 415.
@@ -756,7 +753,7 @@ Package pdftex.def Info: figure/plot_literature_estimates.pdf  used on input lin
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [16] [17 <./figure/plot_literature_estimates.pdf>]
-<figure/dag_red.pdf, id=518, 796.9775pt x 542.025pt>
+<figure/dag_red.pdf, id=519, 796.9775pt x 542.025pt>
 File: figure/dag_red.pdf Graphic file (type pdf)
 <use figure/dag_red.pdf>
 Package pdftex.def Info: figure/dag_red.pdf  used on input line 435.
@@ -826,7 +823,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 627--628
  []
 
 [34]
-<figure/workflow_diagramm_part1.pdf, id=704, 767.86874pt x 542.025pt>
+<figure/workflow_diagramm_part1.pdf, id=705, 767.86874pt x 542.025pt>
 File: figure/workflow_diagramm_part1.pdf Graphic file (type pdf)
 <use figure/workflow_diagramm_part1.pdf>
 Package pdftex.def Info: figure/workflow_diagramm_part1.pdf  used on input line 649.
@@ -843,7 +840,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 2119) has occurred while \output is active []
 
 [37]
-<figure/workflow_diagramm_part2.pdf, id=750, 767.86874pt x 426.59375pt>
+<figure/workflow_diagramm_part2.pdf, id=751, 767.86874pt x 426.59375pt>
 File: figure/workflow_diagramm_part2.pdf Graphic file (type pdf)
 <use figure/workflow_diagramm_part2.pdf>
 Package pdftex.def Info: figure/workflow_diagramm_part2.pdf  used on input line 674.
@@ -853,13 +850,13 @@ Overfull \hbox (13.00806pt too wide) in paragraph at lines 674--675
  [][] 
  []
 
-<figure/occurance_buildings.pdf, id=753, 424.58624pt x 228.855pt>
+<figure/occurance_buildings.pdf, id=754, 424.58624pt x 228.855pt>
 File: figure/occurance_buildings.pdf Graphic file (type pdf)
 <use figure/occurance_buildings.pdf>
 Package pdftex.def Info: figure/occurance_buildings.pdf  used on input line 688.
 (pdftex.def)             Requested size: 325.215pt x 175.30048pt.
 [38 <./figure/workflow_diagramm_part2.pdf>]
-<figure/buildings_distribution.pdf, id=793, 462.72874pt x 572.1375pt>
+<figure/buildings_distribution.pdf, id=794, 462.72874pt x 572.1375pt>
 File: figure/buildings_distribution.pdf Graphic file (type pdf)
 <use figure/buildings_distribution.pdf>
 Package pdftex.def Info: figure/buildings_distribution.pdf  used on input line 701.
@@ -870,7 +867,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 710.
 
 [40 <./figure/buildings_distribution.pdf>]
-<figure/demand_descriptive.pdf, id=831, 677.53125pt x 448.67625pt>
+<figure/demand_descriptive.pdf, id=832, 677.53125pt x 448.67625pt>
 File: figure/demand_descriptive.pdf Graphic file (type pdf)
 <use figure/demand_descriptive.pdf>
 Package pdftex.def Info: figure/demand_descriptive.pdf  used on input line 755.
@@ -879,7 +876,7 @@ Package pdftex.def Info: figure/demand_descriptive.pdf  used on input line 755.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [41] [42 <./figure/demand_descriptive.pdf>]
-<figure/prices_descriptive.pdf, id=860, 578.16pt x 505.89pt>
+<figure/prices_descriptive.pdf, id=861, 578.16pt x 505.89pt>
 File: figure/prices_descriptive.pdf Graphic file (type pdf)
 <use figure/prices_descriptive.pdf>
 Package pdftex.def Info: figure/prices_descriptive.pdf  used on input line 766.
@@ -902,19 +899,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [47]
-<figure/posterior-distributions.pdf, id=912, 739.76375pt x 386.44376pt>
+<figure/posterior-distributions.pdf, id=913, 739.76375pt x 386.44376pt>
 File: figure/posterior-distributions.pdf Graphic file (type pdf)
 <use figure/posterior-distributions.pdf>
 Package pdftex.def Info: figure/posterior-distributions.pdf  used on input line 849.
 (pdftex.def)             Requested size: 433.62pt x 226.51978pt.
 [48] [49 <./figure/posterior-distributions.pdf>]
-<figure/b1_prediction.pdf, id=934, 682.55pt x 385.44pt>
+<figure/b1_prediction.pdf, id=935, 682.55pt x 385.44pt>
 File: figure/b1_prediction.pdf Graphic file (type pdf)
 <use figure/b1_prediction.pdf>
 Package pdftex.def Info: figure/b1_prediction.pdf  used on input line 864.
 (pdftex.def)             Requested size: 433.62pt x 244.86931pt.
 [50 <./figure/b1_prediction.pdf>]
-<figure/bm2_prediction.pdf, id=961, 668.4975pt x 341.275pt>
+<figure/bm2_prediction.pdf, id=962, 668.4975pt x 341.275pt>
 File: figure/bm2_prediction.pdf Graphic file (type pdf)
 <use figure/bm2_prediction.pdf>
 Package pdftex.def Info: figure/bm2_prediction.pdf  used on input line 877.
@@ -931,7 +928,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3679) has occurred while \output is active []
 
 [52 <./figure/bm2_prediction.pdf>]
-<figure/carrier_heterogeneity_plot.pdf, id=992, 505.89pt x 361.35pt>
+<figure/carrier_heterogeneity_plot.pdf, id=993, 505.89pt x 361.35pt>
 File: figure/carrier_heterogeneity_plot.pdf Graphic file (type pdf)
 <use figure/carrier_heterogeneity_plot.pdf>
 Package pdftex.def Info: figure/carrier_heterogeneity_plot.pdf  used on input line 896.
@@ -940,7 +937,7 @@ Package pdftex.def Info: figure/carrier_heterogeneity_plot.pdf  used on input li
 Underfull \vbox (badness 7759) has occurred while \output is active []
 
 [53]
-<figure/posterior-distribution-interaction.pdf, id=1000, 614.295pt x 341.275pt>
+<figure/posterior-distribution-interaction.pdf, id=1001, 614.295pt x 341.275pt>
 File: figure/posterior-distribution-interaction.pdf Graphic file (type pdf)
 <use figure/posterior-distribution-interaction.pdf>
 Package pdftex.def Info: figure/posterior-distribution-interaction.pdf  used on input line 909.
@@ -949,7 +946,7 @@ Package pdftex.def Info: figure/posterior-distribution-interaction.pdf  used on 
 Underfull \vbox (badness 1675) has occurred while \output is active []
 
 [54 <./figure/carrier_heterogeneity_plot.pdf>]
-<figure/elasticity_predictions_subsample.pdf, id=1013, 566.115pt x 572.1375pt>
+<figure/elasticity_predictions_subsample.pdf, id=1014, 566.115pt x 572.1375pt>
 File: figure/elasticity_predictions_subsample.pdf Graphic file (type pdf)
 <use figure/elasticity_predictions_subsample.pdf>
 Package pdftex.def Info: figure/elasticity_predictions_subsample.pdf  used on input line 917.
@@ -991,13 +988,13 @@ Appendix A.
 [62
 
 ]
-<figure/distribution_degree_days.pdf, id=1075, 381.5856pt x 519.80196pt>
+<figure/distribution_degree_days.pdf, id=1076, 381.5856pt x 519.80196pt>
 File: figure/distribution_degree_days.pdf Graphic file (type pdf)
 <use figure/distribution_degree_days.pdf>
 Package pdftex.def Info: figure/distribution_degree_days.pdf  used on input line 1004.
 (pdftex.def)             Requested size: 333.88924pt x 454.84938pt.
 [63 <./figure/distribution_degree_days.pdf>]
-<figure/correlation_matrix.pdf, id=1089, 739.76375pt x 542.025pt>
+<figure/correlation_matrix.pdf, id=1090, 739.76375pt x 542.025pt>
 File: figure/correlation_matrix.pdf Graphic file (type pdf)
 <use figure/correlation_matrix.pdf>
 Package pdftex.def Info: figure/correlation_matrix.pdf  used on input line 1016.
@@ -1008,7 +1005,7 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 1026.
 
 [65]
-<figure/density-distribution-comparison-samples.pdf, id=1114, 718.685pt x 303.1325pt>
+<figure/density-distribution-comparison-samples.pdf, id=1115, 718.685pt x 303.1325pt>
 File: figure/density-distribution-comparison-samples.pdf Graphic file (type pdf)
 <use figure/density-distribution-comparison-samples.pdf>
 Package pdftex.def Info: figure/density-distribution-comparison-samples.pdf  used on input line 1065.
@@ -1042,19 +1039,19 @@ Overfull \hbox (4.37962pt too wide) in alignment at lines 1089--1173
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [67] [68]
-<figure/year_state_heterogeneity_plot.pdf, id=1147, 650.43pt x 758.835pt>
+<figure/year_state_heterogeneity_plot.pdf, id=1148, 650.43pt x 758.835pt>
 File: figure/year_state_heterogeneity_plot.pdf Graphic file (type pdf)
 <use figure/year_state_heterogeneity_plot.pdf>
 Package pdftex.def Info: figure/year_state_heterogeneity_plot.pdf  used on input line 1182.
 (pdftex.def)             Requested size: 433.62pt x 505.9042pt.
 [69 <./figure/year_state_heterogeneity_plot.pdf>] [70]
-<figure/other_variables_heterogeneity_plot.pdf, id=1171, 722.7pt x 650.43pt>
+<figure/other_variables_heterogeneity_plot.pdf, id=1172, 722.7pt x 650.43pt>
 File: figure/other_variables_heterogeneity_plot.pdf Graphic file (type pdf)
 <use figure/other_variables_heterogeneity_plot.pdf>
 Package pdftex.def Info: figure/other_variables_heterogeneity_plot.pdf  used on input line 1194.
 (pdftex.def)             Requested size: 411.93767pt x 370.74895pt.
 [71 <./figure/other_variables_heterogeneity_plot.pdf>]
-<figure/plot-model-comparison.pdf, id=1194, 650.43pt x 650.43pt>
+<figure/plot-model-comparison.pdf, id=1195, 650.43pt x 650.43pt>
 File: figure/plot-model-comparison.pdf Graphic file (type pdf)
 <use figure/plot-model-comparison.pdf>
 Package pdftex.def Info: figure/plot-model-comparison.pdf  used on input line 1206.
@@ -1271,7 +1268,7 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  15936 strings out of 479984
  267475 string characters out of 5887164
- 608642 words of memory out of 5000000
+ 608634 words of memory out of 5000000
  33523 multiletter control sequences out of 15000+600000
  545059 words of font info for 85 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1292,10 +1289,10 @@ pdfTeX warning (dest): name{ref-gelman_etal21} has been referenced but does not 
 pdfTeX warning (dest): name{ref-gaure2013lfe} has been referenced but does not exist, replaced by a fixed one
 
 {/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (86 pages, 11441543 bytes).
+Output written on thesis.pdf (86 pages, 11441873 bytes).
 PDF statistics:
- 1457 PDF objects out of 1728 (max. 8388607)
- 1193 compressed objects within 12 object streams
+ 1458 PDF objects out of 1728 (max. 8388607)
+ 1194 compressed objects within 12 object streams
  248 named destinations out of 1000 (max. 500000)
  295 words of extra memory for PDF output out of 10000 (max. 10000000)
 
