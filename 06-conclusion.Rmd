@@ -11,4 +11,4 @@ options(width = 70)
 
 # Conclusion {#conclusion}
 
-\@ref(eq:ep)
+The elasticity estimates from this thesis may also be relevant for other countries and regions that have comparable conditions to Germany in terms of building stock and energy demand and also face the challenge of decarbonising the buildings sector in the coming decades. Here, my results would serve as an empirical guide to the short-term demand effects for any kind of price-related policy instrument.

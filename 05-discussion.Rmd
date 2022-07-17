@@ -20,6 +20,13 @@ NOTES - Energy taxation and climate change:
 
 ## Discussion of elasticity results
 
+
+
+Relevante Stellen für Rückbezüge aus der Literatur:
+
+- In their analysis, @labandeira_etal17 include a total of 428 papers, all published between 1990 and 2016. For the demand of natural gas, they find an average short-term (long-term) price elasticity of -0.18 (-0.57) based on 230 individual estimates. And for heating oil they find a comparable average short-term (long-term) elasticity of -0.19 (-0.54), which, however, is based on only 44 individual estimates [@labandeira_etal17]. An average elasticity for space heating -- which is less focused on in the literature due to its relatively low prevalence -- is not provided.
+
+- There are three earlier studies that have a spatial focus on Germany. The first study was conducted by @rehdanz07, who estimates short-term price elasticities for different energy carrier groups for residential space heating demand. She uses social survey data on household-level heating expenditures from the Socio-Economic Panel (SOEP) in the years 1998 and 2003. Methodologically, a cross-sectional statistical analysis with dummy variables is conducted for the two years. In contrast to the  meta-estimates presented in the previous part of the Chapter, the study finds that demand for heating oil is highly elastic with estimates ranging between -1.68 and -2.03, depending on the model specification. For gas, the results indicate an inelastic elastic demand between -0.44 and -0.63 (depending on the model specification) which is nevertheless significantly more elastic than the meta-estimates presented previously. Therefore, the study concludes that the type of energy carrier can have a strong influence on the price sensitivity of households [@rehdanz07].
 ## The role of energy prices and interaction with complementary measures (policy-mix)
 
 

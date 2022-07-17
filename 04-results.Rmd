@@ -11,7 +11,7 @@ options(width = 70)
 
 # Results {#results}
 
-The results section is structured in two subsections. First, the results from the analysis of the full sample are presented (reflects first part of workflow, see Figure \@ref(fig:workflow1)). And subsequently the results of the deepened analysis based on the stratified subsample are reported (reflects the second part of the workflow, see Figure \@ref(fig:workflow2)).
+The results Chapter is structured in two subsections. First, the results from the analysis of the full sample are presented (reflects first part of workflow, see Figure \@ref(fig:workflow1)). And subsequently the results of the deepened analysis based on the stratified subsample are reported (reflects the second part of the workflow, see Figure \@ref(fig:workflow2)).
 
 ## Full sample results {#full_sample_results}
 
@@ -68,7 +68,7 @@ Specification (m3.fe, lagged), also shown in the table, shows the results for th
 
 **Other estimates and effects**
 
-In general, almost all model predictors are found to be statistically significant with a p-value < 0.1%. However, this is not surprising given the very large number of more than 2.7 million observations [@gelman_stern06; @johnson99]. Besides the interpretation of the price elasticities, the signs of the other relevant model predictors also point in the expected direction (see rationales established in Section \@ref(conceptual-model)). As most of the predictors are also included in the model in the ln-form, they can as well be interpreted in terms of percentage point change.
+In general, almost all model predictors are found to be statistically significant with a p-value < 0.1%. However, this is not surprising given the very large number of more than 2.7 million observations [@gelman_stern06; @johnson99]. Besides the interpretation of the price elasticities, the signs of the other relevant model predictors also point in the expected direction (see rationales established in Chapter \@ref(conceptual-model)). As most of the predictors are also included in the model in the ln-form, they can as well be interpreted in terms of percentage point change.
 
 Referring again to the main model Specification (m3.fe), this means that, for example, a rise in degree days (lower outside temperatures) of 1% would be associated with to a higher energy demand of 0.779% and a larger building heating surface of 1% would be associated with a lower energy demand of -0.405%. Furthermore, the results indicate that an oil heating system is associated with a higher heating energy demand than gas as the reference category and a district heating system with a lower demand. While the results in the cross-sectional OLS model indicate that an increasing district per capita household income would be associated with a decreasing energy demand, this effect disappears in the FE model and is even reversed. At the same time, the magnitude of the district per capita household income effect in Specification (m3.fe) is so small that one must assume that it does not have a strong influence in explaining the variance in energy demand at all. For district retirement share the sign of the coefficient as well switches when moving from the OLS to the FE model. The results in Specification (m3.fe) indicate that a higher district level retirement share is associated with higher energy demand.
 
@@ -100,7 +100,7 @@ Figures \@ref(fig:elasticity-predictions-b1) and \@ref(fig:elasticity-prediction
 knitr::include_graphics(path = "figure/b1_prediction.pdf")
 ```
 
-Methodologically, the line in the center represents the average energy demand at a respective price. The narrower, darker shaded interval around the mean represents the 95% intervals for the posterior distribution of the expected value of the demand parameter $\mu$ (see Section \@ref(empirical-model)). These posterior predictive distributions have a lower variance because only the uncertainty of the mean is included in the draws, but the residual error is ignored. The wider, lighter shaded interval, on the other hand, represents the posterior predictive distributions including the residual error. It is thus to be interpreted as the interval in which the model expects to find 95% of the actual energy demands in the population at each price.[^1193]
+Methodologically, the line in the center represents the average energy demand at a respective price. The narrower, darker shaded interval around the mean represents the 95% intervals for the posterior distribution of the expected value of the demand parameter $\mu$ (see Chapter \@ref(empirical-model)). These posterior predictive distributions have a lower variance because only the uncertainty of the mean is included in the draws, but the residual error is ignored. The wider, lighter shaded interval, on the other hand, represents the posterior predictive distributions including the residual error. It is thus to be interpreted as the interval in which the model expects to find 95% of the actual energy demands in the population at each price.[^1193]
 
 [^1193]: Cf. @mcelreath20, Chapter 4 and the brms documentation on the $posterior.epred$ and $posterior_predict$ functions in R for the interpretation of the posterior predictive intervals shown in the graph.
 
@@ -145,7 +145,7 @@ knitr::include_graphics(path = "figure/posterior-distribution-interaction.pdf")
 ```
 
 
-```{r elasticity-predictions-energy-carrier, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier group", out.width = "104%", fig.align = "center"}
+```{r elasticity-predictions-energy-carrier, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier group (bm.3)", out.width = "104%", fig.align = "center"}
 knitr::include_graphics(path = "figure/elasticity_predictions_subsample.pdf")
 ```
 

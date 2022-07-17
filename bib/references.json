@@ -5076,5 +5076,357 @@
 			]
 		},
 		"citation-key": "lange_etal14"
+	},
+	{
+		"id": "zhu_etal18",
+		"type": "article-journal",
+		"abstract": "Price elasticity and income elasticity can quantitatively measure the impact of price volatility and income diversity on household electricity demand. To analyze household electricity demand and better identify the main factors affecting residential electricity demand elasticity in previous literature, a meta-analysis based on a comprehensive and systematic summary of 103 articles is presented in this study. The inﬂuencing factors are identiﬁed, with a weighed least squares (WLS) linear regression model to evaluate their strength. The price elasticities and income elasticities are discussed from three dimensions, namely short-term, long-term and unmarked. The results show that residential electricity demand is almost price-inelastic and income-inelastic in the short-term. But in the long-term, some residential electricity demand is price-elastic and income-elastic. The results also reveal that residential electricity demand elasticity is affected by many factors, such as time interval and sample period. These conclusions can support the formulation of more effective electricity price and energy policy.",
+		"container-title": "Journal of Cleaner Production",
+		"DOI": "10.1016/j.jclepro.2018.08.027",
+		"ISSN": "09596526",
+		"journalAbbreviation": "Journal of Cleaner Production",
+		"language": "en",
+		"page": "169-177",
+		"source": "DOI.org (Crossref)",
+		"title": "A meta-analysis on the price elasticity and income elasticity of residential electricity demand",
+		"URL": "https://linkinghub.elsevier.com/retrieve/pii/S0959652618323588",
+		"volume": "201",
+		"author": [
+			{
+				"family": "Zhu",
+				"given": "Xing"
+			},
+			{
+				"family": "Li",
+				"given": "Lanlan"
+			},
+			{
+				"family": "Zhou",
+				"given": "Kaile"
+			},
+			{
+				"family": "Zhang",
+				"given": "Xiaoling"
+			},
+			{
+				"family": "Yang",
+				"given": "Shanlin"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					6,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					11
+				]
+			]
+		},
+		"citation-key": "zhu_etal18"
+	},
+	{
+		"id": "gelman_etal21",
+		"type": "book",
+		"abstract": "Most textbooks on regression focus on theory and the simplest of examples. Real statistical problems, however, are complex and subtle. This is not a book about the theory of regression. It is about using regression to solve real problems of comparison, estimation, prediction, and causal inference. Unlike other books, it focuses on practical issues such as sample size and missing data and a wide range of goals and techniques. It jumps right in to methods and computer code you can use immediately. Real examples, real stories from the authors' experience demonstrate what regression can do and its limitations, with practical advice for understanding assumptions and implementing methods for experiments and observational studies. They make a smooth transition to logistic regression and GLM. The emphasis is on computation in R and Stan rather than derivations, with code available online. Graphics and presentation aid understanding of the models and model fitting",
+		"collection-title": "Analytical methods for social research",
+		"event-place": "Cambridge New York, NY Port Melbourne, VIC New Delhi Singapore",
+		"ISBN": "978-1-139-16187-9",
+		"language": "eng",
+		"note": "DOI: 10.1017/9781139161879",
+		"number-of-pages": "534",
+		"publisher": "Cambridge University Press",
+		"publisher-place": "Cambridge New York, NY Port Melbourne, VIC New Delhi Singapore",
+		"source": "K10plus ISBN",
+		"title": "Regression and other stories",
+		"author": [
+			{
+				"family": "Gelman",
+				"given": "Andrew"
+			},
+			{
+				"family": "Hill",
+				"given": "Jennifer"
+			},
+			{
+				"family": "Vehtari",
+				"given": "Aki"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		},
+		"citation-key": "gelman_etal21"
+	},
+	{
+		"id": "gaure2013lfe",
+		"type": "article-journal",
+		"container-title": "R J.",
+		"issue": "2",
+		"page": "104",
+		"title": "lfe: Linear group fixed effects.",
+		"volume": "5",
+		"author": [
+			{
+				"family": "Gaure",
+				"given": "Simen"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		},
+		"citation-key": "gaure2013lfe"
+	},
+	{
+		"id": "burkner2017brms",
+		"type": "article-journal",
+		"container-title": "Journal of statistical software",
+		"page": "1–28",
+		"title": "brms: An R package for Bayesian multilevel models using Stan",
+		"volume": "80",
+		"author": [
+			{
+				"family": "Bürkner",
+				"given": "Paul-Christian"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2017"
+				]
+			]
+		},
+		"citation-key": "burkner2017brms"
+	},
+	{
+		"id": "standevelopmentteam22",
+		"type": "article-journal",
+		"title": "Documentation",
+		"URL": "https://mc-stan.org/users/documentation/",
+		"author": [
+			{
+				"family": "Stan Development Team",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		},
+		"citation-key": "standevelopmentteam22"
+	},
+	{
+		"id": "johnson99",
+		"type": "article-journal",
+		"container-title": "The Journal of Wildlife Management",
+		"DOI": "10.2307/3802789",
+		"ISSN": "0022541X",
+		"issue": "3",
+		"journalAbbreviation": "The Journal of Wildlife Management",
+		"page": "763",
+		"source": "DOI.org (Crossref)",
+		"title": "The Insignificance of Statistical Significance Testing",
+		"URL": "https://www.jstor.org/stable/3802789?origin=crossref",
+		"volume": "63",
+		"author": [
+			{
+				"family": "Johnson",
+				"given": "Douglas H."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1999",
+					7
+				]
+			]
+		},
+		"citation-key": "johnson99"
+	},
+	{
+		"id": "gelman_stern06",
+		"type": "article-journal",
+		"container-title": "The American Statistician",
+		"DOI": "10.1198/000313006X152649",
+		"ISSN": "0003-1305, 1537-2731",
+		"issue": "4",
+		"journalAbbreviation": "The American Statistician",
+		"language": "en",
+		"page": "328-331",
+		"source": "DOI.org (Crossref)",
+		"title": "The Difference Between “Significant” and “Not Significant” is not Itself Statistically Significant",
+		"URL": "http://www.tandfonline.com/doi/abs/10.1198/000313006X152649",
+		"volume": "60",
+		"author": [
+			{
+				"family": "Gelman",
+				"given": "Andrew"
+			},
+			{
+				"family": "Stern",
+				"given": "Hal"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					10
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2006",
+					11
+				]
+			]
+		},
+		"citation-key": "gelman_stern06"
+	},
+	{
+		"id": "stigler87",
+		"type": "book",
+		"call-number": "HB221 .S82 1987",
+		"edition": "4th ed",
+		"event-place": "New York : London",
+		"ISBN": "978-0-02-417400-0",
+		"number-of-pages": "371",
+		"publisher": "Macmillan ; Collier Macmillan",
+		"publisher-place": "New York : London",
+		"source": "Library of Congress ISBN",
+		"title": "The theory of price",
+		"author": [
+			{
+				"family": "Stigler",
+				"given": "George Joseph"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1987"
+				]
+			]
+		},
+		"citation-key": "stigler87"
+	},
+	{
+		"id": "braungardt_etal21",
+		"type": "article-journal",
+		"abstract": "While it is widely acknowledged that carbon pricing plays an important role in driving the transition towards a low-carbon energy system, its interaction with complementary instruments is discussed controversially. The analysis of combining carbon pricing with complementary policies has been mostly focused on the electricity sector, while the role of carbon pricing in the buildings sector has received only minor interest. In view of the newly introduced carbon pricing scheme for the buildings and transport sector in Germany, we analyze the interactions between the carbon pricing scheme with the existing policy instruments and assess the consistency of the policy mix for decarbonizing the buildings sector. Our analysis finds that the introduction of carbon pricing has a reinforcing effect on the instrument mix and adds to the consistency of the policy mix. The results highlight the importance of complementary policies in order to achieve deep decarbonization in the buildings sector. We conclude that carbon pricing, preferably implemented as a tax with a predictable and increasing price level, needs to be supplemented with a powerful mix of complementary measures.",
+		"container-title": "Energies",
+		"DOI": "10.3390/en14217143",
+		"ISSN": "1996-1073",
+		"issue": "21",
+		"journalAbbreviation": "Energies",
+		"language": "en",
+		"page": "7143",
+		"source": "DOI.org (Crossref)",
+		"title": "Carbon Pricing and Complementary Policies—Consistency of the Policy Mix for Decarbonizing Buildings in Germany",
+		"URL": "https://www.mdpi.com/1996-1073/14/21/7143",
+		"volume": "14",
+		"author": [
+			{
+				"family": "Braungardt",
+				"given": "Sibylle"
+			},
+			{
+				"family": "Bürger",
+				"given": "Veit"
+			},
+			{
+				"family": "Köhler",
+				"given": "Benjamin"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					11,
+					1
+				]
+			]
+		},
+		"citation-key": "braungardt_etal21"
+	},
+	{
+		"id": "Ruhnau2022demand",
+		"type": "report",
+		"abstract": "Europe is in the midst of the most severe energy crisis in a generation, at the core of which is the continuously plummeting supply of Russian natural gas. With alternative supply options being limited, natural gas prices have surged. This paper empirically estimates the response of natural gas demand to the price increase, using data from Germany—the so far largest consumer of Russian natural gas. We identify the crisis response of small and large consumers separately, controlling for temperature, gas-fired power generation, and economic activity. For small consumers, including mostly households, we find a substantial demand reduction of 6% from March onwards—most likely due to political and ethical considerations after the start of Russia's invasion of Ukraine. For industrial consumers, demand reductions started much earlier in August 2021, when wholesale prices for natural gas started to surge, with an average reduction of 11%. We conclude that voluntary industrial demand response has played a significant role in coping with the energy crisis so far.",
+		"event-place": "Kiel, Hamburg",
+		"language": "eng",
+		"note": "tex.copyright: http://www.econstor.eu/dspace/Nutzungsbedingungen",
+		"publisher": "ZBW – Leibniz Information Centre for Economics",
+		"publisher-place": "Kiel, Hamburg",
+		"title": "Gas demand in times of crisis. The response of German households and industry to the 2021/22 energy crisis",
+		"URL": "http://hdl.handle.net/10419/261082",
+		"author": [
+			{
+				"family": "Ruhnau",
+				"given": "Oliver"
+			},
+			{
+				"family": "Stiewe",
+				"given": "Clemens"
+			},
+			{
+				"family": "Muessel",
+				"given": "Jarusch"
+			},
+			{
+				"family": "Hirth",
+				"given": "Lion"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022"
+				]
+			]
+		},
+		"citation-key": "Ruhnau2022demand"
 	}
 ]
