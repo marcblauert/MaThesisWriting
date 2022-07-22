@@ -1,9 +1,13 @@
-The preface pretty much says it all.  \par
-
-Second paragraph of abstract starts here.
+The space heating demand of households accounted for 13.6 % of the national primary energy demand in Germany in 2020. Due to its predominant generation from fossil fuels, space heating is also responsible for the majority of greenhouse gas emissions (GHG) in the residential building sector. In order to achieve ambitious climate targets at national and European level, decarbonisation of the building sector is a key challenge. Carbon pricing instruments, such as the introduction of the German Fuel Emissions Trading Act in 2021, are one of the essential instruments to drive and support the transformation of the building sector in order to reduce energy demand and trigger investments in low-carbon heating technologies and energy efficiency. 
 
 
+\par However, in order to be able to estimate the effects of price-related policy instruments, the price responsiveness of residential consumers for the demand of space heating needs to be identified. Therefore, this paper uses a large-scale energy billing sample of multi-apartment buildings in Germany between 2007 and 2019 to produce estimates of the short-term price elasticities of space heating demand. The results of the analysis show that (...)
 
+
+
+Example:
+
+We find strong household response to energy prices, both in the short and long term. From the static models, we get estimates of the own price elasticity of electricity demand in the − 0.860 to − 0.667 range, while the own price elasticity of gas demand is − 0.693 to − 0.566. These results are robust to a variety of checks. Contrary to earlier literature (Metcalf and Hassett, 1999; Reiss and White, 2005), we find no evidence of significantly different elasticities across households with electric and gas heat. The price elasticity of electricity demand declines with income, but the magnitude of this effect is small. These results are in sharp contrast to much of the literature on residential energy consumption in the United States, and with the figures used in current government agency practice. Our results suggest that there might be greater potential for policies which affect energy price than may have been previously appreciated.
 
 \bigskip
 \bigskip

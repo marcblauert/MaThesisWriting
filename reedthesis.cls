@@ -325,7 +325,7 @@
 	\textit{Submitted by:} \\
 	{\fontsize{12}{14}\selectfont\textbf{Marc Blauert}}  \\
 	(Matriculation number: 605555)  \\
-	Berlin, January 31, 2022  \\
+	Berlin, August 4, 2022  \\
     \smallskip
     \centerline{\hbox to \wd0 {\hbox{}\hrulefill\hbox{}}}
     \smallskip
