@@ -211,7 +211,7 @@ Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual examinati
 
 \newpage
 
-```{r plot-model-comparison, echo = FALSE, fig.cap = "Graphical model comparison for subsample analysis", out.width = "100%", fig.align = "center"}
+```{r plot-model-comparison, echo = FALSE, fig.cap = "Graphical model comparison for subsample model Specifications", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/plot-model-comparison.pdf")
 ```
 \noindent

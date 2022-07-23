@@ -9,13 +9,18 @@ pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 options(width = 70)
 ```
 
-# Discussion {#discussion}
+# Discussion and conclusion {#discussion}
+
+This thesis investigates short-term price elasticities of space heating demand based on a large-scale sample of energy bills in Germany in the period between 2007 and 2019. The estimation of price elasticities of space heating demand is important as it is a key parameter for assessing the expected impact of price-related energy policy instruments, such as the newly introduced Fuel Emissions Trading Act (BEHG) as an instrument for introducing a carbon price for heating fuels consumed in the building sector in Germany. The novelty of this thesis is to rely on energy billing data instead of social survey data which is able to provide a more exact picture on energy prices than previous studies where typically price data from national statistics are employed [e.g., @schmitz_madlener20].
+
+According to price and demand theory, the demand for a good is mainly determined by its own price and the price of possible substitute goods [@pindyck_rubinfeld18]. The demand for space heating is to be considered as an essential good, which is associated with a minimum demand in the winter months in order to ensure the well-being of the occupants. Furthermore, the production of space heating depends on the heating technologies installed in a building, which cannot be easily replaced in the short-term. This is especially true for rental buildings, where the tenants usually have no direct say in the choice of heating technology for their building, nor in a possible replacement of the heating system. Due to these reasons, the price elasticity of space heating demand can be assumed to be rather inelastic, especially in the short-term. This assumption is also confirmed by the prior literature. The majority of studies focusing on the energy use of space heating demand in residential buildings arrive at estimates for the price elasticity of space heating demand in the range between -0.3 and -0.6 (see Chapter \@ref(review)).
+
+**Findings on the price elasticity of space heating demand**
+
+In relation to the first research question that this thesis aimed to answer, the results confirm the assumption that the demand for space heating is a rather inelastic good. The final model specification in the analysis using the full sample yielded the result that for the average building in the sample the demand for space heating would be reduced by -0.243% if the energy price were to increase by 1%. Thus, the price elasticity estimate is lower than the estimates from previous studies focusing on Germany. 
 
 
-NOTES - Energy taxation and climate change:
-- Fuel consumption demand is determined by demand functions that depend primarily on income and prices
-- Those who disfavor fuel taxes often claim they are strongly regressive. Earlier studies have shown that this depends on the country studied and on the details of the methods used, for instance if lifetime or temporary income is used, if substitution or other reactions are allowed for in the analysis. There is a tendency to progressivity in low income countries but regressivity in high income countries.
-- Indirect channel of long-term price change and anticipation of those changes leading to investments in low-carbon UBA: Remediation measures drawn by lot through the BEHG are partly subsidized through the BEG or the tax incentive and are accounted for there (CO2 price as door opener for subsidy) 
+
 
 
 ## Discussion of elasticity results

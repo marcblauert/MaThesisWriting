@@ -152,7 +152,7 @@ In Panel A the models are shown on the ln-scale together with the underlying obs
 
 **Model comparison**
 
-The set of model Specifications for the subsample presented in the previous parts all produce different results for the price elasticity of space heating demand. Thus, it is important to investigate model fit to (...)
+In the previous parts of the chapter various model Specifications for the Bayesian subsample analysis are presented, all producing varying results for the price elasticity of space heating demand. Thus, it is important to investigate which model has the more likely fit. For this purpose, Bayesian regression analysis resorts to the principle of of model selection which assumes that many potential models could be generating our data and that based on tools one should investigate which model is doing this more likely than others [@vehtari_etal17]. To practically implement a model comparison, I rely on the loo-package which uses efficient approximate leave-one-out cross-validation (LOO) for Bayesian models where the approximation uses Pareto smoothed importance sampling (PSIS) [@vehtari2018loo].
 
 
 \begin{table}[]
@@ -161,12 +161,18 @@ The set of model Specifications for the subsample presented in the previous part
 \label{tab:model-comparison}
 \begin{tabular}{@{}lrr@{}}
 \toprule
-     & \multicolumn{1}{l}{elpd\_diff} & \multicolumn{1}{l}{se\_diff} \\ \midrule
-bm.3 & 0.0                            & 0.0                          \\
-bm.2 & -14.7                          & 7.5                          \\
-bm.1 & -90.3                          & 14.0                         \\
-b.2  & -2856.7                        & 80.4                         \\
-b.1  & -3100.5                        & 81.6                         \\ \bottomrule
+\textbf{Model Specification} & \multicolumn{1}{l}{\textbf{Difference in ELPD}} & \multicolumn{1}{l}{\textbf{SE of the Difference}} \\ \midrule
+bm.3 & 0,00 & 0,00 \\
+bm.2 & -59.1 & 14.2 \\
+bm.1 & -155.6 & 21.5 \\
+b.2 & -5102.6 & 110.7 \\
+b.1 & -5763.1 & 116.1 \\ \bottomrule
 \end{tabular}
 \end{table}
+
+\par
+
+The results of the model comparison are shown in Table \@ref(tab:model-comparison). In addition, a visual comparison of model fit is provided in Appendix \@ref(fig:plot-model-comparison).[^2626] In Table \@ref(tab:model-comparison), the models are compared in terms of their difference in expected log pointwise predictive density (ELDP) using LOO as a method. The results reveal that the Specification (bm.3) has the highest ELDP and thus the best model fit. The fit of the other models is represented relative to the best fitting model. Since the standard error associated with the ELDP estimate for Specification (bm.3) (14.2) is much smaller than the ELDP difference compared to Specification (bm.2) (59.1) as the model with the second best fit, there is no ambiguity regarding Specification (bm.3) being the model with the best fit. Furthermore, the results in Table \@ref(tab:model-comparison) show that the model fit increases significantly when moving from the simple model Specifications (b.1 & b.2) to the multilevel partial pooling models (bm.x). Hence, the model results using the multilevel partial pooling approach must be considered much more reliable than the results from the simple Specifications. Furthermore, Specification (bm.3) having the best fit indicates that including the interaction term between energy price and energy carrier group increases the reliability of the model and that price elasticities of space heating demand are more precise when being differentiated by energy carrier group.
+
+[^2626]: Note that the model Specification (bm.2, lagged), which uses the price from the previous period and thus does not have the same number of observations, cannot be compared directly with the others. Therefore, it is not included in Table \@ref(tab:model-comparison). However, because the visual representation of model fit in Appendix \@ref(fig:plot-model-comparison) relies on simulated density distributions that can be produced for each model individually, Specification (bm.2, lagged) is included there. The pattern of simulated density distributions indicates a similar model fit to the other Specifications with a multilevel partial pooling approach (bm.x).
 
