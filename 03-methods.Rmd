@@ -196,7 +196,7 @@ Also for the Bayesian models, the response variable $ln(Demand_{i,t})$ denotes t
 
 **Investigation of heterogeneity in price responsiveness**
 
-In the subsample analysis it is further the goal to identify potential sources of heterogeneity in price responsiveness. For this purpose, a two step approach is adopted. First, (...)
+The subsample analysis is also concerned with identifying potential sources of heterogeneity in the price response that may remain hidden in an estimation of the overall price elasticity of demand. To this end, a two-step approach is adopted (see Figure \@ref(fig:workflow2)). First, scatter plots between energy price and demand which are grouped by a third variable are used to investigate graphically whether relevant differences for price responsiveness can be found within a set of explanatory variables. In a second step, the heterogeneity found for the energy carrier group variable is then formalized by extending the model Specification shown earlier to include an interaction term between energy price and energy carrier group. The interaction model has the following form:
 
 ```{=tex}
 \begin{align*}
@@ -215,9 +215,9 @@ ln(Demand_{i,t}) & \sim \operatorname{Normal}(\mu_{i,t}, \sigma) \\
 \end{align*}
 ```
 
-The second model is an extension to the previous model introducing an additional interaction term between main explanatory variable $ln(Price_{i,t})$ and the categorical variable energy carrier group. Gas serves as the reference category.
+Since the model represents an extension to the model shown previously, all notations remain the same. Only the additional interaction term between main explanatory variable $ln(Price_{i,t})$ and the categorical energy carrier group is added. Since gas as carrier type serves as the reference category, terms for oil and district heating are shown.
 
-The Bayesian models are estimated using the brms-package by @burkner17 in R. The brms-package serves as an interface to the probabilistic programming language and interence engine Stan [@standevelopmentteam22].
+The Bayesian models are estimated using the brms-package by @burkner17 in R. The brms-package serves as an interface to the probabilistic programming language and inference engine Stan [@standevelopmentteam22].
 
 
 ## Descriptive statistics {#descriptives}

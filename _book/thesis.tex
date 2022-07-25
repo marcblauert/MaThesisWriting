@@ -644,7 +644,9 @@ ln(Demand_{i,t}) & \sim \operatorname{Normal}(\mu_{i,t}, \sigma) \\
 \end{align*}
 Also for the Bayesian models, the response variable \(ln(Demand_{i,t})\) denotes the natural logarithm of the annual space heating demand per square meter in building \(i\) in the year \(t\) and the main explanatory variable \(ln(Price_{i,t})\) denotes the natural logarithm of the average energy price (Cents/kWh) in the same period. The intercept term (\(\bar \alpha\)) denotes the varying intercepts along the two grouping variables buildings (\(\gamma_{building[i]}\)) and years (\(\delta_{year[t]}\)). For the model I assume that all parameters follow a Gaussian distribution centered on 0. The intercept term \(\bar \alpha\) is assumed to have a standard deviation of 1. The distribution parameter \(\sigma\) as well as the parameters \(\sigma_{\gamma}\) and \(\sigma_{\delta}\) for the varying intercepts parameters were assumed to follow an \(Exp(1)\) distribution so that they are limited to the positive values required for the standard deviation.
 
-In the subsample analysis it is further the goal to identify potential heterogeneities in price responsiveness in the sample. To
+\textbf{Investigation of heterogeneity in price responsiveness}
+
+In the subsample analysis it is further the goal to identify potential sources of heterogeneity in price responsiveness. For this purpose, a two step approach is adopted. First, (\ldots)
 \begin{align*}
 ln(Demand_{i,t}) & \sim \operatorname{Normal}(\mu_{i,t}, \sigma) \\
 \mu_{i,t} & \sim \bar\alpha + \gamma_{building[i]} + \delta_{year[t]} + \beta_1 \cdot ln(Price_{i,t}) +  \\
