@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.11)  25 JUL 2022 12:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.11)  25 JUL 2022 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,7 +793,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 502--530
 
 Underfull \vbox (badness 2119) has occurred while \output is active []
 
-[25] [26] [27]
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[26] [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [28]
@@ -850,417 +853,418 @@ Overfull \hbox (38.5593pt too wide) detected at line 663
  []
 
 
-LaTeX Warning: Reference `workflow' on page 38 undefined on input line 673.
-
-<figure/occurance_buildings.pdf, id=787, 424.58624pt x 228.855pt>
-File: figure/occurance_buildings.pdf Graphic file (type pdf)
-<use figure/occurance_buildings.pdf>
-Package pdftex.def Info: figure/occurance_buildings.pdf  used on input line 676.
-(pdftex.def)             Requested size: 325.215pt x 175.30048pt.
-
-Underfull \vbox (badness 1281) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [38]
-<figure/buildings_distribution.pdf, id=798, 462.72874pt x 572.1375pt>
+<figure/occurance_buildings.pdf, id=793, 424.58624pt x 228.855pt>
+File: figure/occurance_buildings.pdf Graphic file (type pdf)
+<use figure/occurance_buildings.pdf>
+Package pdftex.def Info: figure/occurance_buildings.pdf  used on input line 678.
+(pdftex.def)             Requested size: 325.215pt x 175.30048pt.
+[39 <./figure/occurance_buildings.pdf>]
+<figure/buildings_distribution.pdf, id=818, 462.72874pt x 572.1375pt>
 File: figure/buildings_distribution.pdf Graphic file (type pdf)
 <use figure/buildings_distribution.pdf>
-Package pdftex.def Info: figure/buildings_distribution.pdf  used on input line 689.
+Package pdftex.def Info: figure/buildings_distribution.pdf  used on input line 691.
 (pdftex.def)             Requested size: 333.88924pt x 412.83788pt.
-[39 <./figure/occurance_buildings.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[40]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 698.
+               Default added (so using `tbp') on input line 700.
 
-[40 <./figure/buildings_distribution.pdf>]
-<figure/demand_descriptive.pdf, id=836, 677.53125pt x 448.67625pt>
+[41 <./figure/buildings_distribution.pdf>]
+<figure/demand_descriptive.pdf, id=841, 677.53125pt x 448.67625pt>
 File: figure/demand_descriptive.pdf Graphic file (type pdf)
 <use figure/demand_descriptive.pdf>
-Package pdftex.def Info: figure/demand_descriptive.pdf  used on input line 743.
+Package pdftex.def Info: figure/demand_descriptive.pdf  used on input line 745.
 (pdftex.def)             Requested size: 433.62pt x 287.15866pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[41] [42 <./figure/demand_descriptive.pdf>]
-<figure/prices_descriptive.pdf, id=865, 578.16pt x 505.89pt>
+[42] [43 <./figure/demand_descriptive.pdf>]
+<figure/prices_descriptive.pdf, id=870, 578.16pt x 505.89pt>
 File: figure/prices_descriptive.pdf Graphic file (type pdf)
 <use figure/prices_descriptive.pdf>
-Package pdftex.def Info: figure/prices_descriptive.pdf  used on input line 754.
+Package pdftex.def Info: figure/prices_descriptive.pdf  used on input line 756.
 (pdftex.def)             Requested size: 433.62pt x 379.41655pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[43] [44 <./figure/prices_descriptive.pdf>]
+[44] [45 <./figure/prices_descriptive.pdf>]
 Chapter 4.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 777.
+               Default added (so using `tbp') on input line 779.
 
-[45
+[46
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[46]
+[47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[47]
-<figure/posterior-distributions.pdf, id=916, 739.76375pt x 386.44376pt>
+[48]
+<figure/posterior-distributions.pdf, id=922, 739.76375pt x 386.44376pt>
 File: figure/posterior-distributions.pdf Graphic file (type pdf)
 <use figure/posterior-distributions.pdf>
-Package pdftex.def Info: figure/posterior-distributions.pdf  used on input line 837.
+Package pdftex.def Info: figure/posterior-distributions.pdf  used on input line 839.
 (pdftex.def)             Requested size: 433.62pt x 226.51978pt.
-[48] [49 <./figure/posterior-distributions.pdf>]
-<figure/b1_prediction.pdf, id=939, 682.55pt x 385.44pt>
+[49] [50 <./figure/posterior-distributions.pdf>]
+<figure/b1_prediction.pdf, id=944, 682.55pt x 385.44pt>
 File: figure/b1_prediction.pdf Graphic file (type pdf)
 <use figure/b1_prediction.pdf>
-Package pdftex.def Info: figure/b1_prediction.pdf  used on input line 852.
+Package pdftex.def Info: figure/b1_prediction.pdf  used on input line 854.
 (pdftex.def)             Requested size: 433.62pt x 244.86931pt.
 
-LaTeX Warning: Reference `empirical-model' on page 50 undefined on input line 858.
+LaTeX Warning: Reference `empirical-model' on page 51 undefined on input line 860.
 
-[50 <./figure/b1_prediction.pdf>]
-<figure/bm2_prediction.pdf, id=965, 668.4975pt x 341.275pt>
+[51 <./figure/b1_prediction.pdf>]
+<figure/bm2_prediction.pdf, id=970, 668.4975pt x 341.275pt>
 File: figure/bm2_prediction.pdf Graphic file (type pdf)
 <use figure/bm2_prediction.pdf>
-Package pdftex.def Info: figure/bm2_prediction.pdf  used on input line 865.
+Package pdftex.def Info: figure/bm2_prediction.pdf  used on input line 867.
 (pdftex.def)             Requested size: 450.96188pt x 230.2257pt.
 
-Overfull \hbox (17.34189pt too wide) in paragraph at lines 865--866
+Overfull \hbox (17.34189pt too wide) in paragraph at lines 867--868
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[51]
+[52]
 Underfull \vbox (badness 3679) has occurred while \output is active []
 
-[52 <./figure/bm2_prediction.pdf>]
-<figure/carrier_heterogeneity_plot.pdf, id=996, 505.89pt x 361.35pt>
+[53 <./figure/bm2_prediction.pdf>]
+<figure/carrier_heterogeneity_plot.pdf, id=1001, 505.89pt x 361.35pt>
 File: figure/carrier_heterogeneity_plot.pdf Graphic file (type pdf)
 <use figure/carrier_heterogeneity_plot.pdf>
-Package pdftex.def Info: figure/carrier_heterogeneity_plot.pdf  used on input line 884.
+Package pdftex.def Info: figure/carrier_heterogeneity_plot.pdf  used on input line 886.
 (pdftex.def)             Requested size: 346.89731pt x 247.78792pt.
 
 Underfull \vbox (badness 7759) has occurred while \output is active []
 
-[53] [54 <./figure/carrier_heterogeneity_plot.pdf>]
-<figure/posterior-distribution-interaction.pdf, id=1018, 614.295pt x 341.275pt>
+[54] [55 <./figure/carrier_heterogeneity_plot.pdf>]
+<figure/posterior-distribution-interaction.pdf, id=1023, 614.295pt x 341.275pt>
 File: figure/posterior-distribution-interaction.pdf Graphic file (type pdf)
 <use figure/posterior-distribution-interaction.pdf>
-Package pdftex.def Info: figure/posterior-distribution-interaction.pdf  used on input line 897.
+Package pdftex.def Info: figure/posterior-distribution-interaction.pdf  used on input line 899.
 (pdftex.def)             Requested size: 433.62pt x 240.90092pt.
-<figure/elasticity_predictions_subsample.pdf, id=1021, 566.115pt x 572.1375pt>
+<figure/elasticity_predictions_subsample.pdf, id=1026, 566.115pt x 572.1375pt>
 File: figure/elasticity_predictions_subsample.pdf Graphic file (type pdf)
 <use figure/elasticity_predictions_subsample.pdf>
-Package pdftex.def Info: figure/elasticity_predictions_subsample.pdf  used on input line 906.
+Package pdftex.def Info: figure/elasticity_predictions_subsample.pdf  used on input line 908.
 (pdftex.def)             Requested size: 450.96188pt x 455.77254pt.
 
-Overfull \hbox (17.34189pt too wide) in paragraph at lines 906--907
+Overfull \hbox (17.34189pt too wide) in paragraph at lines 908--909
  [][] 
  []
 
 
 Underfull \vbox (badness 2245) has occurred while \output is active []
 
-[55 <./figure/posterior-distribution-interaction.pdf>] [56 <./figure/elasticity_predictions_subsample.pdf>]
+[56 <./figure/posterior-distribution-interaction.pdf>] [57 <./figure/elasticity_predictions_subsample.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 917.
+               Default added (so using `tbp') on input line 919.
 
 
 Underfull \vbox (badness 2111) has occurred while \output is active []
 
-[57] [58]
+[58] [59]
 Chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[59
+[60
 
-] [60] [61] [62] [63]
+] [61] [62] [63] [64]
 Chapter 6.
-[64
-
-]
-Appendix A.
 [65
 
 ]
-<figure/distribution_degree_days.pdf, id=1118, 381.5856pt x 519.80196pt>
+Appendix A.
+[66
+
+]
+<figure/distribution_degree_days.pdf, id=1124, 381.5856pt x 519.80196pt>
 File: figure/distribution_degree_days.pdf Graphic file (type pdf)
 <use figure/distribution_degree_days.pdf>
-Package pdftex.def Info: figure/distribution_degree_days.pdf  used on input line 1014.
+Package pdftex.def Info: figure/distribution_degree_days.pdf  used on input line 1016.
 (pdftex.def)             Requested size: 333.88924pt x 454.84938pt.
-[66 <./figure/distribution_degree_days.pdf>]
-<figure/correlation_matrix.pdf, id=1133, 739.76375pt x 542.025pt>
+[67 <./figure/distribution_degree_days.pdf>]
+<figure/correlation_matrix.pdf, id=1138, 739.76375pt x 542.025pt>
 File: figure/correlation_matrix.pdf Graphic file (type pdf)
 <use figure/correlation_matrix.pdf>
-Package pdftex.def Info: figure/correlation_matrix.pdf  used on input line 1026.
+Package pdftex.def Info: figure/correlation_matrix.pdf  used on input line 1028.
 (pdftex.def)             Requested size: 390.25534pt x 285.9403pt.
-[67 <./figure/correlation_matrix.pdf>]
+[68 <./figure/correlation_matrix.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1036.
+               Default added (so using `tbp') on input line 1038.
 
-[68]
-<figure/density-distribution-comparison-samples.pdf, id=1156, 718.685pt x 303.1325pt>
+[69]
+<figure/density-distribution-comparison-samples.pdf, id=1161, 718.685pt x 303.1325pt>
 File: figure/density-distribution-comparison-samples.pdf Graphic file (type pdf)
 <use figure/density-distribution-comparison-samples.pdf>
-Package pdftex.def Info: figure/density-distribution-comparison-samples.pdf  used on input line 1075.
+Package pdftex.def Info: figure/density-distribution-comparison-samples.pdf  used on input line 1077.
 (pdftex.def)             Requested size: 433.62pt x 182.8985pt.
-[69 <./figure/density-distribution-comparison-samples.pdf>]
-Overfull \hbox (4.37962pt too wide) in alignment at lines 1087--1092
+[70 <./figure/density-distribution-comparison-samples.pdf>]
+Overfull \hbox (4.37962pt too wide) in alignment at lines 1089--1094
  [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (4.37962pt too wide) in alignment at lines 1092--1094
+Overfull \hbox (4.37962pt too wide) in alignment at lines 1094--1096
  [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (4.37962pt too wide) in alignment at lines 1094--1097
+Overfull \hbox (4.37962pt too wide) in alignment at lines 1096--1099
  [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (4.37962pt too wide) in alignment at lines 1097--1099
+Overfull \hbox (4.37962pt too wide) in alignment at lines 1099--1101
  [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (4.37962pt too wide) in alignment at lines 1099--1183
+Overfull \hbox (4.37962pt too wide) in alignment at lines 1101--1185
  [] [] [] [] [] [] [] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[70] [71]
-<figure/year_state_heterogeneity_plot.pdf, id=1189, 650.43pt x 758.835pt>
+[71] [72]
+<figure/year_state_heterogeneity_plot.pdf, id=1195, 650.43pt x 758.835pt>
 File: figure/year_state_heterogeneity_plot.pdf Graphic file (type pdf)
 <use figure/year_state_heterogeneity_plot.pdf>
-Package pdftex.def Info: figure/year_state_heterogeneity_plot.pdf  used on input line 1192.
+Package pdftex.def Info: figure/year_state_heterogeneity_plot.pdf  used on input line 1194.
 (pdftex.def)             Requested size: 433.62pt x 505.9042pt.
-[72 <./figure/year_state_heterogeneity_plot.pdf>] [73]
-<figure/other_variables_heterogeneity_plot.pdf, id=1214, 722.7pt x 650.43pt>
+[73 <./figure/year_state_heterogeneity_plot.pdf>] [74]
+<figure/other_variables_heterogeneity_plot.pdf, id=1219, 722.7pt x 650.43pt>
 File: figure/other_variables_heterogeneity_plot.pdf Graphic file (type pdf)
 <use figure/other_variables_heterogeneity_plot.pdf>
-Package pdftex.def Info: figure/other_variables_heterogeneity_plot.pdf  used on input line 1204.
+Package pdftex.def Info: figure/other_variables_heterogeneity_plot.pdf  used on input line 1206.
 (pdftex.def)             Requested size: 411.93767pt x 370.74895pt.
-[74 <./figure/other_variables_heterogeneity_plot.pdf>]
-<figure/plot-model-comparison.pdf, id=1237, 650.43pt x 650.43pt>
+[75 <./figure/other_variables_heterogeneity_plot.pdf>]
+<figure/plot-model-comparison.pdf, id=1242, 650.43pt x 650.43pt>
 File: figure/plot-model-comparison.pdf Graphic file (type pdf)
 <use figure/plot-model-comparison.pdf>
-Package pdftex.def Info: figure/plot-model-comparison.pdf  used on input line 1216.
+Package pdftex.def Info: figure/plot-model-comparison.pdf  used on input line 1218.
 (pdftex.def)             Requested size: 433.62pt x 433.63216pt.
-[75 <./figure/plot-model-comparison.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1239--1241
+[76 <./figure/plot-model-comparison.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1241--1243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1242--1244
+Underfull \hbox (badness 10000) in paragraph at lines 1244--1246
 
  []
 
 
-Overfull \hbox (0.71855pt too wide) in paragraph at lines 1245--1253
+Overfull \hbox (0.71855pt too wide) in paragraph at lines 1247--1255
 [] 
  []
 
-[76
+[77
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1267--1269
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1271
 \T1/lmr/m/n/12 Re-trieved from []$\T1/lmtt/m/n/12 https : / / ag -[] energiebilanzen . de / daten -[] und -[] fakten /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1285--1287
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1289
 []$\T1/lmtt/m/n/12 https : / / www . bmwi . de / Redaktion / DE / Binaer / Energiedaten / energiedaten -[]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[77
+[78
 
 
 ]
-Overfull \hbox (25.87436pt too wide) in paragraph at lines 1297--1299
+Overfull \hbox (25.87436pt too wide) in paragraph at lines 1299--1301
 \T1/lmr/m/n/12 Stan. \T1/lmr/m/it/12 Jour-nal of Sta-tis-ti-cal Soft-ware\T1/lmr/m/n/12 , \T1/lmr/m/it/12 80\T1/lmr/m/n/12 (1), 1--28. http://doi.org/[]10.18637/jss.v080.i01[] 
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 1300--1302
+Underfull \hbox (badness 1014) in paragraph at lines 1302--1304
 \T1/lmr/m/n/12 elec-tric-ity de-mand in the Eu-ro-pean Union. \T1/lmr/m/it/12 En-ergy Pol-icy\T1/lmr/m/n/12 , \T1/lmr/m/it/12 137\T1/lmr/m/n/12 , 111079.
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 1303--1305
+Underfull \hbox (badness 1400) in paragraph at lines 1305--1307
 \T1/lmr/m/n/12 ity. \T1/lmr/m/it/12 The Jour-nal of Land & Pub-lic Util-ity Eco-nomics\T1/lmr/m/n/12 , \T1/lmr/m/it/12 17\T1/lmr/m/n/12 (2), 242--245.
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 1309--1311
+Underfull \hbox (badness 1565) in paragraph at lines 1311--1313
 []\T1/lmr/m/n/12 DESTATIS. (2021a). Bevölkerung: Kreise, Stich-tag, Al-ters-grup-pen (12411-
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 1309--1311
+Underfull \hbox (badness 1496) in paragraph at lines 1311--1313
 \T1/lmr/m/n/12 0017) [Text]. Re-trieved Jan-uary 22, 2022, from []$\T1/lmtt/m/n/12 https : / / www -[] genesis .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1309--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1313
 \T1/lmtt/m/n/12 destatis . de / genesis / online ? operation = previous & levelindex = 0 & step =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1309--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1313
 \T1/lmtt/m/n/12 0 & titel = Tabellenaufbau & levelid = 1642855066461 & acceptscookies = false #
  []
 
 
-Underfull \hbox (badness 4316) in paragraph at lines 1312--1314
+Underfull \hbox (badness 4316) in paragraph at lines 1314--1316
 []\T1/lmr/m/n/12 DESTATIS. (2021b, Novem-ber 12). Ver-braucher-preisin-dex: Deutsch-land,
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 1312--1314
+Underfull \hbox (badness 1817) in paragraph at lines 1314--1316
 \T1/lmr/m/n/12 Jahre (61111-0001). Re-trieved Novem-ber 12, 2021, from []$\T1/lmtt/m/n/12 https : / / www -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1312--1314
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1316
 \T1/lmtt/m/n/12 genesis . destatis . de / genesis / /online ? operation = table & code = 61111 -[]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[78]
-Underfull \hbox (badness 1509) in paragraph at lines 1336--1338
+[79]
+Underfull \hbox (badness 1509) in paragraph at lines 1338--1340
 []\T1/lmr/m/n/12 Hennes, O., Jeddi, S., Madlener, R., Schmitz, H., Wag-ner, J., Wolff, S.,
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 1336--1338
+Underfull \hbox (badness 1253) in paragraph at lines 1338--1340
 \T1/lmr/m/n/12 & Zinke, J. (2021). Auswirkun-gen von CO2-Preisen auf den Gebäude[],
  []
 
 
-Overfull \hbox (27.08379pt too wide) in paragraph at lines 1342--1344
+Overfull \hbox (27.08379pt too wide) in paragraph at lines 1344--1346
 \T1/lmr/m/it/12 tis-ti-cal As-so-ci-a-tion\T1/lmr/m/n/12 , \T1/lmr/m/it/12 81\T1/lmr/m/n/12 (396), 945--960. http://doi.org/[]10.1080/01621459.1986.10478354[] 
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 1348--1350
+Underfull \hbox (badness 1082) in paragraph at lines 1350--1352
 []\T1/lmr/m/n/12 IWU. (2021, Oc-to-ber 7). IWU-Tool ^^RGradtagzahlen-Deutschland.xlsx``. Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1350
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1352
 \T1/lmr/m/n/12 trieved Jan-uary 22, 2022, from []$\T1/lmtt/m/n/12 https : / / www . iwu . de / publikationen /
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 1354--1356
+Underfull \hbox (badness 1043) in paragraph at lines 1356--1358
 \T1/lmr/m/n/12 on the price elas-tic-ity of en-ergy de-mand. \T1/lmr/m/it/12 En-ergy Pol-icy\T1/lmr/m/n/12 , \T1/lmr/m/it/12 102\T1/lmr/m/n/12 , 549--568.
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[79]
-Overfull \hbox (16.4504pt too wide) in paragraph at lines 1369--1371
+[80]
+Overfull \hbox (16.4504pt too wide) in paragraph at lines 1371--1373
 \T1/lmr/m/it/12 and Stan \T1/lmr/m/n/12 (2nd ed.). Chap-man and Hall/CRC. http://doi.org/[]10.1201/9780429029608[] 
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 1372--1374
+Underfull \hbox (badness 1077) in paragraph at lines 1374--1376
 []\T1/lmr/m/n/12 Meier, H., & Re-hdanz, K. (2010). De-ter-mi-nants of res-i-den-tial space heat-
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 1372--1374
+Underfull \hbox (badness 1789) in paragraph at lines 1374--1376
 \T1/lmr/m/n/12 ing ex-pen-di-tures in Great Britain. \T1/lmr/m/it/12 En-ergy Eco-nomics\T1/lmr/m/n/12 , \T1/lmr/m/it/12 32\T1/lmr/m/n/12 (5), 949--959.
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 1378--1380
+Underfull \hbox (badness 2343) in paragraph at lines 1380--1382
 []\T1/lmr/m/n/12 Miller, M., & Al-berini, A. (2016). Sen-si-tiv-ity of price elas-tic-ity of de-
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 1378--1380
+Underfull \hbox (badness 2573) in paragraph at lines 1380--1382
 \T1/lmr/m/n/12 mand to ag-gre-ga-tion, un-ob-served het-ero-gene-ity, price trends, and price
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 1378--1380
+Underfull \hbox (badness 2726) in paragraph at lines 1380--1382
 \T1/lmr/m/n/12 en-do-gene-ity: Ev-i-dence from U.S. Data. \T1/lmr/m/it/12 En-ergy Pol-icy\T1/lmr/m/n/12 , \T1/lmr/m/it/12 97\T1/lmr/m/n/12 , 235--249.
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 1381--1383
+Underfull \hbox (badness 1776) in paragraph at lines 1383--1385
 \T1/lmr/m/it/12 nal: Pro-mot-ing Com-mu-ni-ca-tions on Statis-tics and Stata\T1/lmr/m/n/12 , \T1/lmr/m/it/12 7\T1/lmr/m/n/12 (4), 507--541.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1386
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1388
 \T1/lmtt/m/n/12 / / blog . suche -[] postleitzahl . org / post / 132153774751 / einwohnerzahl -[] auf -[]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[80]
-Overfull \hbox (22.388pt too wide) in paragraph at lines 1393--1395
+[81]
+Overfull \hbox (22.388pt too wide) in paragraph at lines 1395--1397
 \T1/lmr/m/n/12 many. \T1/lmr/m/it/12 En-ergy Eco-nomics\T1/lmr/m/n/12 , \T1/lmr/m/it/12 29\T1/lmr/m/n/12 (2), 167--182. http://doi.org/[]10.1016/j.eneco.2006.04.002[] 
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 1399--1401
+Underfull \hbox (badness 3758) in paragraph at lines 1401--1403
 \T1/lmr/m/it/12 und den Verkehrssek-tor in Deutsch-land\T1/lmr/m/n/12 . Re-trieved from []$\T1/lmtt/m/n/12 https : / / ag -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
+Underfull \hbox (badness 10000) in paragraph at lines 1401--1403
 \T1/lmtt/m/n/12 energiebilanzen . de / wp -[] content / uploads / 2020 / 10 / rwi _ anwendungsbilanz _
  []
 
 
-Overfull \hbox (51.0708pt too wide) in paragraph at lines 1405--1407
+Overfull \hbox (51.0708pt too wide) in paragraph at lines 1407--1409
 \T1/lmr/m/n/12 mand in Ger-many. \T1/lmr/m/it/12 En-ergy Pol-icy\T1/lmr/m/n/12 , \T1/lmr/m/it/12 102\T1/lmr/m/n/12 , 512--528. http://doi.org/[]10.1016/j.enpol.2016.12.055[] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[81]
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1425
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 1425--1427
 []$\T1/lmtt/m/n/12 https : / / www . techem . com / content / dam / techem / newsroom / studien / Techem -[]
  []
 
 
-Underfull \hbox (badness 3746) in paragraph at lines 1426--1428
+Underfull \hbox (badness 3746) in paragraph at lines 1428--1430
 []\T1/lmr/m/n/12 UBA. (2016). \T1/lmr/m/it/12 CO2-Emissionsfaktoren für fos-sile Brennstoffe\T1/lmr/m/n/12 . Re-trieved
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1426--1428
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1430
 \T1/lmr/m/n/12 from []$\T1/lmtt/m/n/12 https : / / www . umweltbundesamt . de / sites / default / files / medien /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1426--1428
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1430
 \T1/lmtt/m/n/12 1968 / publikationen / co2 -[] emissionsfaktoren _ fur _ fossile _ brennstoffe _
  []
 
-[82] (./thesis.aux)
+[83] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1268,8 +1272,8 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: AE1CC383B418CC0590B7A5E657EDC1FE;3790.
  ) 
 Here is how much of TeX's memory you used:
- 15938 strings out of 479984
- 267329 string characters out of 5887164
+ 15939 strings out of 479984
+ 267336 string characters out of 5887164
  610293 words of memory out of 5000000
  33519 multiletter control sequences out of 15000+600000
  545059 words of font info for 85 fonts, out of 8000000 for 9000
@@ -1288,10 +1292,10 @@ pdfTeX warning (dest): name{ref-burtless_hausman78} has been referenced but does
 pdfTeX warning (dest): name{ref-havranek_etal12} has been referenced but does not exist, replaced by a fixed one
 
 {/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx6.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro12.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/marcblauert/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (89 pages, 11462024 bytes).
+Output written on thesis.pdf (90 pages, 11462708 bytes).
 PDF statistics:
- 1517 PDF objects out of 1728 (max. 8388607)
- 1249 compressed objects within 13 object streams
- 254 named destinations out of 1000 (max. 500000)
+ 1522 PDF objects out of 1728 (max. 8388607)
+ 1253 compressed objects within 13 object streams
+ 255 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

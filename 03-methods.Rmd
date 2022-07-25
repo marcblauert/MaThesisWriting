@@ -52,7 +52,7 @@ Energy contracts for residential buildings in Germany usually involve a fixed co
  &  &  &  &  \\
 \textit{\begin{tabular}[c]{@{}l@{}}Demand\\ \end{tabular}} & Space heating demand & Continuous & ln(kWh/sqm/y) & Ista (billing dataset) \\
 \textit{} &  &  &  &  \\
-\textit{\begin{tabular}[c]{@{}l@{}}Price\\ \end{tabular}} & (Average) Energy price & Continuous & ln(Cents/kWh) & Ista (billing dataset)\\
+\textit{\begin{tabular}[c]{@{}l@{}}Price\\ \end{tabular}} & (Average) Energy price, real & Continuous & ln(Cents/kWh) & Ista (billing dataset), DESTATIS (2021b)\\
 \textit{} &  &  &  &  \\
 \multirow{4}{*}{\textit{\begin{tabular}[c]{@{}l@{}}Additional billing \\information\\ \end{tabular}}} & Heating surface & Continuous & ln(sqm) & Ista (billing dataset)\\
  & Energy carrier group & Categorical & Gas / Oil / District heating & Ista (billing dataset)\\
@@ -222,9 +222,11 @@ The Bayesian models are estimated using the brms-package by @burkner17 in R. The
 
 ## Descriptive statistics {#descriptives}
 
+After having established the workflow and empirical approach, the following part of the Chapter presents descriptive statistics on the full sample to obtain a better understanding of the data.
+
 **Unbalanced occurrence of buildings**
 
-How often an individual building is observed in the processed and matched billing sample (full sample) is shown graphically in Figure \@ref(fig:occurrence-buildings). After excluding buildings that appeared only once in the sample (see Chapter \@ref(workflow)), buildings are observed on average 6.77 times during the period under investigation. The histogram shows that not all buildings are observed throughout the whole period, leading to the panel being unbalanced. While a relatively large number of buildings are observed only twice, the distribution exhibits a second peak at nine and ten times observed. This means that information on a relevant proportion of the buildings in the sample is available almost throughout the entire period under investigation.
+How often an individual building is observed in the processed billing data (full sample) is shown graphically in Figure \@ref(fig:occurrence-buildings). Buildings are observed on average 6.77 times during the period under investigation. The histogram shows that not all buildings are observed throughout the whole period, leading to the panel being unbalanced. While a relatively large number of buildings are observed only twice, the distribution exhibits a second peak at nine and ten times observed. This means that information on a relevant proportion of the buildings in the sample is available almost throughout the entire period.
 
 ```{r occurrence-buildings, echo = FALSE, fig.cap = "Number of occurrences of buildings in the full sample", out.width = "75%", fig.align = "center"}
 knitr::include_graphics(path = "figure/occurance_buildings.pdf")
@@ -232,11 +234,11 @@ knitr::include_graphics(path = "figure/occurance_buildings.pdf")
 
 **Spatial and temporal coverage of sample**
 
-In addition to how often an individual building is observed in the sample, also the spatial and temporal distribution of observations is of relevance. Figure \@ref(fig:buildings-distribution) graphically depicts the spatial and temporal coverage of the full sample on the district-level.[^41] On the spatial dimension, the maps show that the coverage is good. There are very few districts without any building observed (transparent) and only a few districts with less than 10 buildings observed per year (dark blue). For most district-year combinations, more than 100 buildings are observed. In some large cities and metropolitan areas, numbers of more than 10,000 buildings annually are reached. The good spatial coverage of the data implies that results drawn from the sample have validity for Germany as a whole and are in their explanatory power not limited to certain regions or clusters.
+In addition, also the spatial and temporal distribution of observations in the sample is of relevance. Figure \@ref(fig:buildings-distribution) graphically depicts the spatial and temporal coverage of the full sample at the district-level.[^41] On the spatial dimension, the maps show that the coverage is good. There are very few districts without a building observed (transparent) and only a few districts with less than 10 buildings observed per year (dark blue). For most district-year combinations, more than 100 buildings are observed. In some cities, numbers of more than 10,000 buildings annually are reached (e.g., Berlin). The good spatial coverage of the data indicate that results drawn from the sample have validity for Germany as a whole and are in their explanatory power not limited to certain regions or clusters.
 
 [^41]: Please note the use of the logarithmic scale in Figure \@ref(fig:buildings-distribution).
 
-On the temporal dimension, fewer observations are available in 2007 (43,696 observations) and 2008 (43,536 observations), as the energy price data was first included in these years. For the years between 2009 and 2019, an annual minimum of 201,856 and an average of 239,183 buildings are observed. Which means that the explanatory power of the results applies in particular to the period between 2009 and 2019. At the same time, exploratory testing of the data with and without consideration of the years 2007 and 2008 did not lead to a relevant change in the results meaning that the results are applicable to the whole time period under investigation.
+On the temporal dimension, fewer observations are available in 2007 (43,696 observations) and 2008 (43,536 observations), as the energy price data was first included in these years. For the period between 2009 and 2019, an annual minimum of 201,856 and an average of 239,183 buildings are observed. Which means that the explanatory power of the results applies in particular to the period between 2009 and 2019. At the same time, exploratory testing of the data with and without consideration of the years 2007 and 2008 did not lead to a relevant change in the results implying that the results are applicable to the whole period under investigation.
 
 ```{r buildings-distribution, echo = FALSE, fig.cap = "Spatial and temporal coverage by the buildings observed", out.width = "77%", fig.align = "center"}
 knitr::include_graphics(path = "figure/buildings_distribution.pdf")
@@ -244,7 +246,7 @@ knitr::include_graphics(path = "figure/buildings_distribution.pdf")
 
 **Summary statistics**
 
-Table \@ref(tab:summary-statistics) provides summary statistics for the full sample reporting the median values and the interquartile range (IQR). Besides the overall sample, also separate statistics for the three carrier types gas, oil, and district heating are included. About 60.6% of the observations in the sample are associated with gas as the energy carrier. A further 29.5% with oil and 9.9% with district heating. For space heat demand, as the response variable, the median value (IQR) for the sample overall is 113 (86, 145) kWh/sqm/a and for energy price as the main explanatory variable the median (IQR) of the sample is 6.49 (5.77, 7.69) Cents/kWh.
+Table \@ref(tab:summary-statistics) provides summary statistics for the full sample reporting the median values and the interquartile range (IQR). Furthermore, separate statistics for the three energy carrier groups gas, oil, and district heating are included. About 60.6% of the observations in the sample are associated with gas as the energy carrier. A further 29.5% with oil and 9.9% with district heating. For space heat demand, as the response variable, the median value (IQR) for the sample overall is 113 (86, 145) kWh/sqm/y and for energy price, the main explanatory variable, the median (IQR) of the sample is 6.49 (5.77, 7.69) Cents/kWh.
 
 \begin{table}[]
 \centering
@@ -260,14 +262,14 @@ Variable {[}Median (IQR){]} &
   \begin{tabular}[c]{@{}l@{}}Oil\\ N = 802,451 (29.5\%)\end{tabular} &
   \begin{tabular}[c]{@{}l@{}}District heating\\ N = 268,232 (9.9\%)\end{tabular} \\ \midrule
                                          &                 &                      &                      &                      &                      \\
-Space heat demand, eff.                  & {[}kWh/sqm{]}   & 113 (86, 145)        & 116 (89, 149)        & 117 (91, 148)        & 83 (63, 109)         \\
+Space heating demand                  & {[}kWh/sqm/y{]}   & 113 (86, 145)        & 116 (89, 149)        & 117 (91, 148)        & 83 (63, 109)         \\
 Energy price, real                       & {[}Cents/kWh{]} & 6.49 (5.77, 7.69)    & 6.18 (5.56, 6.79)    & 7.06 (6.08, 8.25)    & 10.12 (8.71, 11.84)  \\
                                          &                 &                      &                      &                      &                      \\
 Degree days                              &                 & 3,446 (3,214, 3,733) & 3,418 (3,192, 3,697) & 3,536 (3,273, 3,826) & 3,397 (3,191, 3,642) \\
 Heating surface                          & {[}sqm{]}       & 404 (260, 707)       & 424 (271, 701)       & 305 (226, 466)       & 1,118 (556, 2,118)   \\
 Housing units                            &                 & 6 (3, 10)            & 6 (3, 10)            & 4 (3, 6)             & 16 (8, 32)           \\
                                          &                 &                      &                      &                      &                      \\
-\begin{tabular}[c]{@{}l@{}}District household income,\\ per capita\end{tabular} &
+\begin{tabular}[c]{@{}l@{}}District per capita\\ household income\end{tabular} &
   {[}€/a{]} &
   20,695 (18,786, 22,568) &
   20,658 (18,731, 22,563) &
