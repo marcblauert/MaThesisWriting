@@ -75,3 +75,11 @@ Relevance of Policy Mix - UBA (2022) study:
 - Das im Rahmen der aktuellen Beratungen zum Fit-for-55-Paket der EU zu erwartende verschärfte, neue ESR-Ziel wie auch die daraus abgeleitete neue BEHG-Höchstmenge wird in keiner CO2-Preissensitivität eingehalten.--> Einhaltung der ambitionierteren BEHG-Ziele höhere CO2-Preise als hier analysiert zu erwarten sind bzw. darüberhinausgehende klimapolitische Instrumente erforderlich sind
 
 - Damit bestätigt sich mit dieser Modellierungsarbeit auch die wirtschaftstheoretische Herleitung (vgl. Kemfert et al. (2021)), dass zur Erreichung der Klimaschutzziele ein Politik-Mix zielführend ist, welcher die CO2-Bepreisung mit ordnungsrechtlichen Instrumenten, Förderprogrammen und weiteren Instrumenten (z.B. dem Abbau klimaschädlicher Subventionen) kombiniert.
+
+
+
+
+
+
+
+All the models described represent the conditional demand. It therefore has to be inferred that the results reflect the short-term price elasticities of demand. The use of other dynamic estimation approaches to estimate long-term elasticities, as for example @alberini_etal11 or @csereklyei20 have done, would go beyond the scope of this thesis and are therefore not pursued. Additionally, the short-term price elasticities estimated here may also be viewed as lower bound estimates of the price responsiveness compared to the usually higher long-term estimates. As they are a lower bound estimate, they can also be considered as a conservative estimate for any kind of modelling or policy advice for which they might be used.
