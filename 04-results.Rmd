@@ -11,7 +11,7 @@ options(width = 70)
 
 # Results {#results}
 
-The results Chapter is structured in two subsections. First, the results from the analysis of the full sample are presented (reflects first part of workflow, see Figure \@ref(fig:workflow1)). And subsequently the results of the deepened analysis based on the stratified subsample are reported (reflects the second part of the workflow, see Figure \@ref(fig:workflow2)).
+The results Chapter is structured in two parts. First, the results from the analysis of the full sample are presented (see Figure \@ref(fig:workflow1)). Subsequently the results of the deepened analysis based on the stratified subsample are reported (see Figure \@ref(fig:workflow2)).
 
 ## Full sample results {#full_sample_results}
 
@@ -96,7 +96,7 @@ Figures \@ref(fig:elasticity-predictions-b1) and \@ref(fig:elasticity-prediction
 
 [^1192]: Values are re-scaled using $exp()$.
 
-```{r elasticity-predictions-b1, echo = FALSE, fig.cap = "Predicted price elasticities of space heating demand based on simple model (b.1)", out.width = "100%", fig.align = "center"}
+```{r elasticity-predictions-b1, echo = FALSE, fig.cap = "Predicted price elasticities of space heating demand based on simple model (Specification b.1)", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/b1_prediction.pdf")
 ```
 
@@ -110,7 +110,7 @@ For the simple Specification (b.1) in Figure \@ref(fig:elasticity-predictions-b1
 
 [^8282]: Note that the price range shown in the graph were chosen arbitrarily to some extent. They were chosen to represent the lowest reasonable price at the low end and to reflect about 2-3 times the historical prices observed in the sample at the high end.
 
-```{r elasticity-predictions-bm2, echo = FALSE, fig.cap = "Predicted price elasticities of space heating demand based on multilevel partial pooling model (bm.2)", out.width = "104%", fig.align = "center"}
+```{r elasticity-predictions-bm2, echo = FALSE, fig.cap = "Predicted price elasticities of space heating demand based on multilevel partial pooling model (Specification bm.2)", out.width = "104%", fig.align = "center"}
 knitr::include_graphics(path = "figure/bm2_prediction.pdf")
 ```
 
@@ -128,7 +128,7 @@ For the first part, the visual examination of potential heterogeneity in price r
 
 Similarly, Appendix \@ref(fig:other-variables-heterogeneity-plot) presents the visual examinations for the variables degree days, heating surface, district per capita household income, and district retirement share. Since all four variables are continuous, they are each divided into three equally sized groups to be able to investigate possible heterogeneity in the price response visually (e.g., one third of observations with highest number of degree days, one third with medium number of degree days, one third of observations with lowest number of degree days). For the two variables degree days and district retirement share, the three grouped lines are almost completely parallel, suggesting that there are no differences in the price response between the groups. For district per capita household income minor differences can be observed. Districts with a lower per capita household income exhibit a more elastic demand response (steeper slope). For the building heating surface as well some differences can be found with larger buildings being associated with a more elastic demand response than smaller buildings.
 
-```{r heterogeneity-energy-carrier-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity between energy carrier groups", out.width = "80%", fig.align = "center"}
+```{r heterogeneity-energy-carrier-plot, echo = FALSE, fig.cap = "Scatter plot for the investigation of heterogeneity between energy source groups", out.width = "80%", fig.align = "center"}
 knitr::include_graphics(path = "figure/carrier_heterogeneity_plot.pdf")
 ```
 
@@ -144,7 +144,7 @@ knitr::include_graphics(path = "figure/posterior-distribution-interaction.pdf")
 
 As with the previous models, the results of the model Specification (bm.3), where energy price and energy carrier group are interacted, are shown with prediction intervals in Figure \@ref(fig:elasticity-predictions-energy-carrier). Again, the inner darker shaded intervals represent the uncertainty in the parameter value and the lighter shaded intervals represent the uncertainty in the sampling procedure and thus include the residual error of the model [@mcelreath20].
 
-```{r elasticity-predictions-energy-carrier, echo = FALSE, fig.cap = "Predicted price elasticities of demand by energy carrier group (bm.3)", out.width = "104%", fig.align = "center"}
+```{r elasticity-predictions-energy-carrier, echo = FALSE, fig.cap = "Predicted price elasticities of space heating demand by energy carrier group (Specification bm.3)", out.width = "104%", fig.align = "center"}
 knitr::include_graphics(path = "figure/elasticity_predictions_subsample.pdf")
 ```
 

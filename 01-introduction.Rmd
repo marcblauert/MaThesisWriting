@@ -54,7 +54,7 @@ Figure \@ref(fig:behg) illustrates the price effect of the carbon pricing for th
 
 [^6]: The emission factors for gas (0.201 kg CO~2~e per kWh) and oil (0.266 kg CO~2~e per kWh) were taken from @uba16.
 
-```{r behg, echo = FALSE, out.width = "100%", fig.align = "center", fig.cap = "BEHG carbon price effects on gas and oil until 2025", fig.scap="BEHG carbon price effects on gas and oil until 2025"}
+```{r behg, echo = FALSE, out.width = "100%", fig.align = "center", fig.cap = "Price effects on gas and oil induced by the Fuel Emissions Trading Act (BEHG) until 2025", fig.scap="BEHG carbon price effects on gas and oil until 2025"}
 knitr::include_graphics(path = "figure/price_effect_behg.pdf")
 ```
 

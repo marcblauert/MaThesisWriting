@@ -28,7 +28,7 @@ Figure \@ref(fig:degree-days-distribution) show the spatial and temporal variati
 
 \newpage
 
-```{r correlation-plot, echo = FALSE, fig.cap = "Pearson’s correlation matrix", out.width = "90%", fig.align = "center"}
+```{r correlation-plot, echo = FALSE, fig.cap = "Matrix with Pearson’s correlation coefficients", out.width = "90%", fig.align = "center"}
 knitr::include_graphics(path = "figure/correlation_matrix.pdf")
 ```
 \noindent
@@ -77,7 +77,7 @@ Table \@ref(tab:age-building-heating-system) provides descriptive statistics for
 \newpage
 
 
-```{r density-distribution-comparison-samples, echo = FALSE, fig.cap = "Comparison of density distribution for energy demand and price between full sample and subsample", out.width = "100%", fig.align = "center"}
+```{r density-distribution-comparison-samples, echo = FALSE, fig.cap = "Comparison of density distribution for energy demand and energy price between full sample and subsample", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/density-distribution-comparison-samples.pdf")
 ```
 
@@ -89,7 +89,7 @@ Figure \@ref(fig:density-distribution-comparison-samples) compares the density d
 \tiny
 
 \begin{longtable}[c]{lrrrrrrr}
-\caption{Full model results for subsample analysis}
+\caption{Complete model summaries for Specifications in subsample analysis}
 \label{tab:brms-full-model-results}\\
 \cline{2-8}
  & \multicolumn{1}{c}{\textbf{Estimate}} & \multicolumn{1}{c}{\textbf{Est.Error}} & \multicolumn{1}{c}{\textbf{l-95\% CI}} & \multicolumn{1}{c}{\textbf{u-95\% CI}} & \multicolumn{1}{c}{\textbf{Rhat}} & \multicolumn{1}{c}{\textbf{Bulk ESS}} & \multicolumn{1}{c}{\textbf{Tail ESS}} \\ \cline{2-8} 
@@ -193,7 +193,7 @@ Table \@ref(tab:brms-full-model-results) presents the complete model summaries f
 
 \newpage
 
-```{r heterogeneity-year-state-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity for years and federal states", out.width = "100%", fig.align = "center"}
+```{r heterogeneity-year-state-plot, echo = FALSE, fig.cap = "Scatter plot for the investigation of heterogeneity between years and federal states", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/year_state_heterogeneity_plot.pdf")
 ```
 \noindent
@@ -201,7 +201,7 @@ Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual examination of
 
 \newpage
 
-```{r other-variables-heterogeneity-plot, echo = FALSE, fig.cap = "Investigation of heterogeneity for degree days, heating surface, district income, and district retirement share", out.width = "95%", fig.align = "center"}
+```{r other-variables-heterogeneity-plot, echo = FALSE, fig.cap = "Scatter plot for the investigation of heterogeneity for the variables degree days, heating surface, district income, and district retirement share", out.width = "95%", fig.align = "center"}
 knitr::include_graphics(path = "figure/other_variables_heterogeneity_plot.pdf")
 ```
 \noindent
@@ -211,7 +211,7 @@ Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual examinati
 
 \newpage
 
-```{r plot-model-comparison, echo = FALSE, fig.cap = "Graphical model comparison for subsample model Specifications", out.width = "100%", fig.align = "center"}
+```{r plot-model-comparison, echo = FALSE, fig.cap = "Graphical model comparison for Specifications in subsample analysis", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/plot-model-comparison.pdf")
 ```
 \noindent

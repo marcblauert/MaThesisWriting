@@ -108,7 +108,7 @@ However, before the regression analysis can be performed, the billing dataset mu
 
 The most important reason for exclusion from the sample is the absence of price data. In the period 2003-2006, price data are not available for any observation. This leads to the exclusion of 909,458 observations. In addition, price data is also missing for a part of the observations in the period 2009-2019. Due to these gaps, a further 543,544 observations are excluded from the dataset. Another 233,888 observations are removed from the sample because they are associated with buildings that occur only once in the sample. The decision to apply the criterion that buildings must occur at least twice in the sample is mainly due to the fact that singular building IDs occur mainly in the period 2007-2008, suggesting that IDs from this period are not always linked with observations in later years. In addition, observing a building at least twice allowed cross-validation through matching building attributes and thus better reliability of the data. Another 53,674 observations are removed from the sample because the buildings are heated with an energy carrier other than gas, oil, or district heating. Due to the small number of observations compared to the total sample size and due to the heterogeneity of the group (e.g., heat pumps but also coal heating), it was decided to exclude them. In addition, another 1,722 observations are excluded as duplicates (based on matching building ID and year) and 65 observations due to a deviating length of the billing period (deviation of more than +/- 10 days).
 
-```{r workflow1, echo = FALSE, fig.cap = "Workflow of data processing and regression analysis based on full sample", out.width = "103%", fig.align = "center"}
+```{r workflow1, echo = FALSE, fig.cap = "Workflow for data processing and regression analysis based on full sample", out.width = "103%", fig.align = "center"}
 knitr::include_graphics(path = "figure/workflow_diagramm_part1.pdf")
 ```
 
@@ -167,7 +167,7 @@ To estimate the OLS models, I rely on the lm-function in R. To estimate the FE m
 
 After using classical statistical estimation techniques on the full sample, the analysis moves to the application of Bayesian regression analysis. In general, use of Bayesian inference has the advantage of allowing for the propagation of uncertainty in the modelling process [@mcelreath20]. Furthermore, the Bayesian framework allows for a more intuitive interpretation of modelling results being the actual chance of an event happening rather than the probability that the same outcome would occur if one were to replicate the data [@mcelreath20]. A further advantage of Bayesian inference is the logic of updating beliefs based on evidence (data) and the potential integration of prior knowledge [@gelman_etal21]. Here, I refrain from making strong assumptions on the prior distribution of model parameters and instead rely on weakly informed priors because enough data available. Additionally, it should be pointed out that Bayesian inference is more computationally demanding than the classical statistical methods presented above. This is the reason why Bayesian inference is only used on a subsample and not for the analysis of the full sample.
 
-```{r workflow2, echo = FALSE, fig.cap = "Workflow of stratified subsampling and Bayesian regression analysis based on subsample", out.width = "103%", fig.align = "center"}
+```{r workflow2, echo = FALSE, fig.cap = "Workflow for stratified subsampling and Bayesian regression analysis based on subsample", out.width = "103%", fig.align = "center"}
 knitr::include_graphics(path = "figure/workflow_diagramm_part2.pdf")
 ```
 
@@ -228,7 +228,7 @@ After having established the workflow and empirical approach, the following part
 
 How often an individual building is observed in the processed billing data (full sample) is shown in the histogram in Figure \@ref(fig:occurrence-buildings). Buildings are observed on average 6.77 times during the period under investigation. The histogram shows that not all buildings are observed throughout the whole period, leading to the panel being unbalanced. While a relatively large number of buildings are observed only twice, the distribution exhibits a second peak at nine and ten times observed. This means that information on a relevant proportion of the buildings in the sample is available almost throughout the entire period.
 
-```{r occurrence-buildings, echo = FALSE, fig.cap = "Number of occurrences of buildings in the full sample", out.width = "75%", fig.align = "center"}
+```{r occurrence-buildings, echo = FALSE, fig.cap = "Histogram of the occurrence of buildings in the full sample", out.width = "75%", fig.align = "center"}
 knitr::include_graphics(path = "figure/occurance_buildings.pdf")
 ```
 
@@ -240,7 +240,7 @@ In addition, also the spatial and temporal distribution of observations in the s
 
 On the temporal dimension, fewer observations are available in 2007 (43,696 observations) and 2008 (43,536 observations), as the energy price data was first included in these years. For the period between 2009 and 2019, an annual minimum of 201,856 and an average of 239,183 buildings are observed. Which means that the explanatory power of the results applies in particular to the period between 2009 and 2019. At the same time, exploratory testing of the data with and without consideration of the years 2007 and 2008 did not lead to a relevant change in the results implying that the results are applicable to the whole period under investigation.
 
-```{r buildings-distribution, echo = FALSE, fig.cap = "Spatial and temporal coverage by the buildings observed", out.width = "77%", fig.align = "center"}
+```{r buildings-distribution, echo = FALSE, fig.cap = "Map of the spatial and temporal coverage of the observed buildings", out.width = "77%", fig.align = "center"}
 knitr::include_graphics(path = "figure/buildings_distribution.pdf")
 ```
 
@@ -250,7 +250,7 @@ Table \@ref(tab:summary-statistics) provides summary statistics for the full sam
 
 \begin{table}[]
 \centering
-\caption{Summary statistics}
+\caption{Summary statistics for full sample}
 \label{tab:summary-statistics}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llllll@{}}
@@ -294,24 +294,20 @@ To check for potential multicollinearity issues between the variables Appendix \
 
 **In-depth focus on energy demand and energy prices**
 
-Figure \@ref(fig:demand-descriptive-graph) provides a more detailed visual summary of the demand variable. For the aggregated distribution of energy demand (see Panel A), the lowest annual demands are around 25 kWh/sqm/y. The distribution peaks at just over 100 kWh/sqm/y and then tapers off to very high demand values of up to 350 kWh/sqm/y. A differentiated display of the mean demand levels by energy carrier group and over time (see Panel B) reflects the previous findings. While the demands for gas and oil are on an almost similar, higher level, demand in buildings with district heating is considerably lower. Some of the difference observed may be attributable to the strong difference in building size.[^1817]
+Figure \@ref(fig:demand-descriptive-graph) provides a more detailed visual summary of the demand variable. The aggregated distribution of energy demand (see Panel A) shows that the lowest annual demand in the sample is around 25 kWh/sqm/y. The distribution peaks at just over 100 kWh/sqm/y and then declines more gradually to very high demand values of up to 350 kWh/sqm/y. The differentiated display of the mean demand levels by energy carrier group and over time (see Panel B) reflects the previous findings. While the demands for gas and oil are on an almost similar, higher level, demand in buildings with district heating is considerably lower. Some of the difference observed may be attributable to the strong difference in building size.[^1817]
 
 [^1817]: Given the significance of the difference in demand, it was further scrutinized if the age of the building and the age of the heating system may deviate between gas and oil buildings on the one and buildings with district heating on the other hand. This information is available for about 15% of the observations from the additional Energy Performance Certificate (EPC) data mentioned earlier, the use of which was otherwise discarded for this thesis. The rationale for looking deeper into these two variables is that newer buildings and more recent heating systems can be expected to go along with lower energy demand. The comparison is provided in Appendix \@ref(tab:age-building-heating-system). It does not find differences between the energy carrier groups of a magnitude that would suggest a strong influence on demand.
 
-```{r demand-descriptive-graph, echo = FALSE, fig.cap = "Distribution of energy demand", out.width = "100%", fig.align = "center"}
+```{r demand-descriptive-graph, echo = FALSE, fig.cap = "Distribution and trend of energy demand", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/demand_descriptive.pdf")
 ```
 
-Furthermore, two additional pieces of information can be identified for the demand variable (see Panel B). First, the effective demand decreases over time. While this may be due to changes in the determinants of energy demand, it may also be that newer more energy efficient buildings are added to the sample, while others drops from the sample. Thus, controlling for the time dimension appears warranted. 
+Furthermore, two additional trends can be identified for the demand variable (see Panel B). First, the effective demand decreases over time. While this may be due to changes in the determinants of energy demand, it may also be that newer more energy efficient buildings are added to the sample, while others drop out. Thus, controlling for the building and time dimension appears warranted. Second, while the overall demand level is decreasing, the development for all carrier types follows a similar pattern with year-to-year demand being subject to fluctuations. In Appendix \@ref(fig:degree-days-distribution) the distribution of degree days is depicted on a spatial and temporal scale. A comparison of the trends in degree days and energy demand shows a pattern that corroborates the assumption that higher degree days (lower outdoor temperatures) lead to higher energy demand. This illustrates the relevance of considering climatic conditions as a fluctuating determinant of space heating demand.
 
-Second, demand follows a similar pattern for all carriers, which can, however, also turn out to be higher or lower from year to year and only declines in the overall trend. Fluctuations in effective energy demand are linked to the variations in climatic conditions. In Appendix \@ref(fig:degree-days-distribution) the distribution of degree days is depicted on a spatial and temporal scale. There is a consistent trend between degree days and energy demand that corroborates the intuition that higher degree days (lower outside temperatures) leads to higher energy demand. This illustrates the relevance of considering climatic conditions as an additional determinant of space heating demand.
+In Figure \@ref(fig:price-descriptive-graph) below, the distribution of nominal (Panel A) and real (Panel B) energy prices as well differentiated by energy carrier group are depicted. The points represent average annual prices. The vertical bars represent one standard deviation (SD). While the energy prices for gas are relatively stable over the period under investigation, prices for oil show stronger volatility. As established previously, prices for district heating are higher than those for gas and oil (cf. Table \@ref(tab:summary-statistics)). Furthermore, the prices for district heating are not as volatile, but show a much wider range of variation, which is reflected in the width of the vertical bars.
 
-Figure \@ref(fig:price-descriptive-graph) depicts the distribution of nominal (Panel A) and real (Panel B) energy prices also by energy carrier. The points represent the average price in one year. The vertical bars represent the standard deviation. While the energy prices for gas are relatively stable over the period under observation, prices for oil show stronger volatility. As already established previously, prices for district heating are higher than those for gas and oil (cf. Table \@ref(tab:summary-statistics)). Furthermore, the prices for district heating are not as volatile, but show a huge range of variation, which is reflected in the much larger standard deviations.
-
-```{r price-descriptive-graph, echo = FALSE, fig.cap = "Distribution of nominal and real energy prices", out.width = "100%", fig.align = "center"}
+```{r price-descriptive-graph, echo = FALSE, fig.cap = "Trend of nominal and real energy prices", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/prices_descriptive.pdf")
 ```
 
-While nominal prices are relatively stable in the overall trend for all three energy carrier groups, the trend changes after adjusting for inflation. The deflated real prices show an overall declining trend, with the trend being more pronounced for gas and oil. For the intuition about the price elasticity of space heating demand, this means that one would expect an overall increase in demand from the price effect alone. However, the graph also shows that effects into both directions can be observed when looking not at the overall trend but at year-to-year movements.
-
-After having described the data and energy demand and energy prices as the two main variables in detail, the following Chapter will present the results of the regression analysis.
+While nominal prices are relatively stable in the overall trend over time for all three energy carrier groups, the direction of the trend changes after adjusting for inflation. The deflated real prices show declining energy prices over the time period under investigation, with the trend being more pronounced for gas and oil. For the intuition regarding the price elasticity of space heating demand, this means that one would expect an overall increase in demand due to the price effect alone. However, the graph also shows that effects in both directions can be observed if one does not look at the overarching trend, but at the year-to-year movements in energy prices. After having described the underlying data in detail, the following Chapter moves to presenting the results of the regression analysis.

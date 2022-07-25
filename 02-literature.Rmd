@@ -94,7 +94,7 @@ There are three earlier studies that have a spatial focus on Germany. The first 
 
 \begin{table}[]
 \centering
-\caption{Selected studies on the price elasticity of space heating demand}
+\caption{Individual studies focusing on the price elasticity of space heating demand}
 \label{tab:estimates-literature}
 \resizebox{\textwidth}{!}{%
 
