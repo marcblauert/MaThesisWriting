@@ -14,7 +14,7 @@ options(width = 70)
 
 The aim of this chapter is to provide the theoretical background on the price elasticity of demand and an overview of the previous literature on the price elasticity of space heating demand in particular. Subsequently, theory and evidence from the literature are used to develop a conceptual model with corresponding rationales for the relevance and expected direction of a variable's effect on space heating demand.
 
-## Price elasticity of demand {#theory}
+## Price Elasticity of Demand {#theory}
 
 Elasticities, in general, are one of the key concepts in micro-economic theory. They are used to express the sensibility of one variable to a change in another. The own price elasticity of demand is one type of elasticity. It represents the magnitude of a change in demand of a good following from a change in its own price [@pindyck_rubinfeld18]. Formally, the own price elasticity of demand $\epsilon$ can be expressed as:
 
@@ -69,7 +69,7 @@ Another relevant dimension along which one distinguishes different price elastic
 
 In the literature, the approaches in the studies differ in the sense that they estimate either short-term and/or long-term price elasticities. For this thesis, I follow the example of @schmitz_madlener20 and only estimate short-term price elasticities of demand. Long-term price elasticities are often estimated using dynamic models, where the elasticity estimated between two periods represents a fraction of the long-term elasticity [e.g., @alberini_etal11]. However, since the methods vary more widely I consider it as outside of the scope of this thesis.
 
-## Literature review {#review}
+## Literature Review {#review}
 
 In general, the study of the price elasticity of *energy* demand is a broad field of academic research which also has a long history dating back to the mid-twentieth century [e.g., @cutler41; @houthakker51]. In the more recent past, as well a large number of academic studies have been published. These studies differ considerably in terms of focus and design. While a subset of studies focus on the demand responsiveness of private households for space heating in particular, most of the literature focuses on energy demand in general or other types of specific energy applications. To organize the comprehensive body of literature, I first focus on meta-studies to provide a first indication on price elasticity for energy in general, and then concentrate on the subset of relevant studies that focus on household space heating demand.
 
@@ -148,7 +148,7 @@ Figure \@ref(fig:literature-estimates-plot) graphically summarizes the short-ter
 
 Another common feature that links all the individual studies presented is that they do not focus on one-off extreme price shocks as an identification strategy, but on gradual price developments. They are mostly built around a panel data set covering a longer period of time. The period examined in this study also covers more than a decade with rather gradual price developments. This should therefore be considered an important condition that facilitates the comparability of the results of this study with the estimates presented in the literature.
 
-## Conceptual model {#conceptual-model}
+## Conceptual Model {#conceptual-model}
 
 The previous two parts of the Chapter presented the theoretical foundations on the price elasticity of demand (see chapter \@ref(theory)) and the previous evidence from the literature on household demand response for space heating to energy price changes (see chapter \@ref(review)). To synthesize this basis, this final part of the Chapter is dedicated to developing a conceptual model relying on both theory and approaches from previous studies. The aim is to identify relevant determinants for the level of space heating demand of private households and to justify their relevance. The conceptual model will then be transferred into a statistical model and empirically examined in the further course of this thesis.
 

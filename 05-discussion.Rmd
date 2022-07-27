@@ -9,21 +9,43 @@ pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 options(width = 70)
 ```
 
-# Discussion and conclusion {#discussion}
+# Discussion {#discussion}
 
-This thesis investigates short-term price elasticities of space heating demand based on a large-scale sample of energy bills in Germany in the period between 2007 and 2019. The estimation of price elasticities of space heating demand is important as it is a key parameter for assessing the expected impact of price-related energy policy instruments, such as the newly introduced Fuel Emissions Trading Act (BEHG) as an instrument for introducing a carbon price signal for heating fuels consumed in the building sector in Germany. The novelty of this work is that it relies on energy billing data instead of social survey data, which provides a more accurate picture of energy prices than previous studies, which usually use average price data from national statistics [e.g., @schmitz_madlener20]. Furthermore, this thesis uses a wide range of methodological approaches and applies Bayesian models on a subsample of the data, which are well suited to propagate and communicate the uncertainty in the model estimates.
-
-According to price and demand theory, the demand for a good is mainly determined by its own price and the price of possible substitute goods [@pindyck_rubinfeld18]. Space heating is to be considered as an essential good, which is associated with a minimum demand in the winter months in order to ensure the well-being of residents. Furthermore, the production of space heating depends on the heating technologies installed in a building, which cannot be easily replaced in the short-term. This is especially true for rental buildings, where the tenants usually have no direct say in the choice of heating technology for their building, nor in a possible replacement of the heating system. Due to these reasons, the price elasticity of space heating demand can be assumed to be rather inelastic, especially in the short-term. This assumption is also confirmed by the evidence found in the prior literature. The majority of studies focusing on the energy use of space heating demand in the residential buildings sector arrive at estimates for the price elasticity of space heating demand in the range between -0.3 and -0.6 (see Chapter \@ref(review)).
+## Discussion of Empirical Results {#discussion-results}
 
 **Findings on the price elasticity of space heating demand**
 
-In relation to the first research question that this thesis aimed to answer, the results confirm the assumption that the demand for space heating is a rather inelastic good. The final model specification in the analysis using the full sample yielded the result that for the average building in the sample the demand for space heating would be reduced by -0.243% if the energy price were to increase by 1%. Thus, the price elasticity estimate is lower than the estimates from previous studies focusing on Germany. Interestingly, however, the price elasticity estimate is in agreement with the results by @auffhammer_rubin18 which is the only other study also relying on data from energy bills. The fact that the price elasticity estimates observed in the various model Specifications moved down when considering the grouping variables buildings and years either by including them as fixed effects in the full sample or 
+The first research question to be answered in this thesis is: How does a change in the price of energy affect the level of space heating demand? In other words, to determine an reliable estimate of the price elasticity of space heating demand. The results presented previously confirm the assumption that the demand for space heating is a rather inelastic good. In the final model Specification in the analysis relying on the full sample, the estimated price elasticity was that for the average building in the sample, the demand for space heating would decrease by -0.243% if the price of energy increased by 1%. This implies that the estimated price elasticity using the whole set of data is lower than the estimates from previous studies focusing on Germany (see Chapter \@ref(review)). Interestingly, however, the estimated overall price elasticity matches the results of @auffhammer_rubin18, the only other study that also relies on energy billing data. The fact that the price elasticity estimates observed in the different model Specifications moved downwards when the grouping variables buildings and years were included either as fixed effects in the full sample or with a partial pooling approach for the Bayesian regression analysis of the subsample is consistent with findings also made by others in the literature [e.g., @miller_alberini16]. Due to the very large sample size of about 2.8 million observations in the full sample analysis and its inversely proportional relationship to the standard error of a model, the standard error of the price elasticity estimates is very small and does not necessarily reflect the true uncertainty and dispersion about the different combinations of price and demand observed in the data.
+
+The results on the price elasticity of heating demand indicate that private households do adjust their demand levels in response to the incremental price changes observed in this thesis, but only to a relatively limited extent. This means that the direct impact of price-related policy instruments, such as the BEHG recently introduced in Germany for the building sector to price carbon externalities, is somewhat limited in the short-term. However, this statement is independent of the current price increases triggered by the gas shortage in Germany and Europe, where the price effects are so extreme that significant impacts on overall demand can be expected even in the short-term.
+
+**Effects of other determinants on space heat demand**
+
+The results from the full sample analysis are also suitable to discuss the second research question: What other determinants do affect the level space heating demand and need to be considered so that their effects are not falsely attributed to energy prices? The empirical analysis considered a set of additional variables, most of which showed a relevant association with the demand for space heating. The most relevant effect on the model results was clearly related to the inclusion of unobserved inter-individual differences between the units (buildings) and also an intra-individual dynamic over time (years) either trough fixed effects in the full sample analysis or trough the partial pooling approach in the subsample analysis. The model comparison conducted for the subsample analysis showed how significantly the model fit increased. Furthermore, the relatively minor effects on the price elasticity of demand when estimating the model Specifications with price as a sole predictor and then with the other variables included showed that the 
+
+The 
+
+
+RQ3:
+
+**Heterogeneity between the energy carrier groups**
+
+**Little heterogeneity for other determinants**
+
+
+RQ2:
 
 
 
 
+## Integration into the Policy Context {#policy-context}
 
-## Discussion of elasticity results
+Der Verbrauch von Fernwärme lässt sich auch in Kubikmeter (m3) Gas umrechnen. Erdgas hat einen Heizwert von etwa 10 kWh/m3. 100 kWh entsprechen circa 10 m3 Erdgas. Es ist allerdings wenig sinnvoll, den Fernwärme-Verbrauch einfach in einen Gas-Verbrauch umzurechnen. Denn im Vergleich zu Erdgas oder Heizöl fallen keine zusätzlichen Verluste abhängig vom Wirkungsgrad des Kessels an. Daher ist der Fernwärmeverbrauch immer 10 bis 20 Prozent günstiger als bei fossilen Energieträgern. Besser vergleichen können Sie die durchschnittlichen Heizkosten pro m2 mit unseren Vergleichsartikeln.
+
+. Given the robustness of these findings, this paper provides tight bounds on a policy-relevant parameter key to applications ranging from estimating the welfare benefits of fracking (Hausman and Kellogg 2015) to analyzing the regressivity of two-part tariffs (Borenstein and Davis 2012).
+
+
+**Points from the literature (to be integrated)**
 
 - Policy implication: Low elasticity estimates (lower than found in the previous literature) indicate that there is a strong need for a policy mix and carbon pricing must be accompanied by strong measures to induce THG reductions in the buildings sector
 
@@ -36,7 +58,9 @@ Relevante Stellen für Rückbezüge aus der Literatur:
 - In their analysis, @labandeira_etal17 include a total of 428 papers, all published between 1990 and 2016. For the demand of natural gas, they find an average short-term (long-term) price elasticity of -0.18 (-0.57) based on 230 individual estimates. And for heating oil they find a comparable average short-term (long-term) elasticity of -0.19 (-0.54), which, however, is based on only 44 individual estimates [@labandeira_etal17]. An average elasticity for space heating -- which is less focused on in the literature due to its relatively low prevalence -- is not provided.
 
 - There are three earlier studies that have a spatial focus on Germany. The first study was conducted by @rehdanz07, who estimates short-term price elasticities for different energy carrier groups for residential space heating demand. She uses social survey data on household-level heating expenditures from the Socio-Economic Panel (SOEP) in the years 1998 and 2003. Methodologically, a cross-sectional statistical analysis with dummy variables is conducted for the two years. In contrast to the  meta-estimates presented in the previous part of the Chapter, the study finds that demand for heating oil is highly elastic with estimates ranging between -1.68 and -2.03, depending on the model specification. For gas, the results indicate an inelastic elastic demand between -0.44 and -0.63 (depending on the model specification) which is nevertheless significantly more elastic than the meta-estimates presented previously. Therefore, the study concludes that the type of energy carrier can have a strong influence on the price sensitivity of households [@rehdanz07].
-## The role of energy prices and interaction with complementary measures (policy-mix)
+
+
+**The role of energy prices and interaction with complementary measures (policy-mix)**
 
 
 - For district heating larger share of costs are fixed; may drive the effect of larger price elasticities as data does not differentiate between fixed and variable cost components and with lower energy demand the per-unit cost rate increses due to the larger 

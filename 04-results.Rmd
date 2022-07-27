@@ -13,7 +13,7 @@ options(width = 70)
 
 The results Chapter is structured in two parts. First, the results from the analysis of the full sample are presented (see Figure \@ref(fig:workflow1)). Subsequently the results of the deepened analysis based on the stratified subsample are reported (see Figure \@ref(fig:workflow2)).
 
-## Full sample results {#full_sample_results}
+## Full Sample Results {#full_sample_results}
 
 **Price elasticity estimates**
 
@@ -72,7 +72,7 @@ In general, almost all model predictors are found to be statistically significan
 
 Referring again to the main model Specification (m3.fe), this means that, for example, a rise in degree days (lower outside temperatures) of 1% would be associated with to a higher energy demand of 0.779% and a larger building heating surface of 1% would be associated with a lower energy demand of -0.405%. Furthermore, the results indicate that an oil heating system is associated with a higher heating energy demand than gas as the reference category and a district heating system with a lower demand. While the results in the cross-sectional OLS model indicate that an increasing district per capita household income would be associated with a decreasing energy demand, this effect disappears in the FE model and is even reversed. At the same time, the magnitude of the district per capita household income effect in Specification (m3.fe) is so small that one must assume that it does not have a strong influence in explaining the variance in energy demand at all. For district retirement share the sign of the coefficient as well switches when moving from the OLS to the FE model. The results in Specification (m3.fe) indicate that a higher district level retirement share is associated with higher energy demand.
 
-## Subsample results {#subsample_results}
+## Subsample Results {#subsample_results}
 
 **Price elasticity estimates**
 

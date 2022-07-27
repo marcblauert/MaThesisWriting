@@ -11,7 +11,7 @@ options(width = 70)
 
 # Methods {#methods}
 
-## Data description and pre-processing {#data}
+## Data Description and Pre-Processing {#data}
 
 To translate the conceptual model set up in Chapter \@ref(conceptual-model) into a statistical model that can be used to empirically investigate the price elasticity of space heating demand, data from multiple sources were combined. In the following the variables and the pre-processing of the data is presented. An overview of all variables and their respective data source is given in Table \@ref(tab:variables). First, the focus is on the energy billing dataset and its variables and then on variables retrieved from supplementary data sources.
 
@@ -80,7 +80,7 @@ Energy contracts for residential buildings in Germany usually involve a fixed co
 
 **Postal code population density (Inhabitants/sq. km):** To generate the population density variable, data from Open Street Maps with pre-assigned population figures to postal code areas based on the 2011 Census are used [@osm21; @osm21a]. The postal code level is chosen because the higher granularity of data was available and use of population density at the district-level might obscure heterogeneity within districts. Especially when it comes to districts that include both a city and rural areas. To create the population density variable, the number of inhabitants per post code area is divided by the base area in square kilometers ( sq. km), which gives the population density as the average number of inhabitants per sq. km in a post code area.
 
-## Empirical considerations {#empirical-considerations}
+## Empirical Considerations {#empirical-considerations}
 
 **Causality with observational data**
 
@@ -98,7 +98,7 @@ In addition, it was assessed if the variables used in the analysis incorporated 
 
 Furthermore, when estimating price elasticities of demand, one additional relevant challenge for the identification of a causal effect is the potential simultaneous determination of price and demand. Under the assumption that demand and supply curves shift over time, the observed data on quantities and prices would reflect a set of equilibrium points on both curves [@angrist_krueger01]. The common approach in the economic literature to address the endogeneity steaming from simultaneity is to pursue an instrumental variable approach [@angrist_krueger01; @burtless_hausman78]. Using an instrumental variable approach was also explored for this thesis. In line with the approach used by @auffhammer_rubin18, the Trading Hub Europe (THE) Gas forward prices were considered as an instrument. However, use of an instrumental variable approach was ultimately discarded because the identifying assumption that the instrument needs to be highly correlated with the energy prices in the sample was not met. This is mainly because the prices observed in the large-scale sample are more scattered than average energy prices, where instruments have been mainly used in the past (e.g., @csereklyei20). However, unlike in the case of @auffhammer_rubin18 residential energy contracts in Germany are more regulated than in the US where, for example, the rates faced by consumers change on a monthly basis—updating as a function of gas wholesale prices paid by the retail utilities. So while not being able to pursue an instrumental variable approach remains an issue to potentially producing biased estimates, it appears less of an issue with the data available for this thesis.
 
-## Workflow and empirical approach {#workflow-empirical-approach}
+## Workflow and Empirical Approach {#workflow-empirical-approach}
 
 For the regression analysis, I use several statistical methods. I first conduct an analysis of the full sample to estimate an overall price elasticity of demand. Given the large number of observations in the sample, I rely on classical statistical methods to conduct the analysis of the full sample. Subsequently, I deepen the analysis based on a stratified random subsample. Here, I rely on Bayesian regression analysis to better communicate the uncertainty inherent to the estimates as well as to investigate potential factors for heterogeneity in the overall elasticity estimates. Generally, I follow an approach where I begin with constructing a simple model Specification and then extend it to a more elaborate statistical model. The aim is to arrive at a model that has a good fit, but also makes the way to get to it transparent.
 
@@ -137,7 +137,7 @@ ln(Demand) & = \alpha + \beta_1 \cdot ln(Price) + \beta_2 \cdot ln(Degree.days) 
 \end{align*}
 ```
 
-where the response variable $ln(Demand)$ denotes the natural logarithm of the annual space heating demand per square meter and the main explanatory variable $ln(Price)$ denotes the natural logarithm of the average energy price (Cents/kWh) in the same period. The additional terms on the right hand side of the equation denote the additional explanatory variables (degree days, building characteristics, and district/postal code socio-economic variables). $\varepsilon$ denotes the error term of the model. Referring back to Equation \@ref(eq:demand2) in the theory section of this thesis, the ln-form of both sides of the equation transforms the model into the elasticity case, meaning that the coefficient $\beta_1$ of $ln(Price)$ represents the price elasticity of space heating demand. For the cross-sectional OLS regression, I first run the model with $ln(Price)$ as a sole predictor and then with the additional explanatory variables included.
+where the response variable $ln(Demand)$ denotes the natural logarithm of the annual space heating demand per square meter and the main explanatory variable $ln(Price)$ denotes the natural logarithm of the average energy price (Cents/kWh) in the same period. The additional terms on the right hand side of the equation denote the additional explanatory variables (degree days, building characteristics, and district/postal code socio-economic variables). $\varepsilon$ denotes the error term of the model. Referring back to Equation \@ref(eq:demand2) in the theory section of this thesis, the ln-form of both sides of the equation transforms the model into the elasticity case, meaning that the coefficient $\beta_1$ of $ln(Price)$ represents the price elasticity of space heating demand. For the cross-sectional OLS regression, I first run the model with $ln(Price)$ as a sole predictor and then with the additional explanatory variables included. All model predictors except the energy carrier group, which is a categorical variable, and the share of district heating supply, which is already a ratio, are included in the ln-transformed form. This is done firstly to facilitate the interpretation of the results in the elasticity case, but secondly also to reduce the impact of possible outliers in the distribution of the variables. The use of ln-transformed continuous predictors is also the standard approach in the previous literature [e.g., @auffhammer_rubin18; @meier_rehdanz10; @schmitz_madlener20].
 
 In the billing dataset, it is possible to assign several observations to the same building (building ID) and year (billing period). Thus, the data structure allows to go beyond cross-sectional OLS and apply panel data estimation techniques. In the OLS estimation shown above, observations from various buildings and years are treated to be systematically no different from each other. Panel data methods, on the contrary, are rooted in the assumption that there may be systematic and unobserved differences between units that may be correlated with observed predictors whose effects on the response are to be measured [@wooldridge13]. Thus, panel data methods are considered a powerful tool for observational data where controlling for all relevant factors is inherently difficult [@bailey17]. By acknowledging and addressing that there may be unobserved inter-individual differences between the units (buildings) and also an intra-individual dynamic over time (years), use of panel data methods can provide a more accurate picture for the predictors observed in the model.
 
@@ -220,7 +220,7 @@ Since the model represents an extension to the model shown previously, all notat
 The Bayesian models are estimated using the brms-package by @burkner17 in R. The brms-package serves as an interface to the probabilistic programming language and inference engine Stan [@standevelopmentteam22].
 
 
-## Descriptive statistics {#descriptives}
+## Descriptive Statistics {#descriptives}
 
 After having established the workflow and empirical approach, the following part of the Chapter presents descriptive statistics on the full sample to obtain a better understanding of the data.
 

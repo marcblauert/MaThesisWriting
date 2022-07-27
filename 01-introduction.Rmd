@@ -26,7 +26,7 @@ In the face of climate change, there is a urgent need for the decarbonisation of
 
 [^2]: Federal Climate Change Act of 12 December 2019 (Federal Law Gazette I, p. 2513), as last amended by Article 1 of the Act of 18 August 2021 (Federal Law Gazette I, p. 3905).
 
-## Objective and relevance {#relevance}
+## Objective and Relevance {#relevance}
 
 Economic theory relies on the rationale that prices represent the key driver for the level of demand for a good [@pindyck_rubinfeld18; @stigler87]. Therefore, carbon pricing instruments are one of the key instruments to support and drive the decarbonisation of the buildings sector while being supplemented by additional policies [@braungardt_etal21]. Ultimately, however, modelling the effectiveness and impact of any price-related energy and climate policy instrument strongly depends on the assumed responsiveness of consumer demand [@alberini_etal11; @zhu_etal18].
 

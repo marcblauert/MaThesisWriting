@@ -13,7 +13,7 @@ pacman::p_load(tidyverse, thesisdown, knitr, kableExtra)
 options(width = 70)
 ```
 
-# Supplementary materials
+# Supplementary Materials
 
 \singlespacing
 \newpage
@@ -24,7 +24,7 @@ knitr::include_graphics(path = "figure/distribution_degree_days.pdf")
 
 
 \noindent
-Figure \@ref(fig:degree-days-distribution) show the spatial and temporal variation of outside temperature measured in degree days. Degree days data was taken from @iwu21 and are used as an additional determinant of space heat demand in the regression analysis. Data is shown on the postal code level. Higher annual degree days are associated with lower temperatures and vice versa. In terms of spatial variation, the maps show cooler temperatures (higher degree days) mainly in the higher altitude regions, but also in eastern Germany, which is further inland from the European continent. In terms of temporal variation, 2010 in particular, but also 2012 and 2013 were cooler years than the average year in the sample. 2014, 2018 and 2019, on the other hand, were significantly warmer years.
+Figure \@ref(fig:degree-days-distribution) shows the spatial and temporal variation of degree days as an operationalisation of outdoor temperature conditions. Degree days data was taken from @iwu21 and are used as an additional determinant of space heat demand in the regression analysis. Data is shown on the postal code level. Higher annual degree days are associated with lower outdoor temperatures and vice versa. Lower outdoor temperatures are in turn likely to be associated with increased space heating demand. In terms of spatial variation, the maps show colder outdoor temperatures (higher degree-days) mainly in the higher altitude regions, but also in eastern Germany, which is further inland in the European continent. In terms of temporal variation, considerable differences can be observed between the years. Especially 2010, but also 2012 and 2013 were cooler than the average of the years observed. The years 2014, 2018 and 2019, on the other hand, were significantly warmer.
 
 \newpage
 
@@ -32,7 +32,7 @@ Figure \@ref(fig:degree-days-distribution) show the spatial and temporal variati
 knitr::include_graphics(path = "figure/correlation_matrix.pdf")
 ```
 \noindent
-The values in Figure \@ref(fig:correlation-plot) represent Pearson's correlation coefficients. Values closer to 1 indicate a stronger positive relationship, values closer to -1 indicate a stronger negative relationship. Values close to zero indicate no relationship. None of the correlations observed between the variables exceed moderate values, ruling out possible multicollinearity issues. Energy price is negatively correlated with energy demand, indicating that the expected negative effect of price on demand indeed exists. Note that all variables except the district retirement share, which is already a ratio, are ln-transformed and reflect the data transformation used in the regression analysis.
+The values in Figure \@ref(fig:correlation-plot) represent Pearson's correlation coefficients. Values closer to 1 indicate a stronger positive relationship, values closer to -1 indicate a stronger negative relationship. Values close to 0 indicate no relationship. None of the correlations observed between the variables exceed moderate values, ruling out possible multicollinearity issues. Energy price is negatively correlated with energy demand, indicating that the expected negative effect of price on demand appears to be reflected in the data. Note that all variables except the district retirement share, which is already a ratio, are ln-transformed and reflect the data transformation used in the regression analysis.
 
 \newpage
 
@@ -72,7 +72,7 @@ After 2010                            & 46,556 (14\%)      & 27,564 (14\%)   & 1
 \end{table}
 
 \noindent
-Table \@ref(tab:age-building-heating-system) provides descriptive statistics for the age of buildings and heating systems grouped by the type of energy carrier. For those buildings, where information is available, a relatively larger share of district heating systems are installed in older buildings but at a more recent date. Overall, however, the differences are moderate and cannot explain the difference in energy demand between buildings with gas and oil heating on the one side (relatively higher consumption) and district heating on the other side (relatively lower consumption). Instead, it is presumably the size of the buildings that induces to the lower demand levels for buildings with district heating (cf. Table \@ref(tab:summary-statistics). At the same time, it should be noted that the validity of the age classification of buildings and heating system installation year presented here is limited, as the information is available only for 15.5% and 13.7% of the total number of observations, respectively. This is also the reason why the two variables were not included as variables in the regression analysis.
+Table \@ref(tab:age-building-heating-system) provides descriptive statistics for the age of buildings and heating systems grouped by the type of energy carrier. The information is taken from the Energy Performance Certificates (EPC) data which is otherwise not used for this thesis, as it is only available for a relatively small share of observations. For those buildings where the information is available, it can be observed from the table above that a relatively larger share of district heating systems are installed in older buildings but at a more recent date. Overall, however, the differences are moderate and likely only a minor determinant for the difference in energy demand between buildings with gas and oil heating on the one side (relatively higher demand) and district heating on the other side (relatively lower demand). Rather, it can be assumed that two other reasons explain most of the observed difference. Firstly, there is no additional loss of efficiency in local combustion in the boiler when using district heating, as is the case with oil and gas. And secondly, the observed buildings with district heating are on average significantly larger than the observed buildings with gas or oil heating (cf. Table \@ref(tab:summary-statistics). At the same time, it should be noted that the validity of the age classification of buildings and heating system installation year presented here is limited, as the information is available only for 15.5% and 13.7% of the total number of observations, respectively. This is also the reason why the two variables were not included as variables in the regression analysis.
 
 \newpage
 
@@ -82,7 +82,7 @@ knitr::include_graphics(path = "figure/density-distribution-comparison-samples.p
 ```
 
 \noindent
-Figure \@ref(fig:density-distribution-comparison-samples) compares the density distribution for the two key variables energy demand and energy price between the full sample (transparent) and the subsample (purple area) with 400 randomly selected buildings per energy carrier group (gas, oil and district heating). The visual comparison shows that there are only relatively small deviations in energy demand (Panel A), with the distribution in the subsample being slightly shifted to the left (lower demand). The comparison of distribution in energy prices (Panel B), on the other hand, show more divergence, with the subsample distribution showing a lower peak around $Ln(price) = 2$ and also more observations in the higher price range. However, the deviations in energy demand and energy prices can be well explained by the stratified sampling approach for the subsample. The stratified sample leads primarily to a reduction in the share of gas observations and in contrast to an increase in observations related to district heating. For the demand variable, more district heating observations lead to more observations with a lower demand. For the price variable, it leads to a less pronounced peak in gas observations at the center and more district heating observations with higher prices at the upper end of the distribution.
+Figure \@ref(fig:density-distribution-comparison-samples) compares the density distribution for the two key variables energy demand and energy price between the full sample (transparent) and the subsample (purple area) with 400 randomly selected buildings per energy carrier group (gas, oil and district heating). The visual comparison shows that there are only relatively small deviations in energy demand (Panel A), with the distribution in the subsample being slightly shifted to the left (lower demand). The comparison of distribution in energy prices (Panel B), on the other hand, show more divergence, with the subsample distribution showing a lower peak around $Ln(price) = 2$ and also more observations in the higher price range. However, the deviations in energy demand and energy prices can be well explained by the stratified sampling approach for the subsample. The stratified sample leads primarily to a relative reduction of gas observations and to a relative increase in district heating observations. For the demand variable, more district heating observations lead to more observations with a lower demand. For the price variable, it leads to a less pronounced peak in gas observations at the center (around $Ln(price) = 2$) and more district heating observations with higher prices at the upper end of the distribution.
 
 \newpage
 
@@ -189,7 +189,7 @@ sd(Intercept) & 0.03 & 0.01 & 0.01 & 0.04 & 1.00 & 912 & 1752 \\ \hline
 \normalsize
 
 \noindent
-Table \@ref(tab:brms-full-model-results) presents the complete model summaries for the brms models in the subsample analysis. The parameters are summarized using either the mean (estimate) or the standard deviation (standard error) of the posterior distribution with 95% confidence intervals. Rhat is a measure of model convergence. Values below 1.05 indicate that chains mixed well and the model has converged. Bulk ESS and Tail ESS are diagnostics of the sampling efficiency.
+Table \@ref(tab:brms-full-model-results) presents the complete model summaries for the brms models in the subsample analysis. The parameters are summarized using the mean (estimate) and the estimated error of the posterior distribution with the 95% confidence intervals reported. Rhat is a measure of model convergence. Values below 1.05 indicate that chains mixed well and the model has converged. Bulk ESS and Tail ESS are diagnostics of the sampling efficiency.
 
 \newpage
 
@@ -197,7 +197,7 @@ Table \@ref(tab:brms-full-model-results) presents the complete model summaries f
 knitr::include_graphics(path = "figure/year_state_heterogeneity_plot.pdf")
 ```
 \noindent
-Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual examination of the heterogeneity of price elasticity between years (Panel A) and federal states (Panel B). For this purpose, the observations in the sub-sample are grouped by year/federal state and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the years/federal states as groups. Between years, all lines are almost parallel, indicating that there is no relevant difference in price elasticity between years. For the federal states, the lines scatter a little. At the same time, however, no strong pattern can be discerned through clusters such as differences between formerly eastern and western federal states or through other regional clusters.
+Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual analysis designed to detect potential heterogeneity for the price elasticity of space heating demand between years (Panel A) and federal states (Panel B). To construct the graphs, the observations in the subsample are grouped by year or federal state and presented in a scatter plot between energy price and demand. The lines in the diagrams reflect simple linear models for the grouped years or federal states. Between the years observed in the sample, all lines are almost parallel, indicating that there is no relevant difference in price elasticity. In the case of the federal states, the lines diverge a little. But no relevant pattern can be detected (e.g., differences between formerly eastern and western federal states or other regional clusters). Thus, no relevant heterogeneity in price responsiveness of detected for the two variables.
 
 \newpage
 
@@ -205,9 +205,9 @@ Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual examination of
 knitr::include_graphics(path = "figure/other_variables_heterogeneity_plot.pdf")
 ```
 \noindent
-Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual examination of the heterogeneity of price elasticity for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, observations in the sub-sample are ln-transformed, grouped into three equally sized groups,[^99] and presented in a scatter plot. The lines in the diagrams reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and show no difference in price elasticity. For the other three variables, a slight dispersion of the grouped lines can be observed. But again, there are no pronounced differences that would prompt a more detailed investigation.
+Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual analysis designed to detect potential heterogeneity for the price elasticity of space heating demand for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, the observations in the subsample are grouped into three equally sized groups[^99] and presented in a scatter plot between energy price and demand. The lines in the graphs reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and therefore indicate no difference in the price elasticity of demand. ADJUST!!!!
 
-[^99]: E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63).
+[^99]: E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63). ADJUST!!!!
 
 \newpage
 
@@ -215,7 +215,7 @@ Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual examinati
 knitr::include_graphics(path = "figure/plot-model-comparison.pdf")
 ```
 \noindent
-Figure \@ref(fig:plot-model-comparison) presents a visual examination of the model fit for all models used on the subsample analysis.
+Figure \@ref(fig:plot-model-comparison) presents a visual examination of the model fit for all models used on the subsample analysis. ADJUST!!!!
 
 \newpage
 
