@@ -22,7 +22,6 @@ options(width = 70)
 knitr::include_graphics(path = "figure/distribution_degree_days.pdf")
 ```
 
-
 \noindent
 Figure \@ref(fig:degree-days-distribution) shows the spatial and temporal variation of degree days as an operationalisation of outdoor temperature conditions. Degree days data was taken from @iwu21 and are used as an additional determinant of space heat demand in the regression analysis. Data is shown on the postal code level. Higher annual degree days are associated with lower outdoor temperatures and vice versa. Lower outdoor temperatures are in turn likely to be associated with increased space heating demand. In terms of spatial variation, the maps show colder outdoor temperatures (higher degree-days) mainly in the higher altitude regions, but also in eastern Germany, which is further inland in the European continent. In terms of temporal variation, considerable differences can be observed between the years. Especially 2010, but also 2012 and 2013 were cooler than the average of the years observed. The years 2014, 2018 and 2019, on the other hand, were significantly warmer.
 
@@ -196,6 +195,7 @@ Table \@ref(tab:brms-full-model-results) presents the complete model summaries f
 ```{r heterogeneity-year-state-plot, echo = FALSE, fig.cap = "Scatter plot for the investigation of heterogeneity between years and federal states", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/year_state_heterogeneity_plot.pdf")
 ```
+
 \noindent
 Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual analysis designed to detect potential heterogeneity for the price elasticity of space heating demand between years (Panel A) and federal states (Panel B). To construct the graphs, the observations in the subsample are grouped by year or federal state and presented in a scatter plot between energy price and demand. The lines in the diagrams reflect simple linear models for the grouped years or federal states. Between the years observed in the sample, all lines are almost parallel, indicating that there is no relevant difference in price elasticity. In the case of the federal states, the lines diverge a little. But no relevant pattern can be detected (e.g., differences between formerly eastern and western federal states or other regional clusters). Thus, no relevant heterogeneity in price responsiveness of detected for the two variables.
 
@@ -204,18 +204,20 @@ Figure \@ref(fig:heterogeneity-year-state-plot) presents a visual analysis desig
 ```{r other-variables-heterogeneity-plot, echo = FALSE, fig.cap = "Scatter plot for the investigation of heterogeneity for the variables degree days, heating surface, district income, and district retirement share", out.width = "95%", fig.align = "center"}
 knitr::include_graphics(path = "figure/other_variables_heterogeneity_plot.pdf")
 ```
-\noindent
-Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual analysis designed to detect potential heterogeneity for the price elasticity of space heating demand for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables represent continuous variables, the observations in the subsample are grouped into three equally sized groups[^99] and presented in a scatter plot between energy price and demand. The lines in the graphs reflect simple linear models for the respective three groups of equal size. For degree days, the lines are almost parallel and therefore indicate no difference in the price elasticity of demand. ADJUST!!!!
 
-[^99]: E.g., one third of observations with lowest number of degree days (between 7.85 and 8.1), one third of observations medium number of degree days (between 8.1 and 8.2), and one third of observations highest number of degree days (between 8.2 and 8.63). ADJUST!!!!
+\noindent
+Figure \@ref(fig:other-variables-heterogeneity-plot) presents a visual analysis designed to detect potential heterogeneity for the price elasticity of space heating demand for the four variables degree days (Panel A), building heating surface (Panel B), average district income (Panel C), and district retirement share (Panel D). Since all four variables are continuous, the observations in the subsample are grouped into three equally sized groups[^99] and presented in a scatter plot between energy price and demand. The lines in the graphs reflect simple linear models for the respective three groups of equal size. For degree days and district retirement share, the lines are almost parallel and therefore indicate no difference in the price elasticity of demand. For district per capita household income minor differences can be observed. For building heating surface a more pronounced difference is observed with larger buildings being associated with a more elastic demand response than smaller buildings. The possible heterogeneity of the price responsiveness for district per capita income and heating surface is further investigated (see Chapter \@ref(subsample_results)), but ultimately discarded.
+
+[^99]: Taking the example of degree days, this means that the third of the observations with the lowest degree days (between 7.8 and 8.1), the third of the observations with the medium degree days (between 8.1 and 8.2) and the third of the observations with the highest degree days (between 8.2 and 8.58) are combined as groups.
 
 \newpage
 
 ```{r plot-model-comparison, echo = FALSE, fig.cap = "Graphical model comparison for Specifications in subsample analysis", out.width = "100%", fig.align = "center"}
 knitr::include_graphics(path = "figure/plot-model-comparison.pdf")
 ```
+
 \noindent
-Figure \@ref(fig:plot-model-comparison) presents a visual examination of the model fit for all models used on the subsample analysis. ADJUST!!!!
+Figure \@ref(fig:plot-model-comparison) presents a visual examination of the model fit for all six models estimated for the subsample analysis. In contrast to the model comparison table presented in Chapter \@ref(subsample_results) here also model Specification (bm.2, Lagged) could be included. One can observe in the graphs, that the predictions (yellow lines) align better with the reference (purple line) once moving to the partial pooling models (bm.x). Among the partial polling models, the differences reported in Table \@ref(tab:model-comparison) in Chapter \@ref(subsample_results) are difficult to see visually. 
 
 \newpage
 

@@ -17,9 +17,16 @@ According to price and demand theory, the demand for a good is mainly determined
 
 Paragraph on main results
 
+Because the sample data is limited to the rental segment of the buildings sector, the price elasticity estimates presented should be considered as an elasticity for this specific segment of the sector. Due to the different conditions, it can be assumed that the price elasticities for single-family houses and for commercial properties in particular are different from those for rented apartment buildings. By estimating an elasticity for the rental segment exclusively, this thesis addresses a gap mentioned in the literature [e.g., @braungardt_etal21].
+
 Paragraph on policy context
 
+
+Generalisability: Eine Differenzierung zwischen Mietenden und Eigentümer*innen wird in keiner der Studien aufgeführt. --> Hier liegt Evidenz für das Segment der mietwohnungen vor
+
 **Limitations**
+
+
 
 **Further research**
 

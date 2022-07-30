@@ -16,6 +16,6 @@ We find strong household response to energy prices, both in the short and long t
 \begin{tabular}{m{14cm}}
 \hline
 \textbf{Code, GitHub Repository:} \\ 
-\footnotesize \url{https://github.com/marcblauert/price_elasticities_heating_demand_thesis}  \\
+\footnotesize \url{https://github.com/marcblauert/price-elasticities-heating-demand-ext.git}  \\
 \hline
 \end{tabular}
