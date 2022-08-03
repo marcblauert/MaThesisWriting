@@ -12,7 +12,7 @@ options(width = 70)
 
 # Theory and Literature {#literature}
 
-This Chapter aims to provide the theoretical background on the price elasticity of demand and an overview of the previous literature on the price elasticity of space heating demand in particular. Subsequently, theory and evidence from the literature are used to develop a conceptual model with corresponding rationales for the relevance and expected direction of a variable's effect on space heating demand.
+This Chapter aims to provide the theoretical background on the price elasticity of demand. It then summarises evidence from previous literature on the price elasticity of space heating demand. Subsequently, theory and literature evidence are used to develop a conceptual model with corresponding rationales for the relevance and expected direction of a variable's effect on space heating demand.
 
 ## Price Elasticity of Demand {#theory}
 
@@ -150,7 +150,7 @@ Another common feature that links all the individual studies presented is that t
 
 ## Conceptual Model {#conceptual-model}
 
-The last two parts of the Chapter presented the theoretical foundations of the price elasticity of demand (see chapter \@ref(theory)) and the previous evidence from the literature on household demand response for space heating to energy price changes (see chapter \@ref(review)). To synthesise this basis, this final part of the Chapter is dedicated to developing a conceptual model relying on both theory and approaches from previous studies. The aim is to identify relevant determinants for the level of space heating demand of private households and to justify their relevance. The conceptual model will then be transferred into a statistical model and empirically examined in the further course of this thesis.
+The last two parts of the Chapter presented the theoretical foundations of the price elasticity of demand (see Chapter \@ref(theory)) and the previous evidence from the literature on household demand response for space heating to energy price changes (see chapter \@ref(review)). To synthesise this basis, this final part of the Chapter is dedicated to developing a conceptual model relying on both theory and approaches from previous studies. The aim is to identify relevant determinants for the level of space heating demand of private households and to justify their relevance. The conceptual model will then be transferred into a statistical model and empirically examined in the further course of this thesis.
 
 **Price elasticity of demand**
 
