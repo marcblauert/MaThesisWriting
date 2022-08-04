@@ -5713,5 +5713,33 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "agoraenergiewende20",
+		"type": "report",
+		"title": "Wie passen Mieterschutz und Klimaschutz unter einen Hut?",
+		"URL": "https://static.agora-energiewende.de/fileadmin/Projekte/2020/2020_07_Warmmieten/A-EW_190_Mieterschutz_Klimaschutz_WEB.pdf",
+		"author": [
+			{
+				"family": "Agora Energiewende",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					31
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
 	}
 ]
